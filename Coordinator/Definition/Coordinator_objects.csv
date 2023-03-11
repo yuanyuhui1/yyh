@@ -1,0 +1,151 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 240;;;;;;;
+;coodinatorAlarmSimulation;;INOUT;T_DIAGNOSIS_ALARM;4;Protected;RAM
+;operatingMode;;INOUT;TABENUM8;1;ReplaceStaticFreqStaticDefault;NON_VOLATILE
+;workingTimeMSec;;INOUT;SIMPLE_U32;1;Unprotected;RAM
+;totalWorkingTimeHour;;INOUT;SIMPLE_U32;1;STATIC_CYCLIC;NON_VOLATILE
+;partialWorkingTimeHour;;INOUT;SIMPLE_U32;1;Unprotected;RAM
+;simulationMode;Simulation mode;INOUT;TABENUM8;1;Protected;RAM
+;frequency;Piezo sensor frequency;INOUT;FLOAT;1;DynamicDuplicated;RAM
+;frequencySim_Enable;;INOUT;TABENUM8;1;Protected;RAM
+;frequency_Sim;;INOUT;FLOAT;1;Unprotected;RAM
+;frequency_MaxDN;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;frequency_MinDN;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;frequency_Span;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;frequency_Span_Obj;;INPUT;UOM_PF;1;;
+;frequency_range;;INPUT;DEV_RNGFLT;1;STATIC_RARE;NON_VOLATILE
+;frequency_range_Obj;;CONTAINED;UOM_PF;1;;
+;frequency_Percentage;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;frequency_Damped;;INOUT;FLOAT;1;DynamicDuplicated;RAM
+;frequency_Damped_Obj;;CONTAINED;UOM_PF;1;;
+;frequency_UnitCode;;INOUT;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;simFrequency_UnitCode;;INPUT;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;frequency_UnitType;;INOUT;CONST_U8;1;CONSTANT;ROM
+;frequency_Obj;;INOUT;UOM_PF;1;;
+;frequency_SimObj;;INOUT;UOM_PF;1;;
+;frequency_Classification;;OUTPUT;CONST_U8;1;CONSTANT;ROM
+;frequency_Status;;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;frequency_DampingTime;;INOUT;FLOAT;1;ReplaceStaticRare;NON_VOLATILE
+;temperature;;INOUT;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;temperatureSim_Enable;;INOUT;TABENUM8;1;Protected;RAM
+;temperature_Sim;;INOUT;FLOAT;1;Unprotected;RAM
+;temperature_DampingTime;;INPUT;FLOAT;1;ReplaceStaticFreqStaticDefault;NON_VOLATILE
+;temperature_Damped;;INOUT;FLOAT;1;DynamicDuplicated;RAM
+;temperature_Damped_Obj;;OUTPUT;UOM_PF;1;;
+;temperature_UnitCode;;INOUT;TABENUM8;1;ReplaceStaticFreqStaticDefault;NON_VOLATILE
+;simTemperature_UnitCode;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;temperature_UnitType;;OUTPUT;CONST_U8;1;CONSTANT;ROM
+;temperature_Obj;;INOUT;UOM_PF;1;;
+;temperatureSim_Obj;;INOUT;UOM_PF;1;;
+;temperature_MaxDN;;INOUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;temperature_MinDN;;INOUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;temperature_Span;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;temperature_Span_Obj;;INPUT;UOM_PF;1;;
+;temperature_range;;INPUT;DEV_RNGFLT;1;ReplaceStaticFreqStaticDefault;NON_VOLATILE
+;temperature_range_Obj;;CONTAINED;UOM_PF;1;;
+;temperature_Percentage;;OUTPUT;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;temperature_Classification;;OUTPUT;CONST_U8;1;CONSTANT;ROM
+;temperature_Status;;INPUT;SIMPLE_U8;1;Unprotected;RAM
+;temperature_Selection;dummy object;INPUT;TABENUM8;1;Unprotected;RAM
+;intRTDType;;INOUT;TABENUM8;1;ReplaceStaticRare;NON_VOLATILE
+;cpuLoad;CPU load;INOUT;FLOAT;1;Unprotected;RAM
+;frontEndConfParamWr;Front end configuration parameters;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;frontEndConfParamRd;;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;frontEndTempTypeRd;;INOUT;TABENUM8;1;Unprotected;RAM
+;updateTimeFast;;INOUT;SIMPLE_U32;1;Unprotected;READONLY_RAM
+;updateTimeSlow;;OUTPUT;SIMPLE_U32;1;Unprotected;READONLY_RAM
+;forceReplace;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;tranMaintenanceCyc;Transmitter maintenace cycle;INOUT;USIGN32;1;STATIC_CYCLIC;NON_VOLATILE
+;vortexDeviceStatus;Vortex family variable status. Hart  command 152.;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;additionalVortexDeviceStatus;Additional vortex family status. Hart command 152.;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;familyRevision;Hart command 153.;OUTPUT;CONST_U8;1;CONSTANT;ROM
+;calibrationStatus;Piezo sensor calibartion status.;INOUT;TABENUM8;1;ReplaceStaticRare_Calibration;NON_VOLATILE
+;internalRTDPassword;;INPUT;SIMPLE_CHAR;6;ReplaceStaticRare_Calibration;NON_VOLATILE
+;analogInputPassword;;INPUT;SIMPLE_CHAR;6;ReplaceStaticRare_Calibration;NON_VOLATILE
+;energyFlowPassword;;INPUT;SIMPLE_CHAR;6;ReplaceStaticRare_Calibration;NON_VOLATILE
+;frequency_Duplicated;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;frequency_Damped_Duplictated;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;temperature_Duplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;temperature_Damped_Duplicated;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;temperaturePreset;;INPUT;FLOAT;1;ReplaceStaticFreqStaticDefault;NON_VOLATILE
+;temperaturePreset_Obj;;CONTAINED;UOM_PF;1;;
+;cdtDiagnosis;cdtDiagnosis byte 0 for cdt ,byte 1&2 from frontend diagnosis;INOUT;SIMPLE_U8;4;DynamicDuplicated;RAM
+;cdtDiagnosis_Duplicated;;INPUT;SIMPLE_U8;4;DynamicDuplicated;RAM
+;passwordEnable;;CONTAINED;SIMPLE_U8;1;Protected;RAM
+;temperatureMaxRecord;;OUTPUT;FLOAT;1;ReplaceStaticRare;NON_VOLATILE
+;temperature_Percentage_Duplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;temperatureAlmRange;;INPUT;RANGEFLT;1;ReplaceStaticRare;NON_VOLATILE
+;converterType;;INPUT;TABENUM8;1;ReplaceStaticRare;NON_VOLATILE
+;vortexmeterSize;;CONTAINED;TABENUM8;1;ReplaceStaticRare;NON_VOLATILE
+;swirlmeterSize;;CONTAINED;TABENUM8;1;ReplaceStaticRare;NON_VOLATILE
+;snr;;INPUT;FLOAT;1;Unprotected;RAM
+;frontendOperationHour;;INPUT;SIMPLE_U32;1;Unprotected;RAM
+;frontendMaintenance;;INPUT;USIGN32;1;Unprotected;RAM
+;vbrCorrectionOn;;INPUT;TABENUM8;1;Unprotected;RAM
+;vbrFilStep;;INPUT;INT16;1;Unprotected;RAM
+;vbrFilNumCoef;;INPUT;USIGN8;1;Unprotected;RAM
+;fcdOn;;INPUT;TABENUM8;1;Unprotected;RAM
+;fcdShift;;INPUT;USIGN8;1;Unprotected;RAM
+;fcdDelay;;INPUT;USIGN8;1;Unprotected;RAM
+;fcdNumCoef;;INPUT;USIGN8;1;Unprotected;RAM
+;lockMinIntPeriod;;INPUT;USIGN8;1;Unprotected;RAM
+;lockMaxIntPeriod;;INPUT;USIGN8;1;Unprotected;RAM
+;lockEstimation;;INPUT;USIGN8;1;Unprotected;RAM
+;accuracyHigh;;INPUT;USIGN8;1;Unprotected;RAM
+;accuracyMiddle;;INPUT;USIGN8;1;Unprotected;RAM
+;accuracyLow;;INPUT;USIGN8;1;Unprotected;RAM
+;analogGain;;INPUT;TABENUM8;1;Unprotected;RAM
+;gainCtrl;;INPUT;TABENUM8;1;Unprotected;RAM
+;gainLowThresh;;INPUT;INT16;1;Unprotected;RAM
+;gainHighThresh;;INPUT;INT16;1;Unprotected;RAM
+;gainMarginFreq;;INPUT;INT16;1;Unprotected;RAM
+;gainMaxShift;;INPUT;USIGN8;1;Unprotected;RAM
+;lowFlowThreshOn;;INPUT;TABENUM8;1;Unprotected;RAM
+;lowFlowThresh;;INPUT;INT16;1;Unprotected;RAM
+;lowFlowThreshCoef;;INPUT;INT16;1;Unprotected;RAM
+;noiseSampSize;;INPUT;USIGN8;1;Unprotected;RAM
+;staticDecimation;;INPUT;USIGN8;1;Unprotected;RAM
+;middleBufDecimation;;INPUT;USIGN8;1;Unprotected;RAM
+;maxFlowFreq;;INPUT;FLOAT;1;Unprotected;RAM
+;minFlowFreq;;INPUT;FLOAT;1;Unprotected;RAM
+;freqMinMarginPer;;INPUT;USIGN8;1;Unprotected;RAM
+;freqMaxMarginPer;;INPUT;USIGN8;1;Unprotected;RAM
+;readParameters;;CONTAINED;ACTION;1;;
+;writeParameters;;CONTAINED;ACTION;1;;
+;saveCustomerDef;;CONTAINED;ACTION;1;;
+;saveFactoryDef;;CONTAINED;ACTION;1;;
+;resetCustomerDef;;CONTAINED;ACTION;1;;
+;resetFactoryDef;;CONTAINED;ACTION;1;;
+;resetFE_Runhour;;CONTAINED;ACTION;1;;
+;temperatureOffsetCorrect;;INPUT;FLOAT;1;ReplaceStaticRare;NON_VOLATILE
+;temperatureOffsetCorrectDisp;;INPUT;FLOAT;1;Unprotected;RAM
+;timeStamp;;OUTPUT;SIMPLE_U32;1;Unprotected;RAM
+;actualDensitySelection;;INPUT;TABENUM8;1;ReplaceStaticFreqStaticDefault;NON_VOLATILE
+;tPresetChangeFlag;;OUTPUT;SIMPLE_U8;1;Unprotected;RAM
+;protectedDataStatus;;CONTAINED;TABENUM8;1;Protected;RAM
+;page1;;CONTAINED;SIMPLE_U8;30;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;temperatureSensor;;INPUT;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;temperatureSensor_Duplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;temperatureSensor_Obj;;CONTAINED;UOM_PF;1;;
+;protectedDataCrc;;CONTAINED;SIMPLE_U16;1;Unprotected;RAM
+;autoselfcheck_Enable;;CONTAINED;TABENUM8;1;DynamicDuplicated;RAM
+;spanUpperRange;;CONTAINED;INT16;1;Unprotected;RAM
+;temperatureAlmRange_obj;;CONTAINED;UOM_PF;1;;
+;temperatureMaxRecord_obj;;CONTAINED;UOM_PF;1;;
+;sigAmplitude;;INOUT;SIMPLE_U16;1;Unprotected;RAM
+;vbrAmplitude;;INPUT;SIMPLE_U16;1;Unprotected;RAM
+;sigMagnitude;;INPUT;SIMPLE_U16;1;Unprotected;RAM
+;autoselfcheck_Enable_Duplicated;;CONTAINED;TABENUM8;1;DynamicDuplicated;RAM
+;temperatureOffsetCorrectUser;;CONTAINED;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;temperatureOffsetCorrectUserDisp;;CONTAINED;FLOAT;1;Unprotected;RAM
+;reaction_InputFail;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;BothMaintenanceCycle;Both FE and CB maintenance cycle;CONTAINED;USIGN32;1;Unprotected;RAM
+;rawTemperatureSensor;the raw sensor temperature value from FE;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;ext_algSelection;;CONTAINED;TABENUM8;1;FE_OUTPUT_FILTER_PARA;RAM
+;int_algSelection;;CONTAINED;TABENUM8;1;FE_OUTPUT_FILTER_PARA;RAM
+;config_alg_paras;;CONTAINED;ACTION;1;;
+;read_alg_block;;CONTAINED;ACTION;1;;
+;ss_paras;average_or_max + activate percentage + study over count + tolerance + one direction retrigger counter + two direction retrigger counter + remove high counter + remove low counter + delay counter;CONTAINED;SIMPLE_U16;8;FE_OUTPUT_FILTER_PARA;RAM
+;sf_paras;overall counter + remove high counter + remove low counter + delay counter;CONTAINED;SIMPLE_U16;4;FE_OUTPUT_FILTER_PARA;RAM

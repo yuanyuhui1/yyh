@@ -1,0 +1,256 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 167;;;
+;coodinatorAlarmSimulation;ptrCodeTab;_CDT_DIAGNOSIS_ALARM_TABLE
+;coodinatorAlarmSimulation;numberOfCodes;sizeof(_CDT_DIAGNOSIS_ALARM_TABLE)
+;simulationMode;ptrCodeTab;_CDT_SIMULATION_MODE
+;simulationMode;numberOfCodes;sizeof(_CDT_SIMULATION_MODE)
+;cpuLoad;min;0.0f
+;cpuLoad;max;100.0f
+;cpuLoad;increment;0.01f
+;forceReplace;ptrCodeTab;_CDT_FORCE_REPLACE
+;forceReplace;numberOfCodes;sizeof(_CDT_FORCE_REPLACE)
+;calibrationStatus;ptrCodeTab;_SENSOR_CALIBRATION_STATUS
+;calibrationStatus;numberOfCodes;sizeof(_SENSOR_CALIBRATION_STATUS)
+;frontEndTempTypeRd;ptrCodeTab;_TEMP_SENSOR_TYPE
+;frontEndTempTypeRd;numberOfCodes;sizeof(_TEMP_SENSOR_TYPE)
+;frequency;min;0.3f
+;frequency;max;3000.0f
+;frequency;increment;0.1f
+;frequencySim_Enable;ptrCodeTab;_SIMULATION_STATUS
+;frequencySim_Enable;numberOfCodes;sizeof(_SIMULATION_STATUS)
+;frequency_Sim;min;0.0f
+;frequency_Sim;max;3000.0f
+;frequency_Sim;increment;0.1f
+;frequency_Damped;min;0.3f
+;frequency_Damped;max;3000.0f
+;frequency_Damped;increment;0.1f
+;temperatureSim_Enable;ptrCodeTab;_SIMULATION_STATUS
+;temperatureSim_Enable;numberOfCodes;sizeof(_SIMULATION_STATUS)
+;temperature_Sim;min;-200.0
+;temperature_Sim;max;500.0
+;temperature_Sim;increment;0.1f
+;temperature_Damped;min;-200.0f
+;temperature_Damped;max;500.0f
+;temperature_Damped;increment;0.1f
+;frequency_UnitCode;ptrCodeTab;_T_FREQUENCY
+;frequency_UnitCode;numberOfCodes;sizeof(_T_FREQUENCY)
+;frequency_SimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(simFrequency_UnitCode, coordinator, CDT)
+;frequency_SimObj;pObject_value;SUBSYS_OBJPTR_IDX_(frequency_Sim, coordinator, CDT)
+;frequency_SimObj;unitsType;T_FREQUENCY
+;frequency_DampingTime;min;0.0f
+;frequency_DampingTime;max;100.0f
+;frequency_DampingTime;increment;0.1f
+;temperature_UnitCode;ptrCodeTab;_T_TEMPERATURE
+;temperature_UnitCode;numberOfCodes;sizeof(_T_TEMPERATURE)
+;temperature_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperature_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperature_Damped, coordinator, CDT)
+;temperature_Obj;unitsType;T_TEMPERATURE
+;temperatureSim_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(simTemperature_UnitCode, coordinator, CDT)
+;temperatureSim_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperature_Sim, coordinator, CDT)
+;temperatureSim_Obj;unitsType;T_TEMPERATURE
+;frequency_Duplicated;min;0.3f
+;frequency_Duplicated;max;3000.0f
+;frequency_Duplicated;increment;0.1f
+;frequency_Damped_Duplictated;min;0.3f
+;frequency_Damped_Duplictated;max;3000.0f
+;frequency_Damped_Duplictated;increment;0.1f
+;temperaturePreset;min;-200.0f
+;temperaturePreset;max;500.0f
+;temperaturePreset;increment;0.1f
+;temperature_Damped_Duplicated;min;-200.0f
+;temperature_Damped_Duplicated;max;500.0f
+;temperature_Damped_Duplicated;increment;0.1f
+;temperatureAlmRange;maxHi;500.00
+;temperatureAlmRange;maxLo;-200.00
+;converterType;ptrCodeTab;_CONVERTER_TYPE
+;converterType;numberOfCodes;sizeof(_CONVERTER_TYPE)
+;vortexmeterSize;ptrCodeTab;_VORTEX_SIZE
+;vortexmeterSize;numberOfCodes;sizeof(_VORTEX_SIZE)
+;swirlmeterSize;ptrCodeTab;_SWIRL_SIZE
+;swirlmeterSize;numberOfCodes;sizeof(_SWIRL_SIZE)
+;snr;min;0.0f
+;snr;max;1.0f
+;snr;increment;0.01f
+;maxFlowFreq;min;19.0f
+;maxFlowFreq;max;3000.0f
+;maxFlowFreq;increment;0.1f
+;minFlowFreq;min;0.0f
+;minFlowFreq;max;1000.0f
+;minFlowFreq;increment;0.1f
+;vbrFilStep;min;33
+;vbrFilStep;max;1310
+;vbrFilStep;increment;1
+;vbrFilNumCoef;min;10
+;vbrFilNumCoef;max;50
+;vbrFilNumCoef;increment;1
+;vbrCorrectionOn;ptrCodeTab;_STATUS
+;vbrCorrectionOn;numberOfCodes;sizeof(_STATUS)
+;fcdOn;ptrCodeTab;_STATUS
+;fcdOn;numberOfCodes;sizeof(_STATUS)
+;fcdShift;min;0
+;fcdShift;max;5
+;fcdShift;increment;1
+;fcdDelay;min;10
+;fcdDelay;max;25
+;fcdDelay;increment;1
+;fcdNumCoef;min;10
+;fcdNumCoef;max;50
+;fcdNumCoef;increment;1
+;lockMinIntPeriod;min;1
+;lockMinIntPeriod;max;4
+;lockMinIntPeriod;increment;1
+;lockMaxIntPeriod;min;4
+;lockMaxIntPeriod;max;8
+;lockMaxIntPeriod;increment;1
+;lockEstimation;min;10
+;lockEstimation;max;30
+;lockEstimation;increment;1
+;accuracyHigh;min;1
+;accuracyHigh;max;4
+;accuracyHigh;increment;1
+;accuracyMiddle;min;1
+;accuracyMiddle;max;4
+;accuracyMiddle;increment;1
+;accuracyLow;min;1
+;accuracyLow;max;4
+;accuracyLow;increment;1
+;gainCtrl;ptrCodeTab;_STATUS
+;gainCtrl;numberOfCodes;sizeof(_STATUS)
+;gainLowThresh;min;2048
+;gainLowThresh;max;10240
+;gainLowThresh;increment;1
+;gainHighThresh;min;20480
+;gainHighThresh;max;30720
+;gainHighThresh;increment;1
+;gainMarginFreq;min;660
+;gainMarginFreq;max;4096
+;gainMarginFreq;increment;1
+;gainMaxShift;min;0
+;gainMaxShift;max;2
+;gainMaxShift;increment;1
+;lowFlowThreshOn;ptrCodeTab;_STATUS
+;lowFlowThreshOn;numberOfCodes;sizeof(_STATUS)
+;noiseSampSize;min;4
+;noiseSampSize;max;8
+;noiseSampSize;increment;1
+;staticDecimation;min;0
+;staticDecimation;max;5
+;staticDecimation;increment;1
+;middleBufDecimation;min;1
+;middleBufDecimation;max;6
+;middleBufDecimation;increment;1
+;freqMinMarginPer;min;0
+;freqMinMarginPer;max;30
+;freqMinMarginPer;increment;1
+;freqMaxMarginPer;min;0
+;freqMaxMarginPer;max;30
+;freqMaxMarginPer;increment;0
+;operatingMode;ptrCodeTab;_OPERATING_MODE
+;operatingMode;numberOfCodes;sizeof(_OPERATING_MODE)
+;temperature_DampingTime;min;0.0f
+;temperature_DampingTime;max;100.0f
+;temperature_DampingTime;increment;0.1f
+;temperature_Selection;ptrCodeTab;_TSELECTION
+;temperature_Selection;numberOfCodes;sizeof(_TSELECTION)
+;frequency_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(frequency_UnitCode, coordinator, CDT)
+;frequency_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(frequency, coordinator, CDT)
+;frequency_Obj;unitsType;T_FREQUENCY
+;temperaturePreset_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperaturePreset_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperaturePreset, coordinator, CDT)
+;temperaturePreset_Obj;unitsType;T_TEMPERATURE
+;tranMaintenanceCyc;min;MIN_MAINTENANCE_CYCLE_HOURS
+;tranMaintenanceCyc;max;MAX_MAINTENANCE_CYCLE_HOURS
+;tranMaintenanceCyc;increment;1
+;frontendMaintenance;min;MIN_MAINTENANCE_CYCLE_HOURS
+;frontendMaintenance;max;MAX_MAINTENANCE_CYCLE_HOURS
+;frontendMaintenance;increment;1
+;lowFlowThreshCoef;min;-10
+;lowFlowThreshCoef;max;10
+;lowFlowThreshCoef;increment;1
+;lowFlowThresh;min;7
+;lowFlowThresh;max;2000
+;lowFlowThresh;increment;1
+;actualDensitySelection;ptrCodeTab;DENSITY_SELECTION_TABLE
+;actualDensitySelection;numberOfCodes;sizeof(DENSITY_SELECTION_TABLE)
+;intRTDType;ptrCodeTab;_TEMP_SENSOR_TYPE
+;intRTDType;numberOfCodes;sizeof(_TEMP_SENSOR_TYPE)
+;simTemperature_UnitCode;ptrCodeTab;_T_TEMPERATURE
+;simTemperature_UnitCode;numberOfCodes;sizeof(_T_TEMPERATURE)
+;temperature_Damped_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperature_Damped_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperature_Damped, coordinator, CDT)
+;temperature_Damped_Obj;unitsType;T_TEMPERATURE
+;simFrequency_UnitCode;ptrCodeTab;_T_FREQUENCY
+;simFrequency_UnitCode;numberOfCodes;sizeof(_T_FREQUENCY)
+;frequency_range;ptrMaxDN;SUBSYS_OBJPTR_IDX_(frequency_MaxDN,coordinator, CDT)
+;frequency_range;ptrMinDN;SUBSYS_OBJPTR_IDX_(frequency_MinDN,coordinator, CDT)
+;frequency_range;hiLim_MaxPrcOfDnSpan;1.0
+;frequency_range;hiLim_MinPrcOfDnSpan;0.0
+;frequency_range;loLim_MaxPrcOfCurAllowedSpan;1.0
+;frequency_range;loLim_MinPrcOfCurAllowedSpan;0.0
+;frequency_range_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(frequency_UnitCode, coordinator, CDT)
+;frequency_range_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(frequency_range, coordinator, CDT)
+;frequency_range_Obj;unitsType;T_FREQUENCY
+;temperature_range;ptrMaxDN;SUBSYS_OBJPTR_IDX_(temperature_MaxDN,coordinator, CDT)
+;temperature_range;ptrMinDN;SUBSYS_OBJPTR_IDX_(temperature_MinDN,coordinator, CDT)
+;temperature_range;hiLim_MaxPrcOfDnSpan;1.0
+;temperature_range;hiLim_MinPrcOfDnSpan;0.0
+;temperature_range;loLim_MaxPrcOfCurAllowedSpan;1.0
+;temperature_range;loLim_MinPrcOfCurAllowedSpan;0.0
+;temperature_range_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperature_range_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperature_range, coordinator, CDT)
+;temperature_range_Obj;unitsType;T_TEMPERATURE
+;frequency_Damped_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(frequency_UnitCode, coordinator, CDT)
+;frequency_Damped_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(frequency_Damped, coordinator, CDT)
+;frequency_Damped_Obj;unitsType;T_FREQUENCY
+;temperature_Span_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperature_Span_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperature_Span, coordinator, CDT)
+;temperature_Span_Obj;unitsType;T_TEMPERATURE
+;frequency_Span_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(frequency_UnitCode, coordinator, CDT)
+;frequency_Span_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(frequency_Span, coordinator, CDT)
+;frequency_Span_Obj;unitsType;T_FREQUENCY
+;analogGain;ptrCodeTab;GAIN_CONTROL_TAB
+;analogGain;numberOfCodes;sizeof(GAIN_CONTROL_TAB)
+;temperatureSensor_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperatureSensor_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperatureSensor, coordinator, CDT)
+;temperatureSensor_Obj;unitsType;T_TEMPERATURE
+;temperatureOffsetCorrect;min;-500.0f
+;temperatureOffsetCorrect;max;500.0f
+;temperatureOffsetCorrect;increment;0.1f
+;protectedDataStatus;ptrCodeTab;_CDT_STATUS_TABLE
+;protectedDataStatus;numberOfCodes;sizeof(_CDT_STATUS_TABLE)
+;autoselfcheck_Enable;ptrCodeTab;_STATUS
+;autoselfcheck_Enable;numberOfCodes;sizeof(_STATUS)
+;temperatureAlmRange_obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperatureAlmRange_obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperatureAlmRange,coordinator, CDT)
+;temperatureAlmRange_obj;unitsType;T_TEMPERATURE
+;spanUpperRange;min;0
+;spanUpperRange;max;32767
+;spanUpperRange;increment;1
+;temperatureMaxRecord_obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;temperatureMaxRecord_obj;pObject_value;SUBSYS_OBJPTR_IDX_(temperatureMaxRecord,coordinator, CDT)
+;temperatureMaxRecord_obj;unitsType;T_TEMPERATURE
+;temperatureMaxRecord;min;-400.0f
+;temperatureMaxRecord;max;1000.0f
+;temperatureMaxRecord;increment;1
+;autoselfcheck_Enable_Duplicated;ptrCodeTab;_STATUS
+;autoselfcheck_Enable_Duplicated;numberOfCodes;sizeof(_STATUS)
+;temperatureOffsetCorrectUser;min;-500.0f
+;temperatureOffsetCorrectUser;max;500.0f
+;temperatureOffsetCorrectUser;increment;0.1f
+;reaction_InputFail;ptrCodeTab;REACTION_INPUT_FAIL
+;reaction_InputFail;numberOfCodes;sizeof(REACTION_INPUT_FAIL)
+;temperatureOffsetCorrectDisp;min;-50.0f
+;temperatureOffsetCorrectDisp;max;50.0f
+;temperatureOffsetCorrectDisp;increment;0.1f
+;temperatureOffsetCorrectUserDisp;min;-50.0f
+;temperatureOffsetCorrectUserDisp;max;50.0f
+;temperatureOffsetCorrectUserDisp;increment;0.1f
+;BothMaintenanceCycle;min;MIN_MAINTENANCE_CYCLE_HOURS
+;BothMaintenanceCycle;max;MAX_MAINTENANCE_CYCLE_HOURS
+;BothMaintenanceCycle;increment;1
+;ext_algSelection;ptrCodeTab;_FE_OUT_FILTER_EXT_ALG_TABLE
+;ext_algSelection;numberOfCodes;sizeof(_FE_OUT_FILTER_EXT_ALG_TABLE)
+;int_algSelection;ptrCodeTab;_FE_OUT_FILTER_INT_ALG_TABLE
+;int_algSelection;numberOfCodes;sizeof(_FE_OUT_FILTER_INT_ALG_TABLE)

@@ -1,0 +1,21 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 29;;;;;
+;MainTaskEXE;0;;void;Metering, Current out, Digital out, Diagnosis  and Totalizer subsystem are executed in this path.
+;FrontendTaskEXE;0;;void;Front end subsystem is executed in this path.
+;HartTaskEXE;0;;void;Hart subsystem is executed in this path.
+;SlowTaskEXE;0;;void;AI, Electronic services and NV subsystem are executed in this path.
+;ServicesTaskEXE;0;;void;HMI, Service port, Diagnosis update subsystem are executed in this path.
+;UpdateDiagnosis;0;;void;NV diagnosis update.
+;UpdateWorkingTime;0;;void;Update total operation hours.
+;SendConfigToFE;0;;void;Send configuration parameters to FE
+;StopTasksSRV;0;;void;
+;StopTasksSRV;1;taskIdx;TUSIGN16;
+;GetTemperaturePercentageSRV;0;return;TFLOAT;
+;UpdateMaxTemperature;0;;void;
+;UpdateSteamEnthalpy;0;return;TUSIGN16;
+;UpdateSteamEnthalpy;1;opModeShift;TUSIGN16;
+;CheckDataCrc;0;;void;
+;UpdateFunctionPassword;0;;void;
+;UpdateInternalTemperature;0;;TUSIGN16;
