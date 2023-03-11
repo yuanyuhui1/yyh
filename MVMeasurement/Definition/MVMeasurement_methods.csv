@@ -1,0 +1,61 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 36;;;;;
+####-----------------------------------------------------------------------------------------------;;;;;
+;CalculateGasQnEXE;0;return;TFLOAT;gas normal flow
+;CalculateGasQnEXE;1;volumeFlow;TFLOAT;volume flow in m3/h
+;CalculateGasQnEXE;2;tReal;TFLOAT;the real Tempearture in Celsius
+;CalculateGasQnEXE;3;pReal;TFLOAT;the real Pressure in base unit.
+;CalculateGasQnPartialEXE;0;return;TFLOAT;Calculate Gas Qn Partial
+;CalculateGasQnPartialEXE;1;inNVF;TFLOAT;normal volume flow in m3/h
+;CalculateGasQnPartialEXE;4;biogasPerc;TFLOAT;the content of biogas .in percentage.
+;CalculateGasQvPartialEXE;0;return;TFLOAT;volume flow of Biogas
+;CalculateGasQvPartialEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateGasQvPartialEXE;2;biogasPerc;TFLOAT;the content of biogas .in percentage.
+;CalculateGasQmEXE;0;return;TFLOAT;gas mass flow
+;CalculateGasQmEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateGasQmEXE;2;inNVF;TFLOAT;normal Volume flow
+;CalculateGasQmEXE;3;densityReal;TFLOAT;the real density in base unit.
+;CalculateGasQpEXE;0;return;TFLOAT;Gas power flow
+;CalculateGasQpEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateLiquidQnEXE;0;return;TFLOAT;normal volume flow in m3/h
+;CalculateLiquidQnEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateLiquidQnEXE;2;tReal;TFLOAT;the real temperaturein base unit.
+;CalculateLiquidQmEXE;0;return;TFLOAT;liquid mass flow in kg/h
+;CalculateLiquidQmEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateLiquidQmEXE;2;DensityReal;TFLOAT;real density
+;CalculateLiquidQmEXE;3;tReal;TFLOAT;the real temperaturein base unit.
+;CalculateLiquidQpEXE;0;return;TFLOAT;liquid Power flow in kj/h
+;CalculateLiquidQpEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateLiquidQpEXE;2;T1Real;TFLOAT;the real temperature T1 in base unit.
+;CalculateLiquidQpEXE;3;T2Real;TFLOAT;real temperature T2
+;CalculateSteamQmEXE;0;return;TFLOAT;Steam mass flow in kg/h
+;CalculateSteamQmEXE;1;inVF;TFLOAT;volume flow in m3/h
+;CalculateSteamQmEXE;2;DensityReal;TFLOAT;real density
+;CalculateSteamQpEXE;0;return;TFLOAT;Steam Power  flow in kj/h
+;CalculateSteamQpEXE;1;inMF;TFLOAT;mass flow in kg/h
+;UpdateDiagnosisEXE;0;;void;
+;CalcSteamDensityEXE;0;;TFLOAT;real Density
+;CalcSteamDensityEXE;1;inTReal;TFLOAT;real Temperature
+;CalcSteamDensityEXE;2;inPReal;TFLOAT;real  Pressure
+;CalcSteamHEXE;0;;void;
+;CalcSteamHEXE;1;inPReal;TFLOAT;real  Pressure
+;CalcSteamHEXE;2;inT1Real;TFLOAT;real Temperature
+;CalcSteamHEXE;3;inT2Real;TFLOAT;real Temperature
+;CalcCompressFactor;0;return;void;CompressFactor IN real State
+;CheckDataCrcSRV;0;return;void;CRC Check for RAM
+;GetQnPercentageSRV;0;return;TFLOAT;return the Qn percentage value
+;GetQmPercentageSRV;0;return;TFLOAT;return the Qm percentage value
+;GetQpPercentageSRV;0;return;TFLOAT;return the power percentage value
+;GetQnPartialPercentageSRV;0;return;TFLOAT;return the partial Qv percentage value
+;GetQvPartialPercentageSRV;0;return;TFLOAT;return the partial Qn percentage value
+;UpdateLiquidQnMaxDN;0;return;void;
+;UpdateGasQnMaxDN;0;return;void;
+;UpdateLiquidPowerMaxDN;0;return;void;
+;UpdateGasPowerMaxDN;0;return;void;
+;UpdateSteamPowerMaxDN;0;return;void;
+;UpdateQmMaxDN;0;return;void;
+;UpdateBiagasQvMaxDN;0;return;void;
+;UpdateQAlarmEXE;0;return;void;
+;UpdateQAlarmEXE;1;perc;TFLOAT;PV  Percentage.

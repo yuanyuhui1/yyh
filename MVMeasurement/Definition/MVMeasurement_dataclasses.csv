@@ -1,0 +1,9 @@
+reserved;dataClass;referenceDataClass
+##Module SubGen;;
+##ModuleRevision 0x020101;;
+##FileRevision 4;;
+;Protected;DYNAMIC
+;Unprotected;DYNAMIC
+;DynamicDuplicated;DYNAMIC
+;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;STATIC_FREQUENT_STATIC_DEFAULT
+;REPLACE_STATIC_RARE;STATIC_RARE

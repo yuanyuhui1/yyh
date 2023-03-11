@@ -1,0 +1,373 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 311;;;
+;densityRef;min;0.01f
+;densityRef;max;3000.00f
+;densityRef;increment;0.01f
+;densityS;min;0.01f
+;densityS;max;3000.0f
+;densityS;increment;0.01f
+;densityExpandBeta2;min;-100.00f
+;densityExpandBeta2;max;100.00f
+;densityExpandBeta2;increment;0.001f
+;volumeExpandBeta1;min;0.00f
+;volumeExpandBeta1;max;1000.00f
+;volumeExpandBeta1;increment;0.001f
+;steamStatus;ptrCodeTab;_STEAMSTATUS
+;steamStatus;numberOfCodes;sizeof(_STEAMSTATUS)
+;steamType;ptrCodeTab;_STEAMTYPE
+;steamType;numberOfCodes;sizeof(_STEAMTYPE)
+;liquidCorrection;ptrCodeTab;_LIQUIDCORRECTION
+;liquidCorrection;numberOfCodes;sizeof(_LIQUIDCORRECTION)
+;heatCapacity;min;0.0001f
+;heatCapacity;max;10.00f
+;heatCapacity;increment;0.001f
+;gasRef;ptrCodeTab;_GAS_REF_CONDITIONS
+;gasRef;numberOfCodes;sizeof(_GAS_REF_CONDITIONS)
+;gasComputeType;ptrCodeTab;_GAS_COMPUTATION_TYPE
+;gasComputeType;numberOfCodes;sizeof(_GAS_COMPUTATION_TYPE)
+;calorificEnergy;min;1.0f
+;calorificEnergy;max;300.0f
+;calorificEnergy;increment;0.01f
+;molFractions;min;0.0000f
+;molFractions;max;100.00f
+;molFractions;increment;0.0001f
+;relativeDensity;min;0.5500f
+;relativeDensity;max;0.9000f
+;relativeDensity;increment;0.0001f
+;refCalorifcValue;min;20.000f
+;refCalorifcValue;max;48.000f
+;refCalorifcValue;increment;0.001f
+;mvmAlarmSimulation;ptrCodeTab;_MVM_DIAGNOSIS_ALARM_TABLE
+;mvmAlarmSimulation;numberOfCodes;sizeof(_MVM_DIAGNOSIS_ALARM_TABLE)
+;relativeDensityRef;ptrCodeTab;_RELATIVE_DENSITY_REF
+;relativeDensityRef;numberOfCodes;sizeof(_RELATIVE_DENSITY_REF)
+;calorificValueRef;ptrCodeTab;_CALORIFIC_REF
+;calorificValueRef;numberOfCodes;sizeof(_CALORIFIC_REF)
+;QnSimEnable;ptrCodeTab;_MVM_SW
+;QnSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;QnPerSim;min;0.00f
+;QnPerSim;max;120.00f
+;QnPerSim;increment;0.01f
+;QnUnitCode;ptrCodeTab;_T_VOLUME_FLOW
+;QnUnitCode;numberOfCodes;sizeof(_T_VOLUME_FLOW)
+;QnSimUnitCode;ptrCodeTab;_T_VOLUME_FLOW
+;QnSimUnitCode;numberOfCodes;sizeof(_T_VOLUME_FLOW)
+;QnObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode,mVMeasurement, MVM)
+;QnObj;pObject_value;SUBSYS_OBJPTR_IDX_(Qn, mVMeasurement, MVM)
+;QnObj;unitsType;T_VOLUME_FLOW
+;QnSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnSimUnitCode, mVMeasurement, MVM)
+;QnSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnSim, mVMeasurement, MVM)
+;QnSimObj;unitsType;T_VOLUME_FLOW
+;QnDampedObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode, mVMeasurement, MVM)
+;QnDampedObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnDamped, mVMeasurement, MVM)
+;QnDampedObj;unitsType;T_VOLUME_FLOW
+;QnRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode, mVMeasurement, MVM)
+;QnRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnRange, mVMeasurement, MVM)
+;QnRangeObj;unitsType;T_VOLUME_FLOW
+;QnSimUnitCode;ptrCodeTab;_T_VOLUME_FLOW
+;QnSimUnitCode;numberOfCodes;sizeof(_T_VOLUME_FLOW)
+;QnDampingTime;min;0.0f
+;QnDampingTime;max;100.0f
+;QnDampingTime;increment;0.1f
+;QnSim;UnitsType;T_VOLUME_FLOW
+;QnSim;ptrUnitsCodeObj;NULL
+;QnSim;ptrLinkObj;SUBSYS_OBJPTR_IDX_(QnMaxDN, mVMeasurement, MVM)
+;QnSim;MAX;1.1
+;QnSim;Min;0.00
+;QmSimEnable;ptrCodeTab;_MVM_SW
+;QmSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;QmPerSim;min;0.00f
+;QmPerSim;max;120.00f
+;QmPerSim;increment;0.01f
+;QmUnitCode;ptrCodeTab;_T_MASS_FLOW
+;QmUnitCode;numberOfCodes;sizeof(_T_MASS_FLOW)
+;QmSimUnitCode;ptrCodeTab;_T_MASS_FLOW
+;QmSimUnitCode;numberOfCodes;sizeof(_T_MASS_FLOW)
+;QmObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QmUnitCode,mVMeasurement, MVM)
+;QmObj;pObject_value;SUBSYS_OBJPTR_IDX_(Qm, mVMeasurement, MVM)
+;QmObj;unitsType;T_MASS_FLOW
+;QmSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QmSimUnitCode, mVMeasurement, MVM)
+;QmSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(QmSim, mVMeasurement, MVM)
+;QmSimObj;unitsType;T_MASS_FLOW
+;QmDampedObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QmUnitCode, mVMeasurement, MVM)
+;QmDampedObj;pObject_value;SUBSYS_OBJPTR_IDX_(QmDamped, mVMeasurement, MVM)
+;QmDampedObj;unitsType;T_MASS_FLOW
+;QmRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QmUnitCode, mVMeasurement, MVM)
+;QmRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(QmRange, mVMeasurement, MVM)
+;QmRangeObj;unitsType;T_MASS_FLOW
+;QmSimUnitCode;ptrCodeTab;_T_VOLUME_FLOW
+;QmSimUnitCode;numberOfCodes;sizeof(_T_VOLUME_FLOW)
+;QmDampingTime;min;0.0f
+;QmDampingTime;max;100.0f
+;QmDampingTime;increment;0.1f
+;QmSim;UnitsType;T_MASS_FLOW
+;QmSim;ptrUnitsCodeObj;NULL
+;QmSim;ptrLinkObj;SUBSYS_OBJPTR_IDX_(QmMaxDN, mVMeasurement, MVM)
+;QmSim;MAX;1.15
+;QmSim;Min;0.00
+;QpSimEnable;ptrCodeTab;_MVM_SW
+;QpSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;QpPerSim;min;0.00f
+;QpPerSim;max;120.00f
+;QpPerSim;increment;0.01f
+;QpUnitCode;ptrCodeTab;_T_POWER
+;QpUnitCode;numberOfCodes;sizeof(_T_POWER)
+;QpSimUnitCode;ptrCodeTab;_T_POWER
+;QpSimUnitCode;numberOfCodes;sizeof(_T_POWER)
+;QpObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QpUnitCode,mVMeasurement, MVM)
+;QpObj;pObject_value;SUBSYS_OBJPTR_IDX_(Qp, mVMeasurement, MVM)
+;QpObj;unitsType;T_POWER
+;QpSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QpSimUnitCode, mVMeasurement, MVM)
+;QpSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(QpSim, mVMeasurement, MVM)
+;QpSimObj;unitsType;T_POWER
+;QpDampedObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QpUnitCode, mVMeasurement, MVM)
+;QpDampedObj;pObject_value;SUBSYS_OBJPTR_IDX_(QpDamped, mVMeasurement, MVM)
+;QpDampedObj;unitsType;T_POWER
+;QpRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QpUnitCode, mVMeasurement, MVM)
+;QpRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(QpRange, mVMeasurement, MVM)
+;QpRangeObj;unitsType;T_POWER
+;QpSimUnitCode;ptrCodeTab;_T_VOLUME_FLOW
+;QpSimUnitCode;numberOfCodes;sizeof(_T_VOLUME_FLOW)
+;QpDampingTime;min;0.0f
+;QpDampingTime;max;100.0f
+;QpDampingTime;increment;0.1f
+;QpSim;UnitsType;T_POWER
+;QpSim;ptrUnitsCodeObj;NULL
+;QpSim;ptrLinkObj;SUBSYS_OBJPTR_IDX_(QpMaxDN, mVMeasurement, MVM)
+;QpSim;MAX;1.15
+;QpSim;Min;0.00
+;QnPartialSimEnable;ptrCodeTab;_MVM_SW
+;QnPartialSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;QnPartialPerSim;min;0.00f
+;QnPartialPerSim;max;120.00f
+;QnPartialPerSim;increment;0.01f
+;QnPartialObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode,mVMeasurement, MVM)
+;QnPartialObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnPartial, mVMeasurement, MVM)
+;QnPartialObj;unitsType;T_VOLUME_FLOW
+;QnPartialSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnSimUnitCode, mVMeasurement, MVM)
+;QnPartialSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnPartialSim, mVMeasurement, MVM)
+;QnPartialSimObj;unitsType;T_VOLUME_FLOW
+;QnPartialDampedObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode, mVMeasurement, MVM)
+;QnPartialDampedObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnPartialDamped, mVMeasurement, MVM)
+;QnPartialDampedObj;unitsType;T_VOLUME_FLOW
+;QnPartialSim;UnitsType;T_VOLUME_FLOW
+;QnPartialSim;ptrUnitsCodeObj;NULL
+;QnPartialSim;ptrLinkObj;SUBSYS_OBJPTR_IDX_(QnPartialMaxDN, mVMeasurement, MVM)
+;QnPartialSim;MAX;1.15
+;QnPartialSim;Min;0.00
+;QnPartialRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode, mVMeasurement, MVM)
+;QnPartialRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnPartialRange, mVMeasurement, MVM)
+;QnPartialRangeObj;unitsType;T_VOLUME_FLOW
+;QnPartialDampingTime;min;0.0f
+;QnPartialDampingTime;max;100.0f
+;QnPartialDampingTime;increment;0.1f
+;QnPartialSimEnable;ptrCodeTab;_MVM_SW
+;QnPartialSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;QvPartialSimEnable;ptrCodeTab;_MVM_SW
+;QvPartialSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;QvPartialPerSim;min;0.00f
+;QvPartialPerSim;max;120.00f
+;QvPartialPerSim;increment;0.01f
+;QvPartialObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QvUnitCode,sVMeasurement, SVM)
+;QvPartialObj;pObject_value;SUBSYS_OBJPTR_IDX_(QvPartial, mVMeasurement, MVM)
+;QvPartialObj;unitsType;T_VOLUME_FLOW
+;QvPartialSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QvSimUnitCode, sVMeasurement, SVM)
+;QvPartialSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(QvPartialSim, mVMeasurement, MVM)
+;QvPartialSimObj;unitsType;T_VOLUME_FLOW
+;QvPartialDampedObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QvUnitCode, sVMeasurement, SVM)
+;QvPartialDampedObj;pObject_value;SUBSYS_OBJPTR_IDX_(QvPartialDamped, mVMeasurement, MVM)
+;QvPartialDampedObj;unitsType;T_VOLUME_FLOW
+;QvPartialSim;UnitsType;T_VOLUME_FLOW
+;QvPartialSim;ptrUnitsCodeObj;NULL
+;QvPartialSim;ptrLinkObj;SUBSYS_OBJPTR_IDX_(QvPartialMaxDN, mVMeasurement, MVM)
+;QvPartialSim;MAX;1.15
+;QvPartialSim;Min;0.00
+;QvPartialRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QvUnitCode, sVMeasurement, SVM)
+;QvPartialRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(QvPartialRange, mVMeasurement, MVM)
+;QvPartialRangeObj;unitsType;T_VOLUME_FLOW
+;QvPartialDampingTime;min;0.00f
+;QvPartialDampingTime;max;100.0f
+;QvPartialDampingTime;increment;0.1f
+;QvPartialSimEnable;ptrCodeTab;_MVM_SW
+;QvPartialSimEnable;numberOfCodes;sizeof(_MVM_SW)
+;protectedDataStatus;ptrCodeTab;_MVM_STATUS_TABLE
+;protectedDataStatus;numberOfCodes;sizeof(_MVM_STATUS_TABLE)
+;mvmAlarmSimulationDuplicated;ptrCodeTab;_MVM_DIAGNOSIS_ALARM_TABLE
+;mvmAlarmSimulationDuplicated;numberOfCodes;DIAG_SIZE
+;refTemperature;min;-200.0f
+;refTemperature;max;500.0f
+;refTemperature;increment;0.01f
+;refPressure;min;0.001f
+;refPressure;max;40000.00f
+;refPressure;increment;0.001f
+;gasDensitySelection;ptrCodeTab;_GAS_MASS_COMPUTATION
+;gasDensitySelection;numberOfCodes;sizeof(_GAS_MASS_COMPUTATION)
+;compressFactorArray;min;0.00f
+;compressFactorArray;max;1.01f
+;compressFactorArray;increment;0.001f
+;gasConfFlag;ptrCodeTab;_GAS_CFG
+;gasConfFlag;numberOfCodes;sizeof(_GAS_CFG)
+;spline2dRequest;ptrCodeTab;_GAS_CFG
+;spline2dRequest;numberOfCodes;sizeof(_GAS_CFG)
+;updateCFSRequest;ptrCodeTab;_GAS_CFG
+;updateCFSRequest;numberOfCodes;sizeof(_GAS_CFG)
+;QAlmRange;maxHi;105.0f
+;QAlmRange;maxLo;0.00f
+;densigyRefObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensityUnitCode, mapper, MAPPER)
+;densigyRefObj;pObject_value;SUBSYS_OBJPTR_IDX_(densityRef, mVMeasurement, MVM)
+;densigyRefObj;unitsType;T_MASS_DENSITY
+;refPressureObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;refPressureObj;pObject_value;SUBSYS_OBJPTR_IDX_(refPressure,mVMeasurement, MVM)
+;refPressureObj;unitsType;T_PRESSURE
+;refTemperatureObj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;refTemperatureObj;pObject_value;SUBSYS_OBJPTR_IDX_(refTemperature,mVMeasurement, MVM)
+;refTemperatureObj;unitsType;T_TEMPERATURE
+;updateCFPresetRequest;ptrCodeTab;_GAS_CFG
+;updateCFPresetRequest;numberOfCodes;sizeof(_GAS_CFG)
+;CFTempArray0;min;-10.05f
+;CFTempArray0;max;64.85f
+;CFTempArray0;increment;0.01f
+;CFTempArray6;min;-10.05f
+;CFTempArray6;max;64.85f
+;CFTempArray6;increment;0.01f
+;CFTempArray5;min;-10.05f
+;CFTempArray5;max;64.85f
+;CFTempArray5;increment;0.01f
+;CFTempArray4;min;-10.05f
+;CFTempArray4;max;64.85f
+;CFTempArray4;increment;0.01f
+;CFTempArray3;min;-10.05f
+;CFTempArray3;max;64.85f
+;CFTempArray3;increment;0.01f
+;CFTempArray2;min;-10.05f
+;CFTempArray2;max;64.85f
+;CFTempArray2;increment;0.01f
+;CFTempArray1;min;-10.05f
+;CFTempArray1;max;64.85f
+;CFTempArray1;increment;0.01f
+;CFPressArray0;min;0.0f
+;CFPressArray0;max;12000.00f
+;CFPressArray0;increment;0.00f
+;CFPressArray1;min;0.0f
+;CFPressArray1;max;12000.00f
+;CFPressArray1;increment;0.00f
+;CFPressArray2;min;0.0f
+;CFPressArray2;max;12000.00f
+;CFPressArray2;increment;0.00f
+;CFPressArray3;min;0.0f
+;CFPressArray3;max;12000.00f
+;CFPressArray3;increment;0.00f
+;CFPressArray4;min;0.0f
+;CFPressArray4;max;12000.00f
+;CFPressArray4;increment;0.00f
+;CFPressArray5;min;0.0f
+;CFPressArray5;max;12000.00f
+;CFPressArray5;increment;0.00f
+;CFPressArray6;min;0.0f
+;CFPressArray6;max;12000.00f
+;CFPressArray6;increment;0.00f
+;CFPressArray7;min;0.0f
+;CFPressArray7;max;12000.00f
+;CFPressArray7;increment;0.00f
+;CFPressArray8;min;0.0f
+;CFPressArray8;max;12000.00f
+;CFPressArray8;increment;0.00f
+;CFTempArray0Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray0Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray0,mVMeasurement, MVM)
+;CFTempArray0Obj;unitsType;T_TEMPERATURE
+;CFTempArray1Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray1Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray1,mVMeasurement, MVM)
+;CFTempArray1Obj;unitsType;T_TEMPERATURE
+;CFTempArray2Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray2Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray2,mVMeasurement, MVM)
+;CFTempArray2Obj;unitsType;T_TEMPERATURE
+;CFTempArray3Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray3Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray3,mVMeasurement, MVM)
+;CFTempArray3Obj;unitsType;T_TEMPERATURE
+;CFTempArray4Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray4Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray4,mVMeasurement, MVM)
+;CFTempArray4Obj;unitsType;T_TEMPERATURE
+;CFTempArray5Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray5Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray5,mVMeasurement, MVM)
+;CFTempArray5Obj;unitsType;T_TEMPERATURE
+;CFTempArray6Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;CFTempArray6Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFTempArray6,mVMeasurement, MVM)
+;CFTempArray6Obj;unitsType;T_TEMPERATURE
+;CFPressArray0Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray0Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray0,mVMeasurement, MVM)
+;CFPressArray0Obj;unitsType;T_PRESSURE
+;CFPressArray1Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray1Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray1,mVMeasurement, MVM)
+;CFPressArray1Obj;unitsType;T_PRESSURE
+;CFPressArray2Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray2Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray2,mVMeasurement, MVM)
+;CFPressArray2Obj;unitsType;T_PRESSURE
+;CFPressArray3Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray3Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray3,mVMeasurement, MVM)
+;CFPressArray3Obj;unitsType;T_PRESSURE
+;CFPressArray4Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray4Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray4,mVMeasurement, MVM)
+;CFPressArray4Obj;unitsType;T_PRESSURE
+;CFPressArray5Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray5Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray5,mVMeasurement, MVM)
+;CFPressArray5Obj;unitsType;T_PRESSURE
+;CFPressArray6Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray6Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray6,mVMeasurement, MVM)
+;CFPressArray6Obj;unitsType;T_PRESSURE
+;CFPressArray7Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray7Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray7,mVMeasurement, MVM)
+;CFPressArray7Obj;unitsType;T_PRESSURE
+;CFPressArray8Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;CFPressArray8Obj;pObject_value;SUBSYS_OBJPTR_IDX_(CFPressArray8,mVMeasurement, MVM)
+;CFPressArray8Obj;unitsType;T_PRESSURE
+;matrixSize;ptrCodeTab;_MATRIX_TABLE
+;matrixSize;numberOfCodes;sizeof(_MATRIX_TABLE)
+;QnMaxDNObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode, mVMeasurement, MVM)
+;QnMaxDNObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnMaxDN, mVMeasurement, MVM)
+;QnMaxDNObj;unitsType;T_VOLUME_FLOW
+;QmMaxDNObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QmUnitCode, mVMeasurement, MVM)
+;QmMaxDNObj;pObject_value;SUBSYS_OBJPTR_IDX_(QmMaxDN, mVMeasurement, MVM)
+;QmMaxDNObj;unitsType;T_MASS_FLOW
+;QpMaxDNObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QpUnitCode, mVMeasurement, MVM)
+;QpMaxDNObj;pObject_value;SUBSYS_OBJPTR_IDX_(QpMaxDN, mVMeasurement, MVM)
+;QpMaxDNObj;unitsType;T_POWER
+;QnPartialMaxDNObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QnUnitCode, mVMeasurement, MVM)
+;QnPartialMaxDNObj;pObject_value;SUBSYS_OBJPTR_IDX_(QnPartialMaxDN, mVMeasurement, MVM)
+;QnPartialMaxDNObj;unitsType;T_VOLUME_FLOW
+;QvPartialMaxDNObj;pObject_unit;SUBSYS_OBJPTR_IDX_(QvUnitCode, sVMeasurement, SVM)
+;QvPartialMaxDNObj;pObject_value;SUBSYS_OBJPTR_IDX_(QvPartialMaxDN, mVMeasurement, MVM)
+;QvPartialMaxDNObj;unitsType;T_VOLUME_FLOW
+;QnRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(QnMaxDN, mVMeasurement, MVM)
+;QnRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(QMinDN, mVMeasurement, MVM)
+;QnRange;hiLim_MaxPrcOfDnSpan;1.0f
+;QnRange;hiLim_MinPrcOfDnSpan;0.15f
+;QnRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;QnRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;QmRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(QmMaxDN, mVMeasurement, MVM)
+;QmRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(QMinDN, mVMeasurement, MVM)
+;QmRange;hiLim_MaxPrcOfDnSpan;1.0f
+;QmRange;hiLim_MinPrcOfDnSpan;0.15f
+;QmRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;QmRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;QpRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(QpMaxDN, mVMeasurement, MVM)
+;QpRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(QMinDN, mVMeasurement, MVM)
+;QpRange;hiLim_MaxPrcOfDnSpan;1.0f
+;QpRange;hiLim_MinPrcOfDnSpan;0.15f
+;QpRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;QpRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;QnPartialRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(QnPartialMaxDN, mVMeasurement, MVM)
+;QnPartialRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(QMinDN, mVMeasurement, MVM)
+;QnPartialRange;hiLim_MaxPrcOfDnSpan;1.0f
+;QnPartialRange;hiLim_MinPrcOfDnSpan;0.15f
+;QnPartialRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;QnPartialRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;QvPartialRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(QvPartialMaxDN, mVMeasurement, MVM)
+;QvPartialRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(QMinDN, mVMeasurement, MVM)
+;QvPartialRange;hiLim_MaxPrcOfDnSpan;1.0f
+;QvPartialRange;hiLim_MinPrcOfDnSpan;0.15f
+;QvPartialRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;QvPartialRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;steamPwrrFR;ptrCodeTab;_PWR_FWD_REV_SW
+;steamPwrrFR;numberOfCodes;sizeof(_PWR_FWD_REV_SW)

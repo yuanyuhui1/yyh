@@ -1,0 +1,14 @@
+reserved;T_DATA_OBJECT;attribute;default
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 25;;;
+Copyright ABB, 2006.;;;
+All rights reserved. Reproduction, modification,;;;
+use or disclosure to third parties without express;;;
+authority is forbidden.;;;
+!;;;
+!;;;
+!;;;
+last edited 13.02.2006 Martin Dahl;;;
+;T_DNY_FLOAT;value;0
+;T_DNY_FLOAT_DESCRIPTOR;MAX;0

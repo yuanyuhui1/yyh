@@ -1,0 +1,18 @@
+reserved;type;attribute;basicType;externalType
+##Module SubGen;;;;
+##ModuleRevision 0x020101;;;;
+##FileRevision 1;;;;
+Copyright ABB, 2011.;;;;
+All rights reserved. Reproduction, modification,;;;;
+use or disclosure to third parties without express;;;;
+authority is forbidden.;;;;
+!;;;;
+!;;;;
+!;;;;
+last edited 13.02.2011 ZUOCHEN WANG;;;;
+;T_DNY_FLOAT;value;TFLOAT;TFLOAT
+;T_DNY_FLOAT_DESCRIPTOR;UnitsType;TUSIGN8; TUSIGN8
+;T_DNY_FLOAT_DESCRIPTOR;ptrUnitsCodeObj;void *; T_DATA_OBJ SLOW*
+;T_DNY_FLOAT_DESCRIPTOR;ptrLinkObj;void *; T_DATA_OBJ SLOW*
+;T_DNY_FLOAT_DESCRIPTOR;MAX;TFLOAT;TFLOAT
+;T_DNY_FLOAT_DESCRIPTOR;Min;TFLOAT;TFLOAT

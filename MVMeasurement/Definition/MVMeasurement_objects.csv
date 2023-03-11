@@ -1,0 +1,194 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 233;;;;;;;
+;Qn;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;QnSim;;CONTAINED;DNY_FLOAT;1;Unprotected;RAM
+;QnDamped;volume flow  after damping;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnUnitCode;volume flow unit. the default is m3/h;CONTAINED;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QnUnitType;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;QnObj;an object to combine volume flow and the unit.;CONTAINED;UOM_PF;1;;
+;QnDampedObj;;CONTAINED;UOM_PF;1;;
+;QnSimObj;;CONTAINED;UOM_PF;1;;
+;QnRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QnSimUnitCode;range unit code. of volume flowrate;CONTAINED;TABENUM8;1;Unprotected;RAM
+;QnRangeObj;Object to combine the Volume flowrate  upperrange with the Range unit.;CONTAINED;UOM_PF;1;;
+;QnMaxDN;the max permission volume flowrate. it always mark on the nameplate.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnMaxDNDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QMinDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;QnMaxDNObj;;CONTAINED;UOM_PF;1;;
+;QnPerSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;QnPercentage;The volume flowrate percentage  of the deviceVariable2ax.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;QnStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QnDampingTime;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;Qm;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;QmSim;;CONTAINED;DNY_FLOAT;1;Unprotected;RAM
+;QmDamped;volume flow  after damping;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmUnitCode;volume flow unit. the default is m3/h;CONTAINED;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QmUnitType;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;QmObj;an object to combine volume flow and the unit.;CONTAINED;UOM_PF;1;;
+;QmDampedObj;;CONTAINED;UOM_PF;1;;
+;QmSimObj;;CONTAINED;UOM_PF;1;;
+;QmRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QAlmRange;;CONTAINED;RANGEFLT;1;STATIC_RARE;NON_VOLATILE
+;QmSimUnitCode;range unit code. of volume flowrate;CONTAINED;TABENUM8;1;Unprotected;RAM
+;QmRangeObj;Object to combine the Volume flowrate  upperrange with the Range unit.;CONTAINED;UOM_PF;1;;
+;QmMaxDN;the max permission volume flowrate. it always mark on the nameplate.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmMaxDNDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmMaxDNObj;;CONTAINED;UOM_PF;1;;
+;QmPerSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;QmPercentage;The volume flowrate percentage  of the deviceVariable2ax.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;QmStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QmDampingTime;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;Qp;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;QpSim;;CONTAINED;DNY_FLOAT;1;Unprotected;RAM
+;QpDamped;volume flow  after damping;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpUnitCode;volume flow unit. the default is m3/h;CONTAINED;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QpUnitType;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;QpObj;an object to combine volume flow and the unit.;CONTAINED;UOM_PF;1;;
+;QpDampedObj;;CONTAINED;UOM_PF;1;;
+;QpSimObj;;CONTAINED;UOM_PF;1;;
+;QpRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QpSimUnitCode;range unit code. of volume flowrate;CONTAINED;TABENUM8;1;Unprotected;RAM
+;QpRangeObj;Object to combine the Volume flowrate  upperrange with the Range unit.;CONTAINED;UOM_PF;1;;
+;QpMaxDN;the max permission volume flowrate. it always mark on the nameplate.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpMaxDNDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpMaxDNObj;;CONTAINED;UOM_PF;1;;
+;QpPerSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;QpPercentage;The volume flowrate percentage  of the deviceVariable2ax.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;QpStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QpDampingTime;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QnPartial;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;QnPartialSim;;CONTAINED;DNY_FLOAT;1;Unprotected;RAM
+;QnPartialDamped;volume flow  after damping;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialObj;an object to combine volume flow and the unit.;CONTAINED;UOM_PF;1;;
+;QnPartialDampedObj;;CONTAINED;UOM_PF;1;;
+;QnPartialSimObj;;CONTAINED;UOM_PF;1;;
+;QnPartialRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QnPartialRangeObj;Object to combine the Volume flowrate  upperrange with the Range unit.;CONTAINED;UOM_PF;1;;
+;QnPartialMaxDN;the max permission volume flowrate. it always mark on the nameplate.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialMaxDNDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialMaxDNObj;;CONTAINED;UOM_PF;1;;
+;QnPartialPerSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;QnPartialPercentage;The volume flowrate percentage  of the deviceVariable2ax.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QnPartialStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QnPartialDampingTime;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QvPartial;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;QvPartialSim;;CONTAINED;DNY_FLOAT;1;Unprotected;RAM
+;QvPartialDamped;volume flow  after damping;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialObj;an object to combine volume flow and the unit.;CONTAINED;UOM_PF;1;;
+;QvPartialDampedObj;;CONTAINED;UOM_PF;1;;
+;QvPartialSimObj;;CONTAINED;UOM_PF;1;;
+;QvPartialRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;QvPartialRangeObj;Object to combine the Volume flowrate  upperrange with the Range unit.;CONTAINED;UOM_PF;1;;
+;QvPartialMaxDN;the max permission volume flowrate. it always mark on the nameplate.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialMaxDNDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialMaxDNObj;;CONTAINED;UOM_PF;1;;
+;QvPartialPerSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;QvPartialPercentage;The volume flowrate percentage  of the deviceVariable2ax.;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QvPartialStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;QvPartialDampingTime;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;steamStatus;Steam Satus.;OUTPUT;TABENUM8;1;Unprotected;RAM
+;steamType;To store the steam type. It must be one of the saturated steam and Overheat steam;OUTPUT;TABENUM8;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;liquidCorrection;Correction for the liquid.could be no correction. volume correction or density correction.;INPUT;TABENUM8;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;heatCapacity;Heat Capacity. to calculate the power for liquid.;INPUT;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;densityRef;;INPUT;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;densigyRefObj;;CONTAINED;UOM_PF;1;;
+;densityS;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;densityExpandBeta2;;INPUT;FLOAT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;volumeExpandBeta1;;INPUT;FLOAT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;gasRef;Standard Gas condition selection.;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;gasComputeType;;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;gasDensitySelection;Gas Density Selection;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;calorificEnergy;Calorific Value;INPUT;FLOAT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;gasConfFlag;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;molFractions;MolFractions[0]=Methane CH4 MolFractions[1]=Ethane    --C2H6   MolFractions[2]=Propane   --C3H8  MolFractions[3]=ISO_Butane  --C4H10  MolFractions[4]=n_Butane  --C4H10  MolFractions[5]=ISO_Petane  --C5H12  MolFractions[6]=n_Petane  --C5H12  MolFractions[7]=n-Hexane  --C6H14  MolFractions[8]=n-Heptane --C7H16  MolFractions[9]=n-Octane --C8H18  MolFractions[10]=n-Nonane --C9H20  MolFractions[11]=n-Decane --C10H22  MolFractions[12]=Carbon-Dioxide --CO2  MolFractions[13]=Nitrogen --N2  MolFractions[14]=Hydrogen Sulfide --HS  MolFractions[15]=Helium   --He  MolFractions[16]=Water    --H2O  MolFractions[17]=Oxygen   --O2  MolFractions[18]=Argon    --Ar  MolFractions[19]=Hydrogen --H2    MolFractions[20]]=Carbon Monoxide --CO;INPUT;FLOAT;21;STATIC_RARE;NON_VOLATILE
+;compressFactorArray;9*7 [0...6],[7...13]...[56...62];INPUT;FLOAT;63;STATIC_RARE;NON_VOLATILE
+;CFTempArray0;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray1;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray2;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray3;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray4;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray5;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray6;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFTempArray0Obj;;CONTAINED;UOM_PF;1;;
+;CFTempArray1Obj;;CONTAINED;UOM_PF;1;;
+;CFTempArray2Obj;;CONTAINED;UOM_PF;1;;
+;CFTempArray3Obj;;CONTAINED;UOM_PF;1;;
+;CFTempArray4Obj;;CONTAINED;UOM_PF;1;;
+;CFTempArray5Obj;;CONTAINED;UOM_PF;1;;
+;CFTempArray6Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray0;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray1;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray2;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray3;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray4;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray5;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray6;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray7;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray8;;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;CFPressArray0Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray1Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray2Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray3Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray4Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray5Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray6Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray7Obj;;CONTAINED;UOM_PF;1;;
+;CFPressArray8Obj;;CONTAINED;UOM_PF;1;;
+;compressFactorR;Compress Factor at operating Status.;INOUT;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;relativeDensity;;INOUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;relativeDensityRef;;INPUT;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;refCalorifcValue;Calorific Value at ref condition;INPUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;calorificValueRef;;INPUT;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;mvmAlarmSimulation;;INPUT;T_DIAGNOSIS_ALARM;1;DynamicDuplicated;RAM
+;mvmDiagnosis;;INPUT;SIMPLE_U8;1;DynamicDuplicated;RAM
+;refTemperature;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;refTemperatureObj;;CONTAINED;UOM_PF;1;;
+;refPressure;;CONTAINED;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;refPressureObj;;CONTAINED;UOM_PF;1;;
+;compressFactorS;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;compressFactorPreset;;CONTAINED;SIMPLE_FLOAT;1;STATIC_RARE;NON_VOLATILE
+;matrixSize;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;spline2dRequest;;CONTAINED;TABENUM8;1;Protected;RAM
+;updateCFSRequest;Update ComressFactor for Standard Request.;CONTAINED;TABENUM8;1;Protected;RAM
+;updateCFPresetRequest;;CONTAINED;TABENUM8;1;Protected;RAM
+;updateMaxDNRequest;;CONTAINED;SIMPLE_BIT8;1;Protected;RAM
+;Hw;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;Hc;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;HwPreset;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;HcPreset;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;steamPwrrFR;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;QnPartialDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialPercentageDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPartialDampedDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialPercentageDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QvPartialDampedDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnPercentageDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QnDampedDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmPercentageDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QmDampedDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpPercentageDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;QpDampedDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;HwDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;HcDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;compressFactorRDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;compressFactorSDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;mvmAlarmSimulationDuplicated;;CONTAINED;T_DIAGNOSIS_ALARM;1;DynamicDuplicated;RAM
+;mvmDiagnosisDuplicated;;CONTAINED;SIMPLE_U8;1;DynamicDuplicated;RAM
+;protectedDataCrc;;CONTAINED;SIMPLE_U16;1;Unprotected;RAM
+;protectedDataStatus;;CONTAINED;TABENUM8;1;Protected;RAM
