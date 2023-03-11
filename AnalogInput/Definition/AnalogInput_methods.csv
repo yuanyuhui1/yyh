@@ -1,0 +1,7 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 37;;;;;
+;UpdateAnalogInput;0;;void;
+;UpdateDiagnosis;0;;void;
+;IsExternalCutOff;0;return;TUSIGN8;

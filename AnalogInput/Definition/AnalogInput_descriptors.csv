@@ -1,0 +1,26 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 107;;;
+;aiSelection;ptrCodeTab;_AI_SELECT
+;aiSelection;numberOfCodes;sizeof(_AI_SELECT)
+;aiInValue;min;-500000.0f
+;aiInValue;max;500000.0f
+;aiInValue;increment;0.0001f
+;aiAlarmSimulation;ptrCodeTab;_AI_DIAGNOSIS_ALARM_TABLE
+;aiAlarmSimulation;numberOfCodes;sizeof(_AI_DIAGNOSIS_ALARM_TABLE)
+;aiSimulationData;min;0.0f
+;aiSimulationData;max;30.0f
+;aiSimulationData;increment;0.001f
+;aiTempCurr;min;0.0f
+;aiTempCurr;max;26.0f
+;aiTempCurr;increment;0.001f
+;calibrationState;ptrCodeTab;_CALIBRATION_STATE
+;calibrationState;numberOfCodes;sizeof(_CALIBRATION_STATE)
+;aiRawCurr;min;1.0f
+;aiRawCurr;max;26.0f
+;aiRawCurr;increment;0.001f
+;aiExternalCutOffStatus;ptrCodeTab;_EXTERNAL_CUT_OFF_STATUS
+;aiExternalCutOffStatus;numberOfCodes;sizeof(_EXTERNAL_CUT_OFF_STATUS)
+;aiExternalCutOffOption;ptrCodeTab;_EXTERNAL_CUT_OFF_OPTION
+;aiExternalCutOffOption;numberOfCodes;sizeof(_EXTERNAL_CUT_OFF_OPTION)

@@ -1,0 +1,17 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 64;;;;;;;
+;aiSelection;AI Select;CONTAINED;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;aiInValue;The Value of the Input via AI. it is baseunit value. for example. Pressure is MPa.;CONTAINED;FLOAT;1;Unprotected;RAM
+;aiAlarmSimulation;;INPUT;T_DIAGNOSIS_ALARM;1;Unprotected;RAM
+;aiDiagnosis;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;aiSimulationData;;INPUT;FLOAT;1;Unprotected;RAM
+;aiTempCurr;;INOUT;FLOAT;1;Unprotected;RAM
+;baseCalibration;;CONTAINED;SIMPLE_FLOAT;2;StaticFreqStaticDefalutCalibration;NON_VOLATILE
+;trimAiLowerEndpoint;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;trimAiUpperEndpoint;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;calibrationState;;CONTAINED;TABENUM8;1;Unprotected;RAM
+;aiRawCurr;;CONTAINED;FLOAT;1;Unprotected;RAM
+;aiExternalCutOffStatus;;CONTAINED;TABENUM8;1;Unprotected;RAM
+;aiExternalCutOffOption;;INOUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE

@@ -1,0 +1,11 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 29;;;;;
+;aiSelection;;AI selelct;ENUMERATION;_AI_SELECT
+;aiInValue;;ai value;NUMERIC;
+;aiAlarmSimulation;;;;
+;aiSimulationData;;ai simulation data;NUMERIC;
+;aiTempCurr;;ai current value;NUMERIC;
+;calibrationState;;;;
+;aiExternalCutOffOption;;;ENUMERATION;_EXTERNAL_CUT_OFF_OPTION

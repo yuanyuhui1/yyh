@@ -1,0 +1,18 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 87;;;
+;aiSelection;0;WITHOUT
+;aiInValue;0;0.0f
+;aiAlarmSimulation;0;0
+;aiDiagnosis;0;0
+;aiSimulationData;0;4.0f
+;aiTempCurr;0;4.01f
+;baseCalibration;0;1.0f
+;baseCalibration;1;0.0f
+;trimAiLowerEndpoint;0;4.0f
+;trimAiUpperEndpoint;0;20.0f
+;calibrationState;0;CALIBRATION_OFF
+;aiRawCurr;0;4.01f
+;aiExternalCutOffStatus;0;EXTERNAL_UNCUT_OFF
+;aiExternalCutOffOption;0;EXTERNAL_CUT_OFF_4MA
