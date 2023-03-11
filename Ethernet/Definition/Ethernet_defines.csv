@@ -1,0 +1,33 @@
+reserved;definition;name;value;briefdescription
+##Module SubGen;;;;
+##ModuleRevision 0x020101;;;;
+##FileRevision 18;;;;
+;E_SelectedMainProtocol;INVALID_PROTOCOL;0;Invalid protocol
+;E_SelectedMainProtocol;ETHERNETIP_PROTOCOL;1;EtherNet/IP is selected
+;E_SelectedMainProtocol;PROFINETIO_PROTOCOL;2;PROFINET IO is selected
+;E_AutoNegotiate;AUTO_NEGOTIATE_UNKNOWN;0;Link Auto-Negotiation is unknown
+;E_AutoNegotiate;AUTO_NEGOTIATE_DISABLED;1;Link Auto-Negotiation is disabled
+;E_AutoNegotiate;AUTO_NEGOTIATE_ENABLED;2;Link Auto-Negotiation is enabled
+;E_PortSpeed;PORT_SPEED_UNKNOWN;0;Speed on posrt is unknown
+;E_PortSpeed;PORT_SPEED_10;1;Speed on port of up to 10 Mbits/s
+;E_PortSpeed;PORT_SPEED_100;2;Speed on port of up to 100 Mbits/s
+;E_PortSpeed;PORT_SPEED_1000;3;Speed on port of up to 1000 Mbits/s
+;E_DuplexMode;UNKNOWN_DUPLEX;0;Unknown duplex
+;E_DuplexMode;HALF_DUPLEX;1;Half duplex
+;E_DuplexMode;FULL_DUPLEX;2;Full duplex
+;E_UseDhcp;DHCP_STATE_DISABLED;0;DHCP is disabled and static IP settings are used
+;E_UseDhcp;DHCP_STATE_ENABLED;1;DHCP is enabled
+;E_AccessStateFull;FULL_ACCESS_INVALID;0;Access is undefined
+;E_AccessStateFull;FULL_ACCESS_DISABLED;1;Access is disabled
+;E_AccessStateFull;FULL_ACCESS_UNSECURED_READ_ONLY;2;Access is unsecured with read only permission
+;E_AccessStateFull;FULL_ACCESS_UNSECURED_READ_WRITE;3;Access is unsecured with read and write permission
+;E_AccessStateFull;FULL_ACCESS_SECURED_READ_ONLY;4;Access is secured with read only permission
+;E_AccessStateFull;FULL_ACCESS_SECURED_READ_WRITE;5;Access is secured with read and write permission
+;E_AccessStateUnsecured;UNSECURED_ACCESS_INVALID;0;Access is undefined
+;E_AccessStateUnsecured;UNSECURED_ACCESS_DISABLED;1;Access is disabled
+;E_AccessStateUnsecured;UNSECURED_ACCESS_UNSECURED_READ_ONLY;2;Access is unsecured with read only permission
+;E_AccessStateUnsecured;UNSECURED_ACCESS_UNSECURED_READ_WRITE;3;Access is unsecured with read and write permission
+;E_AccessStateSecured;SECURED_ACCESS_INVALID;0;Access is undefined
+;E_AccessStateSecured;SECURED_ACCESS_DISABLED;1;Access is disabled
+;E_AccessStateSecured;SECURED_ACCESS_SECURED_READ_ONLY;4;Access is secured with read only permission
+;E_AccessStateSecured;SECURED_ACCESS_SECURED_READ_WRITE;5;Access is secured with read and write permission

@@ -1,0 +1,10 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 6;;;;;
+;SinkEventEXE;0;;void;
+;SinkEventEXE;1;pEvent;const void*;Pointer to the event structure
+;VerifyMainProtocolEXE;0;;void;Verifies main protocol between value from NV and CI
+;ControlFactoryDefaultsEXE;0;;void;Prepares setup to control behaviour of next resetToFactory method
+;ControlFactoryDefaultsEXE;1;controlId;TUSIGN8;
+;RefreshHmiValidityTestResultsEXE;0;;void;Update the object value of Update the object value of hmiValidityTestResults at cycle complete

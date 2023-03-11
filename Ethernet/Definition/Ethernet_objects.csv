@@ -1,0 +1,37 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 41;;;;;;;
+;selectedMainProtocol;Controls which industrial Ethernet based protocol is active;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;enableModbusTcp;Controls if Modbus/TCP is enabled or not;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;enableOpcUa;Controls if OPC UA is enabled or not;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;enableEthernetIp;Controls if EtherNet/IP is enabled or not;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;enableProfinetIo;Controls if PROFINET IO is enabled or not;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;enableWebserver;Controls if Webserver is enabled or not;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;chasisMAC;Chasis MAC address;OUTPUT;SIMPLE_U8;6;DYNAMIC;READONLY_RAM
+;port1MAC;Ethernet port 1 MAC address;OUTPUT;SIMPLE_U8;6;DYNAMIC;READONLY_RAM
+;port1AutoNegotiate;Ethernet port 1 auto negotiation state;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;port1Speed;Ethernet port 1 speed;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;port1DuplexMode;Ethernet port 1 duplex mode;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;port2MAC;Ethernet port 2 MAC address;OUTPUT;SIMPLE_U8;6;DYNAMIC;READONLY_RAM
+;port2AutoNegotiate;Ethernet port 2 auto negotiation state;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;port2Speed;Ethernet port 2 speed;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;port2DuplexMode;Ethernet port 2 duplex mode;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;useDhcp;DHCP state;INPUT;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;hostName;Host name;INPUT;SIMPLE_CHAR;31;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;hostAddress;Host IP address;INPUT;SIMPLE_U32;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;subnetMask;Subnet mask;INPUT;SIMPLE_U32;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;gatewayAddress;Gateway IP address;INPUT;SIMPLE_U32;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;ntpServerAddress;NTP server IP address;INPUT;SIMPLE_U32;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;port1EthStatsHMI;Statistics for Ethernet port 1 [0] - Bytes received [1] - Bytes transmitted  [2] - Error frames received [3] - Packets with collisions;OUTPUT;SIMPLE_U32;4;DYNAMIC;READONLY_RAM
+;port2EthStatsHMI;Statistics for Ethernet port 2 [0] - Bytes received [1] - Bytes transmitted  [2] - Error frames received [3] - Packets with collisions;OUTPUT;SIMPLE_U32;4;DYNAMIC;READONLY_RAM
+;ipStats;Active TCP connections;OUTPUT;SIMPLE_U32;1;DYNAMIC;READONLY_RAM
+;dnsAddress;Domain Name Server Addresses;INOUT;SIMPLE_U32;2;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;domainName;Domain Name;INOUT;SIMPLE_CHAR;31;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;chasisMACstr;Chasis MAC address as array of characters;OUTPUT;SIMPLE_CHAR;17;CONSTANT;ROM
+;port1MACstr;Ethernet port 1 MAC address as array of characters;OUTPUT;SIMPLE_CHAR;17;CONSTANT;ROM
+;port2MACstr;Ethernet port 2 MAC address as array of characters;OUTPUT;SIMPLE_CHAR;17;CONSTANT;ROM
+;ntpServerAddress2;NTP server IP address;INOUT;SIMPLE_U32;2;DYNAMIC;RAM
+;portSpeedStatus;Ethernet port speed PHY_actual;OUTPUT;TABENUM8;2;DYNAMIC;READONLY_RAM
+;portDuplexStatus;Ethernet port duplex PHY_actual;OUTPUT;TABENUM8;2;DYNAMIC;READONLY_RAM
+;hmiValidityTestResults;Results of the hmi validityTests one test per bit;OUTPUT;SIMPLE_U8;32;DYNAMIC;RAM

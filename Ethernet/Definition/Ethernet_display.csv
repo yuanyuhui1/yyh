@@ -1,0 +1,37 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 15;;;;;
+;port1DuplexMode;;;ENUMERATION;E_DuplexMode
+;selectedMainProtocol;;;ENUMERATION;E_SelectedMainProtocol
+;enableModbusTcp;;;ENUMERATION;E_AccessStateUnsecured
+;enableOpcUa;;;ENUMERATION;E_AccessStateFull
+;enableEthernetIp;;;ENUMERATION;E_AccessStateUnsecured
+;enableProfinetIo;;;ENUMERATION;E_AccessStateUnsecured
+;enableWebserver;;;ENUMERATION;E_AccessStateSecured
+;port1AutoNegotiate;;;ENUMERATION;E_AutoNegotiate
+;port1Speed;;;ENUMERATION;E_PortSpeed
+;port2AutoNegotiate;;;ENUMERATION;E_AutoNegotiate
+;port2Speed;;;ENUMERATION;E_PortSpeed
+;port2DuplexMode;;;ENUMERATION;E_DuplexMode
+;useDhcp;;;ENUMERATION;E_UseDhcp
+;hostName;;;ASCII;
+;hostAddress;;;NUMERIC;
+;subnetMask;;;NUMERIC;
+;gatewayAddress;;;NUMERIC;
+;ntpServerAddress;;;NUMERIC;
+;chasisMAC;;;NUMERIC;
+;port1MAC;;;NUMERIC;
+;port2MAC;;;NUMERIC;
+;port1EthStatsHMI;;;NUMERIC;
+;port2EthStatsHMI;;;NUMERIC;
+;ipStats;;;NUMERIC;
+;dnsAddress;;;NUMERIC;
+;domainName;;;ASCII;
+;chasisMACstr;;;ASCII;
+;port1MACstr;;;ASCII;
+;port2MACstr;;;ASCII;
+;ntpServerAddress2;;;NUMERIC;
+;portDuplexStatus;;;ENUMERATION;E_DuplexMode
+;portSpeedStatus;;;ENUMERATION;E_PortSpeed
+;hmiValidityTestResults;;;BITENUMERATION;

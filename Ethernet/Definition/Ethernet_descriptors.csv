@@ -1,0 +1,34 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 19;;;
+;enableModbusTcp;ptrCodeTab;E_AccessStateUnsecured
+;enableModbusTcp;numberOfCodes;sizeof(E_AccessStateUnsecured)
+;enableOpcUa;ptrCodeTab;E_AccessStateFull
+;enableOpcUa;numberOfCodes;sizeof(E_AccessStateFull)
+;enableEthernetIp;ptrCodeTab;E_AccessStateUnsecured
+;enableEthernetIp;numberOfCodes;sizeof(E_AccessStateUnsecured)
+;enableProfinetIo;ptrCodeTab;E_AccessStateUnsecured
+;enableProfinetIo;numberOfCodes;sizeof(E_AccessStateUnsecured)
+;enableWebserver;ptrCodeTab;E_AccessStateSecured
+;enableWebserver;numberOfCodes;sizeof(E_AccessStateSecured)
+;selectedMainProtocol;ptrCodeTab;E_SelectedMainProtocol
+;selectedMainProtocol;numberOfCodes;sizeof(E_SelectedMainProtocol)
+;port1AutoNegotiate;ptrCodeTab;E_AutoNegotiate
+;port1AutoNegotiate;numberOfCodes;sizeof(E_AutoNegotiate)
+;port2AutoNegotiate;ptrCodeTab;E_AutoNegotiate
+;port2AutoNegotiate;numberOfCodes;sizeof(E_AutoNegotiate)
+;port1Speed;ptrCodeTab;E_PortSpeed
+;port1Speed;numberOfCodes;sizeof(E_PortSpeed)
+;port2Speed;ptrCodeTab;E_PortSpeed
+;port2Speed;numberOfCodes;sizeof(E_PortSpeed)
+;port1DuplexMode;ptrCodeTab;E_DuplexMode
+;port1DuplexMode;numberOfCodes;sizeof(E_DuplexMode)
+;port2DuplexMode;ptrCodeTab;E_DuplexMode
+;port2DuplexMode;numberOfCodes;sizeof(E_DuplexMode)
+;useDhcp;ptrCodeTab;E_UseDhcp
+;useDhcp;numberOfCodes;sizeof(E_UseDhcp)
+;portSpeedStatus;ptrCodeTab;E_PortSpeed
+;portSpeedStatus;numberOfCodes;sizeof(E_PortSpeed)
+;portDuplexStatus;ptrCodeTab;E_DuplexMode
+;portDuplexStatus;numberOfCodes;sizeof(E_DuplexMode)
