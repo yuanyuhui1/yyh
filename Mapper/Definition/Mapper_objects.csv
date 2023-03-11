@@ -1,0 +1,172 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 184;;;;;;;
+;diagFunCheckMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagOffSpecMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagMaintainMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagSimulationStatus;;INOUT;TABENUM8;1;Unprotected;RAM
+;diagSimulationType;;INOUT;TABENUM8;1;Unprotected;RAM
+;diagnosisSimulation;;INOUT;SIMPLE_U8;16;Unprotected;RAM
+;diagClearHistory;;INOUT;ACTION;1;;
+;diagMinFlowMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagMaxFlowMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagFlow103Mask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagTSensorOffSpecMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagTxSensorOffSpecMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagTSensorFailMask;;INOUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagLowCutoffMask;;INPUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;diagDeviceStatus;;INOUT;SIMPLE_U8;6;Unprotected;RAM
+;diagnosisHighCondition;;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;diagnosisHighClass;;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;diagnosisHighGroup;;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;diagHistory;;INOUT;SIMPLE_U8;6;Unprotected;RAM
+;diagnosisConditionNumber;;INOUT;SIMPLE_U8;1;Unprotected;RAM
+;diagnosisConditionDetailsClass;;INPUT;SIMPLE_U8;1;Unprotected;RAM
+;diagnosisConditionDetailsGroup;;INPUT;SIMPLE_U8;1;Unprotected;RAM
+;diagnosisConditionDetailsPriority;;INPUT;SIMPLE_U8;1;Unprotected;RAM
+;diagnosisConditionDetailsAlarmCounter;;INPUT;SIMPLE_U16;1;Unprotected;RAM
+;diagnosisConditionDetailsAlarmTimeCounterDay;;INPUT;SIMPLE_U16;1;Unprotected;RAM
+;diagnosisConditionDetailsAlarmTimeCounterMsec;;INPUT;SIMPLE_U32;1;Unprotected;RAM
+;diagnosisConditionDetailsTimeStampLastAlarmDay;;INPUT;SIMPLE_U16;1;Unprotected;RAM
+;diagnosisConditionDetailsTimeStampLastAlarmMsec;;INPUT;SIMPLE_U32;1;Unprotected;RAM
+;diagnosisConditionDetailsCodes;;INPUT;SIMPLE_U8;15;Unprotected;RAM
+;diagnosisMasking;;INOUT;SIMPLE_U8;6;Unprotected;RAM
+;PV;PV object;INOUT;FLOAT;1;Unprotected;RAM
+;SV;SV object;INOUT;FLOAT;1;Unprotected;RAM
+;TV;TV object;INOUT;FLOAT;1;Unprotected;RAM
+;QV;QV object;INOUT;FLOAT;1;Unprotected;RAM
+;PV_Unit;Unit of PV;INOUT;USIGN8;2;Unprotected;RAM
+;SV_Unit;Unit of SV;INOUT;USIGN8;2;Unprotected;RAM
+;TV_Unit;Unit of TV;INOUT;USIGN8;2;Unprotected;RAM
+;QV_Unit;Unit of QV;INOUT;USIGN8;2;Unprotected;RAM
+;PV_RangeUnit;;INOUT;USIGN8;2;Unprotected;RAM
+;SV_RangeUnit;;INOUT;USIGN8;2;Unprotected;RAM
+;TV_RangeUnit;;INOUT;USIGN8;2;Unprotected;RAM
+;QV_RangeUnit;;INOUT;USIGN8;2;Unprotected;RAM
+;PV_UpperRange;Upper range of PV;INOUT;FLOAT;1;Unprotected;RAM
+;SV_UpperRange;Upper range of SV;INOUT;FLOAT;1;Unprotected;RAM
+;TV_UpperRange;Upper range of TV;INOUT;FLOAT;1;Unprotected;RAM
+;QV_UpperRange;Upper range of QV;INOUT;FLOAT;1;Unprotected;RAM
+;PV_LowerRange;Lower range of PV;INOUT;FLOAT;1;Unprotected;RAM
+;SV_LowerRange;Lower range of SV;INOUT;FLOAT;1;Unprotected;RAM
+;TV_LowerRange;Lower range of TV;INOUT;FLOAT;1;Unprotected;RAM
+;QV_LowerRange;Lower range of QV;INOUT;FLOAT;1;Unprotected;RAM
+;PV_Assignment;PV's assignment to a device variable code;INOUT;TABENUM8;1;Protected;RAM
+;SV_Assignment;SV's assignment to a device variable code;INOUT;TABENUM8;1;Protected;RAM
+;TV_Assignment;TV's assignment to a device variable code;INOUT;TABENUM8;1;Unprotected;RAM
+;QV_Assignment;QV's assignment to a device variable code;INOUT;TABENUM8;1;Unprotected;RAM
+;PV_Classification;;OUTPUT;USIGN8;1;Unprotected;RAM
+;SV_Classification;;OUTPUT;USIGN8;1;Unprotected;RAM
+;TV_Classification;;OUTPUT;USIGN8;1;Unprotected;RAM
+;QV_Classification;;OUTPUT;USIGN8;1;Unprotected;RAM
+;PV_Status;;OUTPUT;USIGN8;1;Unprotected;RAM
+;SV_Status;;OUTPUT;USIGN8;1;Unprotected;RAM
+;TV_Status;;OUTPUT;USIGN8;1;Unprotected;RAM
+;QV_Status;;OUTPUT;USIGN8;1;Unprotected;RAM
+;PV_TFCode;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;PV_ACFlag;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;PV_PercentageForDO;;INPUT;FLOAT;1;Unprotected;RAM
+;PVSensorLimitHigh;;OUTPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;PVSensorLimitLow;;OUTPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;PVSensorLimitUnitcode;;OUTPUT;SIMPLE_U8;2;Unprotected;RAM
+;PVSensorminimumSpan;;OUTPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;PVPercent_Unit;;OUTPUT;CONST_U8;2;CONSTANT;ROM
+;PVPercent_Range;;INOUT;FLOAT;1;Unprotected;RAM
+;PVPercent_Classifiction;;OUTPUT;CONST_U8;1;CONSTANT;ROM
+;PV_DampingTime;;OUTPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;setCurrentValueAsPVRange;;INPUT;TABENUM8;1;Unprotected;RAM
+;flowOver103Bhv;;INPUT;TABENUM8;1;Protected;RAM
+;dvTExt;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvTExtDuplicated;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvTExtSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;dvTExtSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;dvTExtUnitType;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;dvTExtObj;;CONTAINED;UOM_PF;1;;
+;dvTExtSimObj;;CONTAINED;UOM_PF;1;;
+;dvTExtRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvTExtRangeObj;;CONTAINED;UOM_PF;1;;
+;dvTExtClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;dvTExtStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;dvTExtPercentage;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;dvTExtPreset;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvTExtPresetObj;;CONTAINED;UOM_PF;1;;
+;dvTExtSrc;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;dvTExtMaxDN;;CONTAINED;SIMPLE_FLOAT;1;STATIC_RARE;NON_VOLATILE
+;dvTExtMinDN;;CONTAINED;SIMPLE_FLOAT;1;STATIC_RARE;NON_VOLATILE
+;dvTExtMaxDN_Obj;;CONTAINED;UOM_PF;1;;
+;dvTExtMinDN_Obj;;CONTAINED;UOM_PF;1;;
+;dvPressure;Absolute pressure.;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvPressureDuplicated;Absolute pressure.;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvPressureSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;dvPressureSim;Absolute pressure.;CONTAINED;FLOAT;1;Unprotected;RAM
+;dvPressureUnitCode;;CONTAINED;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvPressureUnitType;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;dvPressureSimUnitCode;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;dvPressureObj;;CONTAINED;UOM_PF;1;;
+;dvPressureSimObj;;CONTAINED;UOM_PF;1;;
+;dvPressureRangeRelative;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvPressureRangeRelativeObj;;CONTAINED;UOM_PF;1;;
+;dvPressureRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvPressureRangeObj;;CONTAINED;UOM_PF;1;;
+;dvPressureMaxDN;Absolute pressure.;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvPressureMinDN;Absolute pressure.;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvPressureRelativeMaxDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvPressureRelativeMinDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvPressureMaxDN_Obj;;CONTAINED;UOM_PF;1;;
+;dvPressureMinDN_Obj;;CONTAINED;UOM_PF;1;;
+;dvPressureClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;dvPressureStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;dvPressurePreset;Relative pressure.;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvPressurePresetObj;;CONTAINED;UOM_PF;1;;
+;dvPressureAlmRange;;CONTAINED;RANGEFLT;1;STATIC_RARE;NON_VOLATILE
+;dvPressureSrc;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;dvDensity;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvDensityDuplicated;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvDensitySimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;dvDensitySim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;dvDensityUnitCode;;CONTAINED;TABENUM8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvDensityUnitType;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;dvDensitySimUnitCode;;CONTAINED;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;dvDensityObj;;CONTAINED;UOM_PF;1;;
+;dvDensitySimObj;;CONTAINED;UOM_PF;1;;
+;dvDensityRange;;CONTAINED;DEV_RNGFLT;1;STATIC_RARE;NON_VOLATILE
+;dvDensityRangeObj;;CONTAINED;UOM_PF;1;;
+;dvDensityMaxDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvDensityMinDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvDensityMaxDN_Obj;;CONTAINED;UOM_PF;1;;
+;dvDensityMinDN_Obj;;CONTAINED;UOM_PF;1;;
+;dvDensityClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;dvDensityStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;dvDensityPreset;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvDensityPresetObj;;CONTAINED;UOM_PF;1;;
+;dvDensitySrc;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;dvContent;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvContentDuplicated;;CONTAINED;FLOAT;1;DynamicDuplicated;RAM
+;dvContentSimEnable;;CONTAINED;TABENUM8;1;Protected;RAM
+;dvContentUnitCode;;CONTAINED;SIMPLE_U8;2;STATIC_RARE;NON_VOLATILE
+;dvContentSim;;CONTAINED;FLOAT;1;Unprotected;RAM
+;dvContentRange;;CONTAINED;DEV_RNGFLT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvContentMaxDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvContentMinDN;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;READONLY_RAM
+;dvContentClassification;;CONTAINED;SIMPLE_U8;1;Unprotected;READONLY_RAM
+;dvContentStatus;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;dvContentPreset;;CONTAINED;FLOAT;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;dvContentSrc;;OUTPUT;TABENUM8;1;Unprotected;RAM
+;dvDummyPercentage;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;dvDummyDampingTime;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;dvDummyUnitCode;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;dvDummyUnitType;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;localOperatingModeSelection;;CONTAINED;TABENUM16;1;Protected;RAM
+;mapperAlarmSimulation;;CONTAINED;T_DIAGNOSIS_ALARM;1;Unprotected;RAM
+;mapperDiagnosis;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;presetChanged;;CONTAINED;TABENUM8;1;Protected;RAM
+;diagnosisCounter;;CONTAINED;SIMPLE_U32;1;Unprotected;RAM
+;protectedDataStatus;;CONTAINED;TABENUM8;1;Protected;RAM
+;protectedDataCrc;;CONTAINED;SIMPLE_U16;1;Unprotected;RAM
+;hartBurstInAlarmPeriod;;CONTAINED;USIGN32;1;Unprotected;RAM
+;dvPressureAlmRangeObj;;CONTAINED;UOM_PF;1;;
+;dvTExtUserUnit;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;dvPressureUserUnit;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;dvDensityUserUnit;;CONTAINED;SIMPLE_FLOAT;1;Unprotected;RAM
+;diagAlarmNamurConfiguration;;INOUT;TABENUM8;48;Unprotected;RAM

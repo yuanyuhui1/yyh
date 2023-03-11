@@ -1,0 +1,7 @@
+reserved;name;value
+##Module SubGen;;
+##ModuleRevision 0x020101;;
+##FileRevision 1;;
+;SubsystemName;Mapper
+;ShortSubsystemName;Mapper
+;FrameworkVersion;0x020101

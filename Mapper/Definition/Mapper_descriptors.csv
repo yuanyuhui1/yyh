@@ -1,0 +1,311 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 149;;;
+;diagFunCheckMask;ptrCodeTab;STATUS
+;diagFunCheckMask;numberOfCodes;sizeof(STATUS)
+;diagOffSpecMask;ptrCodeTab;STATUS
+;diagOffSpecMask;numberOfCodes;sizeof(STATUS)
+;diagSimulationType;ptrCodeTab;ALARM_SIMULATION_TYPE
+;diagSimulationType;numberOfCodes;sizeof(ALARM_SIMULATION_TYPE)
+;diagSimulationStatus;ptrCodeTab;STATUS
+;diagSimulationStatus;numberOfCodes;sizeof(STATUS)
+;diagMinFlowMask;ptrCodeTab;STATUS
+;diagMinFlowMask;numberOfCodes;sizeof(STATUS)
+;diagMaxFlowMask;ptrCodeTab;STATUS
+;diagMaxFlowMask;numberOfCodes;sizeof(STATUS)
+;diagFlow103Mask;ptrCodeTab;STATUS
+;diagFlow103Mask;numberOfCodes;sizeof(STATUS)
+;PV;min;MINVALUE
+;PV;max;MAXVALUE
+;PV;increment;0.1f
+;SV;min;MINVALUE
+;SV;max;MAXVALUE
+;SV;increment;0.1f
+;TV;min;MINVALUE
+;TV;max;MAXVALUE
+;TV;increment;0.1f
+;QV;min;MINVALUE
+;QV;max;MAXVALUE
+;QV;increment;0.1f
+;PV_Assignment;ptrCodeTab;DEVICE_VAR_CODE
+;PV_Assignment;numberOfCodes;sizeof(DEVICE_VAR_CODE)
+;PV_Unit;min;0
+;PV_Unit;max;255
+;PV_Unit;increment;1
+;SV_Unit;min;0
+;SV_Unit;max;255
+;SV_Unit;increment;1
+;TV_Unit;min;0
+;TV_Unit;max;255
+;TV_Unit;increment;1
+;QV_Unit;min;0
+;QV_Unit;max;255
+;QV_Unit;increment;1
+;PV_UpperRange;min;0.0f
+;PV_UpperRange;max;MAXVALUE
+;PV_UpperRange;increment;0.1f
+;SV_UpperRange;min;0.0f
+;SV_UpperRange;max;MAXVALUE
+;SV_UpperRange;increment;0.1f
+;TV_UpperRange;min;0.0f
+;TV_UpperRange;max;MAXVALUE
+;TV_UpperRange;increment;0.1f
+;QV_UpperRange;min;0.0f
+;QV_UpperRange;max;MAXVALUE
+;QV_UpperRange;increment;0.1f
+;PV_LowerRange;min;0.0f
+;PV_LowerRange;max;MAXVALUE
+;PV_LowerRange;increment;0.1f
+;SV_LowerRange;min;0.0f
+;SV_LowerRange;max;MAXVALUE
+;SV_LowerRange;increment;0.1f
+;TV_LowerRange;min;0.0f
+;TV_LowerRange;max;MAXVALUE
+;TV_LowerRange;increment;0.1f
+;QV_LowerRange;min;0.0f
+;QV_LowerRange;max;MAXVALUE
+;QV_LowerRange;increment;0.1f
+;SV_Assignment;ptrCodeTab;DEVICE_VAR_CODE
+;SV_Assignment;numberOfCodes;sizeof(DEVICE_VAR_CODE)
+;TV_Assignment;ptrCodeTab;DEVICE_VAR_CODE
+;TV_Assignment;numberOfCodes;sizeof(DEVICE_VAR_CODE)
+;QV_Assignment;ptrCodeTab;DEVICE_VAR_CODE
+;QV_Assignment;numberOfCodes;sizeof(DEVICE_VAR_CODE)
+;diagMaintainMask;ptrCodeTab;STATUS
+;diagMaintainMask;numberOfCodes;sizeof(STATUS)
+;PV_PercentageForDO;min;0.0f
+;PV_PercentageForDO;max;100.0f
+;PV_PercentageForDO;increment;0.1f
+;PV_RangeUnit;min;0
+;PV_RangeUnit;max;255
+;PV_RangeUnit;increment;1
+;PV_Classification;min;0
+;PV_Classification;max;255
+;PV_Classification;increment;1
+;SV_Classification;min;0
+;SV_Classification;max;255
+;SV_Classification;increment;1
+;TV_Classification;min;0
+;TV_Classification;max;255
+;TV_Classification;increment;1
+;QV_Classification;min;0
+;QV_Classification;max;255
+;QV_Classification;increment;1
+;PV_Status;min;0
+;PV_Status;max;255
+;PV_Status;increment;1
+;SV_Status;min;0
+;SV_Status;max;255
+;SV_Status;increment;1
+;TV_Status;min;0
+;TV_Status;max;255
+;TV_Status;increment;1
+;QV_Status;min;0
+;QV_Status;max;255
+;QV_Status;increment;1
+;PV_TFCode;ptrCodeTab;TF_CODE
+;PV_TFCode;numberOfCodes;sizeof(TF_CODE)
+;PV_ACFlag;ptrCodeTab;AC_FLAG
+;PV_ACFlag;numberOfCodes;sizeof(AC_FLAG)
+;SV_RangeUnit;min;0
+;SV_RangeUnit;max;255
+;SV_RangeUnit;increment;1
+;TV_RangeUnit;min;0
+;TV_RangeUnit;max;255
+;TV_RangeUnit;increment;1
+;QV_RangeUnit;min;0
+;QV_RangeUnit;max;255
+;QV_RangeUnit;increment;1
+;diagTSensorOffSpecMask;ptrCodeTab;STATUS
+;diagTSensorOffSpecMask;numberOfCodes;sizeof(STATUS)
+;diagTSensorFailMask;ptrCodeTab;STATUS
+;diagTSensorFailMask;numberOfCodes;sizeof(STATUS)
+;diagTxSensorOffSpecMask;ptrCodeTab;STATUS
+;diagTxSensorOffSpecMask;numberOfCodes;sizeof(STATUS)
+;setCurrentValueAsPVRange;ptrCodeTab;T_RANGE_CHOOSE
+;setCurrentValueAsPVRange;numberOfCodes;sizeof(T_RANGE_CHOOSE)
+;PVPercent_Range;min;0.0f
+;PVPercent_Range;max;255.0f
+;PVPercent_Range;increment;0.1f
+;flowOver103Bhv;ptrCodeTab;FLOWOVER103_BHV
+;flowOver103Bhv;numberOfCodes;sizeof(FLOWOVER103_BHV)
+;dvTExtSimEnable;ptrCodeTab;_SIMU_STATUS
+;dvTExtSimEnable;numberOfCodes;sizeof(_SIMU_STATUS)
+;dvTExtObj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;dvTExtObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvTExt,mapper,MAPPER)
+;dvTExtObj;unitsType;T_TEMPERATURE
+;dvTExtSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(simTemperature_UnitCode, coordinator, CDT)
+;dvTExtSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvTExtSim,mapper,MAPPER)
+;dvTExtSimObj;unitsType;T_TEMPERATURE
+;dvPressureSimEnable;ptrCodeTab;_SIMU_STATUS
+;dvPressureSimEnable;numberOfCodes;sizeof(_SIMU_STATUS)
+;dvPressureUnitCode;ptrCodeTab;_T_PRESSURE_UNIT
+;dvPressureUnitCode;numberOfCodes;sizeof(_T_PRESSURE_UNIT)
+;dvPressureSimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureSimUnitCode, mapper, MAPPER)
+;dvPressureSimObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressureSim, mapper, MAPPER)
+;dvPressureSimObj;unitsType;T_PRESSURE
+;dvPressureObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressureObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressure, mapper, MAPPER)
+;dvPressureObj;unitsType;T_PRESSURE
+;dvDensitySimEnable;ptrCodeTab;_SIMU_STATUS
+;dvDensitySimEnable;numberOfCodes;sizeof(_SIMU_STATUS)
+;dvDensityUnitCode;ptrCodeTab;_T_MASS_DENSITY_UNIT
+;dvDensityUnitCode;numberOfCodes;sizeof(_T_MASS_DENSITY_UNIT)
+;dvDensitySimObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensitySimUnitCode, mapper, MAPPER)
+;dvDensitySimObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvDensitySim, mapper, MAPPER)
+;dvDensitySimObj;unitsType;T_MASS_DENSITY
+;dvDensityObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensityUnitCode, mapper, MAPPER)
+;dvDensityObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvDensity, mapper, MAPPER)
+;dvDensityObj;unitsType;T_MASS_DENSITY
+;dvContentSimEnable;ptrCodeTab;_SIMU_STATUS
+;dvContentSimEnable;numberOfCodes;sizeof(_SIMU_STATUS)
+;localOperatingModeSelection;ptrCodeTab;_OPM_SEL_MASK
+;localOperatingModeSelection;numberOfCodes;OPM_NUM
+;dvPressurePresetObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressurePresetObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressurePreset, mapper, MAPPER)
+;dvPressurePresetObj;unitsType;T_PRESSURE
+;dvDensityPresetObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensityUnitCode, mapper, MAPPER)
+;dvDensityPresetObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvDensityPreset, mapper, MAPPER)
+;dvDensityPresetObj;unitsType;T_MASS_DENSITY
+;dvPressureAlmRange;maxHi;40101.325f
+;dvPressureAlmRange;maxLo;0.0f
+;dvTExtPresetObj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;dvTExtPresetObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvTExtPreset,mapper,MAPPER)
+;dvTExtPresetObj;unitsType;T_TEMPERATURE
+;dvTExtSrc;ptrCodeTab;_TEXT_SRC
+;dvTExtSrc;numberOfCodes;sizeof(_TEXT_SRC)
+;dvPressureSrc;ptrCodeTab;_PRESSURE_SRC
+;dvPressureSrc;numberOfCodes;sizeof(_PRESSURE_SRC)
+;dvDensitySrc;ptrCodeTab;_DENSITY_SRC
+;dvDensitySrc;numberOfCodes;sizeof(_DENSITY_SRC)
+;dvContentSrc;ptrCodeTab;_CONTENT_SRC
+;dvContentSrc;numberOfCodes;sizeof(_CONTENT_SRC)
+;mapperAlarmSimulation;ptrCodeTab;_MAPPER_DIAGNOSIS_ALARM_TABLE
+;mapperAlarmSimulation;numberOfCodes;sizeof(_MAPPER_DIAGNOSIS_ALARM_TABLE)
+;presetChanged;ptrCodeTab;_PRESET_STATE
+;presetChanged;numberOfCodes;sizeof(_PRESET_STATE)
+;dvTExtPreset;min;-200.0f
+;dvTExtPreset;max;500.0f
+;dvTExtPreset;increment;0.1f
+;dvTExtSim;min;-200.0f
+;dvTExtSim;max;500.0f
+;dvTExtSim;increment;0.1f
+;dvTExt;min;-300.0f
+;dvTExt;max;600.0f
+;dvTExt;increment;0.1f
+;dvTExtDuplicated;min;-300.0f
+;dvTExtDuplicated;max;600.0f
+;dvTExtDuplicated;increment;0.1f
+;dvPressure;min;0.0f
+;dvPressure;max;40101.325f
+;dvPressure;increment;0.1f
+;dvPressureDuplicated;min;0.0f
+;dvPressureDuplicated;max;40101.325f
+;dvPressureDuplicated;increment;0.1f
+;dvDensity;min;0.0f
+;dvDensity;max;3000.0f
+;dvDensity;increment;0.1f
+;dvDensityDuplicated;min;0.0f
+;dvDensityDuplicated;max;3000.0f
+;dvDensityDuplicated;increment;0.1f
+;dvDensitySim;min;0.0f
+;dvDensitySim;max;3000.0f
+;dvDensitySim;increment;0.1f
+;dvContent;min;0.0f
+;dvContent;max;100.0f
+;dvContent;increment;0.1f
+;dvContentDuplicated;min;0.0f
+;dvContentDuplicated;max;100.0f
+;dvContentDuplicated;increment;0.01f
+;dvContentSim;min;0.0f
+;dvContentSim;max;100.0f
+;dvContentSim;increment;0.01f
+;dvContentPreset;min;0.0f
+;dvContentPreset;max;100.0f
+;dvContentPreset;increment;0.01f
+;dvPressureSim;min;0.0f
+;dvPressureSim;max;40101.325f
+;dvPressureSim;increment;0.1f
+;dvPressurePreset;min;0.0f
+;dvPressurePreset;max;40101.325f
+;dvPressurePreset;increment;0.1f
+;dvDensityPreset;min;0.08f
+;dvDensityPreset;max;3000.0f
+;dvDensityPreset;increment;0.01f
+;dvPressureSimUnitCode;ptrCodeTab;_T_PRESSURE_UNIT
+;dvPressureSimUnitCode;numberOfCodes;sizeof(_T_PRESSURE_UNIT)
+;dvDensitySimUnitCode;ptrCodeTab;_T_MASS_DENSITY_UNIT
+;dvDensitySimUnitCode;numberOfCodes;sizeof(_T_MASS_DENSITY_UNIT)
+;dvTExtRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(dvTExtMaxDN,mapper,MAPPER)
+;dvTExtRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(dvTExtMinDN,mapper,MAPPER)
+;dvTExtRange;hiLim_MaxPrcOfDnSpan;1.0f
+;dvTExtRange;hiLim_MinPrcOfDnSpan;0.0f
+;dvTExtRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;dvTExtRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;dvTExtRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;dvTExtRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvTExtRange,mapper,MAPPER)
+;dvTExtRangeObj;unitsType;T_TEMPERATURE
+;dvPressureRangeRelative;ptrMaxDN;SUBSYS_OBJPTR_IDX_(dvPressureRelativeMaxDN,mapper,MAPPER)
+;dvPressureRangeRelative;ptrMinDN;SUBSYS_OBJPTR_IDX_(dvPressureRelativeMinDN,mapper,MAPPER)
+;dvPressureRangeRelative;hiLim_MaxPrcOfDnSpan;1.0f
+;dvPressureRangeRelative;hiLim_MinPrcOfDnSpan;0.0f
+;dvPressureRangeRelative;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;dvPressureRangeRelative;loLim_MinPrcOfCurAllowedSpan;0.0f
+;dvDensityRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(dvDensityMaxDN,mapper,MAPPER)
+;dvDensityRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(dvDensityMinDN,mapper,MAPPER)
+;dvDensityRange;hiLim_MaxPrcOfDnSpan;1.0f
+;dvDensityRange;hiLim_MinPrcOfDnSpan;0.0f
+;dvDensityRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;dvDensityRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;dvContentRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(dvContentMaxDN,mapper,MAPPER)
+;dvContentRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(dvContentMinDN,mapper,MAPPER)
+;dvContentRange;hiLim_MaxPrcOfDnSpan;1.0f
+;dvContentRange;hiLim_MinPrcOfDnSpan;0.0f
+;dvContentRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;dvContentRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;dvPressureRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressureRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressureRange, mapper, MAPPER)
+;dvPressureRangeObj;unitsType;T_PRESSURE
+;dvDensityRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensityUnitCode, mapper, MAPPER)
+;dvDensityRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvDensityRange, mapper, MAPPER)
+;dvDensityRangeObj;unitsType;T_MASS_DENSITY
+;dvTExtMaxDN_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;dvTExtMaxDN_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(dvTExtMaxDN,mapper,MAPPER)
+;dvTExtMaxDN_Obj;unitsType;T_TEMPERATURE
+;dvTExtMinDN_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;dvTExtMinDN_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(dvTExtMinDN,mapper,MAPPER)
+;dvTExtMinDN_Obj;unitsType;T_TEMPERATURE
+;dvDensityMinDN_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensityUnitCode, mapper, MAPPER)
+;dvDensityMinDN_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(dvDensityMinDN, mapper, MAPPER)
+;dvDensityMinDN_Obj;unitsType;T_MASS_DENSITY
+;dvDensityMaxDN_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvDensityUnitCode, mapper, MAPPER)
+;dvDensityMaxDN_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(dvDensityMaxDN, mapper, MAPPER)
+;dvDensityMaxDN_Obj;unitsType;T_MASS_DENSITY
+;dvPressureMaxDN_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressureMaxDN_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressureMaxDN, mapper, MAPPER)
+;dvPressureMaxDN_Obj;unitsType;T_PRESSURE
+;dvPressureMinDN_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressureMinDN_Obj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressureMinDN, mapper, MAPPER)
+;dvPressureMinDN_Obj;unitsType;T_PRESSURE
+;diagLowCutoffMask;ptrCodeTab;STATUS
+;diagLowCutoffMask;numberOfCodes;sizeof(STATUS)
+;protectedDataStatus;ptrCodeTab;MapperStatusTable
+;protectedDataStatus;numberOfCodes;sizeof(MapperStatusTable)
+;hartBurstInAlarmPeriod;min;5
+;hartBurstInAlarmPeriod;max;10800
+;hartBurstInAlarmPeriod;increment;1
+;dvPressureRange;ptrMaxDN;SUBSYS_OBJPTR_IDX_(dvPressureMaxDN,mapper,MAPPER)
+;dvPressureRange;ptrMinDN;SUBSYS_OBJPTR_IDX_(dvPressureMinDN,mapper,MAPPER)
+;dvPressureRange;hiLim_MaxPrcOfDnSpan;1.0f
+;dvPressureRange;hiLim_MinPrcOfDnSpan;0.0f
+;dvPressureRange;loLim_MaxPrcOfCurAllowedSpan;1.0f
+;dvPressureRange;loLim_MinPrcOfCurAllowedSpan;0.0f
+;dvPressureRangeRelativeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressureRangeRelativeObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressureRangeRelative, mapper, MAPPER)
+;dvPressureRangeRelativeObj;unitsType;T_PRESSURE
+;dvPressureAlmRangeObj;pObject_unit;SUBSYS_OBJPTR_IDX_(dvPressureUnitCode, mapper, MAPPER)
+;dvPressureAlmRangeObj;pObject_value;SUBSYS_OBJPTR_IDX_(dvPressureAlmRange, mapper, MAPPER)
+;dvPressureAlmRangeObj;unitsType;T_PRESSURE
+;diagAlarmNamurConfiguration;ptrCodeTab;namurAlarmStatusTable
+;diagAlarmNamurConfiguration;numberOfCodes;sizeof(namurAlarmStatusTable)

@@ -1,0 +1,13 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 28;;;;;
+;GetPVPercentageForDOSRV;0;return;TUSIGN16;error code
+;GetPVPercentageForDOSRV;1;ptrValue;TFLOAT*;percentage value for Digital Output
+;SetSelection;0;return;TUSIGN16;update PV SV TV QV assignment when operating mode changed
+;SetSelection;1;selection;TUSIGN16;
+;CheckDataCrc;0;;void;Calculate and check crc
+;UpdateDeviceVariablesEXE;0;return;TUSIGN16;update the device variables in slow task
+;UpdatePVSVAssignment;0;return;TUSIGN16;Update PV SV Assignment
+;UpdateDiagnosis;0;;void;Update mapper Diagnosis
+;GetDummyPercentageSRV;0;return;TFLOAT;return dummy percentage for map list
