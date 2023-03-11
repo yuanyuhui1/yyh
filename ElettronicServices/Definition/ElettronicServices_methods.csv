@@ -1,0 +1,17 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 61;;;;;
+;ElettornicServicesEXE;0;;void;Perform the elettronic services
+;CyclicAsyncSaveSRV;0;;void;Cyclic variables Asyncronous Save on Eeprom
+;UpdateDiagnosis;0;;void;
+;ExitSRV;0;;void;
+;InizializeNvSRV;0;;void;
+;InitializeNvCheckSRV;0;;TUSIGN8;
+;ResetToDefaultSRV;0;;void;
+;LoadRomDefaultSRV;0;;void;
+;DeviceResetSRV;0;;void;
+;CheckCpuAsm;0;;void;Cyclic Check Asm and Cpu Register or other
+;CheckDataCrc;0;return;void;CRC check all rarely change data
+;CheckAutoZeroStatus;0;;void;
+;CheckDecreasingVoltage;0;return;TBOOL;

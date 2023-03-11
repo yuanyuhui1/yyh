@@ -1,0 +1,86 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 201;;;;;;;
+;elettronicTemperature_Obj;;OUTPUT;UOM_PF;1;;
+;elettronicTemperatureSimulation_Obj;;INPUT;UOM_PF;1;;
+;softwareRevision;;OUTPUT;CONST_U8;3;CONSTANT;RAM
+;hardwareRevision;;OUTPUT;SIMPLE_U8;3;Unprotected;RAM
+;deviceSerialNumber;;OUTPUT;SIMPLE_U8;8;ReplaceStaticRare;NON_VOLATILE
+;feSerialNumber;;OUTPUT;SIMPLE_U8;3;ReplaceStaticRare;NON_VOLATILE
+;vSupplyReadBack;;CONTAINED;SIMPLE_U16;1;DynamicDuplicated;RAM
+;dipSwitchAndPushButtonsStatus;;OUTPUT;SIMPLE_U16;1;Unprotected;READONLY_RAM
+;swWriteProtection;;INOUT;TABENUM8;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;swRevisionHmi_transmitter;;OUTPUT;SIMPLE_CHAR;8;Unprotected;RAM
+;hwRevisionHmi_transmitter;;OUTPUT;SIMPLE_CHAR;8;Unprotected;RAM
+;deviceReset;;CONTAINED;ACTION;1;;
+;electronicServicesAlarmSimulation;;CONTAINED;T_DIAGNOSIS_ALARM;1;Protected;RAM
+;localDiagnosis;;CONTAINED;SIMPLE_U8;1;DynamicDuplicated;RAM
+;cbSerialNumber;;CONTAINED;SIMPLE_U8;3;STATIC_RARE;NON_VOLATILE
+;resetOutputTrimming;;CONTAINED;ACTION;1;;
+;elettronicTemperature;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;vSupplyReadBackDuplicated;;CONTAINED;SIMPLE_U16;1;DynamicDuplicated;RAM
+;protectedDataCrc;;CONTAINED;SIMPLE_U16;1;Unprotected;RAM
+;localDiagnosisDuplicated;;CONTAINED;SIMPLE_U8;1;DynamicDuplicated;RAM
+;initializeNv;;CONTAINED;TABENUM8;1;Protected;RAM
+;resetToDefault;;CONTAINED;SIMPLE_I16;1;Protected;RAM
+;saveAsDefault;;CONTAINED;SIMPLE_I16;1;Protected;RAM
+;loadRomDefault;;CONTAINED;SIMPLE_I16;1;Protected;RAM
+;classLoadRomDefault;;CONTAINED;SIMPLE_I16;1;Unprotected;RAM
+;lowLevelHmiHwSwRevision;;OUTPUT;SIMPLE_CHAR;8;Unprotected;RAM
+;vSupplyReadbackEnable;;INOUT;TABENUM8;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;vSupplyReadbackHighThreshold;;INOUT;SIMPLE_U16;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;vSupplyReadbackLowThreshold;;INOUT;SIMPLE_U16;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;vSupplyReadbackRetry;;INOUT;SIMPLE_U8;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;ramTestEnable;;INOUT;TABENUM8;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;romTestEnable;;INOUT;TABENUM8;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;cbNvWriteIsActive;;OUTPUT;TABENUM8;1;Unprotected;READONLY_RAM
+;feNvWriteIsActive;;OUTPUT;TABENUM8;1;Unprotected;READONLY_RAM
+;dynamicVariablesCheckEnable;;OUTPUT;TABENUM8;1;ReplaceStaticFrequentNoDefault;NON_VOLATILE
+;T_UnitCode;;INPUT;TABENUM8;1;STATIC_RARE;NON_VOLATILE
+;elettronicTemperatureDuplicated;;CONTAINED;SIMPLE_FLOAT;1;DynamicDuplicated;RAM
+;elettronicTemperatureSimulation;;INPUT;FLOAT;1;Protected;RAM
+;alarmTRng;;CONTAINED;RANGEFLT;1;STATIC_RARE;NON_VOLATILE
+;alarmTRng_Obj;;CONTAINED;UOM_PF;1;;
+;protectedDataStatus;;CONTAINED;TABENUM8;1;Protected;RAM
+;hardwareCalibrationLoad;;CONTAINED;SIMPLE_U8;1;STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;sensorID;;INOUT;SIMPLE_CHAR;8;ReplaceStaticRare;NON_VOLATILE
+;sensorSapErpNo;Sensor SAP/ERP No.;INOUT;SIMPLE_CHAR;20;ReplaceStaticRare;NON_VOLATILE
+;sensorCalDate;Sensor calibration date.;INOUT;SIMPLE_CHAR;12;ReplaceStaticRare;NON_VOLATILE
+;sensorCalCertNo;Sensor calibration certificate No.;INOUT;SIMPLE_CHAR;20;ReplaceStaticRare;NON_VOLATILE
+;sensorCalLocation;Sensor calibration location;INOUT;SIMPLE_CHAR;32;ReplaceStaticRare;NON_VOLATILE
+;bootloaderRevision;;INOUT;SIMPLE_U8;8;Unprotected;RAM
+;tranType;;INOUT;SIMPLE_CHAR;12;STATIC_RARE;NON_VOLATILE
+;tranID;;INOUT;SIMPLE_CHAR;8;STATIC_RARE;NON_VOLATILE
+;tranSapErpNo;Transmitter SAP/ERP No.;INOUT;SIMPLE_CHAR;20;ReplaceStaticRare;NON_VOLATILE
+;tranCalDate;Transmitter calibration date.;INOUT;SIMPLE_CHAR;12;STATIC_RARE;NON_VOLATILE
+;tranCalCertNo;Transmitter calibration certificate No.;INOUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;tranCalLocation;Transmitter calibration location.;INOUT;SIMPLE_CHAR;32;STATIC_RARE;NON_VOLATILE
+;manufacturer;;INOUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;street;;INOUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;city;;INOUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;phone;Phone;INOUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;writeAutoZero;;CONTAINED;ACTION;1;;
+;writeSelfDiagnosis;;CONTAINED;ACTION;1;;
+;resetCB_Runhour;;CONTAINED;ACTION;1;;
+;frontendRtc;;INPUT;SIMPLE_U8;5;Unprotected;RAM
+;autozeroStatus;;INPUT;TABENUM8;1;Unprotected;RAM
+;autoSelfCheckTime;;INPUT;USIGN32;1;STATIC_RARE;NON_VOLATILE
+;snrThreshold;;INPUT;INT16;1;Unprotected;RAM
+;sensorLocationTag;;INPUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;sensoTag;;INPUT;SIMPLE_CHAR;20;STATIC_RARE;NON_VOLATILE
+;softwareMainRevision;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;hardwareMainRevision;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;swRevisionHmi_fe;;OUTPUT;SIMPLE_CHAR;8;Unprotected;RAM
+;hwRevisionHmi_fe;;OUTPUT;SIMPLE_CHAR;8;Unprotected;RAM
+;tranSapErpNoChangeFlag;;CONTAINED;SIMPLE_U8;1;Unprotected;RAM
+;formatFENV;;CONTAINED;ACTION;1;;
+;ambientTemperatureMax;Record the maximum value of ambient temperature.;INOUT;FLOAT;1;STATIC_RARE;NON_VOLATILE
+;ambientTemperatureMax_obj;;CONTAINED;UOM_PF;1;;
+;saveAllAsDefault;;CONTAINED;ACTION;1;;
+;resetAllToDefault;;CONTAINED;ACTION;1;;
+;acttelettronicTemperature;;INPUT;SIMPLE_FLOAT;1;Unprotected;RAM
+;acttelettronicTemperature_obj;;CONTAINED;UOM_PF;1;;
+;switchBLE;;INOUT;TABENUM8;1;Configure;NON_VOLATILE
+;modeLCDLight;;INOUT;TABENUM8;1;Configure;NON_VOLATILE
+;configDataCheck;;OUTPUT;SIMPLE_U16;1;Configure;NON_VOLATILE

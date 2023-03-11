@@ -1,0 +1,61 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 104;;;
+;swWriteProtection;ptrCodeTab;SwWriteProtectionTable
+;swWriteProtection;numberOfCodes;sizeof(SwWriteProtectionTable)
+;electronicServicesAlarmSimulation;ptrCodeTab;ElectronicServicesDiagnosisEnumTable
+;electronicServicesAlarmSimulation;numberOfCodes;ALARM_CODES
+;initializeNv;ptrCodeTab;InitializeNvTable
+;initializeNv;numberOfCodes;sizeof(InitializeNvTable)
+;ramTestEnable;ptrCodeTab;SilTestTable
+;ramTestEnable;numberOfCodes;sizeof(SilTestTable)
+;romTestEnable;ptrCodeTab;SilTestTable
+;romTestEnable;numberOfCodes;sizeof(SilTestTable)
+;cbNvWriteIsActive;ptrCodeTab;NvWriteIsActiveTable
+;cbNvWriteIsActive;numberOfCodes;sizeof(NvWriteIsActiveTable)
+;feNvWriteIsActive;ptrCodeTab;NvWriteIsActiveTable
+;feNvWriteIsActive;numberOfCodes;sizeof(NvWriteIsActiveTable)
+;vSupplyReadbackEnable;ptrCodeTab;SilTestTable
+;vSupplyReadbackEnable;numberOfCodes;sizeof(SilTestTable)
+;dynamicVariablesCheckEnable;ptrCodeTab;SilTestTable
+;dynamicVariablesCheckEnable;numberOfCodes;sizeof(SilTestTable)
+;autozeroStatus;ptrCodeTab;_AUTOZERO_STATUS
+;autozeroStatus;numberOfCodes;sizeof(_AUTOZERO_STATUS)
+;autoSelfCheckTime;min;2
+;autoSelfCheckTime;max;525600
+;autoSelfCheckTime;increment;1
+;elettronicTemperature_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;elettronicTemperature_Obj;pObject_value;&elettronicServicesObjectList[ELETTRONICSERVICES_IDX_elettronicTemperature]
+;elettronicTemperature_Obj;unitsType;T_TEMPERATURE
+;alarmTRng;maxHi;500
+;alarmTRng;maxLo;-200
+;alarmTRng_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;alarmTRng_Obj;pObject_value;&elettronicServicesObjectList[ELETTRONICSERVICES_IDX_alarmTRng]
+;alarmTRng_Obj;unitsType;T_TEMPERATURE
+;protectedDataStatus;ptrCodeTab;PROTECT_TABLE
+;protectedDataStatus;numberOfCodes;sizeof(PROTECT_TABLE)
+;elettronicTemperatureSimulation_Obj;pObject_unit;SUBSYS_OBJPTR_IDX_(simTemperature_UnitCode, coordinator, CDT)
+;elettronicTemperatureSimulation_Obj;pObject_value;&elettronicServicesObjectList[ELETTRONICSERVICES_IDX_elettronicTemperatureSimulation]
+;elettronicTemperatureSimulation_Obj;unitsType;T_TEMPERATURE
+;snrThreshold;min;-80
+;snrThreshold;max;50
+;snrThreshold;increment;1
+;T_UnitCode;ptrCodeTab;TEMPERATURE
+;T_UnitCode;numberOfCodes;sizeof(TEMPERATURE)
+;ambientTemperatureMax_obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;ambientTemperatureMax_obj;pObject_value;&elettronicServicesObjectList[ELETTRONICSERVICES_IDX_ambientTemperatureMax]
+;ambientTemperatureMax_obj;unitsType;T_TEMPERATURE
+;ambientTemperatureMax;min;-80.0
+;ambientTemperatureMax;max;170.0
+;ambientTemperatureMax;increment;1
+;elettronicTemperatureSimulation;min;-60.0f
+;elettronicTemperatureSimulation;max;210.0f
+;elettronicTemperatureSimulation;increment;1
+;acttelettronicTemperature_obj;pObject_unit;SUBSYS_OBJPTR_IDX_(temperature_UnitCode, coordinator, CDT)
+;acttelettronicTemperature_obj;pObject_value;&elettronicServicesObjectList[ELETTRONICSERVICES_IDX_acttelettronicTemperature]
+;acttelettronicTemperature_obj;unitsType;T_TEMPERATURE
+;switchBLE;ptrCodeTab;TABLE_BLE_SWITCH_2
+;switchBLE;numberOfCodes;sizeof(TABLE_BLE_SWITCH_2)
+;modeLCDLight;ptrCodeTab;TABLE_LCD_LIGHT_MODE
+;modeLCDLight;numberOfCodes;sizeof(TABLE_LCD_LIGHT_MODE)

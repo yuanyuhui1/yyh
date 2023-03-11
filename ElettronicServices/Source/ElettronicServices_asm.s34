@@ -1,0 +1,498 @@
+        NAME ES_ASM_CHECK
+
+        RSEG CSTACK:NEARDATA:REORDER:NOROOT(0)
+
+        PUBLIC Test_Smovfw
+        PUBLIC Test_Smovfb
+        PUBLIC Test_Smovbw
+        PUBLIC Test_Smovbb
+        PUBLIC Test_Rmpa_b
+        PUBLIC Test_Rmpa_w
+        PUBLIC Test_Sstrb
+        PUBLIC Test_Sstrw
+        PUBLIC Test_Mova
+        PUBLIC Test_Jmp
+        PUBLIC Test_Jsr
+
+ //Test_Smovf(TINT16 len,TUSIGN8 NEAR* dest,TUSIGN8 HUGE* src)
+
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM SMOVF.B
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+
+                     RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Smovfb:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,-2:8[FB]; //LEN
+    MOV.W  A0,A1; //DEST    
+    MOV.W  R0,R3; //LEN
+    
+    MOV.B   0x7[FB], R1H;//HIGH
+    MOV.W   0x5[FB], A0;//LOW
+
+    SMOVF.B;//COPY FROM SRC TO DEST.
+    
+   
+    POPM   R1,R3,A1;
+    
+    EXITD;
+    
+    
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM SMOVF.W
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+                     RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Smovfw:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,-2:8[FB]; //LEN
+    MOV.W  A0,A1; //DEST    
+    MOV.W  R0,R3; //LEN
+    
+    MOV.B   0x7[FB], R1H;//HIGH
+    MOV.W   0x5[FB], A0;//LOW
+
+    SMOVF.W;//COPY FROM SRC TO DEST.
+    
+   
+    POPM   R1,R3,A1;
+    
+    EXITD;
+    
+    
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM SMOVB.B
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+        RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Smovbb:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,-2:8[FB]; //LEN
+    MOV.W  A0,A1; //DEST    
+    MOV.W  R0,R3; //LEN
+    
+    MOV.B   0x7[FB], R1H;//HIGH
+    MOV.W   0x5[FB], A0;//LOW
+
+    SMOVB.B;//COPY FROM SRC TO DEST.
+    
+   
+    POPM   R1,R3,A1;
+    
+    EXITD;
+    
+    
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM SMOVB.W
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+                                        RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Smovbw:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,-2:8[FB]; //LEN
+    MOV.W  A0,A1; //DEST    
+    MOV.W  R0,R3; //LEN
+    
+    MOV.B   0x7[FB], R1H;//HIGH
+    MOV.W   0x5[FB], A0;//LOW
+
+    SMOVB.W;//COPY FROM SRC TO DEST.
+    
+   
+    POPM   R1,R3,A1;
+    
+    EXITD;
+    
+    
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM SSTR.B
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+        RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Sstrb:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R2,R3; //LEN
+    MOV.W  R0,-2:8[FB]; //LEN
+    MOV.W  A0,A1; //DEST    
+
+    SSTR.B;//COPY FROM SRC TO DEST.
+    
+   
+    POPM   R1,R3,A1;
+    
+    EXITD;
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM SSTR.W
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------    
+                             RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Sstrw:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,R3; //LEN
+    MOV.W  R2,R0; //DATA
+    MOV.W  A0,A1; //DEST    
+
+    SSTR.W;//COPY FROM SRC TO DEST.
+    
+   
+    POPM   R1,R3,A1;
+    
+    EXITD;
+//TUSIGN16 Test_Srmpa_b(TINT16 len,TUSIGN8 NEAR* SRC1,TUSIGN8 NEAR* SRC2)
+
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM RMPA.B
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+                             RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Rmpa_b:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,R3; //LEN
+    MOV.W  R2,A1; //SRC1    
+
+    MOV.W  #0,R0; //LEN
+
+    RMPA.B;//
+    CMP.W #02D8H,R0    
+    JNE RMPA_B_ERR_LABEL
+    JMP.S RMPA_B_OK_LABEL
+
+RMPA_B_ERR_LABEL:
+    BRK;    
+    
+RMPA_B_OK_LABEL:    
+    POPM   R1,R3,A1;
+    
+    EXITD;
+    
+    
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM RMPA.W
+                will be called in this function. and another function will call this function to check whether the asm command is work ok.
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------
+                             RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Rmpa_w:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    MOV.W  R0,R3; //LEN
+    MOV.W  R2,A1; //SRC1    
+    MOV.W  #0,R0; //
+    MOV.W  #0,R2; //
+    EXTS.W R0
+    RMPA.W;//
+    CMP.W #3560H,R0    
+    JNE RMPA_W_ERR_LABEL
+    CMP.W #0,R2    
+    JNE RMPA_W_ERR_LABEL
+    JMP.S RMPA_W_OK_LABEL
+RMPA_W_ERR_LABEL:
+    BRK;    
+    
+RMPA_W_OK_LABEL:    
+    POPM   R1,R3,A1;
+    
+    EXITD;
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM MOVA PUSHA PUSH POP PUSHC POPC   
+                will be tested in this function. If error happens, It wiil call _ASM_Test_ErrorHandler
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------    
+                             RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Mova:
+    ENTER   #2;
+//MOVA
+    PUSHM   R1,R3,A1;
+    MOV.W  #05EFH, R0;
+    MOV.W  R0, -2:8[FB];
+    MOVA   -2:8[FB],A0; //    
+    MOV.W     [A0],   R0
+    CMP.W #05EFH,R0    
+    JNE MOVA_ERR_LABEL
+ /*
+//PUSHA    
+    MOV.W  #05DFH, R0;
+    MOV.W  R0, -2:8[FB];
+    STC     SP,   R2;
+    PUSHA -2:8[FB]
+    MOV.W   0:8[SP],A0; //    @SP VALUE COMPARE
+    MOV.W   [A0],R0; //    
+    CMP.W #05DFH,R0    
+    JNE MOVA_ERR_LABEL
+    
+    STC     SP,   R0;
+    SUB.W     #2,   R2; // SP +- COMPARE
+    CMP.W   R2,R0    
+    JNE MOVA_ERR_LABEL
+    */
+    JMP.S PUSH_LABEL
+MOVA_ERR_LABEL:
+    BRK;    
+PUSH_LABEL:
+
+//PUSH & POP
+    MOV.W  #25FEH, R2;
+    PUSH.W R2
+    MOV.W  #03FEH, R2;
+    MOV.W   0:8[SP],R0; //    
+    CMP.W #25FEH,R0    
+    JNE PUSH_ERR_LABEL
+    POP.W     R2
+    CMP.W #25FEH,R2    
+    JNE PUSH_ERR_LABEL
+//PUSHC &POPC   
+    MOV.W  #0ADFH, -2:8[FB];
+    MOV.W  -2:8[FB], R2;
+    PUSHC FB
+    LDC #123H, FB;
+    MOV.W   0:8[SP],A0; //    @SP VALUE COMPARE
+    LDC A0, FB;
+    MOV.W   -2:8[FB],R2; //    
+    CMP.W #0ADFH,R2    
+    JNE PUSH_ERR_LABEL
+    LDC #123H, FB;
+    POPC     FB
+    MOV.W  -2:8[FB], R0;
+    CMP.W #0ADFH,-2:8[FB]    
+    JNE PUSH_ERR_LABEL
+    JMP.S PUSH_OK_LABEL;
+PUSH_ERR_LABEL:
+    BRK;    
+    
+PUSH_OK_LABEL:
+
+    POPM   R1,R3,A1;
+    EXITD;
+    
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM JMP
+                will be tested in this function. If error happens, It wiil call _ASM_Test_ErrorHandler
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------       
+                             RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Jmp:
+    ENTER   #2;
+//MOVA
+    PUSHM   R1,R3,A1;
+    MOV.W  #05EFH, R0;
+    JMP.B   TEST_JMP_LABEL1;
+    CMP.W   #03DFH, R0;
+    JNE     TEST_JMP_ERR_LABEL1;
+    JMP.W   TEST_JMP_LABEL2;
+    BRK;
+TEST_JMP_LABEL1:
+    MOV.W  #03DFH, R0;
+    MOV.W  #-18, R1;
+    JMPI.W  R1;
+TEST_JMP_LABEL2:
+    JSR.W   Test_Jsr;
+    POPM   R1,R3,A1;
+    EXITD;    
+
+
+//------------------------------------------------------------------------------------------------
+/*
+ brief			The ASM JSR 
+                will be tested in this function. If error happens, It wiil call _ASM_Test_ErrorHandler
+ \author		Paul
+ \date		23-02-2012
+ \param len SRC SRC1
+ \return DAT
+ \warning
+ \test
+ test-date: 2012-MM-DD
+ \n by: pp ss
+ \n environment:
+ \n intention:
+ \n result module test:
+ \n result Lint Level 3:
+ \bug
+*/
+//------------------------------------------------------------------------------------------------       
+                             RSEG CODE:CODE:REORDER:NOROOT(0)
+Test_Jsr:
+    ENTER   #2;
+    PUSHM   R1,R3,A1;
+    STC    SP, R1;
+    MOV.W  #07H, R0;
+    JSRI.W  R0;
+    BRK;
+    MOV.W   #03DFH, R0;
+    CMP.W   #03DFH, R0;
+    JZ     E_JMP_ERR_LABEL;
+    JMP.S   JSR_LABEL2;
+    BRK;
+
+E_JMP_ERR_LABEL:
+    BRK;
+JSR_LABEL2:
+    POPM   R1,R3,A1;
+    EXITD;    
+TEST_JMP_ERR_LABEL1:
+    BRK;    
+   
+    end

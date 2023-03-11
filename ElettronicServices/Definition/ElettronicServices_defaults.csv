@@ -1,0 +1,526 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 187;;;
+;deviceSerialNumber;0;51
+;deviceSerialNumber;1;75
+;deviceSerialNumber;2;64
+;deviceSerialNumber;3;0
+;deviceSerialNumber;4;0
+;deviceSerialNumber;5;0
+;deviceSerialNumber;6;0
+;vSupplyReadBack;0;0
+;dipSwitchAndPushButtonsStatus;0;0
+;swWriteProtection;0;WRITE_PROTECTION_OFF
+;deviceSerialNumber;7;0
+;electronicServicesAlarmSimulation;0;0
+;cbSerialNumber;0;0
+;cbSerialNumber;1;0
+;cbSerialNumber;2;0
+;vSupplyReadBackDuplicated;0;0
+;localDiagnosis;0;0
+;localDiagnosisDuplicated;0;0
+;initializeNv;0;NV_NOT_INITIALIZE
+;resetToDefault;0;0
+;saveAsDefault;0;0
+;classLoadRomDefault;0;0
+;loadRomDefault;0;0
+;lowLevelHmiHwSwRevision;0;32
+;lowLevelHmiHwSwRevision;1;32
+;lowLevelHmiHwSwRevision;2;32
+;lowLevelHmiHwSwRevision;3;32
+;lowLevelHmiHwSwRevision;4;32
+;lowLevelHmiHwSwRevision;5;32
+;lowLevelHmiHwSwRevision;6;32
+;lowLevelHmiHwSwRevision;7;32
+;ramTestEnable;0;SIL_TEST_ON
+;romTestEnable;0;SIL_TEST_ON
+;cbNvWriteIsActive;0;WRITE_NOT_ACTIVE
+;feNvWriteIsActive;0;WRITE_NOT_ACTIVE
+;vSupplyReadbackEnable;0;SIL_TEST_ON
+;vSupplyReadbackRetry;0;V_SUPPLY_READBACK_RETRY
+;dynamicVariablesCheckEnable;0;SIL_TEST_ON
+;vSupplyReadbackHighThreshold;0;V_SUPPLY_READBACK_HIGH_THRESHOLD
+;vSupplyReadbackLowThreshold;0;V_SUPPLY_READBACK_LOW_THRESHOLD
+;feSerialNumber;0;'A'
+;feSerialNumber;1;'B'
+;feSerialNumber;2;'B'
+;sensorID;0;'A'
+;sensorID;1;'B'
+;sensorID;2;'B'
+;sensorID;3;' '
+;sensorID;4;' '
+;sensorID;5;' '
+;sensorID;6;' '
+;sensorID;7;' '
+;sensorSapErpNo;0;' '
+;sensorSapErpNo;1;' '
+;sensorSapErpNo;2;' '
+;sensorSapErpNo;3;' '
+;sensorSapErpNo;4;' '
+;sensorSapErpNo;5;' '
+;sensorSapErpNo;6;' '
+;sensorSapErpNo;7;' '
+;sensorCalDate;0;'2'
+;sensorCalDate;1;'0'
+;sensorCalDate;2;'1'
+;sensorCalDate;3;'2'
+;sensorCalDate;4;'-'
+;sensorCalDate;5;'0'
+;sensorCalDate;6;'1'
+;sensorCalDate;7;'-'
+;sensorCalDate;8;'0'
+;sensorCalDate;9;'1'
+;sensorCalCertNo;0;'0'
+;sensorCalCertNo;1;'0'
+;sensorCalCertNo;2;'0'
+;sensorCalCertNo;3;'0'
+;sensorCalCertNo;4;'0'
+;sensorCalCertNo;5;'0'
+;sensorCalCertNo;6;'0'
+;sensorCalCertNo;7;'0'
+;sensorCalCertNo;8;'0'
+;sensorCalCertNo;9;'0'
+;phone;0;'+'
+;phone;1;'8'
+;phone;2;'6'
+;phone;3;' '
+;phone;4;'2'
+;phone;5;'1'
+;phone;6;' '
+;phone;7;'8'
+;phone;8;'8'
+;phone;9;'8'
+;phone;10;'8'
+;phone;11;'8'
+;phone;12;'8'
+;phone;13;'8'
+;phone;14;'8'
+;city;0;'S'
+;city;1;'h'
+;city;2;'a'
+;city;3;'n'
+;city;4;'g'
+;city;5;'H'
+;city;6;'a'
+;city;7;'i'
+;street;0;' '
+;street;1;' '
+;street;2;' '
+;street;3;' '
+;street;4;' '
+;street;5;' '
+;street;6;' '
+;street;7;' '
+;manufacturer;0;'A'
+;manufacturer;1;'B'
+;manufacturer;2;'B'
+;manufacturer;3;' '
+;manufacturer;4;' '
+;manufacturer;5;' '
+;manufacturer;6;' '
+;manufacturer;7;' '
+;tranCalCertNo;0;'0'
+;tranCalCertNo;1;'0'
+;tranCalCertNo;2;'0'
+;tranCalCertNo;3;'0'
+;tranCalCertNo;4;'0'
+;tranCalCertNo;5;'0'
+;tranCalCertNo;6;'0'
+;tranCalCertNo;7;'0'
+;tranCalCertNo;8;'0'
+;tranCalCertNo;9;'0'
+;tranCalDate;0;'2'
+;tranCalDate;1;'0'
+;tranCalDate;2;'1'
+;tranCalDate;3;'2'
+;tranCalDate;4;'-'
+;tranCalDate;5;'0'
+;tranCalDate;6;'1'
+;tranCalDate;7;'-'
+;tranCalDate;8;'0'
+;tranCalDate;9;'1'
+;tranSapErpNo;0;'0'
+;tranSapErpNo;1;'0'
+;tranSapErpNo;2;'0'
+;tranSapErpNo;3;'0'
+;tranSapErpNo;4;'0'
+;tranSapErpNo;5;'0'
+;tranSapErpNo;6;'0'
+;tranSapErpNo;7;'0'
+;tranID;0;'0'
+;tranID;1;'0'
+;tranID;2;'0'
+;tranID;3;'0'
+;tranID;4;'0'
+;tranID;5;'0'
+;tranID;6;'0'
+;tranID;7;'0'
+;bootloaderRevision;0;'0'
+;bootloaderRevision;1;'0'
+;bootloaderRevision;2;'.'
+;manufacturer;8;' '
+;manufacturer;9;' '
+;manufacturer;10;' '
+;manufacturer;11;' '
+;manufacturer;12;' '
+;manufacturer;13;' '
+;manufacturer;14;' '
+;manufacturer;15;' '
+;manufacturer;16;' '
+;manufacturer;17;' '
+;manufacturer;18;' '
+;manufacturer;19;' '
+;street;8;' '
+;street;9;' '
+;street;10;' '
+;street;11;' '
+;street;12;' '
+;street;13;' '
+;street;14;' '
+;street;15;' '
+;street;16;' '
+;street;17;' '
+;street;18;' '
+;street;19;' '
+;city;8;' '
+;city;9;' '
+;city;10;' '
+;city;11;' '
+;city;12;' '
+;city;13;' '
+;city;14;' '
+;city;15;' '
+;city;16;' '
+;city;17;' '
+;city;18;' '
+;city;19;' '
+;phone;15;' '
+;phone;16;' '
+;phone;17;' '
+;phone;18;' '
+;phone;19;' '
+;sensorSapErpNo;8;' '
+;sensorSapErpNo;9;' '
+;sensorSapErpNo;10;' '
+;sensorSapErpNo;11;' '
+;sensorSapErpNo;12;' '
+;sensorSapErpNo;13;' '
+;sensorSapErpNo;14;' '
+;sensorSapErpNo;15;' '
+;sensorSapErpNo;16;' '
+;sensorSapErpNo;17;' '
+;sensorSapErpNo;18;' '
+;sensorSapErpNo;19;' '
+;tranSapErpNo;8;' '
+;tranSapErpNo;9;' '
+;tranSapErpNo;10;' '
+;tranSapErpNo;11;' '
+;tranSapErpNo;12;' '
+;tranSapErpNo;13;' '
+;tranSapErpNo;14;' '
+;tranSapErpNo;15;' '
+;tranSapErpNo;16;' '
+;tranSapErpNo;17;' '
+;tranSapErpNo;18;' '
+;tranSapErpNo;19;' '
+;frontendRtc;0;0
+;frontendRtc;1;0
+;frontendRtc;2;0
+;frontendRtc;3;0
+;frontendRtc;4;0
+;autozeroStatus;0;STATUS_NOT_START
+;sensorCalDate;10;'0'
+;sensorCalDate;11;'0'
+;sensorCalCertNo;10;'0'
+;sensorCalCertNo;11;'0'
+;tranCalDate;10;'0'
+;tranCalDate;11;'0'
+;tranCalCertNo;10;'0'
+;tranCalCertNo;11;'0'
+;tranCalLocation;0;'0'
+;tranCalLocation;1;'0'
+;tranCalLocation;2;'0'
+;tranCalLocation;3;'0'
+;tranCalLocation;4;'0'
+;tranCalLocation;5;'0'
+;tranCalLocation;6;'0'
+;tranCalLocation;7;'0'
+;tranCalLocation;8;'0'
+;tranCalLocation;9;'0'
+;tranCalLocation;10;'0'
+;tranCalLocation;11;'0'
+;tranCalLocation;12;'0'
+;tranCalLocation;13;'0'
+;tranCalLocation;14;'0'
+;tranCalLocation;15;'0'
+;tranCalLocation;16;'0'
+;tranCalLocation;17;'0'
+;tranCalLocation;18;'0'
+;tranCalLocation;19;'0'
+;tranCalLocation;20;'0'
+;tranCalLocation;21;'0'
+;tranCalLocation;22;'0'
+;tranCalLocation;23;'0'
+;tranCalLocation;24;'0'
+;tranCalLocation;25;'0'
+;tranCalLocation;26;'0'
+;tranCalLocation;27;'0'
+;tranCalLocation;28;'0'
+;tranCalLocation;29;'0'
+;tranCalLocation;30;'0'
+;tranCalLocation;31;'0'
+;sensorCalLocation;0;'0'
+;sensorCalLocation;1;'0'
+;sensorCalLocation;2;'0'
+;sensorCalLocation;3;'0'
+;sensorCalLocation;4;'0'
+;sensorCalLocation;5;'0'
+;sensorCalLocation;6;'0'
+;sensorCalLocation;7;'0'
+;sensorCalLocation;8;'0'
+;sensorCalLocation;9;'0'
+;sensorCalLocation;10;'0'
+;sensorCalLocation;11;'0'
+;sensorCalLocation;12;'0'
+;sensorCalLocation;13;'0'
+;sensorCalLocation;14;'0'
+;sensorCalLocation;15;'0'
+;sensorCalLocation;16;'0'
+;sensorCalLocation;17;'0'
+;sensorCalLocation;18;'0'
+;sensorCalLocation;19;'0'
+;sensorCalLocation;20;'0'
+;sensorCalLocation;21;'0'
+;sensorCalLocation;22;'0'
+;sensorCalLocation;23;'0'
+;sensorCalLocation;24;'0'
+;sensorCalLocation;25;'0'
+;sensorCalLocation;26;'0'
+;sensorCalLocation;27;'0'
+;sensorCalLocation;28;'0'
+;sensorCalLocation;29;'0'
+;sensorCalLocation;30;'0'
+;sensorCalLocation;31;'0'
+;autoSelfCheckTime;0;525600
+;tranType;0;'0'
+;tranType;1;'0'
+;tranType;2;'0'
+;tranType;3;'0'
+;tranType;4;'0'
+;tranType;5;'0'
+;tranType;6;'0'
+;tranType;7;'0'
+;tranType;8;'0'
+;tranType;9;'0'
+;tranType;10;'0'
+;tranType;11;'0'
+;bootloaderRevision;3;'0'
+;bootloaderRevision;4;'0'
+;elettronicTemperature;0;0
+;elettronicTemperatureDuplicated;0;0
+;alarmTRng;hiLim;85
+;alarmTRng;loLim;-40
+;protectedDataStatus;0;UNPROTECTED
+;hardwareCalibrationLoad;0;CALIBRATION_LOAD
+;protectedDataCrc;0;0
+;sensorCalCertNo;12;'0'
+;sensorCalCertNo;13;'0'
+;sensorCalCertNo;14;'0'
+;sensorCalCertNo;15;'0'
+;sensorCalCertNo;16;'0'
+;sensorCalCertNo;17;'0'
+;sensorCalCertNo;18;'0'
+;sensorCalCertNo;19;'0'
+;tranCalCertNo;12;'0'
+;tranCalCertNo;13;'0'
+;tranCalCertNo;14;'0'
+;tranCalCertNo;15;'0'
+;tranCalCertNo;16;'0'
+;tranCalCertNo;17;'0'
+;tranCalCertNo;18;'0'
+;tranCalCertNo;19;'0'
+;bootloaderRevision;5;'.'
+;bootloaderRevision;6;'0'
+;bootloaderRevision;7;'4'
+;sensorLocationTag;0;'0'
+;sensorLocationTag;1;'0'
+;sensorLocationTag;2;'0'
+;sensorLocationTag;3;'0'
+;sensorLocationTag;4;'0'
+;sensorLocationTag;5;'0'
+;sensorLocationTag;6;'0'
+;sensorLocationTag;7;'0'
+;sensorLocationTag;8;'0'
+;sensorLocationTag;9;'0'
+;sensorLocationTag;10;'0'
+;sensorLocationTag;11;'0'
+;sensorLocationTag;12;'0'
+;sensorLocationTag;13;'0'
+;sensorLocationTag;14;'0'
+;sensorLocationTag;15;'0'
+;sensorLocationTag;16;'0'
+;sensorLocationTag;17;'0'
+;sensorLocationTag;18;'0'
+;sensorLocationTag;19;'0'
+;sensoTag;0;'0'
+;sensoTag;1;'0'
+;sensoTag;2;'0'
+;sensoTag;3;'0'
+;sensoTag;4;'0'
+;sensoTag;5;'0'
+;sensoTag;6;'0'
+;sensoTag;7;'0'
+;sensoTag;8;'0'
+;sensoTag;9;'0'
+;sensoTag;10;'0'
+;sensoTag;11;'0'
+;sensoTag;12;'0'
+;sensoTag;13;'0'
+;sensoTag;14;'0'
+;sensoTag;15;'0'
+;sensoTag;16;'0'
+;sensoTag;17;'0'
+;sensoTag;18;'0'
+;sensoTag;19;'0'
+;softwareMainRevision;0;0
+;hardwareMainRevision;0;0
+;snrThreshold;0;-50
+;swRevisionHmi_transmitter;0;'0'
+;swRevisionHmi_transmitter;1;'0'
+;swRevisionHmi_transmitter;2;'.'
+;swRevisionHmi_transmitter;3;'0'
+;swRevisionHmi_transmitter;4;'0'
+;swRevisionHmi_transmitter;5;'.'
+;swRevisionHmi_transmitter;6;'0'
+;swRevisionHmi_transmitter;7;'0'
+;hwRevisionHmi_transmitter;0;'0'
+;hwRevisionHmi_transmitter;1;'0'
+;hwRevisionHmi_transmitter;2;'.'
+;hwRevisionHmi_transmitter;3;'0'
+;hwRevisionHmi_transmitter;4;'0'
+;hwRevisionHmi_transmitter;5;'.'
+;hwRevisionHmi_transmitter;6;'0'
+;hwRevisionHmi_transmitter;7;'0'
+;swRevisionHmi_fe;0;'0'
+;swRevisionHmi_fe;1;'0'
+;swRevisionHmi_fe;2;'.'
+;swRevisionHmi_fe;3;'0'
+;swRevisionHmi_fe;4;'0'
+;swRevisionHmi_fe;5;'.'
+;swRevisionHmi_fe;6;'0'
+;swRevisionHmi_fe;7;'0'
+;hwRevisionHmi_fe;0;'0'
+;hwRevisionHmi_fe;1;'0'
+;hwRevisionHmi_fe;2;'.'
+;hwRevisionHmi_fe;3;'0'
+;hwRevisionHmi_fe;4;'0'
+;hwRevisionHmi_fe;5;'.'
+;hwRevisionHmi_fe;6;'0'
+;hwRevisionHmi_fe;7;'0'
+;hardwareRevision;0;1
+;hardwareRevision;1;0
+;hardwareRevision;2;0
+;T_UnitCode;0;CELSIUS
+;softwareRevision;0;SW_REV0
+;softwareRevision;1;SW_REV1
+;softwareRevision;2;SW_REV2
+;tranSapErpNoChangeFlag;0;0
+;elettronicTemperature_Obj;unit;CELSIUS
+;elettronicTemperature_Obj;type;T_TEMPERATURE
+;elettronicTemperature_Obj;value_0;0.0f
+;elettronicTemperature_Obj;value_1;
+;elettronicTemperature_Obj;value_2;
+;elettronicTemperature_Obj;value_3;
+;elettronicTemperature_Obj;value_4;
+;elettronicTemperature_Obj;value_5;
+;elettronicTemperature_Obj;value_6;
+;elettronicTemperature_Obj;value_7;
+;elettronicTemperature_Obj;value_8;
+;elettronicTemperature_Obj;value_9;
+;elettronicTemperature_Obj;value_10;
+;elettronicTemperature_Obj;value_11;
+;elettronicTemperature_Obj;value_12;
+;elettronicTemperature_Obj;value_13;
+;elettronicTemperature_Obj;value_14;
+;elettronicTemperature_Obj;value_15;
+;elettronicTemperature_Obj;value_16;
+;elettronicTemperature_Obj;value_17;
+;elettronicTemperature_Obj;value_18;
+;elettronicTemperature_Obj;value_19;
+;elettronicTemperature_Obj;value_20;
+;elettronicTemperatureSimulation_Obj;unit;CELSIUS
+;elettronicTemperatureSimulation_Obj;type;T_TEMPERATURE
+;elettronicTemperatureSimulation_Obj;value_0;0.0f
+;elettronicTemperatureSimulation_Obj;value_1;
+;elettronicTemperatureSimulation_Obj;value_2;
+;elettronicTemperatureSimulation_Obj;value_3;
+;elettronicTemperatureSimulation_Obj;value_4;
+;elettronicTemperatureSimulation_Obj;value_5;
+;elettronicTemperatureSimulation_Obj;value_6;
+;elettronicTemperatureSimulation_Obj;value_7;
+;elettronicTemperatureSimulation_Obj;value_8;
+;elettronicTemperatureSimulation_Obj;value_9;
+;elettronicTemperatureSimulation_Obj;value_10;
+;elettronicTemperatureSimulation_Obj;value_11;
+;elettronicTemperatureSimulation_Obj;value_12;
+;elettronicTemperatureSimulation_Obj;value_13;
+;elettronicTemperatureSimulation_Obj;value_14;
+;elettronicTemperatureSimulation_Obj;value_15;
+;elettronicTemperatureSimulation_Obj;value_16;
+;elettronicTemperatureSimulation_Obj;value_17;
+;elettronicTemperatureSimulation_Obj;value_18;
+;elettronicTemperatureSimulation_Obj;value_19;
+;elettronicTemperatureSimulation_Obj;value_20;
+;ambientTemperatureMax_obj;unit;T_TEMPERATURE
+;ambientTemperatureMax_obj;type;CELSIUS
+;ambientTemperatureMax_obj;value_0;0.0f
+;ambientTemperatureMax_obj;value_1;
+;ambientTemperatureMax_obj;value_2;
+;ambientTemperatureMax_obj;value_3;
+;ambientTemperatureMax_obj;value_4;
+;ambientTemperatureMax_obj;value_5;
+;ambientTemperatureMax_obj;value_6;
+;ambientTemperatureMax_obj;value_7;
+;ambientTemperatureMax_obj;value_8;
+;ambientTemperatureMax_obj;value_9;
+;ambientTemperatureMax_obj;value_10;
+;ambientTemperatureMax_obj;value_11;
+;ambientTemperatureMax_obj;value_12;
+;ambientTemperatureMax_obj;value_13;
+;ambientTemperatureMax_obj;value_14;
+;ambientTemperatureMax_obj;value_15;
+;ambientTemperatureMax_obj;value_16;
+;ambientTemperatureMax_obj;value_17;
+;ambientTemperatureMax_obj;value_18;
+;ambientTemperatureMax_obj;value_19;
+;ambientTemperatureMax_obj;value_20;
+;ambientTemperatureMax;0;-40
+;elettronicTemperatureSimulation;0;0.0f
+;acttelettronicTemperature;0;0.0f
+;acttelettronicTemperature_obj;unit;T_TEMPERATURE
+;acttelettronicTemperature_obj;type;CELSIUS
+;acttelettronicTemperature_obj;value_0;0.0f
+;acttelettronicTemperature_obj;value_1;
+;acttelettronicTemperature_obj;value_2;
+;acttelettronicTemperature_obj;value_3;
+;acttelettronicTemperature_obj;value_4;
+;acttelettronicTemperature_obj;value_5;
+;acttelettronicTemperature_obj;value_6;
+;acttelettronicTemperature_obj;value_7;
+;acttelettronicTemperature_obj;value_8;
+;acttelettronicTemperature_obj;value_9;
+;acttelettronicTemperature_obj;value_10;
+;acttelettronicTemperature_obj;value_11;
+;acttelettronicTemperature_obj;value_12;
+;acttelettronicTemperature_obj;value_13;
+;acttelettronicTemperature_obj;value_14;
+;acttelettronicTemperature_obj;value_15;
+;acttelettronicTemperature_obj;value_16;
+;acttelettronicTemperature_obj;value_17;
+;acttelettronicTemperature_obj;value_18;
+;acttelettronicTemperature_obj;value_19;
+;acttelettronicTemperature_obj;value_20;
+;switchBLE;0;BLE_TOOTH_ON
+;modeLCDLight;0;LIGHT_DYNAMIC
+;configDataCheck;0;ROM_CHECK_VALUE_CONFIG
