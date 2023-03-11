@@ -1,0 +1,83 @@
+=============================================================================================
+>>>>>>>>>>>>>>>>>>>>	                 ABB Entry Tool                  <<<<<<<<<<<<<<<<<<<<
+=============================================================================================
+
+Current Release :   Version: 1.1.2
+===============
+					
+Notes           :   Entry Tool for the ABB Common Framework
+=====              
+                   
+Change History
+==============
+
+Entry Tool Version 1.1.2
+--------------------------
+  2008/01/10	
+- solved Bug: The HartCmdDescriber does not show vlaues for double define defines  
+
+Entry Tool Version 1.1.1
+--------------------------
+  2008/01/10	
+- solved Bug: The HartCmdDescriber the value for the objects not in the right form  
+
+Entry Tool Version 1.1.0
+--------------------------
+  2007/11/09	
+- solved Bug: The HartCmdDescriber shows the unit enumeration's twice  
+
+
+Entry Tool Version 1.0.9
+--------------------------
+- implement Suggestion: The HartCmdDescriber should show the object count number 
+
+Entry Tool Version 1.0.8
+--------------------------
+- implement Suggestion: The HartCmdDescriber should show the values of the objects attributes  
+
+Entry Tool Version 1.0.7
+--------------------------
+- implement Suggestion: The HartCmdDescriber should show the value of the enumaration entries  
+
+Entry Tool Version 1.0.6
+--------------------------
+- implement Suggestion: The HartCmdDescriber proviedes the Min/Max Information for Subsytsem Objects  
+
+Entry Tool Version 1.0.5
+--------------------------
+- solved Bug: entryTool_33 (Display Values for Object do not show all object attributes) 
+
+Entry Tool Version 1.0.4
+--------------------------
+- solved Bug: entryTool_27 (The entry tool does not allow to select ""(nothing) as attribute for an object in the Hart_Cmd_definion.csv).
+- solved Bug: the subsystem_descriptor.csv file contains not only the objects attribute name (e.g.:	"attributeName" ("attributeType")).
+
+Entry Tool Version 1.0.3
+--------------------------
+- information: 	This Version requires HartGen Build 8.
+                Some changes has to be done for the HART_Cmd_Definition.csv file:
+                Rename Rows:    - "NO" (in the Column "convertASCII") to "NONE"
+                                - "YES"	(in the Column "convertASCII") to "PASC_ASC"
+                Rename Column: "convertASCII" to "conversion" 
+
+- implement Suggestion: entryTool_7 (The entry tool should show the actual type of each descriptor attribute 
+  when entering values via "Descriptor value for object")  
+- implement Suggestion:	The Column "attribute" in the HartCommandDescrition View should display numbers for ArrayTypes.
+- implement Suggestion: The Column "conversion" in the HartCommandDescrition should be writeable
+- implement Suggestion: New Attribute in the Column "conversion" --> "UNIT"
+
+Entry Tool Version 1.0.2
+--------------------------
+- implement Suggestion: The Entry Tool should generate a Hart Command Description
+- info: the HartCmdDescriber.dll shall stand in the same path as the EntryTool.exe
+
+Entry Tool Version 1.0.1
+--------------------------
+- solved Bug: entryTool_6 (Problem with the searching of T_DATA_OBJECTs)
+- solved Bug: If the oP.xml file is write protected then the Entry Tool produce an unhandeld exception
+- implement Suggestion: OK-Button for the Brief Description Window
+- implement Suggestion: Changed names e.g: "BriefDescription" --> "Brief Description", "DisplayFormat" --> "Display Format"
+- solved Bug: entryTool_8 - After changing in the Subsystem "HART" an object name (also after deleting the whole object), 
+  changes regarding these object are not applied to the _defaults.csv, _constructor.csv, _display.csv 
+- solved Bug: Changed the naming convention from the Hart Subsystem (Camel Convention)
+- solved Bug: Window for Object Descriptors is too small, the user could not see all Descriptor entries, if the entriy count is bigger that 9

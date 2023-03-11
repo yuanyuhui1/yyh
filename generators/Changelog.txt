@@ -1,0 +1,77 @@
+2.1.1 Build 12
+--------------
+-solves Bug subGen_23 (Naming arrays of enumeration codes)
+ to fix the bug in an already generated subsystem delete file "interface/subsystem.h" and regenerate Subsystem
+
+
+2.1.1 Build 11
+--------------
+-hotfix for EMF project: Tables are not declared static anymore
+
+
+2.1.1 Build 10
+--------------
+-solves Bug subGen_24 (The code generated for a subsystem is wrong in subsystem.h in "define a macro to ease access" part)
+ to fix the bug in an already generated subsystem delete file "interface/subsystem.h" and regenerate Subsystem
+
+
+2.1.1 Build 9
+-------------
+-removed bug with naming of recursive DEFINES
+-shared Descriptors are named sharedTypeDescriptorX with Type beiing the appropiate type of the descriptor
+-removed a bug when a generated table got no type name
+-solves Bug subGen_16 (No void type is added if no type is specified for a function parameter type)
+-solves Bug subGen_15 (Subsystem Code Generator appends subsystem name to all definitions)
+
+
+
+2.1.1 Build 8
+-------------
+-corrected some typos in the subGen template files
+-solves Bug frw_50 (DefaultSubsystemFrame: frame_idx.h: checked and set #define is different)
+-solves Bug frw_13 (SubSystem Identification)
+-solves Bug subGen_9 (unhandled exception in Subsystem Code Generator)
+-solves Bug subGen_11 (Subsystem Code Generator Defines Handling)
+-code improvement: subGen shares descriptors among several T_DATA_OBJECTs if their descriptors are equal
+-Tables for descriptors are declared static, too
+
+
+
+2.1.1 Build 7
+-------------
+-Descriptors are declared static
+
+2.1.1 Build 6
+-------------
+-Improved naming convention (uppercase/lowercase) in Subsystems.
+-Subsystems generated with release 5 or before may require manual touching 
+ (templates in the source files have been changed)
+
+-Porting source code to Build 6:
+ Regenerate the subsystem from scratch with the new release of subgen.
+ It is suggested to make a backup copy of the subsystem, delete the .c and .h files and regenerate the subsystem.
+ Then, copy the parts of code that have been written manually (execute methods and the like) to the newly generated source.
+   
+
+
+2.1.1 Build 5
+-------------
+-look up defines in defines.csv for default and descriptor data
+
+
+2.1.1 Build 4
+-------------
+-better error handling for missing 'storage qualifier' and 'descriptor data' 
+
+
+2.1.1 Build 3
+-------------
+
+-solved Bug frw_41 (SubGen behaviour improvement)
+-solved Bug frw_26 (missing warning in subgen)
+-updated to new CSV requirements specification
+
+
+2.1.1 Build 1
+-------------
+-initial release for Framework 2.1.1

@@ -1,0 +1,537 @@
+reserved;object;attribute;briefDescription;displayFormat;subsystem;definition
+;diagnosis;;Diagnosis of current_Out;BITENUMERATION;CURR;_DIAG
+;actualOutputValue;;Actual current in milliamperes;NUMERIC;CURR;
+;pwmRawValue;;Raw value of current_Out;NUMERIC;CURR;
+;fixedOutputValue;;Enter or leave simulation of current_Out;NUMERIC;CURR;
+;loopCurrentMode;;Select wheter the loopcurrent is active (normal 4 to 20 mA) or constant  (multidrop);ENUMERATION;CURR;_LOOP_MODE
+;alarmSelection;;Select which value has to be used for the alarm-state;ENUMERATION;CURR;_ALARM_SELECT
+;alarmLowValue;;Value for the alarm-state Low ( e.g. 3.6mA );NUMERIC;CURR;
+;alarmHighValue;;Value for the alarm-state High ( e.g. 22mA );NUMERIC;CURR;
+;spanLimitLowValue;;Lower limit for the signaling-range in normal-operation ( e.g. 3.8mA );NUMERIC;CURR;
+;spanLimitHighValue;;Upper limit for the signaling-range in normal-operation ( e.g. 20.5mA );NUMERIC;CURR;
+;swWriteProtection;;;NUMERIC;ElettronicServices;
+;StartSelfTest;;Starts self test;ACTION;HART;
+;FormatEEPROM;;Format whole device (NVOL memory);ACTION;HART;
+;BurnFactoryDefaultData;;Burn data as factory defaults in NV;ACTION;HART;
+;bolDeviceIsBusy;;Internal information for status;NUMERIC;HART;
+;dummy_254;;Fixed to 254;NUMERIC;HART;
+;dummy_0;;Not used (Value = 0);NUMERIC;HART;
+;burstModeSelectCode;;Burst Mode Control;NUMERIC;HART;BurstModeEnumTable
+;bitRateCode;;Bit rate code;NUMERIC;HART;
+;hwWriteProtection;;Write protect code;ENUMERATION;HART;WriteProtectionEnumTable
+;mfrId;;Manufacturer Identification Code 0x1A or ABB;NUMERIC;HART;
+;mfrDeviceType;;Device Type 0x8C for Rainbow SE;NUMERIC;HART;
+;numberRquestPream;;Min Number Request Preambles;NUMERIC;HART;
+;univCmdRev;;Universal Command Major Revision Number;NUMERIC;HART;
+;transSpecRev;;Device Revision Level;NUMERIC;HART;
+;flags;;Fixed to 1;NUMERIC;HART;
+;operMode;;Device Operating Mode (Rainbow SE fixed to 0=Normal Mode);NUMERIC;HART;
+;configurationFlags;;Configuration Flag 1 and 2;NUMERIC;HART;
+;numberRespPream;;Write Number of Response Preambles;NUMERIC;HART;
+;burstCmdNumber;;burst command number;ENUMERATION;HART;BurstCmdNumberHARTEnumTable
+;burstSlot0;;Burst Slot 0;NUMERIC;HART;
+;burstSlot1;;Burst Slot 1;NUMERIC;HART;
+;burstSlot2;;Burst Slot 2;NUMERIC;HART;
+;burstSlot3;;Burst Slot 3;NUMERIC;HART;
+;tag;;Device-Tag;NUMERIC;HART;
+;deviceMessage;;Device Message as 24 byte PASCII character;STRING;HART;
+;finalAssyNumber;;Final Assembly Number;NUMERIC;HART;
+;writeProtection;;Lock/Unlock Write Protection (1 = locked);ENUMERATION;HART;
+;descriptor;;Descriptor;STRING;HART;
+;deviceIdNumber;;Device identification number;NUMERIC;HART;
+;deviceInstallDate;;Installation date;NUMERIC;HART;
+;extendedFieldDevStatus;;Extended Field Device Status;NUMERIC;HART;
+;slot0;;Slot 0;NUMERIC;HART;
+;slot1;;Slot 1;NUMERIC;HART;
+;slot2;;Slot 2;NUMERIC;HART;
+;slot3;;Slot 3;NUMERIC;HART;
+;reserved;;Reserved;NUMERIC;HART;
+;extentionByte254;;;;HART;
+;language;;Enumeration - Defines the language used;ENUMERATION;Hmi;_LANGUAGE
+;mainOperatorView_1_1;;Signal to be displayed on 1st line of 1st operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_2;;Signal to be displayed on 2nd line of 1st operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_3;;Signal to be displayed on 3rd line of 1st operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_bargraph;;Signal to be displayed on bargraph of 1st operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_1;;Signal to be displayed on 1st line of 2nd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_2;;Signal to be displayed on 2nd line of 2nd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_3;;Signal to be displayed on 3rd line of 2nd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_bargraph;;Signal to be displayed on bargraph of 2nd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_1;;Signal to be displayed on 1st line of 3rd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_2;;Signal to be displayed on 2nd line of 3rd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_3;;Signal to be displayed on 3rd line of 3rd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_bargraph;;Signal to be displayed on bargraph of 3rd operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_bargraph;;Signal to be displayed on bargraph of 4th operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_1;;Signal to be displayed on 1st line of 4th operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_2;;Signal to be displayed on 2nd line of 4th operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_3;;Signal to be displayed on 3rd line of 4th operator page;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;contrast;;Display Contrast (0..100%);NUMERIC;Hmi;
+;localOperationEnable;;Defines if HMI is allowed to make changes to parameter values;;Hmi;
+;displayMode_1;;Display format for operator page 1;ENUMERATION;Hmi;_DISPLAY_MODE
+;displayMode_2;;Display format for operator page 2;ENUMERATION;Hmi;_DISPLAY_MODE
+;displayMode_3;;Display format for operator page 3;ENUMERATION;Hmi;_DISPLAY_MODE
+;displayMode_4;;Display format for operator page 4;ENUMERATION;Hmi;_DISPLAY_MODE
+;autoscrollEnable;;Autoscroll on/off - used when multiple operator pages are available;ENUMERATION;Hmi;_AUTOSCROLL
+;lowLevelSoftwareRevision;;Software revision of low level HMI component;NUMERIC;Hmi;
+;defaultContrast;;Default contrast setting for display glass;NUMERIC;Hmi;
+;diagnosisView;;Signal to be displayed in signal view (diagnostics) frame;ENUMERATION;Hmi;_MAIN_OPERATOR_VIEW
+;customDP_1;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_2;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_3;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_4;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_5;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_6;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_7;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_8;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_9;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_10;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;customDP_11;;Custom number of decimal places;ENUMERATION;Hmi;_CUSTOM_DP
+;Password;;String entered at "Enter Password" for comparison with ARM security passwords;ASCII;Hmi;
+;SetPassword_StandardLevel;;Used by the HMI user to set a new standard level password;ASCII;Hmi;
+;SetPassword_AdvancedLevel;;Used by the HMI user to set a new advanced level password;ASCII;Hmi;
+;SetPassword_ServiceLevel;;Used by the HMI user to set a new service level password;ASCII;Hmi;
+;SetPassword_StandardLevelDefault;;Used by the HMI user to set a new default password for standard level;ASCII;Hmi;
+;SetPassword_AdvancedLevelDefault;;Used by the HMI user to set a new default password for Advanced level;ASCII;Hmi;
+;SetPassword_ServiceLevelDefault;;Used by the HMI user to set a new default password for Service level;ASCII;Hmi;
+;DateFormat;;Defines the way in which dates are represented on the HMI.;ENUMERATION;Hmi;_DATE_FORMAT
+;displayTest;;Action Object - used to start display test;ACTION;Hmi;
+;primaryValueCommunicationTransferFunction;;transfer function table;ENUMERATION;Mapper;transferFunctionTable
+;primaryValueMapping;;primary value mapping enumeration table;ENUMERATION;Mapper;primaryValueMappingEnumTable
+;secondaryValueMapping;;secondary value mapping enumeration table;ENUMERATION;Mapper;secondaryValueMappingEnumTable
+;tertiaryValueMapping;;tertiary value mapping enumeration table;ENUMERATION;Mapper;tertiaryValueMappingEnumTable
+;quaternaryValueMapping;;quaternary value mapping enumeration table;ENUMERATION;Mapper;quaternaryValueMappingEnumTable
+;primaryValueUnit;;Primary value hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;primaryValueHmiTransferFunction;;transfer function table;ENUMERATION;Mapper;transferFunctionTable
+;primaryValueHmiScaleOut;unit;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;primaryValueHmiScaleOut;hiLim;;;Mapper;
+;primaryValueHmiScaleOut;loLim;;;Mapper;
+;primaryValueScaleIn;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;primaryValueScaleIn;hiLim;;;Mapper;
+;primaryValueScaleIn;loLim;;;Mapper;
+;secondaryValueUnit;;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;tertiaryValueUnit;;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;quaternaryValueUnit;;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;deviceVariablePrimaryValueCode;;device variable primary value code table;ENUMERATION;Mapper;deviceVariablePrimaryValueCodeTable
+;deviceVariableGenericCode;;device variable code table;ENUMERATION;Mapper;deviceVariableCodeTable
+;deviceVariableSensorLimit;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;deviceVariableSensorLimit;hiLim;;;Mapper;
+;deviceVariableSensorLimit;loLim;;;Mapper;
+;pdpScaleIn;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;pdpScaleIn;hiLim;;;Mapper;
+;pdpScaleIn;loLim;;;Mapper;
+;pdpBias;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;pdpBias;value;;;Mapper;
+;pdpLowSensorTrimming;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;pdpLowSensorTrimming;value;;;Mapper;
+;pdpHighSensorTrimming;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;pdpHighSensorTrimming;value;;;Mapper;
+;pdpCommunicationScaleOut;unit;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;pdpCommunicationScaleOut;hiLim;;;Mapper;
+;pdpCommunicationScaleOut;loLim;;;Mapper;
+;staticPressureScaleIn;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;staticPressureScaleIn;hiLim;;;Mapper;
+;staticPressureScaleIn;loLim;;;Mapper;
+;staticPressureBias;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;staticPressureBias;value;;;Mapper;
+;staticPressureLowSensorTrimming;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;staticPressureLowSensorTrimming;value;;;Mapper;
+;staticPressureHighSensorTrimming;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;staticPressureHighSensorTrimming;value;;;Mapper;
+;staticPressureCommunicationScaleOut;unit;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;staticPressureCommunicationScaleOut;hiLim;;;Mapper;
+;staticPressureCommunicationScaleOut;loLim;;;Mapper;
+;sensorTemperatureUnit;;hart temperature unit table;ENUMERATION;Mapper;hartTemperatureUnitTable
+;sensorTemperatureLowSensorTrimming;unit;hart temperature unit table;ENUMERATION;Mapper;hartTemperatureUnitTable
+;sensorTemperatureLowSensorTrimming;value;;;Mapper;
+;hmiPdPScaleOut;unit;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;hmiPdPScaleOut;hiLim;;;Mapper;
+;hmiPdPScaleOut;loLim;;;Mapper;
+;hmiStaticPressureScaleOut;unit;hart flow unit table;ENUMERATION;Mapper;hartFlowUnitTable
+;hmiStaticPressureScaleOut;hiLim;;;Mapper;
+;hmiStaticPressureScaleOut;loLim;;;Mapper;
+;setPdpValueToInputValue;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;setPdpValueToInputValue;value;;;Mapper;
+;setStaticPressureValueToInputValue;unit;hart pressure unit table;ENUMERATION;Mapper;hartPressureUnitTable
+;setStaticPressureValueToInputValue;value;;;Mapper;
+;currentOutFailSafeType;;fail safe type table;ENUMERATION;Mapper;currentOutFailSafeTypeTable
+;deviceVariableUnitsCode;;All units;ENUMERATION;Mapper;hartAllUnitTable
+;primaryValue;;Primary Value;NUMERIC;Mapper;
+;sensorTemperatureInputValue;;Input Sensor Temperature;NUMERIC;PdP;
+;sensorTemperatureUnitValue;;Sensor Temperature with Unit;NUMERIC;PdP;
+;pdpOutputTransferFunction;;Transfer Function;PASCII;PdP;TransferFunctionTable
+;linearizationPoint;;LinearPoint;NUMERIC;PdP;
+;staticPressureBias;;Static Pressure Bias;NUMERIC;PdP;
+;staticPressureCustomerMaxValue;;Maximum Static Pressure;NUMERIC;PdP;
+;staticPressureServiceMaxValue;;Maximum Static Pressure Service Value;NUMERIC;PdP;
+;pdpInputValue;;PdP input from Sensor Interface;NUMERIC;PdP;
+;staticPressureInputValue;;SP  Input from sensor interface;NUMERIC;PdP;
+;staticPressureUnitValue;;SP Value after Unit selection;NUMERIC;PdP;
+;pdpScaleInValue;;PdP after Ranging.;NUMERIC;PdP;
+;staticPressureScaleInValue;;PdP after Ranging;NUMERIC;PdP;
+;communicationScaleOutValue;;PdP/SP Value after Scaleout for Comn;NUMERIC;PdP;
+;sensorTemperatureCustomerMaxMinValues;hiLim;Maximum Static temperature Customer Value;NUMERIC;PdP;
+;sensorTemperatureCustomerMaxMinValues;loLim;Minimum Static temperature Customer Value;NUMERIC;PdP;
+;sensorTemperatureServiceMaxMinValues;hiLim;Maximum Static temperature Service Value;NUMERIC;PdP;
+;sensorTemperatureServiceMaxMinValues;loLim;Minimum Static temperature Service Value;NUMERIC;PdP;
+;pdpCustomerMaxMinValues;hiLim;Maximum Pressure/differential Pressure Customer Value;NUMERIC;PdP;
+;pdpCustomerMaxMinValues;loLim;Minimum Pressure/differential Pressure Customer Value;NUMERIC;PdP;
+;pdpServiceMaxMinValues;hiLim;Maximum Pressure/differential Pressure Service Value;NUMERIC;PdP;
+;pdpServiceMaxMinValues;loLim;Minimum Pressure/differential Pressure Service Value;NUMERIC;PdP;
+;pdpHmiTransferFunction;;Output Transfer Function Selection;ASCII;PdP;TransferFunctionTable
+;hmiPdpScaleOut;unit;Output Scale Unit;ASCII;PdP;
+;hmiPdpScaleOut;hiLim;Output Scale for Display Range Maximum Value;NUMERIC;PdP;
+;hmiPdpScaleOut;loLim;Output Scale for Display Range Maximum Value;NUMERIC;PdP;
+;communicationPdPScaleOutFreeUnitText;;Free Text Unit associated with output;ASCII;PdP;
+;hmiScaleOutValue;;PdP/SP Value after Scaleout for Display;NUMERIC;PdP;
+;communicationPercentOutputValue;;Output PdP/SP value in % for Commn and Currentout.;NUMERIC;PdP;
+;hmiPercentOutputValue;;Output PdP/SP value in % for Display.;NUMERIC;PdP;
+;setPdpToInputValue;unit;PV bias Input Value Unit;ASCII;PdP;p_dpUnitTable
+;setPdpToInputValue;value;Set PV bias  Input Value;NUMERIC;PdP;
+;tableActualNumber;;Actual Number of entries in the linear table;NUMERIC;PdP;
+;tableMaxNumber;;Maximum size of the Linear Table;NUMERIC;PdP;
+;tableMinNumber;;Minimum size of the Linear Table;NUMERIC;PdP;
+;tableOperationalCode;;Linear Table OpCode;NUMERIC;PdP;
+;tableStatus;;Linear Table Status;NUMERIC;PdP;
+;tableEntry;;Linear Table Entry;NUMERIC;PdP;
+;tableXYValue;;TabXYValue contains one value couple (x,y) of the Linear Table.;NUMERIC;PdP;
+;pdpDamping;;Damping Filter Time constant for PdP;NUMERIC;PdP;
+;staticPressureDamping;;Damping Filter Time constant for SP;NUMERIC;PdP;
+;pdpSimulation;;Simulation value for PdP;NUMERIC;PdP;
+;staticPressureSimulation;;Simulation value for SP;NUMERIC;PdP;
+;sensorTemperatureSimulation;;Simulation value for ST;NUMERIC;PdP;
+;pdpCommunicationScaleOut;unit;;;PdP;
+;pdpCommunicationScaleOut;hiLim;;;PdP;
+;pdpCommunicationScaleOut;loLim;;;PdP;
+;activationStatus;;Activation Status;;ServicePort;
+;deviceIdNumber;;Device ID number;;ServicePort;
+;mfrID;;Manufacture ID;;ServicePort;
+;univCmdRevision;;Universal Command Revision;;ServicePort;
+;flags;;Flags;;ServicePort;
+;tProcUnitVal;;Process Temperature Output  after Unit Selection;NUMERIC;T_Proc;
+;tProcBias;;Process Temperature Bias (offset) value;NUMERIC;T_Proc;
+;tProcScaleInVal;;Tproc after Ranging. It is associated with URV and LRV;NUMERIC;T_Proc;
+;offNcRes;;Hardware dependent Offset for  calculation of not compensated resistor value;NUMERIC;T_Proc;
+;mulNcRes;;Hardware dependent Span for  calculation of not compensated resistor value;NUMERIC;T_Proc;
+;compWire;;Compensation value for 2 or 3 wire connection;NUMERIC;T_Proc;
+;tProcCalibVal;;Calibrated Process Temperature Value;NUMERIC;T_Proc;
+;tProcScaleInSpare;;Tproc ScaleInSpare;NUMERIC;T_Proc;
+;tProcMinSpan;;Tproc Minimum Span;NUMERIC;T_Proc;
+;resetMinMaxCusValues;;Reset Min Max Customer Values to default values: hiLim  = -FLT_MAX loLim = FLT_MAX;NUMERIC;T_Proc;
+;resetMinMaxSerValues;;Reset Min Max Service Values to default values( hiLim  = -FLT_MAX loLim = FLT_MAX )if the value != 0.;NUMERIC;T_Proc;
+;resetTprocBias;;Reset Process Temperature Bias, if Value != 0.;NUMERIC;T_Proc;
+;maxMinTprocCus;hiLim;MAx Tproc_Cus value;NUMERIC;T_Proc;
+;maxMinTprocCus;loLim;Min Tproc_Cus value;NUMERIC;T_Proc;
+;maxMinTprocSer;hiLim;Max Tproc_Ser value;NUMERIC;T_Proc;
+;maxMinTprocSer;loLim;Min Tproc_Ser value;NUMERIC;T_Proc;
+;calPointHiLo;hiLim;Tproc Calibration Hi point;NUMERIC;T_Proc;
+;calPointHiLo;loLim;Tproc Calibration Lo point;NUMERIC;T_Proc;
+;unCalPointHiLo;hiLim;Tproc Uncalibrated point hi;NUMERIC;T_Proc;
+;unCalPointHiLo;loLim;Tproc Uncalibrated point low;NUMERIC;T_Proc;
+;tProcURLLRL;hiLim;Tproc URL;NUMERIC;T_Proc;
+;tProcURLLRL;loLim;Tproc_LRL;NUMERIC;T_Proc;
+;adcOfstVal;;Tproc ADC Offset Register Value;NUMERIC;T_Proc;
+;adcFulSclVal;;Tproc ADC Full-Scale Register Value;NUMERIC;T_Proc;
+;tProcAlarm;;T_Proc Subsystem Alarm;NUMERIC;T_Proc;TProcAlarmCodes
+;tProcFiltTimeConst;;Damping Filter Time constant for Tproc;NUMERIC;T_Proc;
+;tProcSimEna;;Enable/Disable Tproc Simulation;NUMERIC;T_Proc;
+;tProcSimVal;;Simulation value for TProc;;T_Proc;
+;sensConNumWire;;No of wire attached to sensor. Used for Compensated resistor value Calculation.  0-  Two-Wire, 1- Three-Wire, 2- Four-Wire.;NUMERIC;T_Proc;NumWireSensorConTable
+;tProcBiasedVal;;Biased Tproc Value for flow calculation.;NUMERIC;T_Proc;
+;adcRegVal;;ADC Register Value for testing;NUMERIC;T_Proc;
+;adcRegAddr;;ADC register Address for testing;NUMERIC;T_Proc;
+;resetAdc;;Reset ADC, if Value != 0.;NUMERIC;T_Proc;
+reserved;definition;name;value;subsystem;briefDesciption
+;_LOOP_MODE;LOOP_MODE_ENABLED;0;CURR;Normal mode
+;_LOOP_MODE;LOOP_MODE_DISABLED;1;CURR;Fixed mode ( e.g. Multidrop )
+;_LOOP_MODE;LOOP_MODE_SIZE;2;CURR;Size
+;_ALARM_SELECT;ALARM_SELECT_HI;0;CURR;for alarmSelection
+;_ALARM_SELECT;ALARM_SELECT_LO;1;CURR;for alarmSelection
+;_ALARM_SELECT;ALARM_SELECT_SIZE;2;CURR;Size
+
+;_LANGUAGE;LANGUAGE_ENGLISH;0;Hmi;English
+;_LANGUAGE;LANGUAGE_GERMAN;1;Hmi;German
+;_LANGUAGE;LANGUAGE_FRENCH;2;Hmi;French
+;_LANGUAGE;LANGUAGE_SPANISH;3;Hmi;Spanish
+;_LANGUAGE;LANGUAGE_ITALIAN;4;Hmi;Italian
+;_LANGUAGE;LANGUAGE_DUTCH;5;Hmi;Dutch
+;_LANGUAGE;LANGUAGE_DANISH;6;Hmi;Danish
+;_LANGUAGE;LANGUAGE_SWEDISH;7;Hmi;Swedish
+;_LANGUAGE;LANGUAGE_FINNISH;8;Hmi;Finnish
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_1;0;Hmi;1st signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_2;1;Hmi;2nd signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_3;2;Hmi;3rd signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_4;3;Hmi;4th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_5;4;Hmi;5th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_6;5;Hmi;6th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_7;6;Hmi;7th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_8;7;Hmi;8th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_9;8;Hmi;9th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_10;9;Hmi;10th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_11;10;Hmi;11th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_12;11;Hmi;12th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_13;12;Hmi;13th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_14;13;Hmi;14th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_15;14;Hmi;15th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_16;15;Hmi;16th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_17;16;Hmi;17th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_18;17;Hmi;18th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_19;18;Hmi;19th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_20;19;Hmi;20th signal defined in signals table
+;_DISPLAY_MODE;DISPLAY_MODE_OFF;0;Hmi;Operator page switched off
+;_DISPLAY_MODE;DISPLAY_MODE_1x3;1;Hmi;1 row of 3 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x4;2;Hmi;1 row of 4 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_A;3;Hmi;1 row of 6 characters (Rainbow Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_BAR_A;4;Hmi;1 row of 6 characters + Bargraph (Rainbow Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_B;5;Hmi;1 row of 6 characters (Standard Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_BAR_B;6;Hmi;1 row of 6 characters + Bargraph (Standard Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x9;7;Hmi;1 row of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x9_BAR;8;Hmi;1 row of 9 characters + Bargraph
+;_DISPLAY_MODE;DISPLAY_MODE_2x9;9;Hmi;2 rows of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_2x9_BAR;10;Hmi;2 rows of 9 characters + Bargraph
+;_DISPLAY_MODE;DISPLAY_MODE_3x9;11;Hmi;3 rows of 9 characters
+;_AUTOSCROLL;AUTOSCROLL_DISABLED;eFALSE;Hmi;Autoscroll Disabled
+;_AUTOSCROLL;AUTOSCROLL_ENABLED;eTRUE;Hmi;Autoscroll Enabled
+;_CUSTOM_DP;0_DP;0;Hmi;X
+;_CUSTOM_DP;1_DP;1;Hmi;X.X
+;_CUSTOM_DP;2_DP;2;Hmi;X.XX
+;_CUSTOM_DP;3_DP;3;Hmi;X.XXX
+;_CUSTOM_DP;4_DP;4;Hmi;X.XXXX
+;_CUSTOM_DP;5_DP;5;Hmi;X.XXXXX
+;_CUSTOM_DP;6_DP;6;Hmi;X.XXXXXX
+;_CUSTOM_DP;7_DP;7;Hmi;X.XXXXXXX
+;_CUSTOM_DP;8_DP;8;Hmi;X.XXXXXXXX
+;_CUSTOM_DP;9_DP;9;Hmi;X.XXXXXXXXX
+;_CUSTOM_DP;10_DP;10;Hmi;X.XXXXXXXXXX
+;_CUSTOM_DP;11_DP;11;Hmi;X.XXXXXXXXXXX
+;_CUSTOM_DP;12_DP;12;Hmi;X.XXXXXXXXXXXX
+;_DATE_FORMAT;DATE_FORMAT_DD_MM_YYYY;0;Hmi;DD-MM-YYYY
+;_DATE_FORMAT;DATE_FORMAT_MM_DD_YYYY;1;Hmi;MM-DD-YYYY
+;_DATE_FORMAT;DATE_FORMAT_YYYY_MM_DD;2;Hmi;YYYY-MM-YYYY
+;transferFunctionTable;LINEAR;0;Mapper;Linear Transfer function
+;transferFunctionTable;SQUARE_ROOT;1;Mapper;Square Root Transfer function
+;transferFunctionTable;BI_SQUARE_ROOT;2;Mapper;Bi-Directional Square RootTransfer function
+;transferFunctionTable;SQ_THIRD_POWER;3;Mapper;Square Root Third Power
+;transferFunctionTable;SQ_FIFTH_POWER;4;Mapper;Square Root Fifth Power
+;transferFunctionTable;LIN_TABLE_21PT;5;Mapper;21 Point Linear Table
+;transferFunctionTable;CYLIND_TANK;6;Mapper;Cylindrical tank- fixed table
+;transferFunctionTable;SPHER_TANK;7;Mapper;Spherical tank- fixed function
+;primaryValueMappingEnumTable;PV_P_DP;0;Mapper;Pdp code
+;primaryValueMappingEnumTable;PV_STATIC_PRESSURE;1;Mapper;Static Pressure code
+;secondaryValueMappingEnumTable;SV_P_DP;0;Mapper;Pdp code
+;secondaryValueMappingEnumTable;SV_STATIC_PRESSURE;1;Mapper;Static Pressure code
+;secondaryValueMappingEnumTable;SV_SENSOR_TEMPERATURE;2;Mapper;Sensor Temperature code
+;secondaryValueMappingEnumTable;SV_ELECTRONIC_TEMPERATURE;3;Mapper;Electronic Temperature code
+;secondaryValueMappingEnumTable;SV_ENGINEERING_UNIT;4;Mapper;Engineering unit code
+;tertiaryValueMappingEnumTable;TV_P_DP;0;Mapper;Pdp code
+;tertiaryValueMappingEnumTable;TV_STATIC_PRESSURE;1;Mapper;Static Pressure code
+;tertiaryValueMappingEnumTable;TV_SENSOR_TEMPERATURE;2;Mapper;Sensor Temperature code
+;tertiaryValueMappingEnumTable;TV_ELECTRONIC_TEMPERATURE;3;Mapper;Electronic Temperature code
+;tertiaryValueMappingEnumTable;TV_ENGINEERING_UNIT;4;Mapper;Engineering unit code
+;quaternaryValueMappingEnumTable;QV_P_DP;0;Mapper;Pdp code
+;quaternaryValueMappingEnumTable;QV_STATIC_PRESSURE;1;Mapper;Static Pressure code
+;quaternaryValueMappingEnumTable;QV_SENSOR_TEMPERATURE;2;Mapper;Sensor Temperature code
+;quaternaryValueMappingEnumTable;QV_ELECTRONIC_TEMPERATURE;3;Mapper;Electronic Temperature code
+;quaternaryValueMappingEnumTable;QV_ENGINEERING_UNIT;4;Mapper;Engineering unit code
+;deviceVariablePrimaryValueCodeTable;DEVICE_CODE_PV_P_DP;0;Mapper;Pdp code
+;deviceVariablePrimaryValueCodeTable;DEVICE_CODE_PV_STATIC_PRESSURE;1;Mapper;Static Pressure code
+;deviceVariableCodeTable;DEVICE_CODE_P_DP;0;Mapper;Pdp code
+;deviceVariableCodeTable;DEVICE_CODE_STATIC_PRESSURE;1;Mapper;Static Pressure code
+;deviceVariableCodeTable;DEVICE_CODE_SENSOR_TEMPERATURE;2;Mapper;Sensor Temperature code
+;hartPressureUnitTable;PRESSURE_INCHES_H20_68F;1;Mapper;Inches H2O 68F
+;hartPressureUnitTable;PRESSURE_INCHES_HG_0C;2;Mapper;Inches HG 0C
+;hartPressureUnitTable;PRESSURE_FEET_H2O_68F;3;Mapper;Feet H2O 68F
+;hartPressureUnitTable;PRESSURE_MILLIMETER_H2O_68F;4;Mapper;Millimiter H2O 68F
+;hartPressureUnitTable;PRESSURE_MILLIMETER_HG_0C;5;Mapper;Millimiter HG
+;hartPressureUnitTable;PRESSURE_PSI;6;Mapper;Psi
+;hartPressureUnitTable;PRESSURE_BAR;7;Mapper;Bar
+;hartPressureUnitTable;PRESSURE_MILLIBAR;8;Mapper;Millibar
+;hartPressureUnitTable;PRESSURE_GRAM_PER_SQUARE_CENTIMETER;9;Mapper;Gram per Centimeter^2
+;hartPressureUnitTable;PRESSURE_KILOGRAM_PER_SQUARE_CENTIMETER;10;Mapper;Kilogram per Centimeter^2
+;hartPressureUnitTable;PRESSURE_PASCAL;11;Mapper;Pascal
+;hartPressureUnitTable;PRESSURE_KILOPASCAL;12;Mapper;Kilopascal
+;hartPressureUnitTable;PRESSURE_TORR;13;Mapper;Torr
+;hartPressureUnitTable;PRESSURE_ATMOSPHERE;14;Mapper;Atmosphere
+;hartPressureUnitTable;PRESSURE_INCHES_H2O_60F;145;Mapper;Inches H2O 60F
+;hartPressureUnitTable;PRESSURE_MEGAPASCAL;237;Mapper;Megapascal
+;hartPressureUnitTable;PRESSURE_INCHES_H2O_4C;238;Mapper;Inches H2O 4C
+;hartPressureUnitTable;PRESSURE_MILLIMETER_H2O_4C;239;Mapper;Millimiter H2O 4C
+;hartAllUnitTable;ALL_INCHES_H20_68F;1;Mapper;Inches H2O 68F
+;hartAllUnitTable;ALL_INCHES_HG_0C;2;Mapper;Inches HG 0C
+;hartAllUnitTable;ALL_FEET_H2O_68F;3;Mapper;Feet H2O 68F
+;hartAllUnitTable;ALL_MILLIMETER_H2O_68F;4;Mapper;Millimiter H2O 68F
+;hartAllUnitTable;ALL_MILLIMETER_HG_0C;5;Mapper;Millimiter HG
+;hartAllUnitTable;ALL_PSI;6;Mapper;Psi
+;hartAllUnitTable;ALL_BAR;7;Mapper;Bar
+;hartAllUnitTable;ALL_MILLIBAR;8;Mapper;Millibar
+;hartAllUnitTable;ALL_GRAM_PER_SQUARE_CENTIMETER;9;Mapper;Gram per Centimeter^2
+;hartAllUnitTable;ALL_KILOGRAM_PER_SQUARE_CENTIMETER;10;Mapper;Kilogram per Centimeter^2
+;hartAllUnitTable;ALL_PASCAL;11;Mapper;Pascal
+;hartAllUnitTable;ALL_KILOPASCAL;12;Mapper;Kilopascal
+;hartAllUnitTable;ALL_TORR;13;Mapper;Torr
+;hartAllUnitTable;ALL_ATMOSPHERE;14;Mapper;Atmosphere
+;hartAllUnitTable;ALL_CUBIC_FEET_PER_MINUTE;15;Mapper;Cubic Feet per Minute
+;hartAllUnitTable;ALL_GALLONS_PER_MINUTE;16;Mapper;Gallons per Minute
+;hartAllUnitTable;ALL_LITERS_PER_MINUTE;17;Mapper;Liters per Minute
+;hartAllUnitTable;ALL_IMPERIAL_GALLONS_PER_MINUTE;18;Mapper;Imperial Gallons per Minute
+;hartAllUnitTable;ALL_CUBIC_METER_PER_HOUR;19;Mapper;Cubic Meter per Hour
+;hartAllUnitTable;ALL_FEET_PER_SECOND;20;Mapper;Feet per Second
+;hartAllUnitTable;ALL_METER_PER_SECOND;21;Mapper;Meter per Second
+;hartAllUnitTable;ALL_GALLONS_PER_SECOND;22;Mapper;Gallons per Second
+;hartAllUnitTable;ALL_MILLION_GALLONS_PER_DAY;23;Mapper;Million Gallons per Day
+;hartAllUnitTable;ALL_LITERS_PER_SECOND;24;Mapper;Liters per Second
+;hartAllUnitTable;ALL_MILLION_LITERS_PER_DAY;25;Mapper;Million Liters per Day
+;hartAllUnitTable;ALL_CUBIC_FEET_PER_SECOND;26;Mapper;Cubic Feet per Second
+;hartAllUnitTable;ALL_CUBIC_FEET_PER_DAY;27;Mapper;Cubic Feet per Day
+;hartAllUnitTable;ALL_CUBIC_METER_PER_SECOND;28;Mapper;Cubic Meter per Second
+;hartAllUnitTable;ALL_CUBIC_METER_PER_DAY;29;Mapper;Cubic Meter per Day
+;hartAllUnitTable;ALL_IMPERIAL_GALLONS_PER_HOUR;30;Mapper;Imperial Gallons per Hour
+;hartAllUnitTable;ALL_IMPERIAL_GALLONS_PER_DAY;31;Mapper;Imperial Gallons per Day
+;hartAllUnitTable;ALL_CELSIUS;32;Mapper;Celsius
+;hartAllUnitTable;ALL_FAHRENHEIT;33;Mapper;Fahrenheit
+;hartAllUnitTable;ALL_RANKINE;34;Mapper;Rankine
+;hartAllUnitTable;ALL_KELVIN;35;Mapper;Kelvin
+;hartAllUnitTable;ALL_MILLIVOLTS;36;Mapper;Millivolts
+;hartAllUnitTable;ALL_OHMS;37;Mapper;Ohms
+;hartAllUnitTable;ALL_HERTZ;38;Mapper;Hertz
+;hartAllUnitTable;ALL_MILLIAMPERE;39;Mapper;Milliampere
+;hartAllUnitTable;ALL_GALLONS;40;Mapper;Gallons
+;hartAllUnitTable;ALL_LITERS;41;Mapper;Liters
+;hartAllUnitTable;ALL_IMPERIAL_GALLONS;42;Mapper;Imperial Gallons
+;hartAllUnitTable;ALL_CUBIC_METERS;43;Mapper;Cubic Meters
+;hartAllUnitTable;ALL_FEET;44;Mapper;Feet
+;hartAllUnitTable;ALL_METER;45;Mapper;Meter
+;hartAllUnitTable;ALL_BARRELS;46;Mapper;Barrels
+;hartAllUnitTable;ALL_INCH;47;Mapper;Inch
+;hartAllUnitTable;ALL_CENTIMETER;48;Mapper;Centimeter
+;hartAllUnitTable;ALL_MILLIMETER;49;Mapper;Millimeter
+;hartAllUnitTable;ALL_MINUTES;50;Mapper;Minutes
+;hartAllUnitTable;ALL_SECONDS;51;Mapper;Seconds
+;hartAllUnitTable;ALL_HOURS;52;Mapper;Hours
+;hartAllUnitTable;ALL_DAYS;53;Mapper;Day
+;hartAllUnitTable;ALL_CENTISTOKES;54;Mapper;Centistokes
+;hartAllUnitTable;ALL_CENTIPOISE;55;Mapper;Centipoise
+;hartAllUnitTable;ALL_MICROSIEMENS;56;Mapper;Microsiemens
+;hartAllUnitTable;ALL_PERCENT;57;Mapper;Percent
+;hartAllUnitTable;ALL_VOLTS;58;Mapper;Volts
+;hartAllUnitTable;ALL_PH;59;Mapper;Ph
+;hartAllUnitTable;ALL_GRAMS;60;Mapper;Grams
+;hartAllUnitTable;ALL_KILOGRAMS;61;Mapper;Kilograms
+;hartAllUnitTable;ALL_METRIC_TONS;62;Mapper;Metric Tons
+;hartAllUnitTable;ALL_POUNDS;63;Mapper;Pounds
+;hartAllUnitTable;ALL_SHORT_TONS;64;Mapper;Short Tons
+;hartAllUnitTable;ALL_LONG_TONS;65;Mapper;Long Tons
+;hartAllUnitTable;ALL_MILLISIEMENS_PER_CENTIMETER;66;Mapper;Millisiemens per centimeter
+;hartAllUnitTable;ALL_MICROSIEMENS_PER_CENTIMETER;67;Mapper;Microsiemens per centimeter
+;hartAllUnitTable;ALL_NEWTON;68;Mapper;Newton
+;hartAllUnitTable;ALL_NEWTON_METER;69;Mapper;Newton Meter
+;hartAllUnitTable;ALL_GRAMS_PER_SECOND;70;Mapper;Grams per Second
+;hartAllUnitTable;ALL_GRAMS_PER_MINUTE;71;Mapper;Grams per Minute
+;hartAllUnitTable;ALL_GRAMS_PER_HOUR;72;Mapper;Grams per Hour
+;hartAllUnitTable;ALL_KILOGRAMS_PER_SECOND;73;Mapper;Kilograms per Second
+;hartAllUnitTable;ALL_KILOGRAMS_PER_MINUTE;74;Mapper;Kilograms per Minute
+;hartAllUnitTable;ALL_KILOGRAMS_PER_HOUR;75;Mapper;Kilograms per Hour
+;hartAllUnitTable;ALL_KILOGRAMS_PER_DAY;76;Mapper;Kilograms per Day
+;hartAllUnitTable;ALL_METRIC_TONS_PER_MINUTE;77;Mapper;Metric Tons per Minute
+;hartAllUnitTable;ALL_METRIC_TONS_PER_HOUR;78;Mapper;Metric Tons per Hour
+;hartAllUnitTable;ALL_METRIC_TONS_PER_DAY;79;Mapper;Metric Tons per Day
+;hartAllUnitTable;ALL_POUNDS_PER_SECOND;80;Mapper;Pounds per Second
+;hartAllUnitTable;ALL_POUNDS_PER_MINUTE;81;Mapper;Pounds per Minute
+;hartAllUnitTable;ALL_POUNDS_PER_HOUR;82;Mapper;Pounds per Hour
+;hartAllUnitTable;ALL_POUNDS_PER_DAY;83;Mapper;Pounds per Day
+;hartAllUnitTable;ALL_SHORT_TONS_PER_MINUTE;84;Mapper;Short Tons per Minute
+;hartAllUnitTable;ALL_SHORT_TONS_PER_HOUR;85;Mapper;Short Tons per Hour
+;hartAllUnitTable;ALL_SHORT_TONS_PER_DAY;86;Mapper;Short Tons per Day
+;hartAllUnitTable;ALL_LONG_TONS_PER_HOUR;87;Mapper;Long Tons per Hour
+;hartAllUnitTable;ALL_LONG_TONS_PER_DAY;88;Mapper;Long Tons per Day
+;hartAllUnitTable;ALL_DEKA_THERM;89;Mapper;Deka Therm
+;hartAllUnitTable;ALL_SPECIFIC_GRAVITY_UNITS;90;Mapper;Specific Gravity Units
+;hartAllUnitTable;ALL_GRAMS_PER_CUBIC_CENTIMETER;91;Mapper;Grams per Cubic Centimeter
+;hartAllUnitTable;ALL_KILOGRAMS_PER_CUBIC_METER;92;Mapper;Kilograms per Cubic Meter
+;hartAllUnitTable;ALL_POUNDS_PER_GALLONS;93;Mapper;Pounds per Gallon
+;hartAllUnitTable;ALL_POUNDS_PER_CUBIC_FOOT;94;Mapper;Pounds per Cubic Foot
+;hartAllUnitTable;ALL_GRAMS_PER_MILLILITER;95;Mapper;Grams per Milliliter
+;hartAllUnitTable;ALL_KILOGRAMS_PER_LITER;96;Mapper;Kilograms per Liter
+;hartAllUnitTable;ALL_GRAMS_PER_LITER;97;Mapper;Grams per Liter
+;hartAllUnitTable;ALL_POUNDS_PER_CUBIC_INCH;98;Mapper;Pounds per Cubic Inch
+;hartAllUnitTable;ALL_SHORT_TONS_PER_CUBIC_YARD;99;Mapper;Short Tons per Cubic Yard
+;hartAllUnitTable;ALL_DEGREE_TWADDELL;100;Mapper;Degree Twaddell
+;hartAllUnitTable;ALL_DEGREE_BRIX;101;Mapper;Degree Brix
+;hartAllUnitTable;ALL_DEGREE_BAUME_HEAVY;102;Mapper;Degree Baume Heavy
+;hartAllUnitTable;ALL_DEGREE_BAUME_LIGHT;103;Mapper;Degree Baume Light
+;hartAllUnitTable;ALL_DEGREE_API;104;Mapper;Degree Api
+;hartAllUnitTable;ALL_PERCENT_SOLIDS_PER_WEIGHT;105;Mapper;Percent Solids per Weight
+;hartAllUnitTable;ALL_PERCENT_SOLIDS_PER_VOLUME;106;Mapper;Percent Solids per Volume
+;hartAllUnitTable;ALL_DEGREE_BALLING;107;Mapper;Degree Balling
+;hartAllUnitTable;ALL_PROOF_PER_VOLUME;108;Mapper;Proof per Volume
+;hartAllUnitTable;ALL_PROOF_PER_MASS;109;Mapper;Proof per Mass
+;hartAllUnitTable;ALL_BUSHEL;110;Mapper;Buchel
+;hartAllUnitTable;ALL_CUBIC_YARDS;111;Mapper;Cubic Yards
+;hartAllUnitTable;ALL_CUBIC_FEET;112;Mapper;Cubic Feet
+;hartAllUnitTable;ALL_CUBIC_INCHES;113;Mapper;Cubic Inches
+;hartAllUnitTable;ALL_INCHES_PER_SECOND;114;Mapper;Inches per Second
+;hartAllUnitTable;ALL_INCHES_PER_MINUTE;115;Mapper;Inches per Minute
+;hartAllUnitTable;ALL_FEET_PER_MINUTE;116;Mapper;Feet per Minute
+;hartAllUnitTable;ALL_DEGREE_PER_SECOND;117;Mapper;Degree per Second
+;hartAllUnitTable;ALL_REVOLUTION_PER_SECOND;118;Mapper;Revolution per Second
+;hartAllUnitTable;ALL_REVOLUTION_PER_MINUTE;119;Mapper;Revolution per Minute
+;hartAllUnitTable;ALL_METERS_PER_HOUR;120;Mapper;Meters per Hour
+;hartAllUnitTable;ALL_NORMAL_CUBIC_METER_PER_HOUR;121;Mapper;Normal Cubic Meter per Hour
+;hartAllUnitTable;ALL_NORMAL_LITER_PER_HOUR;122;Mapper;Normal Liter per Hour
+;hartAllUnitTable;ALL_STANDARD_CUBIC_FEET_PER_MINUTE;123;Mapper;Standard Cubic Feet per Minute
+;hartAllUnitTable;ALL_LIQUID_BARREL;124;Mapper;Liquid Barres
+;hartAllUnitTable;ALL_OUNCE;125;Mapper;Ounce
+;hartAllUnitTable;ALL_FOOT_POUND_FORCE;126;Mapper;Foot Pound Force
+;hartAllUnitTable;ALL_KILOWATT;127;Mapper;Kilowatt
+;hartAllUnitTable;ALL_KILOWATT_HOUR;128;Mapper;Kilowatt hour
+;hartAllUnitTable;ALL_HORSEPOWER;129;Mapper;Horsepower
+;hartAllUnitTable;ALL_CUBIC_FEET_PER_HOUR;130;Mapper;Cubic Feet per Hour
+;hartAllUnitTable;ALL_CUBIC_METERS_PER_MINUTE;131;Mapper;Cubic Meters per Minute
+;hartAllUnitTable;ALL_BARRELS_PER_SECOND;132;Mapper;Barrels per Second
+;hartAllUnitTable;ALL_BARRELS_PER_MINUTE;133;Mapper;Barrels per Minute
+;hartAllUnitTable;ALL_BARRELS_PER_HOUR;134;Mapper;Barrels per Hour
+;hartAllUnitTable;ALL_BARRELS_PER_DAY;135;Mapper;Barrels per Day
+;hartAllUnitTable;ALL_GALLONS_PER_HOUR;136;Mapper;Gallons per Hour
+;hartAllUnitTable;ALL_IMPERIAL_GALLONS_PER_SECOND;137;Mapper;Imperial Gallons per Second
+;hartAllUnitTable;ALL_LITERS_PER_HOUR;138;Mapper;Liters per Hour
+;hartAllUnitTable;ALL_PARTS_PER_MILLION;139;Mapper;Parts per Million
+;hartAllUnitTable;ALL_MEGACALORIE_PER_HOUR;140;Mapper;Megacalorie per Hour
+;hartAllUnitTable;ALL_MEGAJOULE_PER_HOUR;141;Mapper;Megajoule per Hour
+;hartAllUnitTable;ALL_BRITISH_THERMAL_UNIT_PER_HOUR;142;Mapper;British Thermal Unit per Hour
+;hartAllUnitTable;ALL_DEGREE;143;Mapper;Degree
+;hartAllUnitTable;ALL_RADIAN;144;Mapper;Radian
+;hartAllUnitTable;ALL_INCHES_H2O_60F;145;Mapper;Inches H2O 60F
+;hartAllUnitTable;ALL_MICROGRAMS_PER_LITER;146;Mapper;Micrograms per Liter
+;hartAllUnitTable;ALL_MICROGRAMS_PER_CUBIC_METER;147;Mapper;Micrograms per Cubic Meter
+;hartAllUnitTable;ALL_PERCENT_CONSISTENSY;148;Mapper;Percent Consistency
+;hartAllUnitTable;ALL_PERCENT_VOLUME;149;Mapper;Volume Percent
+;hartAllUnitTable;ALL_PERCENT_STEAM_QUALITY;150;Mapper;Percent Steam Quality
+;hartAllUnitTable;ALL_FEET_IN_SIXTEENTHS;151;Mapper;Feet in Sixteenths
+;hartAllUnitTable;ALL_CUBIC_FEET_PER_POUND;152;Mapper;Cubic Feet per Pound
+;hartAllUnitTable;ALL_PICOFARADS;153;Mapper;Picofarads
+;hartAllUnitTable;ALL_MILLILITERS_PER_LITER;154;Mapper;Milliliters per Liter
+;hartAllUnitTable;ALL_MICROLITERS_PER_LITER;155;Mapper;Microliters per Liter
+;hartAllUnitTable;ALL_PERCENT_PLATO;160;Mapper;Percent Plato
+;hartAllUnitTable;ALL_PERCENT_EXPLOSION_LEVEL;161;Mapper;Percent Lower Explosion Level
+;hartAllUnitTable;ALL_MEGACALORIE;162;Mapper;Megacalorie
+;hartAllUnitTable;ALL_KILOOHMS;163;Mapper;Kilo Ohms
+;hartAllUnitTable;ALL_MEGAJOULE;164;Mapper;Megajoule
+;hartAllUnitTable;ALL_BRITISH_THERMAL_UNIT;165;Mapper;British Thermal Unit
+;hartAllUnitTable;ALL_NORMAL_CUBIC_METER;166;Mapper;Normal Cubic Meter
+;hartAllUnitTable;ALL_NORMAL_LITER;167;Mapper;Normal Liter
+;hartAllUnitTable;ALL_STANDARD_CUBIC_FEET;168;Mapper;Standard Cubic Feet
+;hartAllUnitTable;ALL_PARTS_PER_BILLION;169;Mapper;Parts per Billion
+;hartAllUnitTable;ALL_GALLONS_PER_DAY;235;Mapper;Gallons per Day
+;hartAllUnitTable;ALL_HECTOLITERS;236;Mapper;Hectoliters
+;hartAllUnitTable;ALL_MEGAPASCAL;237;Mapper;Megapascal
+;hartAllUnitTable;ALL_INCHES_H2O_4C;238;Mapper;Inches H2O 4C
+;hartAllUnitTable;ALL_MILLIMETER_H2O_4C;239;Mapper;Millimiter H2O 4C
+;hartAllUnitTable;ALL_NONE;251;Mapper;None
+;hartAllUnitTable;ALL_FREEUNITTEXT;253;Mapper;Free unit Text
+;hartTemperatureUnitTable;TEMPERATURE_CELSIUS;32;Mapper;Celsius
+;hartTemperatureUnitTable;TEMPERATURE_FAHRENHEIT;33;Mapper;Fahrenheit
+;hartTemperatureUnitTable;TEMPERATURE_RANKINE;34;Mapper;Rankine
+;hartTemperatureUnitTable;TEMPERATURE_KELVIN;35;Mapper;Kelvin
+;currentOutFailSafeTypeTable;FAIL_SAFE_TYPE_HW;0;Mapper;Hardware
+;currentOutFailSafeTypeTable;FAIL_SAFE_TYPE_SW;1;Mapper;Software
+
+
+
