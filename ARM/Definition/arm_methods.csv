@@ -1,0 +1,31 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 14;;;;;
+in for that Client;;;;;
+out for that Client;;;;;
+check the access permissions for the target subsystem/object in respect of the Client;;;;;
+calling;;;;;
+reset all of the passwords (Standard, Advanced, Service) to the default passwords;;;;;
+in each case;;;;;
+change a users own (or subordinate) password;;;;;
+change;;;;;
+change;;;;;
+;LogInEXE;0;;TUSIGN16;Called by a "Client" subsystem (eg: HMI, HART...) in order to login a user
+;LogInEXE;1;callerId;T_SUBSYSTEM_IDX;Subsystem index relating to the Client
+;LogInEXE;2;accessLevel;TUSIGN8;Identity code for the user
+;LogInEXE;3;password;TCHAR*;5 character password for the requesting user
+;LogOffEXE;0;;TUSIGN16;Called by a "Client" subsystem (eg: HMI, HART...) in order to logoff a user
+;LogOffEXE;1;callerId;T_SUBSYSTEM_IDX;Subsystem index relating to the Client
+;CheckAccessRightsSRV;0;;TUSIGN16;Called by a Client in order to check access permissions
+;CheckAccessRightsSRV;1;callerId;T_SUBSYSTEM_IDX;Subsystem index relating to the Client
+;CheckAccessRightsSRV;2;targetId;T_SUBSYSTEM_IDX;Subsystem index relating to the subsystem in which the data is held
+;CheckAccessRightsSRV;3;objectId;TUSIGN16;Object index for the data in the target subsystem
+;CheckAccessRightsSRV;4;attributeId;TUSIGN16;Attribute id for the data within the target object
+;CheckAccessRightsSRV;5;accessRequested;TUSIGN8;Required level of access (code) for the requesting user
+;ResetPasswordsEXE;0;;TUSIGN16;Called by a Client in order to reset all passwords to default
+;ResetPasswordsEXE;1;password;TCHAR*;The hashed password, with feature-bit set to "Reset All Passwords"
+;ChangePasswordEXE;0;;TUSIGN16;Called by a Client in order to change a users own (or subordinate) password
+;ChangePasswordEXE;1;callerId;T_SUBSYSTEM_IDX;Subsystem index relating to the Client
+;ChangePasswordEXE;2;accessLevel;TUSIGN8;Identity code for the user to be changed
+;ChangePasswordEXE;3;newPassword;TCHAR*;New 5 character password for the userId whose password is to change

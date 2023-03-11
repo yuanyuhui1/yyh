@@ -1,0 +1,18 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 11;;;
+;hartLoginState;ptrCodeTab;TClientLoginFormats
+;hartLoginState;numberOfCodes;NUMBER_OF_USER_LOGGED_IN_STATES
+;hmiLoginState;ptrCodeTab;TClientLoginFormats
+;hmiLoginState;numberOfCodes;NUMBER_OF_USER_LOGGED_IN_STATES
+;clientEnableState;ptrCodeTab;TClientEnableFormats
+;clientEnableState;numberOfCodes;NUMBER_OF_CLIENT_ENABLE_STATES
+;hiSecAccessState;ptrCodeTab;THighSecurityEnableFormats
+;hiSecAccessState;numberOfCodes;NUMBER_OF_HIGH_SECURITY_ENABLE_STATES
+;readOnlySwitchStatus;ptrCodeTab;TReadOnlySwitchActiveFormats
+;readOnlySwitchStatus;numberOfCodes;NUMBER_OF_READ_ONLY_SWITCH_STATES
+;custodySwitchStatus;ptrCodeTab;TCustodySwitchActiveFormats
+;custodySwitchStatus;numberOfCodes;NUMBER_OF_CUSTODY_SWITCH_STATES
+;serviceAccountSwitch;ptrCodeTab;TCustodySwitchActiveFormats
+;serviceAccountSwitch;numberOfCodes;sizeof(TCustodySwitchActiveFormats)

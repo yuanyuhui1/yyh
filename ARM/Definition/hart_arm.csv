@@ -1,0 +1,14 @@
+reserved;Target Subsystem Name;Target Object Name;Target Attribute Index;Bas;Std;Adv;Svc
+##Module arm;;;;;;;
+##ModuleRevision 01;;;;;;;
+##FileRevision 7;;;;;;;
+;Hart;board;;RO;RO;RO;RW
+;Hart;address;;RO;RO;RO;RW
+;Hart;subsystemIndex;;RO;RO;RO;RW
+;Hart;objectIndex;;RO;RO;RO;RW
+;Hart;attributeIndex;;RO;RO;RO;RW
+;Hart;objectDataLength;;RO;RO;RO;RW
+;Hart;objectData;;RO;RO;RO;RW
+;Hart;memoryAddress;;RO;RO;RO;RW
+;Hart;memoryLength;;RO;RO;RO;RW
+;Hart;memoryData;;RO;RO;RO;RW

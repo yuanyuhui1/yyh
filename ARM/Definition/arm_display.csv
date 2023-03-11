@@ -1,0 +1,21 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 20;;;;;
+;stdDefaultPassword_dummy;;;NUMERIC;
+;hartLoginState;;;ENUMERATION;TClientLoginFormats
+;advDefaultPassword_dummy;;;NUMERIC;
+;svcDefaultPassword_dummy;;;NUMERIC;
+;stdUserPassword_dummy;;;NUMERIC;
+;advUserPassword_dummy;;;NUMERIC;
+;svcUserPassword_dummy;;;NUMERIC;
+;adpin;;;NUMERIC;
+;hmiLoginState;;;ENUMERATION;TClientLoginFormats
+;enableHighSecurityMode;;;ACTION;
+;disableHighSecurityMode;;;ACTION;
+;clientEnableState;;;ENUMERATION;TClientEnableFormats
+;hiSecAccessState;;;ENUMERATION;THighSecurityEnableFormats
+;transmitterIdStringForm;;;ASCII;
+;readOnlySwitchStatus;;;ENUMERATION;TReadOnlySwitchActiveFormats
+;custodySwitchStatus;;;ENUMERATION;TCustodySwitchActiveFormats
+;serviceAccountSwitch;;;ENUMERATION;TCustodySwitchActiveFormats

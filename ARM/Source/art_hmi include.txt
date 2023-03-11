@@ -1,0 +1,29 @@
+// system-wide include files added here
+#include "..\..\system\interface\system.h"
+#include "..\..\common\interface\common_type.h"
+#include "..\..\t_data_obj\interface\simple_type.h"
+#include "..\..\t_data_obj\interface\t_data_obj.h"
+#include "..\..\t_unit\interface\t_unit.h"
+#include "..\..\coordinator\interface\subsystem_idx.h"
+#include "..\..\t_data_obj\interface\t_data_obj_uom_pf.h"
+#include "..\..\t_data_obj\interface\t_data_obj_tabenum8.h"
+#include "..\..\t_data_obj\interface\t_data_obj_units.h"
+#include "..\..\t_data_obj\interface\t_data_obj_rngflt.h"
+#include "..\..\common\interface\common_units.h"
+#include "..\..\totalizer\interface\t_data_obj_totdispunits.h"
+
+// subsystem-specific include files added here
+#include "..\..\hmi\interface\hmi_idx.h"
+#include "..\..\mvmeasurement\interface\mvmeasurement_idx.h"
+#include "..\..\mapper\interface\mapper_idx.h"
+#include "..\..\coordinator\interface\coordinator_idx.h"
+#include "..\..\analoginput\interface\analoginput_idx.h"
+#include "..\..\elettronicservices\interface\elettronicservices_idx.h"
+#include "..\..\svmeasurement\interface\svmeasurement_idx.h"
+#include "..\..\hart\interface\hart_idx.h"
+#include "..\..\current_out\interface\current_out_idx.h"
+#include "..\..\totalizer\interface\totalizer_idx.h"
+
+// arm include files added here
+#include "..\interface\arm.h"
+#include "..\interface\arm_idx.h"

@@ -1,0 +1,28 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 23;;;;;;;
+;stdDefaultPassword_dummy;Hashed result of 5-digit alphanumeric password (Standard Default);INPUT;SIMPLE_U32;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;advDefaultPassword_dummy;Hashed result of 5-digit alphanumeric password (Advanced Default);INPUT;SIMPLE_U32;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;svcDefaultPassword_dummy;Hashed result of 5-digit alphanumeric password (Service Default);INPUT;SIMPLE_U32;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;stdUserPassword_dummy;Hashed result of 5-digit alphanumeric password (Standard);INPUT;SIMPLE_U32;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;advUserPassword_dummy;Hashed result of 5-digit alphanumeric password (Advanced);INPUT;SIMPLE_U32;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;svcUserPassword_dummy;Hashed result of 5-digit alphanumeric password (Service);INPUT;SIMPLE_U32;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;adpin;"Per-access Incrementing Number";INPUT;SIMPLE_U16;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;clientEnableState;Client write-enabled status.;INPUT;TABENUM8;1;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;hiSecAccessState;For service level, 0 = password login, 1 = login via hasher/pin;INPUT;TABENUM8;1;StaticFrequentConstantDefault_2;NON_VOLATILE
+;hmiLoginState;HMI client login status.;OUTPUT;TABENUM8;1;DYNAMIC;RAM
+;hartLoginState;HART client login status.;OUTPUT;TABENUM8;1;DYNAMIC;RAM
+;transmitterIdStringForm;;OUTPUT;SIMPLE_U8;8;DYNAMIC;RAM
+;readOnlySwitchStatus;Relays the status of the hardware input to a dynamic object for externals to read.;OUTPUT;TABENUM8;1;DYNAMIC;RAM
+;custodySwitchStatus;Relays the status of the hardware input to a dynamic object for externals to read.;OUTPUT;TABENUM8;1;DYNAMIC;RAM
+;enableHighSecurityMode;;INPUT;ACTION;1;;
+;disableHighSecurityMode;;INPUT;ACTION;1;;
+;hardwareCalibrationLoad;;CONTAINED;SIMPLE_U8;1;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;serviceAccountSwitch;;INPUT;TABENUM8;1;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;stdDefaultPassword;;INPUT;SIMPLE_U32;8;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;advDefaultPassword;;INPUT;SIMPLE_U32;8;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;svcDefaultPassword;;INPUT;SIMPLE_U32;8;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;stdUserPassword;;INPUT;SIMPLE_U32;8;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;advUserPassword;;INPUT;SIMPLE_U32;8;StaticFrequentConstantDefault_Password;NON_VOLATILE
+;svcUserPassword;;INPUT;SIMPLE_U32;8;StaticFrequentConstantDefault_Password;NON_VOLATILE
