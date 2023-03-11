@@ -1,0 +1,7 @@
+reserved;name;value
+##Module SubGen;;
+##ModuleRevision 0x020101;;
+##FileRevision 2;;
+;SubsystemName;Modbus
+;ShortSubsystemName;Modbus
+;FrameworkVersion;0x020101

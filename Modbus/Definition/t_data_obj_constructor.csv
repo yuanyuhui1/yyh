@@ -1,0 +1,7 @@
+reserved;T_DATA_OBJECT;constructorName;ptrValue;numberofAttributes;objectLength;storageQualifier;typeQualifier;ptrDescriptor;type;descriptorType
+##Module SubGen;;;;;;;;;;
+##ModuleRevision 0x020101;;;;;;;;;;
+##FileRevision 8;;;;;;;;;;
+last edited Joachim Lenk;;;;;;;;;;
+;MODBUS_DIAG;CONSTRUCT_MODBUS_DIAG;_GEN;_IGNORE;_IGNORE;_GEN;STRUCT;_IGNORE;T_MODBUS_DIAG;_IGNORE
+;MODBUS_DIAG_HIS;CONSTRUCT_MODBUS_DIAG_HIS;_GEN;_IGNORE;_IGNORE;_GEN;STRUCT;_IGNORE;T_MODBUS_DIAG_HIS;_IGNORE

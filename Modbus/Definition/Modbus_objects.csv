@@ -1,0 +1,17 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 62;;;;;;;
+;mbDiag;ModBus diagnostic status alarm object.;INPUT;MODBUS_DIAG;1;DYNAMIC;RAM
+;mbDiagHis;ModBus diagnostic alarm history.;INPUT;MODBUS_DIAG_HIS;1;DYNAMIC;RAM
+;modbusIEEEFormat;Configuration for Modbus IEEE format for handling WORD swap;INOUT;TABENUM8;1;STATIC_FREQUENT_NO_DEFAULT;NON_VOLATILE
+;configScanRegister1;;INOUT;SIMPLE_U16;32;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;configScanRegister2;;INOUT;SIMPLE_U16;32;STATIC_FREQUENT_CONSTANT_DEFAULT;NON_VOLATILE
+;ScanRegister1;Scan Register 1;INOUT;SIMPLE_U16;32;DYNAMIC;RAM
+;ScanRegister2;Scan Register 2;INOUT;SIMPLE_U16;32;DYNAMIC;RAM
+;manufactuerDeviceID;is used for a special functionality to write the modbusAddress by using the sensorSerialID and the manufactuerDeviceID = 0x00001AA0 (Manufactuer ID =1A for ABB andDeviceID = A0 for Coriolis) and the slaveID;INOUT;SIMPLE_U32;1;DYNAMIC;RAM
+;sensorSerialID;is used for a special functionality to write the modbusAddress by using the sensorSerialID and the manufactuerDeviceID = 0x00001AA0 (Manufactuer ID =1A for ABB andDeviceID = A0 for Coriolis) and the slaveID;INOUT;SIMPLE_U32;1;DYNAMIC;RAM
+;slaveID;is used for a special functionality to write the modbusAddress by using the sensorSerialID and the manufactuerDeviceID = 0x00001AA0 (Manufactuer ID =1A for ABB andDeviceID = A0 for Coriolis) and the slaveID;INOUT;SIMPLE_U32;1;DYNAMIC;RAM
+;mDiagCondenseStatus;This object mapped the 48 alarm bits to 3x U16.;INOUT;SIMPLE_U16;3;DYNAMIC;RAM
+;networkPort;Port number for TCP connection on which Modbus TCP communication will happen;CONTAINED;SIMPLE_U16;1;CONSTANT;READONLY_RAM
+;writeFunctionsEnabled;Enabling Modbus write functions;INPUT;TABENUM8;1;DYNAMIC;RAM

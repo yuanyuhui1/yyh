@@ -1,0 +1,10 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 28;;;;;
+;modbusIEEEFormat;;Modbus IEEE data format for configuring  WORD swapping.;ENUMERATION;TModbusConfigurationIEEEEnableState
+;configScanRegister1;;;NUMERIC;
+;configScanRegister2;;;NUMERIC;
+;mDiagCondenseStatus;;;NUMERIC;
+;ScanRegister1;;Scan Register 1;NUMERIC;
+;ScanRegister2;;Scan Register 2;NUMERIC;

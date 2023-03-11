@@ -1,0 +1,11 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 28;;;;;
+;UpdateScanRegister;0;;void;Updates the Modbus Scan Registers
+;UpdateScanRegister;1;;void;Updates the Modbus Scan Registers
+;SinkEventEXE;0;;void;
+;SinkEventEXE;1;pEvent;const void*;Pointer to the event structure
+;UpdateEnableStateEXE;0;;void;
+;UpdateEnableStateEXE;1;enableState;TUSIGN8;Enable state
+;TaskEXE;0;;void;

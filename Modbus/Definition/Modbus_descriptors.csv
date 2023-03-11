@@ -1,0 +1,8 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 33;;;
+;modbusIEEEFormat;ptrCodeTab;TModbusConfigurationIEEEEnableState
+;modbusIEEEFormat;numberOfCodes;IEEE_FORMAT_COUNT
+;writeFunctionsEnabled;ptrCodeTab;E_WriteFunctionsEnabling
+;writeFunctionsEnabled;numberOfCodes;sizeof(E_WriteFunctionsEnabling)
