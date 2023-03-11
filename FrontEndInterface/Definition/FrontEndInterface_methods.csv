@@ -1,0 +1,29 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 54;;;;;
+;UpdateDiagnosis;0;;void;update alarm to diagnosis subsystem
+;SetDiagnosis;0;;void;Set diagnosis
+;SetDiagnosis;1;attributeIdx;TUSIGN16;
+;ClearDiagnosis;0;;void;Clear diagnosis
+;ClearDiagnosis;1;attributeIdx;TUSIGN16;
+;InterpreterCmd;0;return;void;interpreter frame and process data
+;InterpreterCmd;1;pMessage;const CMD_MSG*;
+;ProcessComData;0;return;void;process the data
+;ProcessComData;1;pMessage;const CMD_MSG*;
+;ReadComCmd;0;;void;read data command
+;ReadComCmd;1;pMessage;const CMD_MSG*;
+;WriteComCmd;0;;void;write data command
+;WriteComCmd;1;pMessage;const CMD_MSG*;
+;ProcessCmd;0;return;void;process the FEI com commands
+;PutCommand;0;return;TINT16;put the cmd message into the command queues
+;PutCommand;1;cmdnum;TUSIGN8;
+;PutCommand;2;datalen;TUSIGN8;
+;PutCommand;3;(*pFunc)(TUSIGN8 length,TUSIGN8* const pDataBuf);void;
+;PutCommand;4;(*pFuncFlag)(TUSIGN8 flag);void;
+;SendCmd;0;return;void;send queue command
+;SendCmd;1;pMessage;const CMD_MSG*;
+;UpdateDiagData;0;;void;Update the diagnosis subsystem alarm object
+;UpdateDiagData;1;setDiag;TUSIGN16;
+;UpdateDiagData;2;clearDiag;TUSIGN16;
+;CheckFEreadySRV;0;return;TBOOL;Check if the FE is ready for communcation

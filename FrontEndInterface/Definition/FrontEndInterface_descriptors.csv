@@ -1,0 +1,8 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 25;;;
+;frontendAlarmSimulation;ptrCodeTab;_FE_DIAGNOSIS_ALARM_TABLE
+;frontendAlarmSimulation;numberOfCodes;FE_DIAG_ALARM_SIZE
+;frontendAlarmSimulationDuplicated;ptrCodeTab;_FE_DIAGNOSIS_ALARM_TABLE
+;frontendAlarmSimulationDuplicated;numberOfCodes;sizeof(_FE_DIAGNOSIS_ALARM_TABLE)

@@ -1,0 +1,7 @@
+reserved;name;value
+##Module SubGen;;
+##ModuleRevision 0x020101;;
+##FileRevision 6;;
+;SubsystemName;FrontEndInterface
+;ShortSubsystemName;FE
+;FrameworkVersion;0x020101

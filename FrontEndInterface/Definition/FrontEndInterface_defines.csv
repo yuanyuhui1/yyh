@@ -1,0 +1,6 @@
+reserved;definition;name;value;briefdescription
+##Module SubGen;;;;
+##ModuleRevision 0x020101;;;;
+##FileRevision 14;;;;
+;_FE_DIAGNOSIS_ALARM_TABLE;BOARD_COMM_ERROR;0;
+;;FE_DIAG_ALARM_SIZE;1;

@@ -1,0 +1,8 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 36;;;;;;;
+;frontendDiagnosis;;INOUT;SIMPLE_U8;1;DynamicDuplicated;RAM
+;frontendAlarmSimulation;;INOUT;T_DIAGNOSIS_ALARM;1;DynamicDuplicated;RAM
+;frontendDiagnosisDuplicated;;CONTAINED;SIMPLE_U8;1;DynamicDuplicated;RAM
+;frontendAlarmSimulationDuplicated;;CONTAINED;T_DIAGNOSIS_ALARM;1;DynamicDuplicated;RAM

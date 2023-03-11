@@ -1,0 +1,28 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 29;;;
+;frontendDiagnosis;0;0
+;frontendAlarmSimulation;0;0
+;frontendDiagnosisDuplicated;0;0
+;frontendAlarmSimulationDuplicated;0;0
+;AccuracyLow;0;0
+;AnaGain;0;0
+;GainCtrl;0;0
+;GainLowThresh;0;0
+;GainHighThresh;0;0
+;FCDSwitch;0;0
+;VbrCorrect;0;0
+;GainMaxShift;0;0
+;GainMarginFreq;0;0
+;LowFlowThresh;0;0
+;HighFlowThreshCoef;0;0
+;NoiseSampSize;0;0
+;LowFlowThreshSwitch;0;0
+;MaxFlowFreq;0;0
+;MinFlowFreq;0;0
+;StaticDecimation;0;0
+;MiddleBufDecimation;0;0
+;LockMinIntPeriod;0;0
+;LockMaxIntPeriod;0;0
+;LockEstErrMarginPer;0;0

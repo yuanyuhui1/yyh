@@ -1,0 +1,26 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 20;;;;;
+;frontendDiagnosis;;;;
+;AccuracyLow;;;NUMERIC;
+;AnaGain;;;NUMERIC;
+;GainCtrl;;;NUMERIC;
+;GainLowThresh;;;NUMERIC;
+;GainHighThresh;;;NUMERIC;
+;GainMarginFreq;;;NUMERIC;
+;GainMaxShift;;;NUMERIC;
+;VbrCorrect;;;NUMERIC;
+;FCDSwitch;;;NUMERIC;
+;LowFlowThresh;;;NUMERIC;
+;HighFlowThreshCoef;;;NUMERIC;
+;NoiseSampSize;;;NUMERIC;
+;LowFlowThreshSwitch;;;NUMERIC;
+;MaxFlowFreq;;;NUMERIC;
+;MinFlowFreq;;;NUMERIC;
+;StaticDecimation;;;NUMERIC;
+;MiddleBufDecimation;;;NUMERIC;
+;LockMinIntPeriod;;;NUMERIC;
+;LockMaxIntPeriod;;;NUMERIC;
+;LockEstErrMarginPer;;;NUMERIC;
+;frontendAlarmSimulationDuplicated;;;;
