@@ -1,0 +1,148 @@
+2012-12-04
+1. Add "volumn Format" in Display.
+2. Remove "Qm Format", "Qv Format", "Temperature Format", "Density Format" in Display.
+
+2012-12-10
+1. Add "Volumeflow unit", "Massflow unit", "Temperature unit" in "Diagnostics-->Simulation Mode"
+2. Add "Unit Qnv" in "Device Setup-->Transmitter-->Units"
+
+2012-12-19
+1. Remove "Cyclic Update Rate" in "Communication-->Cyclic Data Out" 
+2. Remove "HART Access" in "Communication-->Service Port" 
+3. Remove "Response Delay Time" in "Communication-->Modbus RTU" 
+
+2013-01-17
+1. Change "Gain control margin in freq domain" from 983...4096 to 660...4096 in "Service-->FE parameters-->Gain control"
+2. Change "Analogue gain" from 1...8 to 1,2,4,8 in "Service-->FE parameters-->Gain control"
+
+2013-01-22
+1. Change "Liquid Temp Correction" to "Liquid Mass Correction" in "Device Setup-->Plant / Customized-->Compensation setting"
+2. Change "Enthalpy" to "Heat Capacity" in "Device Setup-->Plant / Customized-->Compensation setting"
+3. Change "Gas Calculation Mode" to "Gas Standard Mode" in "Device Setup-->Plant / Customized-->Compensation setting"
+4. Remove "Liquid Power Computation"in "Device Setup-->Plant / Customized-->Compensation setting"
+5. Remove "ISO12212-2/AGA8" in "Device Setup-->Plant / Customized"
+6. Remove "ISO12212-3/SGERG88" in "Device Setup-->Plant / Customized"
+7. Change "Actual temperature value" to "Preset Int. Temperature" in "Device Setup-->Plant / Customized"
+8. Change "Actual ext. temperature value" to "Preset Ext. Temperature" in "Device Setup-->Plant / Customized"
+9. Change "Actual Pressure Value" to "Preset Pressure" in "Device Setup-->Plant / Customized"
+10. Change "Actual Gas Content value" to "Preset Gas Content" in "Device Setup-->Plant / Customized"
+11. Change "Actul Density Value" to "Preset Density" in "Device Setup-->Plant / Customized"
+12. Change "Calorific Energy" to "Gas Energy Density" in "Device Setup-->Plant / Customized"
+13. Change "Actual Density Selection" to "Steam Density Selection" in "Device Setup-->Plant / Customized"
+14. Change "Ref density value" to "Ref density" in "Device Setup-->Plant / Customized"
+15. Change "Ref Temperature Value" to "Ref Temperature" in "Device Setup-->Plant / Customized"
+16. Change "Internal temperature selection" to "Int. temperature selection" in "Device Setup-->Plant / Customized"
+17. Change "Volume Extension Coefficients " to "Volume Expansion Coefficients " in "Device Setup-->Plant / Customized"
+18. Change "Density Extension Coefficients " to "Density Expansion Coefficients " in "Device Setup-->Plant / Customized"
+
+2013-01-25
+1. Add "Flow<LowFlowCutOff" in "Process Alarm -> Individual Masking"
+2. Move all operation modes in menu "Device Setup -> Operating Mode"
+
+2013-01-30
+1. Add "Transmitter" in "Service"
+2. Add "Sensor" in "Service"
+
+2013-04-10.
+1. "Temperature offset correction" in "Field optimization" ranges from -100 to 100
+2. Remove "Reset FE to customer default" and "Reset FE to factory default" in "Field optimization"
+3. Remove "Iout Mode" in "Current Output 1".
+4. Move "Temperature Upper Range, Temperature Low Range, Pressure Upper Range ,Pressure Low Range ,Density Upper Range,
+Density Low Range, Gas content Upper Range, Gas content Low Range" to submenu2.
+5. Change "Tube Frequency" to "Flow Frequency" in "Diagnosis Values"
+
+2013-04-25
+1. Delete "Auto self check" in "Diagnosis->Diagnosis Control->Auto self check"
+2. Add "Highest Temperature" in "Service->Sensor->Highest Temperature"
+3. Rename "Current Output 1" to "Current Output" in "input/output->Current Output1"
+4. Rename "Digital Output 1" to "Digital Output" in "input/output->Digital Output1"
+
+2013-05-08
+1. Add "Dynamic Viscosity" in "Device Setup-->Plant / Customized-->Compensation setting".
+2. Add "Reynolds number" in "Diagnostics->Diagnosis Values"
+3. Add "Min Alarm Re" in "Process Alarm->Alarm Limits"
+4. According to TRS, change the damping time range from (0.2s...60s) to (0.2s...100s).
+
+2013-05-10
+1. Add "Unit Normal Volume Flow Qnv" in Easy set up HART.
+2. Add "Unit Normal VolumeTotalizer" in Easy set up HART.
+3. Add "External output cut off" in "Input / Output -> Field Input -> Analog In Value"
+4. Add "External output cut off trigger" in in "Input / Output -> Field Input"
+5. Change "Volume extension Coefficients" to "Volume Expansion Coefficients"  in Easy set up HART.
+6. Change "Density extension Coefficients" to "Density Expansion Coefficients"  in Easy set up HART.
+7. Change "Ref Density value" to "Ref Density"  in Easy set up HART.
+8. Change "Ref Temperature value" to "Ref Temperature"  in Easy set up HART.
+9. Change "Enthalpy" to "Heat Capacity"  in Easy set up HART.
+10. Change "Calorific Energy" to "Gas Energy Density" in Easy set up HART.
+11. Remove "Liquid Power Computation"in Easy set up HART.
+12. Add "Gas Mass Computation" in  Easy set up HART.
+13. Add "Steam Density Selection"  in  Easy set up HART.
+14. Add "Gas Std Mode" in  Easy set up HART.
+15.  Change "Actual temperature value" to "Preset Int. Temperature" in  Easy set up HART.
+16. Add "Preset Ext. Temperature" in  Easy set up HART.
+17. Change "Actual Pressure Value" to "Preset Pressure" in  Easy set up HART.
+18. Add "Preset Gas Content" in  Easy set up HART.
+19. Change "Actul Density Value" to "Preset Density" in  Easy set up HART.
+20. Remove "Digital out 2 Simulation" and "Current out 2 Simulation"in  Easy set up HART.
+21. Add "Unit Volume Totalizer" and "Unit Mass Totalizer"in  Easy set up HART.
+22. Add "Lower Frequency" in Easy set up HART.
+
+2013-05-20
+1. Remove "Current out 1 Simulation" in Easy set up HART.
+2. Remove "Digital out 1 Simulation" in Easy set up HART.
+3. Remove "Output Value" in "Input / Output->Digital Output".
+4. Rename "Temperature Upper Range" to "Temperature Ext. Upper Range" in Easy set up HART.
+5. Rename "Temperature lower Range" to "Temperature Ext. lower Range" in Easy set up HART.
+6. Rename "Pressure (abs) Upper Range" to "Pressure (abs) Upper Range" in Easy set up HART.
+7. Rename "Pressure (abs) lower Range" to "Pressure (abs) lower Range" in Easy set up HART.
+6. Rename "Temperature Upper Range" to "Temperature Ext. Upper Range"  in "Input / Output->Field Input".
+7. Rename "Temperature lower Range" to "Temperature Ext. lower Range"  in "Input / Output->Field Input".
+8. Add "No Hart Input Alarm" in "Process Alarm->Alarm Limits->No Hart Input Alarm".
+
+2013-06-17
+1. Add comments "Default value is 4%" for low flow cut off.
+2. Rename "Gas Stand Volume" in menu "Operating Mode" to "Gas Std/Norm Vol." , "Bio Stand Volume" to "Bio Std/Norm Vol." , 
+"Liquid Norm Volume" to "Liquid Std/Norm Vol.".
+3. Add "Median, 1 point,  2 points,  3 points, 4 points,  5 points,  6 points,  7 points, 8 points" in "Service-->Linearisation-->k-Linearisation"
+4. QvmaxDN is editable under service access level, others (QnMaxDN, QmMaxDN, etc.)are read only .
+5. Dlete "Load Rom def." in "Services -- > Rom Defaults".
+
+2013-08-28
+1. add "Force Replace" in Services menu
+2. change "lowFlowThresh"default value 3 and min 3, max 2000
+3. change "snrThreshold" range -80 ~ 50
+
+2013-09-22
+1. add"auto check EN." in menu "service"-->"sensor"
+2. change "Auto Adjust" in "device setup"-->"field optimization" to "Auto Zero"
+3. change "Low flow threshold" range 3 ~ 4000 
+4. change "K set"  read only
+
+2013-09-29
+1. remove "diagnostics"-->"diagnosis values"-->"flow frequency"
+2. remove "diagnostics"-->"diagnosis values"-->"density"
+3. remove "diagnostics"-->"diagnosis values"-->"pipe temperature"
+4. remove "diagnostics"-->"diagnosis values"-->"pressure"
+5. add "diagnostics"-->"diagnosis values"-->"ext. Temperature"
+2013-10-10
+1. add "span upperrange"in menu "service"-->"sensor"
+
+
+2013-10-23
+1. delete "setup logic output"in "InputOutput"-->"digit output"  
+2. change "Sensor Temperature Alarm"in "Input/output"-->"setup logic output"-->"digital output" 
+    to "Sensor Max T Alarm"and "Sensor Min T Alarm"
+
+
+2013-11-05
+1. Add "Temp ¡ú l = 0 %" and "Temp ¡ú l = 100 %" in Easy Setup Menu.
+2. Delete "Digital Out  Output Value" in Easy Setup Menu.
+3. Add "Active Mode" in Easy Setup Menu.
+4. Change "Gas Mass computation" to "Gas Density Selection" in Easy Setup and device setup.
+5. Change "Steam Mass computation"to "Steam Type" in Easy Setup and device setup.
+6. Add "Damping Temperature" in easy setup menu.
+7. Add "Frontend Hardware Version" in device info menu.
+8. Delete "Int. temperature selection" in device setup menu.
+9. Add "Pressure Upper Range" and "Pressure Lower Range" in easy setup and Input/Output.
+10. Change "SNR" to "AI Value" in diagnostics value.
+11. Add "Max Housing Temp" in service menu.

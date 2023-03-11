@@ -1,0 +1,301 @@
+reserved;definition;name;value;briefdescription
+##Module SubGen;;;;
+##ModuleRevision 0x020101;;;;
+##FileRevision 58;;;;
+;_LANGUAGE;LANGUAGE_ENGLISH;0;English
+;_LANGUAGE;LANGUAGE_GERMAN;1;German
+;_LANGUAGE;LANGUAGE_FRENCH;2;French
+;_LANGUAGE;LANGUAGE_SPANISH;3;Spanish
+;_LANGUAGE;LANGUAGE_ITALIAN;4;Italian
+;_LANGUAGE;LANGUAGE_DUTCH;5;Dutch
+;_LANGUAGE;LANGUAGE_DANISH;6;Danish
+;_LANGUAGE;LANGUAGE_SWEDISH;7;Swedish
+;_LANGUAGE;LANGUAGE_FINNISH;8;Finnish
+;_LANGUAGE;LANGUAGE_POLISH;9;Polish
+;_LANGUAGE;LANGUAGE_RUSSIAN;10;Russian
+;_LANGUAGE;LANGUAGE_CHINESE;11;Chinese
+;_LANGUAGE;LANGUAGE_JAPANESE;12;Japanese
+;_LANGUAGE;LANGUAGE_TURKISH;13;Turkish
+;_LANGUAGE;LANGUAGE_PORTUGUESE;14;Portuguese
+;_LANGUAGE;LANGUAGE_NOT_DEFINED;20;
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_1;0;1st signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_2;1;2nd signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_3;2;3rd signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_4;3;4th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_5;4;5th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_6;5;6th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_7;6;7th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_8;7;8th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_9;8;9th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_10;9;10th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_11;10;11th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_12;11;12th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_13;12;13th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_14;13;14th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_15;14;15th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_16;15;16th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_17;16;17th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_18;17;18th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_19;18;19th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_20;19;20th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_21;20;21th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_22;21;22th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_23;22;23th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_24;23;24th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_25;24;25th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_26;25;26th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_27;26;27th signal defined in signals table
+;_LOCAL_OP;LOCAL_OP_DISABLED;eTRUE;Local Operation Disabled
+;_LOCAL_OP;LOCAL_OP_ENABLED;eFALSE;Local Operation Enabled
+;_DISPLAY_MODE;DISPLAY_MODE_OFF;0;Operator page switched off
+;_DISPLAY_MODE;DISPLAY_MODE_GRAPHIC;1;Graph View
+;_DISPLAY_MODE;DISPLAY_MODE_1x4;2;1 row of 4 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_A;3;1 row of 6 characters (Rainbow Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_BAR_A;4;1 row of 6 characters + Bargraph (Rainbow Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_B;5;1 row of 6 characters (Standard Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_BAR_B;6;1 row of 6 characters + Bargraph (Standard Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x9;7;1 row of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x9_BAR;8;1 row of 9 characters + Bargraph
+;_DISPLAY_MODE;DISPLAY_MODE_2x9;9;2 rows of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_2x9_BAR;10;2 rows of 9 characters + Bargraph
+;_DISPLAY_MODE;DISPLAY_MODE_3x9;11;3 rows of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_4x9;12;4 rows of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_LPV;13;
+;_DISPLAY_MODE;DISPLAY_MODE_LPV_SSV;14;
+;_DISPLAY_MODE;DISPLAY_MODE_LPV_BAR;15;
+;_DISPLAY_MODE;DISPLAY_MODE_MPV_MSV;16;
+;_DISPLAY_MODE;DISPLAY_MODE_MPV_MSV_BAR;17;
+;_DISPLAY_MODE;DISPLAY_MODE_SPV_SSV_STV;18;
+;;DISPLAY_MODE_MAX;18;
+;_AUTOSCROLL;AUTOSCROLL_DISABLED;eFALSE;Autoscroll Disabled
+;_AUTOSCROLL;AUTOSCROLL_ENABLED;eTRUE;Autoscroll Enabled
+;_CUSTOM_DP;0_DP;0;X
+;_CUSTOM_DP;1_DP;1;X.X
+;_CUSTOM_DP;2_DP;2;X.XX
+;_CUSTOM_DP;3_DP;3;X.XXX
+;_CUSTOM_DP;4_DP;4;X.XXXX
+;_CUSTOM_DP;5_DP;5;X.XXXXX
+;_CUSTOM_DP;6_DP;6;X.XXXXXX
+;_CUSTOM_DP;7_DP;7;X.XXXXXXX
+;_CUSTOM_DP;8_DP;8;X.XXXXXXXX
+;_CUSTOM_DP;9_DP;9;X.XXXXXXXXX
+;_CUSTOM_DP;10_DP;10;X.XXXXXXXXXX
+;_CUSTOM_DP;11_DP;11;X.XXXXXXXXXXX
+;_CUSTOM_DP;12_DP;12;X.XXXXXXXXXXXX
+;_KEYPRESS;NO_KEYPRESS;0;
+;_KEYPRESS;RIGHT_KEYPRESS;1;
+;_KEYPRESS;LEFT_KEYPRESS;2;
+;_KEYPRESS;UP_KEYPRESS;3;
+;_KEYPRESS;DOWN_KEYPRESS;4;
+;_KEYPRESS;FAST_UP_KEYPRESS;5;
+;_KEYPRESS;FAST_DOWN_KEYPRESS;6;
+;_KEYPRESS;EXIT_CONFIGURATION_KEYPRESS;7;
+;_DATE_FORMAT;DATE_FORMAT_DD_MM_YYYY;0;DD-MM-YYYY
+;_DATE_FORMAT;DATE_FORMAT_MM_DD_YYYY;1;MM-DD-YYYY
+;_DATE_FORMAT;DATE_FORMAT_YYYY_MM_DD;2;YYYY-MM-YYYY
+;_HMI_INSTANCE;LOCAL_INSTANCE;1;1st instance of HMI (o/p to standard display)
+;_HMI_INSTANCE;REMOTE_INSTANCE;2;2nd instance of HMI (o/p via service port)
+;_CALIBRATION_STATE;CAL_STATUS_INACTIVE;0;Auto / Manual calibration is inactive
+;_CALIBRATION_STATE;CAL_STATUS_WAITING_FOR_STABILITY;1;Manual Calibration is waiting to be told that i/p signal is stable
+;_CALIBRATION_STATE;CAL_STATUS_WAITING_FOR_NEW_VALUE;2;Manual Calibration is waiting for a new process value
+;_CALIBRATION_STATE;CAL_STATUS_WAITING_FOR_STANDARD_1;3;Auto Calibration is waiting for 1st standard (buffer solution/test gas) to be applied
+;_CALIBRATION_STATE;CAL_STATUS_CALCULATING_1;4;Auto Calibration is caulculating factors for 1st standard (buffer solution/test gas)
+;_CALIBRATION_STATE;CAL_STATUS_WAITING_FOR_STANDARD_2;5;Auto Calibration is waiting for 2nd standard (buffer solution/test gas) to be applied
+;_CALIBRATION_STATE;CAL_STATUS_CALCULATING_2;6;Auto Calibration is caulculating factors for 2nd standard (buffer solution/test gas)
+;_CALIBRATION_STATE;CAL_STATUS_SUCCESS;7;Auto / Manual calibration has completed and successfully calculated new factors (can be accepted/rejected)
+;_CALIBRATION_STATE;CAL_STATUS_FAILURE;8;Auto / Manual calibration has completed but could not calculate new factors
+;_CALIBRATION_STATE;CAL_STATUS_REJECT;9;Auto / Manual calibration is rejecting any new factors
+;_CALIBRATION_STATE;CAL_STATUS_ACCEPT;10;Auto / Manual calibration is saving any new factors
+;_CALIBRATION_STATE;CAL_STATUS_SUCCESS_NO_REJECT;11;Auto / Manual calibration has completed and successfully calculated new factors (Exit only - cannot  be rejected)
+;_CALIBRATION_STATE;CAL_STATUS_VIEW_BUFFER_TEMP;12;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_EDIT_BUFFER_TEMP;13;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_VIEW_BUFFER_1;14;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_EDIT_BUFFER_1;15;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_WAITING_FOR_STABILITY_BUFFER_1;16;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_VIEW_BUFFER_2;17;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_EDIT_BUFFER_2;18;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_WAITING_FOR_STABILITY_BUFFER_2;19;2 point pH cal
+;_CALIBRATION_STATE;CAL_STATUS_SET_OUTPUT_HOLD;20;
+;_CALIBRATION_STATE;CAL_STATUS_RELEASE_OUTPUT_HOLD_ACCEPT;21;
+;_CALIBRATION_STATE;CAL_STATUS_RELEASE_OUTPUT_HOLD_REJECT;22;
+;_CALIBRATION_STATE;CAL_STATUS_SAMPLE_COLLECTION_IN_PROGRESS;23;
+;_CALIBRATION_STATE;CAL_STATUS_SAMPLE_COLLECTION_COMPLETE;24;
+;_CALIBRATION_STATE;CAL_STATUS_SAMPLE_COLLECTION_STOPPED;25;
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_NO_FAILURE;0;Auto / Manual calibration has completed without errors
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_UNSTABLE_INPUT;1;Auto / Manual calibration has failed because i/p signal was not stable
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_RESULT_OUT_OF_BOUNDS;2;Auto / Manual calibration has failed because calculated factors were outside specified limits
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_TEST_GAS_NOT_PRESENT;3;Auto / Manual calibration has failed because Test Gas in not present
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_NO_RESPONSE;4;Auto / Manual calibration has failed because sensor in not responding
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_NV_ERROR;5;Auto / Manual calibration has failed because system has failed to save new calibration factors
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_OFFSET_HIGH;6;calibration has failed because calculated result was outside specified limits
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_OFFSET_LOW;7;calibration has failed because calculated result was outside specified limits
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_SLOPE_HIGH;8;calibration has failed because calculated result was outside specified limits
+;_CALIBRATION_FAILURE_REASON;CAL_RESULT_FAIL_SLOPE_LOW;9;calibration has failed because calculated result was outside specified limits
+;_LL_HARDWARE_TYPE;HW_NOT_RECOGNISED;0;
+;_LL_HARDWARE_TYPE;HW_NORMAL_X_X;1;Original version without EEPROM (size, switches etc not defined)
+;_LL_HARDWARE_TYPE;HW_EEPROM_X_X;2;Original version with EEPROM (size, switches etc not defined)
+;_LL_HARDWARE_TYPE;HW_REMOTE_HMI;3;
+;_LL_HARDWARE_TYPE;HW_NORMAL_A_STD_SWITCH;4;HMI Size A
+;_LL_HARDWARE_TYPE;HW_EEPROM_A_STD_SWITCH;5;HMI Size A with EEPROM
+;_LL_HARDWARE_TYPE;HW_NORMAL_A_CAP_SWITCH;6;HMI Size A with capacitive switches
+;_LL_HARDWARE_TYPE;HW_EEPROM_A_CAP_SWITCH;7;HMI Size A with capacitive switches with EEPROM
+;_LL_HARDWARE_TYPE;HW_NORMAL_A_INDICATOR_ONLY;8;Size A indicator
+;_LL_HARDWARE_TYPE;HW_EEPROM_A_INDICATOR_ONLY;9;Size A indicator with EEPROM
+;_LL_HARDWARE_TYPE;HW_NORMAL_B_STD_SWITCH;10;HMI Size B
+;_LL_HARDWARE_TYPE;HW_EEPROM_B_STD_SWITCH;11;HMI Size B with EEPROM
+;_LL_HARDWARE_TYPE;HW_NORMAL_B_HH_TERMINAL;12;Hand held terminal Size B
+;_LL_HARDWARE_TYPE;HW_EEPROM_B_HH_TERMINAL;13;Hand held terminal Size B with EEPROM
+;_LL_HARDWARE_TYPE;HW_NORMAL_B_CAP_SWITCH;14;HMI Size B with capacitive switches
+;_LL_HARDWARE_TYPE;HW_EEPROM_B_CAP_SWITCH;15;HMI Size B with capacitive switches with EEPROM
+;_LL_HARDWARE_TYPE;HW_NORMAL_B_INDICATOR_ONLY;16;Size B indicator
+;_LL_HARDWARE_TYPE;HW_EEPROM_B_INDICATOR_ONLY;17;Size B indicator with EEPROM
+;_LL_HARDWARE_TYPE;HW_EEPROM_F_STD_SWITCH;19;Size F with standard switches
+;_LL_HARDWARE_TYPE;HW_SMART;20;Size B, smartHMI
+;_LL_HARDWARE_TYPE;HW_NORMAL_B_SIMPLE_INDICATOR;32;Size B simple indicator
+;_LL_HARDWARE_TYPE;HW_NOT_AVAILABLE;0xFF;LL HMI not active - Type cannot be determined
+;;VALVE_CAL_STATUS_INACTIVE;0;Calibration status - for Manual Valve Calibration
+;;VALVE_CAL_STATUS_SUCCESSFUL;1;Calibration status - for Manual Valve Calibration
+;;VALVE_CAL_STATUS_FAIL_SPAN_TOO_SMALL;2;Calibration status - for Manual Valve Calibration
+;;VALVE_CAL_STATUS_FAIL_RANGE_ERROR;3;Calibration status - for Manual Valve Calibration
+;;VALVE_CAL_STATUS_FAIL_SENSOR_ERROR;4;Calibration status - for Manual Valve Calibration
+;;TRENDVIEW_TIMEBASE_OFF;0;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_TIMEBASE_1_MINUTE;1;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_TIMEBASE_2_MINUTE;2;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_TIMEBASE_5_MINUTE;3;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_TIMEBASE_10_MINUTE;4;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_TIMEBASE_20_MINUTE;5;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_TIMEBASE_30_MINUTE;6;Timebase - for graphical(Trend) operator page
+;;TRENDVIEW_STATUS_INACTIVE;0;Status of Trend view section
+;;TRENDVIEW_STATUS_SAMPLING;1;Status of Trend view section
+;;TRENDVIEW_STATUS_ARRAY_VIEW;2;Status of Trend view section
+;_ROTATION;ROTATION_0;0;
+;_ROTATION;ROTATION_180;1;
+;;ROTATION_N_CODES;2;
+;_MENU_FORMAT;MENU_FORMAT_3_LINES;3;
+;_MENU_FORMAT;MENU_FORMAT_4_LINES;4;
+;_MENU_FORMAT;MENU_FORMAT_5_LINES;5;
+;_MENU_FORMAT;MENU_FORMAT_6_LINES;6;
+;;MENU_FORMAT_N_CODES;4;
+;LANGUAGE_OPTIONS;_LANGUAGE_OPTIONS_LIST;LANGUAGE_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_LANGUAGE_N_OPTIONS;LANGUAGE_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_LANGUAGE_OPTIONS;_CUSTOM_LANGUAGE_OPTIONS_LIST;CUSTOM_LANGUAGE_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_LANGUAGE_N_OPTIONS;CUSTOM_LANGUAGE_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_1_FORMAT_OPTIONS;_PAGE_1_FORMAT_OPTIONS_LIST;PAGE_1_FORMAT_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_1_FORMAT_N_OPTIONS;PAGE_1_FORMAT_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_1_LINE_1_OPTIONS;_PAGE_1_LINE_1_OPTIONS_LIST;PAGE_1_LINE_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_1_LINE_1_N_OPTIONS;PAGE_1_LINE_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_1_LINE_2_OPTIONS;_PAGE_1_LINE_2_OPTIONS_LIST;PAGE_1_LINE_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_1_LINE_2_N_OPTIONS;PAGE_1_LINE_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_1_LINE_3_OPTIONS;_PAGE_1_LINE_3_OPTIONS_LIST;PAGE_1_LINE_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_1_LINE_3_N_OPTIONS;PAGE_1_LINE_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_1_LINE_4_OPTIONS;_PAGE_1_LINE_4_OPTIONS_LIST;PAGE_1_LINE_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_1_LINE_4_N_OPTIONS;PAGE_1_LINE_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_1_LINE_B_OPTIONS;_PAGE_1_LINE_B_OPTIONS_LIST;PAGE_1_LINE_B_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_1_LINE_B_N_OPTIONS;PAGE_1_LINE_B_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_2_FORMAT_OPTIONS;_PAGE_2_FORMAT_OPTIONS_LIST;PAGE_2_FORMAT_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_2_FORMAT_N_OPTIONS;PAGE_2_FORMAT_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_2_LINE_1_OPTIONS;_PAGE_2_LINE_1_OPTIONS_LIST;PAGE_2_LINE_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_2_LINE_1_N_OPTIONS;PAGE_2_LINE_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_2_LINE_2_OPTIONS;_PAGE_2_LINE_2_OPTIONS_LIST;PAGE_2_LINE_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_2_LINE_2_N_OPTIONS;PAGE_2_LINE_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_2_LINE_3_OPTIONS;_PAGE_2_LINE_3_OPTIONS_LIST;PAGE_2_LINE_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_2_LINE_3_N_OPTIONS;PAGE_2_LINE_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_2_LINE_4_OPTIONS;_PAGE_2_LINE_4_OPTIONS_LIST;PAGE_2_LINE_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_2_LINE_4_N_OPTIONS;PAGE_2_LINE_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_2_LINE_B_OPTIONS;_PAGE_2_LINE_B_OPTIONS_LIST;PAGE_2_LINE_B_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_2_LINE_B_N_OPTIONS;PAGE_2_LINE_B_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_3_FORMAT_OPTIONS;_PAGE_3_FORMAT_OPTIONS_LIST;PAGE_3_FORMAT_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_3_FORMAT_N_OPTIONS;PAGE_3_FORMAT_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_3_LINE_1_OPTIONS;_PAGE_3_LINE_1_OPTIONS_LIST;PAGE_3_LINE_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_3_LINE_1_N_OPTIONS;PAGE_3_LINE_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_3_LINE_2_OPTIONS;_PAGE_3_LINE_2_OPTIONS_LIST;PAGE_3_LINE_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_3_LINE_2_N_OPTIONS;PAGE_3_LINE_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_3_LINE_3_OPTIONS;_PAGE_3_LINE_3_OPTIONS_LIST;PAGE_3_LINE_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_3_LINE_3_N_OPTIONS;PAGE_3_LINE_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_3_LINE_4_OPTIONS;_PAGE_3_LINE_4_OPTIONS_LIST;PAGE_3_LINE_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_3_LINE_4_N_OPTIONS;PAGE_3_LINE_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_3_LINE_B_OPTIONS;_PAGE_3_LINE_B_OPTIONS_LIST;PAGE_3_LINE_B_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_3_LINE_B_N_OPTIONS;PAGE_3_LINE_B_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_4_FORMAT_OPTIONS;_PAGE_4_FORMAT_OPTIONS_LIST;PAGE_4_FORMAT_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_4_FORMAT_N_OPTIONS;PAGE_4_FORMAT_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_4_LINE_1_OPTIONS;_PAGE_4_LINE_1_OPTIONS_LIST;PAGE_4_LINE_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_4_LINE_1_N_OPTIONS;PAGE_4_LINE_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_4_LINE_2_OPTIONS;_PAGE_4_LINE_2_OPTIONS_LIST;PAGE_4_LINE_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_4_LINE_2_N_OPTIONS;PAGE_4_LINE_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_4_LINE_3_OPTIONS;_PAGE_4_LINE_3_OPTIONS_LIST;PAGE_4_LINE_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_4_LINE_3_N_OPTIONS;PAGE_4_LINE_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_4_LINE_4_OPTIONS;_PAGE_4_LINE_4_OPTIONS_LIST;PAGE_4_LINE_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_4_LINE_4_N_OPTIONS;PAGE_4_LINE_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_4_LINE_B_OPTIONS;_PAGE_4_LINE_B_OPTIONS_LIST;PAGE_4_LINE_B_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_4_LINE_B_N_OPTIONS;PAGE_4_LINE_B_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_5_FORMAT_OPTIONS;_PAGE_5_FORMAT_OPTIONS_LIST;PAGE_5_FORMAT_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_5_FORMAT_N_OPTIONS;PAGE_5_FORMAT_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_5_LINE_1_OPTIONS;_PAGE_5_LINE_1_OPTIONS_LIST;PAGE_5_LINE_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_5_LINE_1_N_OPTIONS;PAGE_5_LINE_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_5_LINE_2_OPTIONS;_PAGE_5_LINE_2_OPTIONS_LIST;PAGE_5_LINE_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_5_LINE_2_N_OPTIONS;PAGE_5_LINE_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_5_LINE_3_OPTIONS;_PAGE_5_LINE_3_OPTIONS_LIST;PAGE_5_LINE_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_5_LINE_3_N_OPTIONS;PAGE_5_LINE_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_5_LINE_4_OPTIONS;_PAGE_5_LINE_4_OPTIONS_LIST;PAGE_5_LINE_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_5_LINE_4_N_OPTIONS;PAGE_5_LINE_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_5_LINE_B_OPTIONS;_PAGE_5_LINE_B_OPTIONS_LIST;PAGE_5_LINE_B_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_5_LINE_B_N_OPTIONS;PAGE_5_LINE_B_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_6_FORMAT_OPTIONS;_PAGE_6_FORMAT_OPTIONS_LIST;PAGE_6_FORMAT_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_6_FORMAT_N_OPTIONS;PAGE_6_FORMAT_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_6_LINE_1_OPTIONS;_PAGE_6_LINE_1_OPTIONS_LIST;PAGE_6_LINE_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_6_LINE_1_N_OPTIONS;PAGE_6_LINE_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_6_LINE_2_OPTIONS;_PAGE_6_LINE_2_OPTIONS_LIST;PAGE_6_LINE_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_6_LINE_2_N_OPTIONS;PAGE_6_LINE_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_6_LINE_3_OPTIONS;_PAGE_6_LINE_3_OPTIONS_LIST;PAGE_6_LINE_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_6_LINE_3_N_OPTIONS;PAGE_6_LINE_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_6_LINE_4_OPTIONS;_PAGE_6_LINE_4_OPTIONS_LIST;PAGE_6_LINE_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_6_LINE_4_N_OPTIONS;PAGE_6_LINE_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;PAGE_6_LINE_B_OPTIONS;_PAGE_6_LINE_B_OPTIONS_LIST;PAGE_6_LINE_B_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_PAGE_6_LINE_B_N_OPTIONS;PAGE_6_LINE_B_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;DIAGNOSIS_VIEW_OPTIONS;_DIAGNOSIS_VIEW_OPTIONS_LIST;DIAGNOSIS_VIEW_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_DIAGNOSIS_VIEW_N_OPTIONS;DIAGNOSIS_VIEW_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_1_OPTIONS;_CUSTOM_DP_1_OPTIONS_LIST;CUSTOM_DP_1_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_1_N_OPTIONS;CUSTOM_DP_1_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_2_OPTIONS;_CUSTOM_DP_2_OPTIONS_LIST;CUSTOM_DP_2_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_2_N_OPTIONS;CUSTOM_DP_2_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_3_OPTIONS;_CUSTOM_DP_3_OPTIONS_LIST;CUSTOM_DP_3_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_3_N_OPTIONS;CUSTOM_DP_3_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_4_OPTIONS;_CUSTOM_DP_4_OPTIONS_LIST;CUSTOM_DP_4_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_4_N_OPTIONS;CUSTOM_DP_4_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_5_OPTIONS;_CUSTOM_DP_5_OPTIONS_LIST;CUSTOM_DP_5_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_5_N_OPTIONS;CUSTOM_DP_5_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_6_OPTIONS;_CUSTOM_DP_6_OPTIONS_LIST;CUSTOM_DP_6_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_6_N_OPTIONS;CUSTOM_DP_6_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_7_OPTIONS;_CUSTOM_DP_7_OPTIONS_LIST;CUSTOM_DP_7_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_7_N_OPTIONS;CUSTOM_DP_7_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_8_OPTIONS;_CUSTOM_DP_8_OPTIONS_LIST;CUSTOM_DP_8_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_8_N_OPTIONS;CUSTOM_DP_8_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_9_OPTIONS;_CUSTOM_DP_9_OPTIONS_LIST;CUSTOM_DP_9_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_9_N_OPTIONS;CUSTOM_DP_9_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_10_OPTIONS;_CUSTOM_DP_10_OPTIONS_LIST;CUSTOM_DP_10_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_10_N_OPTIONS;CUSTOM_DP_10_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;CUSTOM_DP_11_OPTIONS;_CUSTOM_DP_11_OPTIONS_LIST;CUSTOM_DP_11_OPTIONS_LIST;the value according to ConstructorInclude.h, which is create by HMIGen
+;;_CUSTOM_DP_11_N_OPTIONS;CUSTOM_DP_11_N_OPTIONS;the value according to ConstructorInclude.h, which is create by HMIGen
+;;WAVEFORM_PLOT_DATA_1_ADDRESS;1;
+;;WAVEFORM_PLOT_DATA_2_ADDRESS;2;
+;;WAVEFORM_PLOT_DATA_3_ADDRESS;3;
+;;WAVEFORM_PLOT_ENABLE_1_U8;4;
+;;WAVEFORM_PLOT_ENABLE_2_U8;5;
+;;WAVEFORM_PLOT_ENABLE_3_U8;6;
+;;WAVEFORM_PLOT_DISTANCE_UNITS_U8;7;
+;;WAVEFORM_H_SCALE_OFFSET_FLOAT;8;
+;;WAVEFORM_H_SCALE_OFFSET_INC_OBJ;9;
+;;WAVEFORM_H_SCALE_OFFSET_DEC_OBJ;10;
+;;WAVEFORM_H_SCALE_RES_FLOAT;11;
+;;WAVEFORM_H_SCALE_RES_INC_OBJ;12;
+;;WAVEFORM_H_SCALE_RES_DEC_OBJ;13;
+;;WAVEFORM_V_SCALE_RANGE_HIGH_FLOAT;14;
+;;WAVEFORM_V_SCALE_RANGE_LOW_FLOAT;15;
+;;WAVEFORM_V_SCALE_RANGE_DP_U8;16;
+;;WAVEFORM_V_SCALE_RANGE_DIV_U8;17;
+;;WAVEFORM_PLOT_DISTANCE_NO_UNITS;0;
+;;WAVEFORM_PLOT_DISTANCE_FEET;1;
+;;WAVEFORM_PLOT_DISTANCE_INCHES;2;
+;;WAVEFORM_PLOT_DISTANCE_METRES;3;
+;;WAVEFORM_PLOT_DISTANCE_CENTIMETRES;4;
+;;WAVEFORM_PLOT_DISTANCE_MILLIMETRES;5;

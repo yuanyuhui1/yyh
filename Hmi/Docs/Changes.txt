@@ -1,0 +1,1927 @@
+ +---------------------------------------------------------------------------------------------------------------------------------------------------+
+ |                                                                                                                                                   |
+ |                                          Rules For Version Numbering: HMI s/w is labelled as HMI/20xx.yy.zz                                       |
+ |                                          ===========================                             | |  |  |                                        |
+ |                                           where:                                                 | |  |  |                                        |
+ |                                           (20) HMI software series ______________________________| |  |  |                                        |
+ |                                                                                                    |  |  |                                        |
+ |                                           (xx) HMI Version ________________________________________|  |  |                                        |
+ |                                                                                                       |  |                                        |
+ |                                           (yy) Major Release Number___________________________________|  |                                        |
+ |                                                incremented when a major new feature is introduced        |                                        |
+ |                                                                                                          |                                        |
+ |                                           (zz) Minor Release Number _____________________________________|                                        |
+ |                                                incremented when (a) a minor new feature is introduced                                             |
+ |                                                              or (b) a BugFix is added                                                             |
+ |                                                cleared when a major new feature is introduced                                                     |
+ |                                                                                                                                                   |
+ +---------------------------------------------------------------------------------------------------------------------------------------------------+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_08_00'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 20/04/12
+NAME gbroarn
+DETAILS
+New Feature - New implemetation type added: TYPE_1_IMPLEMENTATION_WITH_2WIRE_SERVICEPORT
+Improvement - ARM_PIN_OBJECT is now user defined in CompileTimeDefinitions to allow for renaming of object in 2WCTW start kit
+
+DATE 02/04/12
+NAME gbroarn
+DETAILS
+Bug fix     - FrameTableRenameAutocal() changed - parameter "TBOOL rename" changed to "TBOOL renameAutocal" to overcome compile time error
+Improvement - HmiCoordinatorResetPreviousKeyState() added - allows previous keystate to be cleared when HMI passes control back to TFT subsystem
+Improvement - All keys locked out when left key used to automatically enter a specific config level
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_07_02'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 29/03/12
+NAME gbroarn
+DETAILS
+Improvement - If write protected by UserLock() function then "locked" icon overrides ARM or SetOperatorIcon_SRV() settings on operator page(s)
+Improvement - Autocalibration frames: Fixed strings that refer to "Calibration" can be changed to "Procedure" via special operation function
+
+DATE 07/03/12
+NAME gbroarn
+DETAILS
+Bug fix     - Changes to BuildWaveformFrame() to ensure waveform area is "live" and updated regularly
+
+DATE 06/03/12
+NAME gbroarn
+DETAILS
+Bug fix     - Changes wrt FrameTableIsNavigationFromAutoCalAllowed() for builds with Manual Calibration frames but without AutoCal Frames
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_07_01'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New Feature - From operator page, Left key can be used to enter configuration at Standard,Advanced or Service level.
+              Feature enabled by use of appropriate pre-processor switch: LEFT_KEY_SELECTS_STANDARD_LEVEL
+                                                                          LEFT_KEY_SELECTS_ADVANCED_LEVEL
+                                                                          LEFT_KEY_SELECTS_SERVICE_LEVEL
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_07_00'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New Feature - Matrix frame types added
+Bug fix     - correction to write protection bug introduced at 2002_06_02
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_06_02'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 17/01/12
+NAME gbroarn
+DETAILS
+
+Improvement - "Stop" added to Sample Collection stage in Manual Calibration
+New Feature - Write protection mechanism simplified for CTW versions
+New Feature - Trap added to force use of up to date ARM subsystem
+Improvement - Login Level Icons improved on Type 4 & Type 5 implementations
+Bux Fix     - Corrections to compiler errors in previously untested Type 1 implementation
+New Feature - Device Setup (Analyser) & Sesor setup (Analyser) config icons added
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_06_01'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 29/11/11
+NAME gbroarn
+DETAILS
+
+New Feature - Analyser Device Config Headers added
+New feature - Sample Collection stage added to Manual Calibration
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_06_00'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 29/11/11
+NAME gbroarn
+DETAILS
+
+Improvement  - Packet buffer size defined by HMIGen
+
+
+DATE 29/11/11
+NAME gbroarn
+DETAILS
+
+New feature - Introduction of 4x9 operator page format
+New feature - Completion of changes related to user selectable display rotation
+Bug Fix     - Correction to packet buffer size - Type 2 implementations
+Improvement - Format of NV data changed to allow new features (Operator pages 5 & 6, 4x9 operator page format, Rotation & Menu Format)
+              to be introduced without affecting existing NV storage
+New Feature - Support for Reduced Numeric Character set
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_05_00'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 27/10/11
+NAME gbroarn
+DETAILS
+
+New feature - Changes related to user selectable menu format
+New feature - Changes related to user selectable display rotation	NOT COMPLETE
+New Feature - Changes related to custom languages			NOT COMPLETE
+New Feature - Waveform frame type added
+New Feature - Support added for diagnostic groups "Sensor 1", "Sensor 2", "Sensor 3", "Sensor 4", "Sensor 5", "Sensor 6", "Transmitter"
+New Feature - Support for operator pages 5 & 6 added
+New Feature - "Navigation from Autocal" added
+New Feature - Support for indirect text added
+New Feature - Support for increased packet buffer size - Type 1 & 2 implementations
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_04_03'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 01/07/11
+NAME gbroarn
+DETAILS
+
+Bug Fix     - (CTRLM517) - FrameMover.c, EnterConfig_CheckPassword() Termination character added to password string which is passed to AdjusterSetARMlevel() and ultimately to ARM.
+New Feature - Various changes in preparation for "COMMON_TOP_WORKS_NEW_FEATURES" - will have no effect 
+
+DATE 31/05/11
+NAME gbroarn
+DETAILS
+
+New Feature - Changes related to "SHOW_LOGIN_LEVEL"
+              Changes related to "HMI_SUPPORTS_INDICATOR_ONLY"
+              Changes related to "NAVIGATOR_SPECIAL_FEATURES_HMI"
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_04_02'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 05/05/11
+NAME gbroarn
+DETAILS
+
+Improvement - (EDP300 only) Modified to allow GetEDP300NamurClassCategory() to use pointers of type *TUSIGN8 - simplifies EDP300Mode.c/.h
+Improvement - (EDP300 only) Diagnosis classes other than the following are considered a "Not NAMUR" class and result in an "information" classification icon
+              DIAGNOSIS_CLASS_FAILURE, DIAGNOSIS_CLASS_MAINTENANCE, DIAGNOSIS_CLASS_OFF_SPECIFICATION, DIAGNOSIS_CLASS_CHECK_FUNCTION, DIAGNOSIS_CLASS_NONE
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_04_01'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 20/04/11
+NAME gbroarn
+DETAILS
+
+New Feature - (EDP300 only) NAMUR status of device obtained via GetEDP300NamurClassCategory() rather than highest priority active alarm
+New Feature - (EDP300 only) Diagnosis classes other than the following are considered a "Not NAMUR" class and result in a blank classification icon
+              DIAGNOSIS_CLASS_FAILURE, DIAGNOSIS_CLASS_MAINTENANCE, DIAGNOSIS_CLASS_OFF_SPECIFICATION, DIAGNOSIS_CLASS_CHECK_FUNCTION, DIAGNOSIS_CLASS_NONE
+New Feature - (EDP300 only) Quick Adjust status "Exhaust" replaced by "Pressurise"
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_04_00'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 02/03/11
+NAME gbroarn
+DETAILS
+Improvement - structure of generated c files changed
+              allows multiple HMI implementations to be included in one IAR project
+
+New Feature - Additions to allow Chinese on TFT display versions
+
+DATE 19/01/11
+NAME gbroarn
+DETAILS
+Improvement - All pre-processor switches using _CM10_BUILD, _CM15_BUILD, _CM30_BUILD & _CM50_BUILD replaced with pre-processor switches using the appropriate
+              combination of implementation type & display size to allow more general use of TFT display variants
+
+Improvement - Definitions for DISPLAY_START_ADDR (used in TYPE_5_IMPLEMENTATION & TYPE_4_IMPLEMENTATION)
+              and DISPLAY_REG_ADDR (used TYPE_4_IMPLEMENTATION) moved from Macros_type_X.h to driver.c so that
+              product specific values can be applied. 
+
+DATE 18/01/11
+NAME gbroarn
+DETAILS
+Bug Fix     - Correction to blank area function for type 4 & type 5 implementations
+
+DATE 14/01/11
+NAME gbroarn
+DETAILS
+Improvement - Modifications made in preparation for Asian language on TFT displays
+New Feature - Calibration frames supported in sequences
+
+
+Modifications made in preparation for Asian language on TFT displays
+
+Calibration frames supported in sequences
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_09'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 19/11/10
+NAME gbroarn
+DETAILS
+New Feature - Portuguese Language added
+New Feature - Support for config header "Device Setup (Level)" added
+New Feature - Support for Latin 1 character set added
+
+DATE 28/10/10
+NAME gbroarn
+DETAILS
+Improvement - Mechanism added to force the language enumerations to be displayed in its native language
+              NOTE: This feature can be disabled with pre-processor switch DISABLE_NATIVE_LANGUAGE
+Bug Fix     - Trap for blank title bar added - HMI will crash if attempting to process a blank title bar
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_08'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 15/10/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Correction to compile errors introduced by Auto Adjust "Abort" feature
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_07'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 14/10/10
+NAME gbroarn
+DETAILS
+New Feature - "Abort" introduced on Auto Adjust with Timer & Result frames.
+              "Abort" is by default not enabled but can be enabled using the function FrameTableSetAutoAdjustAbortSettings() which must be called 
+              from a special operation function on entry to the Auto Adjust frame.
+Bug Fix     - Special operation functions only called when FrameTableSetCurrentFrame() changes the frame (not if it resets to the same frame)
+Bug Fix     - Numerical parameter view - correction to incorrectly dimensioned array TUSIGN8 units[15] changed to [18]
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_06'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 02/09/10
+NAME gbroarn
+DETAILS
+Improvement - Supression of compiler warning "Warning[Go003]: Optimization can only be lowered from the default, not raised" added to PacketManagerBuilder.c
+Improvement - Supression of compiler warning "Warning[Go003]: Optimization can only be lowered from the default, not raised" added to TrendView.c
+
+DATE 16/08/10
+NAME gbroarn
+DETAILS
+Improvement - Accellerator added to adjustment of time fields within Date & time frames
+              NOTE: requires pre-processor directive DATE_TIME_ACCELERATOR
+
+DATE 16/08/10
+NAME gbroarn
+DETAILS
+Improvement - Time duration frames inherently have an upper limit for the duration of 200 hours (199h 59m 59s) but the upper limit can be changed via
+              FrameTableSetTimeDurationLimit() which must be called from a special operation function on entry to the Date/Time frame.
+
+Improvement - Inherent Special operation function added: specialOp_INH_RETURN_TO_OPERATOR_PAGE() - called when HMI returns to the operator page 
+                                                                                                 - NOTE: inherently called following specialOp_INH_EXIT_CONFIG()
+
+DATE 10/08/10
+NAME gbmaash
+DETAILS
+Bug Fix	    - An over-length titlebar string was not being limited correctly. This was a problem introduced when code was modified on the 25/2/10 to account 
+	          for the extended character set.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_05'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 28/07/10
+NAME gbroarn
+DETAILS
+Improvement - #pragma statements used to restrict optimizations extended to include format used by compiler version 3.4
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_04'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 28/07/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Correction to processing of custom engineering units in numerical view frames
+
+Bug Fix     - Numerical adjustment of simple data types (without business rules) corrected to 
+              allow/not allow negative numbers and show minimum limit based upon the data type
+
+              ST_U8       - negative not allowed - minimum limit displayed as 0
+              ST_U16      - negative not allowed - minimum limit displayed as 0
+              ST_I16      - negative allowed     - minimum limit displayed as -9, -99, -999 (the number of 9's is determined by "maxCharacters")
+              ST_U32      - negative not allowed - minimum limit displayed as 0
+              ST_FLOAT    - negative allowed     - minimum limit displayed as -9, -99, -999 (the number of 9's is determined by "maxCharacters")
+              ST_DOUBLE   - negative allowed     - minimum limit displayed as -9, -99, -999 (the number of 9's is determined by "maxCharacters")
+              ST_CHAR     - negative not allowed - minimum limit displayed as 0
+              ST_WIDECHAR - negative not allowed - minimum limit displayed as 0
+
+DATE 28/07/10
+NAME gbroarn
+DETAILS
+Improvement - data_handling.c & driver.c:
+              implementation.h now included via IncludeList_Implementation.h - 
+              simplifies implementation if the files generated by HMIGen 
+              are not saved to the ....HMI\source\ folder.
+
+Improvement - data_handling.c & driver.c:
+              Layer2.h now included via IncludeList_LowLevelLayer2.h - 
+              simplifies implementation if the files generated by HMIGen 
+              are not saved to the ....HMI\source\ folder.
+
+DATE 27/07/10
+NAME gbroarn
+DETAILS
+Improvement - HMI service function "HMI_AllowReInit_SRV()" added. Allows Hardware, tasks and data to be reinitialised via "Initialize_HMI()"
+Improvement - Stack usage reduced on string Edit frames if long strings (>20 characters) are not supported
+Improvement - Write protection mechanism extended to include specdific write protection features for FF & PA devices (not just HART)
+              NOTE: These features can be removed with pre-processor switches OVERRIDE_FF_WRITE_PROTECT & OVERRIDE_PA_WRITE_PROTECT 
+Improvement - Write protection mechanism modified to suit 266 requirements (MILE2_266_SPECIAL_FEATURES_HMI only)
+New Feature - Full support for ASIAN Language added to type 1 versions
+                  
+DATE 27/07/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Graph parameter frames, correction to calculation of plot pixel pattern 
+
+DATE 01/07/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Checking of availability of extended character sets corrected for versions without service port
+
+Improvement - Layer2.h header files now included via IncludeList_Layer2.h - 
+              simplifies implementation if the files generated by HMIGen 
+              are not saved to the ....HMI\source\ folder
+
+DATE 30/06/10
+NAME gbroarn
+DETAILS
+Improvement - All Diagnosis header files now included via IncludeList_Diagnosis.h - 
+              simplifies implementation if the files generated by the diagnosis code 
+              generator are not saved to the ....Diagnosis\Interface\ folder
+
+DATE 30/06/10
+NAME gbroarn
+DETAILS
+            - Extension to HMIGen version trap revoked
+              Asian versions     - Files must be generated by HMIGen Version "0.11.x.x" or "1.11.x.x" or newer
+              Non Asian Versions - Files must be generated by HMIGen Vesions "0.10.x.x" or "1.5.x.x" or newer
+
+DATE 30/06/10
+NAME gbroarn
+DETAILS
+Improvement - macros to ease access to often used T_UNIT methods added (hmi.h)
+Improvement - DiagnosisCompileTimeDefinitions.h now included via IncludeList_Diagnosis.h - 
+              simplifies implementation if the files generated by the diagnosis code 
+              generator are not saved to the ....Diagnosis\Interface\ folder
+New Feature - HMIGen version trap extended.
+              All versions     - Files must be generated by HMIGen Version "x.12.2.x" or newer
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_03'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE 25/06/10
+NAME gbroarn
+DETAILS
+New Feature - Manual calibration frames: "New" value displayed with 9 rather than 6 characters (APA592_SPECIAL_FEATURES_HMI only)
+New Feature - Progress bargraph added to Manual calibration frames (initially for Toroidal Conductivity Calibration)
+Improvement - Casting added in various places to remove "implicit cast" compiler warnings
+New Feature - Left / Right key lockout overridden whilst user in logged in via ARM NOTE: Requires pre-processor definition "OVERRIDE_LR_LOCKOUT_WHILST_LOGGED_IN"
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_02'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 18/05/10
+NAME gbroarn
+DETAILS
+Improvement - Operator frame format "HMI_DISPLAY_MODE_GRAPHIC" uses signal from "mainOperatorView_X_bargraph" rather than "mainOperatorView_X_1"
+Improvement - When Low level component is either the Remote HMI or a Type 1 low level which does not support extended characters then the character 
+              codes > 0x7F are converted to characters from the special character area (0x06..0x1F) where possible.
+New Feature - Validity tests assigned to signals can be used to remove signals from list of available operator page line sources.
+              NOTE requires pre-processor directive ENABLE_LINE_SOURCE_VALIDITY_TESTS
+
+DATE 18/05/10
+NAME gbroarn
+DETAILS
+Improvement - Packet buffer size increased to 240 bytes on type 3 implementations
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_01'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 13/05/10
+NAME gbroarn
+DETAILS
+Improvement - Display flicker & resetting problems caused by excessively long text strings eliminated
+New Feature - HMIGen version trap extended.
+              Asian versions     - Files must be generated by HMIGen Version "0.11.x.x" or "1.11.x.x" or newer
+              Non Asian Versions - Files must be generated by HMIGen Vesions "0.10.x.x" or "1.5.x.x" or newer
+
+Improvement - Separate Asian pattern tables for upper & lower pages replaced with single pattern table containing both upper & lower page patterns
+
+Improvement - special icons for EDP300 modified so that "control active" icon appears at the top rather than the bottom of the icon
+Improvement - PacketManagerBuilder.c now split into two files in order to elimiate linker range errors:
+               - PacketManagerBuilder.c         - contains only the basic frame builder functions
+               - PacketManagerBuilderServices.c - contains functions called from functions within PacketManagerBuilder.c
+Improvement - Graph Parameter Frames now accept an array of data of the any one of the following types: ST_FLOAT, ST_U16, ST_I16, ST_U8
+
+Bug Fix     - Conversions from float & double float values to strings corrected so that values close to multiples of 10 are not inherently rounded up
+Improvement - Icon definitions in PacketManagerBuilder.c declared as "static"
+
+DATE 10/05/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Frame table initialized correctly with respect to MainInit (power up) from HmiCoordinatorInitializeTasks() via FrameTableInitialise()
+
+DATE 16/04/10
+NAME gbroarn
+DETAILS
+Improvement - SECONDARY_IDENTIFIER_LEN increased to 16 characters on TFT versions (TYPE_4_IMPLEMENTATION & TYPE_5_IMPLEMENTATION)
+
+DATE 14/04/10
+NAME gbroarn
+DETAILS
+
+Improvement - TFLOAT values equal to NaN are displayed as "------"
+Bug Fix     - Changes made so that graph param frames can be available without graphical operator page
+Bug Fix     - Changes made so that graph param frames can be available without special op's
+New Feature - Device can now support up to 12 languages
+Improvement - Minor changes related to new EDP300 requirements
+New Feature - Engineering units type extended to include "Use next attribute" 
+	                         Engineering unit code is at: <Subsystem Index><Object Index><Attribute Index>
+	                         UOM table selected from:     <Subsystem Index><Object Index><Attribute Index + 1>
+Bug Fix     - Quick Exit time corrected
+New Feature - Page specific view icons available on operator pages (can be disabled with pre-processor def'n DISABLE_OP_PAGE_ID)
+Improvement - Graphical Operator page. If the bargraph range of the signal to be displayed graphically is not set then the Max & Min y axis value are calculated from the attribute description
+Improvement - LL firware version only displayed with splash screen on Type 1 implementation
+Bug Fix     - LL StaticTextWrite() function corrected to allow for revised "WRITE_STRING" format introduced when extended character set was introduced
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_03_00'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 26/03/10
+NAME gbroarn
+DETAILS
+Improvement - HMI Version number added to comment field HmiCoordinator.c
+New Feature - Full support for Graphical (Trend) Operator page added, Previous implementation of graph view removed.
+New Feature - Frame Types added: FRAME_TYPE_GRAPH_PARAM_FRAME_1_NO_EDIT - displays an array of floats as a graph (interpolation between points)
+                               : FRAME_TYPE_GRAPH_PARAM_FRAME_2_NO_EDIT - displays an array of floats as a graph (interpolation between points)
+New Feature - Bug CG7 - Inherent Special operation functions added: specialOp_INH_ENTER_CONFIG() - called when HMI enters congfiguration
+                                                                  : specialOp_INH_EXIT_CONFIG()  - called when HMI exits congfiguration
+Bug Fix     - Bug CTRLM358 - Slider bar position modified to allow for menu items "hidden" by validity test functions. (Type 4 & Type 5 implementations only)
+New Feature - Bug CTRLM368 - Quick Exit feature added
+Bug Fix     - Bug CTRLM293 - String view for long strings on display size E corrected
+
+DATE 05/03/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Support for validity tests on signals view modified to ensure backwards compatibility with older versions of HMIGen
+
+DATE 05/03/10
+NAME gbroarn
+DETAILS
+Bug Fix     - Modified to ensure that special operation(on exit) function is not proccessed if frame being exited is not valid.
+New Feature - Support for validity tests on signals view added
+Improvement - User can move between main menu headers without releasing up/down key each time
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+   Labelled 'version 2002_02_08'
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATE 25/02/10
+NAME gbroarn
+DETAILS
+Improvement - All implementations can now accept extended character sets (Type 1 compatibility is based on LL s/w h/w version)
+New Feature - Support for new character sets added: SetStandardAndRussian, SetKatakana, SetStandardAndKatakana, SetTurkish, SetStandardAndTurkish
+New Feature - Support for extended character pages added
+New Feature - Support for Japanese(Katakana) & Turkish Languages added
+
+
+DATE 10/02/10
+NAME gbroarn
+DETAILS
+Improvement - Improvement to processing of EDP300 Mode & Quick Adjust Frames
+
+DATE 10/02/10
+NAME gbroarn
+DETAILS
+Improvement - Display of bargraph value on Manual Adjust - Allows a maximum length of 6 characters
+Bug Fix     - Manual Adjust Accellerator setting of maximum acceleration rate corrected
+
+DATE 10/02/10
+NAME gbroarn
+DETAILS
+Improvement - Correction to display of bargraph value on special manual adjust frame
+Improvement - Handling of Diagnostics Page on Type 4 & 5 versions improved
+Improvement - Handling of Operator Page Icons improved
+Improvement - Operator Icon (Unlocked) added
+New Feature - Support for Configuration Change counter Added
+New Feature - Manual valve calibration frame (special Auto Adjust Frame) added
+New Feature - Basic Setup Header added to enumeration CONFIG_HEADER_TYPE
+Bug Fix     - Correction to modification made to ensure lower levels of frame memory cleared when entering
+              a sub menu and the cursor position retrieved from frame memory is no longer valid
+
+
+DATE 01/02/10
+NAME gbroarn
+DETAILS
+
+Bug Fix     - Modifications made to ensure lower levels of frame memory are cleared when entering
+              a sub menu and the cursor position retrieved from frame memory is no longer valid
+
+Bug Fix     - Correction to ensure that PacketManagerIsRemoteInstance()
+              is only called if HMI_SUPPORTS_SERVICEPORT
+
+DATE 29/01/10
+NAME gbroarn
+DETAILS
+
+Improvement - Preprocessor definitions for User defined special features now built into CompileTimeDefinitions.h
+              Preprocessor directive AZ200_SPECIAL_FEATURES  renamed AZ200_SPECIAL_FEATURES_HMI
+              Preprocessor directive EDP300_SPECIAL_FEATURES renamed EDP300_SPECIAL_FEATURES_HMI
+              Preprocessor directive APA592_SPECIAL_FEATURES renamed APA592_SPECIAL_FEATURES_HMI
+Improvement - Accelerator added to manual adjust frames
+New Feature - Numeric Value of object represented on bargraph can be displayed below bargraph
+              NOTE: Both of the above require pre-processor directive MANUAL_ADJUST_ACCELERATOR
+Improvement - Adjustment of Date & Time. Cursor now moves in the order Year->Month->Date->Hours->Minutes->Seconds irrespective of date format
+Improvement - Frame memory reset when user selects "Logout"
+Bug Fix     - 2pt pH calibration frame - correction to cursor/dp positioning when editing buffer values
+New Feature - Support for Chinese Added to Type 2 & Type 3 Implementations
+Bug Fix     - Write protection mechanism modified to suit APA592 requirements (APA592_SPECIAL_FEATURES_HMI only)
+Improvement - Bargraph length standardised on Manual Adjust & Auto Adjust frames
+New Feature - Up/Down Icon displayed on view frames to indicate availability of navigation between view frames
+
+DATE 11/11/09
+NAME gbroarn
+DETAILS
+
+Improvement - Accellerator added to adjustment of fields within IP Address frames
+              NOTE: requires pre-processor directive IPADDR_ACCELERATOR
+Bug Fix     - pre-processor directive STRING_ACCELLERATOR renamed STRING_ACCELERATOR 
+Bug Fix     - pre-processor directive ENUM_ACCELLERATOR renamed ENUM_ACCELERATOR 
+
+DATE 11/11/09
+NAME gbroarn
+DETAILS
+
+Improvement - Accellerator added to adjustment of characters within strings
+              NOTE: requires pre-processor directive STRING_ACCELLERATOR
+Bug Fix     - Redundant debug prints removed.
+Bug Fix     - Compatibility issue between HMI version 2002.02.07 and HMIGen version 1.5.0.3 resolved
+
+----------------------------------------------------------------------------------------------
+   Labelled 'version 2002_02_07'
+----------------------------------------------------------------------------------------------
+
+DATE 10/11/09
+NAME gbroarn
+DETAILS
+
+New Feature - Support for IP Address frames added
+New Feature - Support for Information messages added
+Improvement - Additional highlight bar to right of highlighted character/string removed on Type 4 & 5 implementations (colour TFT displays)
+Bug Fix     - Various corrections to casting of pointer returned by GetSubsystemPtr()
+
+----------------------------------------------------------------------------------------------
+Labelled 'version 2002_02_06'
+----------------------------------------------------------------------------------------------
+DATE 26/10/09
+NAME gbroarn
+DETAILS
+
+New Feature - Changes made to allow multiple menu structures to be included into a single instance of the core code.
+              (File paths of generated files are different)
+
+New Feature - Changes made to support the option to use either the STATIC_FREQUENT_STATIC_DEFAULT or 
+              STATIC_FREQUENT_CONSTANT_DEFAULT dataclass for HMI data.
+              NOTE: requires pre-processor directive SFCD
+
+New Feature - Changes made to support splitting of the STATIC_FREQUENT_------_DEFAULT dataclass
+              The STATIC_FREQUENT_------_DEFAULT dataclass contains HMI configuration data for all variants of HMI. For simple
+              versions of HMI (i.e. without multiple operator pages or custom decimal places) much of the configuration is 
+              redundant. The "SFD_SPLIT" pre-processor switch can be used to split the configuration data into three separate
+              data classes. Hence redundant configuration data can be mapped to an area without NV coverage - to reduce NV requirement.
+              NOTE: requires pre-processor directive SFD_SPLIT
+
+Improvement - Originally 16 bit enumerations had to use a base data type of ST_U16
+              Now 16 bit enumerations can use a base data type of either ST_U16 or ST_E16
+
+New Feature - Service methods have been added to allow the user to select the font used for Parameter Dump
+
+New Feature - The string objects for custom engineering unit strings are no longer HMI objects.
+              Custom Engineering unit strings are now mapped from the appropriate subsystem.
+
+Improvement - An improved mechanism to enable the Left & Right keys has been implemented.
+              Service methods have been added to disable allow the lockout mechanism.
+              The lockout is not applied to remote HMI via service port
+
+Improvement - Modifications have been made to improve reliability of the Hot plug In mechanism especially
+              if the UART is used for some other function whilst the LL HMI is not connected.
+
+Improvement - Modifications have been made to improve operation of the HMI if it is executed at a slower than intended update rates
+              Slowest allowed update rate is 200mS
+              With a type 1 interface and an update rate slower than 140mS the Operator page is updated every 1.4sec, rather than every 1 sec.
+
+Improvement - The Progress bar displayed for NV Initialization is updated every 500mS rather than 1sec
+
+Bug Fix     - AdjusterGetAlarmConditionDetails() - Returns eFALSE if no alarms are active.
+
+Bug Fix     - HMI_IDX_lowLevelSoftwareRevision - Correctly updated with data returned from low level
+
+Bug Fix     - Manual adjust Frame - "OK" is not cleared after data has been adjusted
+
+
+DATE 04/09/09
+NAME gbroarn
+DETAILS
+	Operator page icons added:
+		16 = Media_Fitted_Icon      (field 7 only)
+		17 = Media_Write_Icon       (field 7 only)
+
+
+DATE 01/09/09
+NAME gbroarn
+DETAILS
+	Left/Right lockout operation modified
+	To access the menus the user must press and hold the Up key until the Icons appear.
+	The user must then release the Up key and press either Left or Right as appropriate within 3 sec.
+	If the user continues to press the Up key, presses the Down key or fails to press either Left or Right
+	then the Icons will dissapear and the procedure must be re-started. If at any time the exclamation mark
+	icons appear the user must release all keys, wait 1 second and then restart the procedure.
+
+
+DATE 09/07/09
+NAME gbroarn
+DETAILS
+	service method "HMI_ToggleBacklight_SRV" added. This provides a mechanism to switch backlight on/off 
+        on type 1 interface versions
+
+----------------------------------------------------------------------------------------------
+Labelled 'version 2002_02_05'
+----------------------------------------------------------------------------------------------
+DATE 07/07/09
+NAME gbroarn
+DETAILS
+Bug Fix     - <Driver.h> definitions for ASIAN_FIRST, ASIAN_LAST & ASIAN_QUESTION_MARK only used in MSP builds
+
+----------------------------------------------------------------------------------------------
+Labelled 'version 2002_02_04'
+----------------------------------------------------------------------------------------------
+
+DATE 06/07/09
+NAME gbroarn
+DETAILS
+New Feature - Support for 16 bit engineering unit codes added
+Bug Fix     - Correction to engineering unit handling error introduced at 2002.02.03
+
+----------------------------------------------------------------------------------------------
+Labelled 'version 2002_02_03'
+----------------------------------------------------------------------------------------------
+
+DATE 19/06/09
+NAME M Ashford
+DETAILS
+Improvement - Removed controller specific code
+
+DATE 16/06/09
+NAME gbroarn
+DETAILS
+Improvement - Enum accellerator tuned to match number of lines displayed
+Improvement - Enum edit frame modified so that enumerated parameters with non-incremental values can be processed
+Bug Fix     - AZ200 Only - Bug AZ200/72 The test gas value remains displayed as PV2 so that the user can determine at what stage the procedure failed.
+
+DATE 15/06/09
+NAME gbroarn
+DETAILS
+Bug Fix     - Various changes for MISRA compliance
+Bug Fix     - AZ200 Only - Bug AZ200/66 "autoExit" Flag cleared correctly.
+
+----------------------------------------------------------------------------------------------
+Labelled 'release20090611_2002_02_02'
+----------------------------------------------------------------------------------------------
+
+DATE 11/06/09
+NAME gbroarn
+DETAILS
+Improvement - Menu Frames & Enumerated parameter edit frames - modified to allow for 3,4, 5 or 6 items per menu.
+Bug Fix     - Failure message on auto adjust frames. Displayed on line 6 with standard font on type 4 & type 5 displays
+Improvement - AZ200 Only. Auto calibration frames - 2nd PV used to display test gas value
+Bug Fix     - AZ200 Only. Move command corrected when Aborting/rejecting autocalibration.
+
+DATE 04/06/09
+NAME gbroarn
+DETAILS
+Improvement - AZ200 Only.  Diagnostics History frame. 2nd line of alarm descriptor is displayed as blank if it contains any lowercase characters (a..z)
+New feature - APA592 Only. Auto Adjust Result "OK" is displayed on Auto Adjust (t+r) frames if timer >= 100 and error result is not set
+Bug Fix     - Auto Adjust (t+r) frames Soft key prompt "OK" is removed after adjustment is started. - "OK" can only be performed once.
+
+DATE 02/06/09
+NAME gbroarn
+DETAILS
+New Feature - Various additions relating to new HMIGen Project option interfaceOptimizedForSpeed
+              Available for Interface types 2.1, 2.2 & 3 only. Layer 2 functions for accessing I/O are built as macros (in layer2.h) rather than functions (in layer2.c)
+New feature - Various additions relating to changes to type 2 interface.
+              Interface type 2 removed and replaced with interface type 2.1 - SPI access to display & SPI access to switches (same as origional Type 2)
+                                                     and interface Type 2.2 - SPI access to display & parallel access to switches
+
+DATE 29/05/09
+NAME gbroarn
+DETAILS
+Bug Fix     - Various changes for Misra compliance
+Bug Fix     - Character set border for string edit frames - length calculated to allow for size E (portrait) display
+
+DATE 27/05/09
+NAME gbroarn
+DETAILS
+New Feature - Write protection can be st by special operation
+Bug Fix     - Parameter Dump, signals dump only includes signals that are included in signals view.
+
+----------------------------------------------------------------------------------------------
+Labelled 'release20090515_2002_02_02'
+----------------------------------------------------------------------------------------------
+
+DATE 14/05/09
+NAME gbroarn
+DETAILS
+Improvement - Implementation_InitController: Macros for Sizes A,B & C standardised
+
+DATE 14/05/09
+NAME gbroarn
+DETAILS
+Improvement - Facility to flip/rotate display image added. Enabled with pre-processor switch
+              "DISPLAY_FLIP_HORIZONTAL" or "DISPLAY_FLIP_VERTICAL" or "DISPLAY_ROTATE_180"
+
+
+DATE 13/05/09
+NAME M Ashford
+DETAILS 
+Improvement - Changed ICON_HOURGLASS to ICON_CLOCK to allow successful compilation of module (controller implementation only).
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20090513_2002_02_02'
+----------------------------------------------------------------------------------------------
+
+DATE 13/05/09
+NAME gbroarn
+DETAILS
+Bug Fix     - Write protection mechanism for EDP300 does not refer to "PasswordEdit"
+Improvement - Write protection mechanism for EDP300 AutoAdjust added
+New Feature - Display Mode "Graph View" added
+New Feature - Write Protect Icon (Padlock) can be controlled similar to other operator page icons
+Bug Fix     - Very fast update of the signal value on 1x6 type operator pagesnow only works if PV dislayed with fixed 1dp
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20090507_2002_02_02'
+----------------------------------------------------------------------------------------------
+
+DATE 07/05/09
+NAME gbroarn
+DETAILS
+New Feature - New Features specifically for EDP300
+              (1) Write protection mechanism added
+              (2) German Language versions of strings specific to EDP300 frames added NOTE: TRANSLATIONS REQUIRED
+              (3) Operator Page Right Key Icons for "Fast Available" & "Fast Active" only displayed when Manual Sensor Mode Active
+              (4) Operator Page Icons Added: Auto control with Adaption Off
+                                             Auto control with Adaption On
+                                             Manual control with Adaption Off
+                                             Manual control with Adaption On
+                                             Manual Setpoint Mode
+                                             Ser Chrt Mode
+                                             Control Test Mode
+                                             Service Mode
+
+
+DATE 28/04/09
+NAME gbroarn
+DETAILS
+Bug Fix     - Definition "DISGUISE_PASSWORDS" moved from PacketManager.c to PacketManagerLocalData.h
+New Feature - String View/Edit functions modified to allow for terminator character (which has been added to character sets in latest version of HMIGen
+New Feature - Accellerator added to enumeration edit frames
+              NOTE requires pre-processor directive ENUM_ACCELLERATOR
+
+
+DATE 17/04/09
+NAME gbroarn
+DETAILS
+New Feature - Support for bit enumerations (FRAME_TYPE_BIT_ENUMERATED_PARAM & FRAME_TYPE_BIT_ENUMERATED_PARAM_NO_EDIT) added
+
+DATE 17/04/09
+NAME gbroarn
+DETAILS
+New Feature - Support for time durations added to Time/Date view & edit frames
+
+DATE 16/04/09
+NAME gbroarn
+DETAILS
+New Feature - Support for custom engineering units added
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20090414_2002_02_02'
+----------------------------------------------------------------------------------------------
+DATE 07/04/09
+NAME gbroarn
+DETAILS
+1. Modifications made which allow generated code to be used with framework version 2.3.0
+2. Operator Page - Left(Operator Menu) & Right(Enter Config) keys disabled unless down key held.
+   Reduces likelyhood of unrequired keypresses. Feature enabled with pre-processor switch "LEFT_RIGHT_LOCKOUT"
+3. To test display & switches a version of HMI can be built which simply displays a checkerboard pattern and
+   an indication of which keys are pressed. Feature enabled with pre-processor switch "LOW_LEVEL_HMI_TEST"
+4. Further Implementation of EDP300_SPECIAL_FEATURES
+5. Changes to low level folder names: "Low Level" to "Low_Level"
+6. A version of HMI can be built that has a very fast update of the signal value on 1x6 type operator pages
+   NOTE. Only works if PV dislayed with fixed 2dp's  Feature enabled with pre-processor switch "VALUE_1_FAST"
+
+DATE 30/03/09
+NAME gbroarn
+DETAILS
+definitions for PACKETBUFFERSIZE & PACKETBUFFERSIZE_SP moved from PacketManager.h to PacketManagerLocalData.h
+
+DATE 27/03/09
+NAME gbroarn
+DETAILS
+Corrections to PacketManager.c split specifically for versions without Service Port.
+
+DATE 27/03/09
+NAME gbroarn
+DETAILS
+PacketManager.c split to simplify compilation.
+New files added ...HMI\Source\PacketManagerBuilder.c
+                ...HMI\Source\PacketManagerBuilder.h
+                ...HMI\Source\PacketManagerLocalData.h
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20090324_2002_02_02'
+----------------------------------------------------------------------------------------------
+DATE 18/03/09
+NAME gbroarn
+DETAILS
+Improvement - (Large fonts for 1x4 & 1x6 operator displays now have improved appearance & faster processing.
+              NOTE. Only applicable to TYPE_2_IMPLEMENTATION and TYPE_3_IMPLEMENTATION
+              NOTE. Can be removed by setting pre-processor directive "DISABLE_SMOOTH_FONT"
+
+DATE 18/03/09
+NAME gbroarn
+DETAILS
+Improvement - HMI Service Function Added: HMI_SetOperatorIcon_SRV() Function can be called
+              from outside of the HMI to select an icon to be displayed on the lower line
+              of the operator page.
+
+New Feature - Further Implementation of EDP300_SPECIAL_FEATURES
+
+Service Function Added: HMI_SetOperatorIcon_SRV()
+Function can be called from outside of the HMI to select an icon to be displayed on the lower line of the operator page.
+
+
+DATE 09/03/09
+NAME M Ashford
+DETAILS
+New Feature - Changes to support colour Common HMI on 2.2" display
+Improvement - Added splash screen for portait view
+
+DATE 04/03/09
+NAME M Ashford
+DETAILS
+New Feature - Added further icon enums for TFT implementation
+New Feature - Added code for demonstration of animated colour icons (TFT implementation only)
+
+DATE 04/03/09
+NAME gbroarn
+DETAILS
+BugFix      - Un-necessary "printf()" calls removed
+New Feature - Implementation of EDP300_SPECIAL_FEATURES started
+
+DATE 20/02/09
+NAME gbroarn
+DETAILS
+BugFix      - Correction to bug in display of slider bar number
+
+DATE 20/02/09
+NAME gbroarn
+DETAILS
+Improvement - Packet definitions changed from #defines to enumerations
+BugFix      - Correction to string Edit frame
+
+DATE 11/02/09
+NAME M Ashford
+DETAILS
+1. Low Level part of HMI separated from High Level via a 'drop in' component.
+2. Modified High Level file paths to support low level 'drop in component'.
+
+DATE 11/02/09
+NAME gbroarn
+DETAILS
+Improvement - Back/Move/Select feature is inherently enabled but can be disabled with DISABLE_BACK_MOVE_SELECT
+
+DATE 11/02/09
+NAME M Ashford
+DETAILS
+Improvement - hmi_overload.c (Controller Specific) Improved way maximum eng. dp's are calculated.
+
+DATE 11/02/09
+NAME gbroarn
+DETAILS
+(1) Improvement - (AZ200 only) "AZ200\" prefix removed from software version displayed at startup
+(2) New Feature - Menus can be made sequential by calling FrameTableEnableSequence() from the on entry special
+                  operation for the menu frame.
+                  NOTE requires pre-processor directive HMI_SUPPORTS_SEQUENCES
+(3) New Feature - A secondary identifier (displayed below title bar) can be displayed on Adjust frames and
+                  Numerical, Time/Date, String and Enumeration parameter frames by calling
+                  FrameTableSetSecondaryIdentifier() from the on entry special operation for the frame.
+                  NOTE requires pre-processor directive HMI_SUPPORTS_SECONDARY_IDENTIFIER
+(4) New Feature - Additional stages "Hold Output" (at beginning of procedure)
+                  and "Release Held Output" (at end of procedure). Can be added to calibration frames
+                  FRAME_TYPE_MANUAL_CALIBRATION, FRAME_TYPE_AUTO_CALIBRATION and FRAME_TYPE_2_POINT_pH_CALIBRATION
+                  by calling FrameTableSetOutputHoldSettings() from the on entry special operation for the frame.
+                  NOTE requires pre-processor directive HMI_SUPPORTS_OUTPUT_HOLD_AND_RELEASE
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20081216_2002_02_02'
+----------------------------------------------------------------------------------------------
+DATE 16/12/08
+NAME gbroarn
+DETAILS
+(1) BugFix      - 2 point pH calibration frame. Buffer solution value view & edit modified to use
+                  engineering units & decimal point position equivalent to process value
+                  and number of characters based on the largest value from attribute range.
+(2) BugFix      - Improvement to processing of 2 point pH calibration frame to reduce display flicker
+(3) Improvement - Accesses the diagnosis subsytem directly rather than via pointer from GetSubsystemPtr()
+(4) New Feature - supports pre-processor directive BACK_MOVE_SELECT to allow navigation from view frames
+                  with up/down keys
+(5) BugFix      - BuildFrameTitle() function modified to allow for extended character set
+(6) BugFix      - Correction to method of handling extended character set for type 1 & remote HMI applications
+(7) BugFix      - variables  of type FRAME_FORMAT_TYPE* and casts to type FRAME_FORMAT_TYPE* changed to
+                  FRAME_FORMAT_TYPE const * to ensure correct operation with all data model settings
+
+DATE 21/11/08
+NAME gbroarn
+DETAILS
+(1) BugFix      - parameterDumpOutputLine[] was declared as extern in ParameterDump.c
+(2) BugFix      - (AZ200 Only) Performance log Entry Index set to zero when perfomance log view first displayed.
+(3) BugFix      - (AZ200 Only) Right function key has no effect in perfomance log view
+(4) Improvement - All references to LoadAll_T_UNIT & SaveAll_T_UNIT removed if T_UNIT_VERSION >= 0x020300
+                  Common HMI is now compatible with framework version 2.3
+(5) BugFix      - References to PacketManagerLocal_1 removed in versions without service port
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20081119_2002_02_02'
+----------------------------------------------------------------------------------------------
+
+DATE 18/11/08
+NAME gbroarn
+DETAILS
+(1) Support for Polish & Russian Languages added
+(2) Support for 2point pH calibration frame added
+(3) Additional Calibration failure reasons added
+(4) Service functions added
+    (1) Get_LLHardwareType_SRV()
+    (2) GetAutoscrollState_SRV()
+    (3) GetOperatorPageNumber_SRV()
+    (4) SetStartupFrame_SRV()
+    (5) resetConfigurationTimeout()
+(5) Modifications for MISRA compliance
+(6) Further improvement to calculation of float value from string
+(7) Additional characters added to character set (Polish, Russian & improved support of accented characters)
+(8) For standard, advanced & service levels -
+    Password entry frames bypassed (and user automatically logged on) if respective security code is set to NULL
+(9) Time/Date Edit frame - packets built differently to accomodate new write string method that supports additions to character set.
+
+
+lcd_patterns.h
+abbLogo[] - modified to show "Aquatech" logo when pre-processor directive "OEM_AQUATECH" is defined
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20080611_2002_02_02'
+----------------------------------------------------------------------------------------------
+hmi_defines.csv
+Added: additional calibration failure reasons
+
+hmi.h
+MISRA rule 96 suppression added
+Added: additional calibration failure reasons added
+
+adjuster.c
+modifications for MISRA compliance
+"__far" pointers redefined as "SLOW" pointers
+added: "AdjusterFindFirstDiagHistoryEntry()"
+added: support for diagnostic groups "information" and "calibration"
+
+adjuster.h
+modifications for MISRA compliance
+added: "AdjusterFindFirstDiagHistoryEntry()"
+
+configModeManager.c
+changes related to AZ200 only
+
+frameMover.c
+modifications for MISRA compliance
+
+frameTable.c
+added: support for diagnostic group "calibration"
+mechanism for finding active diagnostic alarms simplified (by use of "AdjusterFindFirstDiagHistoryEntry()")
+
+frameTableDefinitions.h
+added: support for diagnostic group "calibration"
+
+hmi_execute.c
+modifications for MISRA compliance
+
+hmicoordinator.c
+"__far" pointers redefined as "SLOW" pointers
+modifications for MISRA compliance
+
+packetManager.c
+modifications for MISRA compliance
+changes related to AZ200 only
+"__far" pointers redefined as "SLOW" pointers
+BuildDiagnosticsMenu() - mechanism for finding active diagnostic alarms simplified (by use of "AdjusterFindFirstDiagHistoryEntry()")
+Bargraph position limited to ensure no corruption of Manual Adjust frames
+Auto & Manual Calibration frames display "Calibration Complete" if neither result signal is required
+Added: support for additional calibration failure reasons
+
+PacketManager.h
+Operator frame icon fields 2 & 4 size increased
+
+ParameterDump.c
+modifications for MISRA compliance
+"__far" pointers redefined as "SLOW" pointers
+
+WriteProtect.c
+modifications for MISRA compliance
+"__far" pointers redefined as "SLOW" pointers
+
+
+Adjuster.c
+AdjusterBuildNumberString() - improvement to rounding wrt very small values
+BuildFloatFromString() - improvement to calculation wrt decimal point position
+
+FrameTable.c
+AZ200_SPECIAL_FEATURES
+
+PacketManager.c
+(1) Setting of "SP_ReceiverWaiting" moved from SP_CallbackTransmissionComplete() to
+    PacketManagerStartTransmission_SP() - to allow for condition when service port
+    callback SP_CallbackDataReceived() gets called before SP_CallbackTransmissionComplete()
+(2) Further modifications for MISRA(C) compliance
+
+
+Adjuster.c
+FrameTable.c
+HmiCoordinator.c
+driver.c
+(1) Further modifications for MISRA(C) compliance
+
+PacketManager.c
+(1) Further modifications for MISRA(C) compliance
+(2) String view frame - trailing spaces on strings less than 20 characters are not displayed
+
+PacketManager.c
+AZ200 special features
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20080228_2002_02_02'
+----------------------------------------------------------------------------------------------
+HmiCoordinator.c
+(1) Include Files re-arranged
+
+FrameTable.c
+(1) Include Files re-arranged
+
+PacketManager.c
+(1) Preprocessor directive DONT_FLASH_OVERRANGE_VALUES added
+(2) Typing error corrected
+
+ParameterDump.c
+(1) ConfigDumpProcessFrame() - Missing bracket in "if" statement corrected
+(2) ConfigDumpBuildNumberString() - assert(0) replaced with asm("nop") if resolution < 2
+(3 ConfigDumpBuildNumberStringFromDouble() - assert(0) replaced with asm("nop") if resolution < 2
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20080227_2002_02_02'
+----------------------------------------------------------------------------------------------
+Adjuster.c
+Adjuster.h
+ConfigModeManager.c
+Driver.c
+Data_handling.c
+Data_handling.h
+FrameTable.c
+FrameTable.h
+FrameMover.c
+HmiCoordinator.c
+PacketManager.c
+ParameterDump.c
+(1) Further modifications for MISRA(C) compliance
+
+Layer2.h
+(1) Completion of implementation for type 1.2 interface
+
+Adjuster.c
+(1) Additions to ensure compatibility with common diagnosis subsystem
+
+Adjuster.c
+Adjuster.h
+ConfigModeManager.c
+ConfigModeManager.h
+FrameMover.c
+FrameTable.c
+FrameTable.h
+(1) Modified for MISRA(C) compliance
+
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20080219_2002_02_02'
+----------------------------------------------------------------------------------------------
+
+BugFix EMF/601
+Service port thread was crashing due to lack of resources(Semaphore) for significant
+amount of time (more than 20 ms) while in the call-back method for Remote HMI.
+
+----------------------------------------------------------------------------------------------
+19/02/08 - Rog
+
+Adjuster.c
+(1) AZ200_SPECIAL_FEATURES
+(2) AdjusterGetNAMURStatus() - uses GetActiveDiagnosticConditionsSRV() rather than GetNAMURStatusSRV()
+(3) ConvertClassification() - supports "DIAGNOSIS_CLASS_INFO"/"CLASSIFICATION_INFORMATIONONLY"
+
+ConfigModeManager.c
+(1) AZ200_SPECIAL_FEATURES
+
+FrameTable.c
+FrameTable.h
+(1) FrameTableGetDiagnosticIconAddress() - supports "CLASSIFICATION_INFORMATIONONLY"
+
+FrameTableDefinitions.h
+(1) supports "CLASSIFICATION_INFORMATIONONLY"
+
+hmi_constructor.c
+(1) MISRA Rule 31 supressed
+
+hmicoordinator.c
+(1) AZ200_SPECIAL_FEATURES
+
+08/02/08 - Rog
+
+HmiCoordinator.c
+HmiCoordinator.h
+(1) use of Semaphore for remote HMI "Sema_HMI_REMOTE_INSTANCE" modified to reduce
+    the amount of time that semaphore is active.
+(2) Function "HmiCoordinatorGetInstance()" &  variable "HMI_Instance" added to allow
+    identification of which instance of HMI is active.
+
+PacketManager.c
+(1) AZ200_SPECIAL_FEATURES
+(2) supports "CLASSIFICATION_INFORMATIONONLY"
+
+PacketManager.h
+(1) AZ200_SPECIAL_FEATURES
+
+ParameterDump.c
+(1) supports "CLASSIFICATION_INFORMATIONONLY"
+
+PacketManager.c
+PacketManager.h
+Various changes related to..
+(1) use of Semaphore for remote HMI "Sema_HMI_REMOTE_INSTANCE" modified to reduce
+    the amount of time that semaphore is active.
+    Function PacketManagerCopyServicePortData() added
+(2) New alternative options for type 1 interface
+    "TYPE_1_IMPLEMENTATION_RESET_AND_PRESENCE"
+    "TYPE_1_IMPLEMENTATION_NO_POWER_CYCLE"
+
+
+29/01/08 - Rog
+
+PacketManager.c
+FrameTable.c
+HmiCoordinator.c
+Minor changes related to special features for AZ200
+
+----------------------------------------------------------------------------------------------
+Labelled 'release20080122_2002_02_01'
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20080122_2002_01_02'
+----------------------------------------------------------------------------------------------
+Adjuster.c
+(1) limitArray[][] corrected - initialization for len = 5 was included twice
+(2) AdjusterBuildNumberString()
+    1. various blocks of commented out code removed
+    2. 7 significant digits extracted from float values
+
+
+Adjuster.c
+(1) limitArray[][] added
+(2) AdjusterBuildNumberString(), AdjusterBuildNumberStringFromDouble()
+    1. modification to decimal point selection limits for dp position "MAX_RESOLUTION" so
+       that numbers cannot be rounded up to such an extent that they are too big to be displayed
+    2. Limits for numbers (wrt dp position & length) now selected from table rather than calculated
+
+
+PacketManager.c
+(1) BuildAdjustFrame() additions to allow display of relay test status (AZ200)
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20080107_2002_01_02'
+----------------------------------------------------------------------------------------------
+BugFix - hmi_129
+when adjusting a numerical parameter up/down buttons have no effect when
+cursor at limit ("Cancel" highlighted as right hand function key)
+
+BugFix - hmi_91
+Additions to allow Validity tests to be applied to frames in easy setup sequence
+
+New Feature
+Additions to allow display of scheduled calibration sequence (AZ200)
+
+----------------------------------------------------------------------------------------------
+Adjuster.c
+(1) AdjusterAdjust() - when adjusting a numerical parameter up/down buttons have no effect when
+		       cursor at limit ("Cancel" highlighted as right hand function key)
+
+FrameMover.c
+(1) SelectConfigLevel(), NextEasySetup() - Additions to allow Validity tests to be applied to frames in easy setup sequence
+
+FrameTable.c
+FrameTable.h
+(1) FrameTableSetCurrentFrame() - Additions to allow determination of when operator frame is being displayed
+(2) FrameTableIsOperatorFrameActive() - new function added
+(3) FrameTableGetEasySetupValidityTestIndex() new function added to allow Validity tests to be applied to frames in easy setup sequence
+(4) FrameTableGetCalFrameAddress - new function added to allow display of scheduled calibration sequence (AZ200)
+
+FrameTableDefinitions.h
+(1) EVST_LIST_OF_TABLES_ENTRY added to allow Validity tests to be applied to frames in easy setup sequence
+
+Hmi_constructor.c
+Hmi_execute.c
+Hmi_execute.h
+(1) HMI_IsOperatorFrameActive_HMI() service function added
+
+PacketManager.c
+(1) BuildAutocalFrame() additions to allow display of scheduled calibration sequence (AZ200)
+
+HmiCoordinator.c
+(1) Various additions to allow display of scheduled calibration sequence (AZ200)
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20071214_2002_01_02'
+-----------------------------------------------------------------------------------------------
+BugFix - hmi_126
+declaractions of local variable "prvBlankHistory" added
+
+----------------------------------------------------------------------------------------------
+
+PacketManager.c
+(1) declaractions of local variable "prvBlankHistory" added
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20071213_2002_01_02'
+-----------------------------------------------------------------------------------------------
+
+Improvement
+when adjusting the polarity of a numerical value the limits are checked.
+the polarity will be set to +ve if both limits are >= 0
+the polarity will be set to -ve if both limits are < 0
+
+BugFix - hmi_120
+when adjusting a numerical parameter a decimal point cannot be selected
+if the value is displayed with a fixed (or custom) dp position
+
+BugFix - hmi_116
+Diagnostics Menu caters for alarms being de-activated
+
+BugFix - hmi_108
+contrast bargraph corrupted on remote HMI because alternative method for building contrast packet being used.
+The code for building this alternative contrast packet has been removed.
+
+BugFix - hmi_109
+Bugfix - hmi_107
+In the event of a numeric value being out of range (such that it is displayed as up arrows) the first press
+of the "Edit" key will cause the value to be set to its minimum value. Then "Edit" can be pressed again.
+
+BugFix - hmi_106
+non standard characters converted to standard characters that will always be understood by remote applications
+
+Bugfix - hmi_95
+BugFix - hmi_125
+justification of error message changed to ensure no clash with soft key prompts
+
+BugFix - hmi_76
+Clearing the inactive user timer on either instance of HMI will clear the timer on both HMI's
+
+-----------------------------------------------------------------------------------------------
+Adjuster.c
+(1) AdjusterAdjust() - when adjusting a numerical parameter a decimal point cannot be selected if
+                       the value is displayed with a fixed (or custom) dp position
+
+ParameterDump.c
+(1) ParameterDump_OutputLine() - correction to method used to send converted text to service port.
+
+PacketManager.h
+(1) definition added "JUSTIFY_LEFT_WITH_INDENT_9"
+
+PacketManager.c
+(1) various - Special features for AZ200 added
+(2) BuildAdjustFrame() - justification of error message changed to ensure no clash with soft key prompts
+(3) BuildWriteString() - support for "JUSTIFY_LEFT_WITH_INDENT_9" added
+(4) BuidDiagnosticMenu() - automatically selects newly activated alarm if previously showing "
+
+HmiCoordinator.c
+(1) LogoutInactiveUser() - Clearing the inactive user timer on either instance of HMI will clear the timer on both HMI's
+
+FrameTable.c
+(1) FrameTableGetString() - Overrides any translations for IDS_OK with "OK" (only applies to Spanish)
+
+ParameterDump.c
+(1) ParameterDump_OutputLine() - non standard characters converted to standard characters that will always be understood
+                                 by remote applications
+
+2007-12-03 Rog
+Adjuster.c
+(1) AdjusterAdjust() - when adjusting the polarity of a numerical value the limits are checked.
+                       the polarity will be set to +ve if both limits are >= 0
+                       the polarity will be set to -ve if both limits are < 0
+
+HmiCoordinator.c
+(1) ProcessSwitch() - KEYSTATE_RIGHT 0n FRAME_TYPE_NUMERICAL_PARAM
+                      In the event of a numeric value being out of range (such that it is displayed as up arrows)
+                      the first press of the "Edit" key will cause the value to be set to its minimum value.
+                      Then "Edit" can be pressed again.
+
+
+PacketManager.c
+(1) BuildNumericalViewFrame() - "Edit" displayed as right key function even if value is out of range
+
+-----------------------------------------------------------------------------------------------
+2007-11-23 Rog
+Adjuster.c
+(1) AdjusterPrepareNewVariable() - when saving a string the put function is called once (with WHOLE_OBJECT)
+    rather than putting individual attributes
+
+PacketManager.c
+(1) - buildSignalText() - if possible a space is added between value and engineering units
+
+2007-11-15 Rog
+PacketManager.c
+(1) - BuildSetContrast() alternative method for building packet for "newCommsMode" (with 6 bytes) removed
+
+2007-11-15 Rog
+PacketManager.c
+(1) - BuidDiagnosticsMenu() automatically changes "AlarmSelection" in the event of "AlarmSelection"
+      being greater than the number of active alarms bugFix for EMF/300, HMI_116
+
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20071113_2002_01_02'
+-----------------------------------------------------------------------------------------------
+
+BugFix - hmi_76, EMF/314, EMF/349
+Access Rights timed out while keys still being used, HMI looses cursor information when HMI times out
+
+BugFix - hmi_78
+Signals & Alarms information presentation needs tidy-up/formatting
+
+BugFix - hmi_80, EMF/284
+Device Id not being displayed by HMI high security log in frame
+
+BugFix - hmi_87
+Packed Ascii object presentation on display
+
+BugFix - hmi_101
+Range of adjustment for contrast
+
+BugFix - EMF/340 EMF/370
+Artifacts left after diagnostic alarm message on operator page
+
+BugFix - EMF/516
+
+-----------------------------------------------------------------------------------------------
+2007-11-13 Rog
+PacketManager.c
+ParameterDump.c
+(1) Alarm code for uncategorised alarms displayed as "_PPP.NNN" where "_" represents uncategorised
+
+2007-11-12 Rog
+HmiCoordinator.c
+PacketManager.c
+PacketManager.h
+(1) Resource Semaphore added to eliminate data conflict between 2nd Instance of HMI and Service port
+
+2007-11-09 Rog
+FrameMover.c
+(1) EnterConfig_AccessAllowed() & Menu()
+    When moving to first config frame pulled frame is checked for validity
+    If frame not valid then starts with first config header (normally Easy Setup) and searches for first valid header
+
+
+2007-11-07 Rog
+PacketManager.c
+(1) flag variables "displayAutoscrollIcon", "displayControlIcon", "displayWriteProtectIcon" & "displayModeIcon"
+    moved from temp (in BuildAdvancedOperatorFrame() ) to local memory
+
+ConfigModeManager.c
+(1) Config mode timeout timers not routinely reset when in operator mode (Only when a key is pressed)
+
+HmiCoordinator.c
+(1) HmiCoordinatorEXE(), HmiCoordinatorForceDisplayTimeoutSRV(), HmiCoordinatorPowerOn(), HmiCoordinatorSetAccess()
+ - if HMI_SUPPORTS_SERVICEPORT is not defined and "instance != HMI_LOCAL_INSTANCE then function returns without performing any processing
+
+2007-11-06 Rog
+ParameterDump.c
+(1) Gets "HMI_SUPPORTS_PARAMETER_DUMP" from compileTimeDefinitions.h rather than using HMI_SUPPORTS_SERVICEPORT
+
+PacketManager.c
+(1) SP_CallbackDataReceived() - New method of copying data from "SP_ReceiveBuffer[]" to "PacketManagerLocal_2.RxByte[]"
+(2) SP_ReceiveBuffer[] moved from temp (in SP_CallbackDataReceived() ) to local memory
+(3) Auto cal frame now uses new variable "autocal_bar_position"
+(4) Contrast adjustment - adjustment of contrast 0..100% actually results in adjustment of 40..80% on display
+
+2007-10-30 Rog
+driver.c driver.h
+(1) forward declarations of "Delay100uS()" & "nop_instruction()" moved from driver.c to driver.h
+
+
+2007-10-25 Rog
+PacketManager.c
+(1) Correction to typing errors wrt "lineData" specifically when HMI_SUPPORTS_DOUBLE
+(2) BuildAutoCalFrame() modified sequence so that progress bar can go down as well as up
+----------------------------------------------------------------------------------------------
+Labelled 'prerelease20071022_2002_01_02'
+-----------------------------------------------------------------------------------------------
+
+BugFix - hmi_85
+Auto adjust frame with timer & result frames
+(1) Displayed values increased from 7 to 8 characters
+(2) mean,sd, max & min identifier icons removed to allow frame to be more generic
+(3) User cannot exit from frame whilst adjustment being performed
+
+BugFix - hmi_99
+remnants of cleared alarm message on operator page no longer displayed to left of security padlock
+
+BugFix - No Ref
+FRAME_MEMORY_SIZE increased from 6 to 7
+
+BugFix - No Ref
+When remote HMI (on service port) supported, a keypress on either HMI will reset the configuration timout on both HMI's
+
+BugFix - hmi_60, hmi_105
+Operator frames using 1x9 2x9 3x9 formats justify all values the same way. The justification is dependant upon
+the largest of the values being displayed
+
+BugFix - No Ref
+Parameter Dump
+Method of processing dump data modified to ensure that service port has sufficient time to process a message before
+another is sent
+
+BugFix - hmi_110
+HMI will display a diagnostics category message of "Information"
+provided that diagnostics supports group "DIAGNOSIS_GROUP_INFORMATION"
+
+
+New Feature
+New frame types "Manual Calibration" & "Auto Calibration" supported
+
+-----------------------------------------------------------------------------------------------
+
+2007-10-19 - Rog
+Adjuster.c
+(1) ConvertCategory() - Diagnostics category DIAGNOSIS_GROUP_INFORMATION supported
+
+FrameTable.c
+(1) FrameTableGetNAMURCategoryString - support for "CATEGORY_INFORMATION" added
+
+FrameTableDefinitions.h
+(1) "CATEGORY_INFORMATION" added
+
+2007-10-19 - Rog
+ParameterDump.c
+(1) Configuration dump caters for manual & auto calibration frames
+
+2007-10-19 - Rog
+Adjuster.c
+(1) AdjusterGetAlarmHistoryDetails() - now returns eTRUE only if alarm is active
+
+PacketManager.c
+(1) BuidDiagnosticsMenu() - caters for change to AdjusterGetAlarmHistoryDetails() which now returns eTRUE only if alarm is active
+
+ParameterDump.c
+(1) ConfigDumpProcessFrame() - Only outputs text to service port ( Via ParameterDump_OutputLine() ) if a recognised frameType is being processed
+(2) InfoDumpStart() - initialises "readyForNextLine" to TRUE so that info dump always starts reliably
+(3) InfoDumpExecute() - (i)checks "readyForNextLine" and (ii) only processes one dump stage in each pass so that text is output to service port only once in each pass
+(4) HistoryDumpProcessAlarm() - (i) uses return val from AdjusterGetAlarmHistoryDetails() to determine if alarm is currently active
+                               (ii) only processes one history dump stage in each pass so that text is output to service port only once in each pass
+(5) InvalidCommandDumpStart() - initialises "readyForNextLine" to TRUE so that invalid command dump always starts reliably
+
+
+2007-10-12 - Rog
+PacketManager.c
+(1) Completion of autocal frame functionality
+Adjuster.c
+(1) Completion of autocal frame functionality
+
+2007-10-10 Martin
+Changes for controller implementation
+
+2007-10-03 - Rog
+FrameTableDefinitions.h
+(1) objidx_settlingTimer added to manual calibration frame
+
+2007-10-03 - Rog
+Adjuster.c
+(1) Function added : AdjusterAdjustResolutionForCustomDP()
+
+Adjuster.h
+(1) Function declaration added : AdjusterAdjustResolutionForCustomDP()
+
+FrameTable.c
+(1) FrameTableGetConfigIconAddress() - compiler warning supressed
+
+PacketManager.c
+(1) BuildAdvancedOperatorFrame() - 1x9 2x9 3x9 formats
+All displayed values use the same number of digits (9 or 13) dependant upon the length of the largest (of the 3)
+
+
+2007-09-20 Rog
+Adjuster.c
+(1) minor corrections to remove compiler warning when getting/setting string variables
+(2) Additions to allow adjustment of "new" value on manual adjust frames
+
+ConfigModeManager.c
+(1) When remote HMI (on service port) supported, a keypress on either HMI will reset the configuration timout on both HMI's
+
+FrameTableDefinitions.h
+(1) FRAME_MEMORY_SIZE increased from 6 to 7
+
+HmiCoOrdinator.c
+(1) ProcessSwitch() "Back" function from AutoAdjust + timer frame is disabled until auto adjust complete
+
+PacketManager.c
+(1) BuildAdjustFrame() - AutoAdjust + timer frame: mean,sd, max & min identifier icons removed
+                         AutoAdjust + timer frame: "Back" function not displayed until auto adjust complete
+(2) BuildAdvancedOperatorFrame() - icon field 4 (left of padlock) cleared correctly
+(3) BuildAutoCalFrame() - minor corrections
+(4) BuildManualCalFrame() - minor corrections
+(5) GetValueAndMakeString_AutoAdjust() - Displayed values increased from 7 to 8 characters
+
+-----------------------------------------------------------------------------------------------
+Labelled 'prerelease20070903_2002_01_02'
+-----------------------------------------------------------------------------------------------
+BugFix - Correction to slider bar position in frames within "Easy Setup" Menu
+BugFix - Completion of display of device ID is service level hash code entry frame
+BugFix - Correction to operator page so that previous value is properly overwritten with new value
+         (when value > 9 digits is overwritten by value of <= 9 digits)
+-----------------------------------------------------------------------------------------------
+
+2007-09-03 Rog
+
+PacketManager.c
+(1) Correction to slider bar position in frames within "Easy Setup" Menu
+(2) Completion of display of device ID is service level hash code entry frame
+(3) Modification to operator page display to ensure previous value completely overwritten with new value
+    when value > 9 digits is overwritten by value of <= 9 digits
+
+FrameTableDefinitions.h
+(1) "EasySetupFlag" replaces "unusedSpare" in struct "CONFIG_HEADER_FRAME_TYPE"
+
+FrameTable.c
+(1) Additions to calculate, get & modify Easy setup stages
+
+FrameTable.h
+(1) Function declarations added: FrameTableGetEasySetupStages() & FrameTableIncrementEasySetupStage()
+
+FrameMover.c
+{1) Addition to update "Easy setup stage" as operator moves down easy setup menu
+
+Adjuster.h
+(1) Function declaration added: AdjusterGetArmID()
+
+Adjuster.c
+(1) Function added: AdjusterGetArmID()
+
+
+2007-08-20
+
+hmi.h
+(1) Constant definitions for calibration frames added
+
+ConfigModeManager.c
+FrameMover.c
+Hmi_execute.c
+Hmi_overload.c
+ParameterDump.c
+(1) Compiler optimization warning messages supressed
+
+PacketManager.c
+(1) Compiler optimization warning messages supressed
+(2) driver.h included irrespective of implementation (interface) type
+(3) Functionality added for Auto & Manual Calibration frames
+(4) buildSignalText(): Modified to create two alternative formats of signal line
+(5) AdjustResolutionForRange(): New function added
+
+HmiCoordinator.c
+(1) Compiler optimization warning messages supressed
+(2) ProcessSwitch(): Functionality added for Auto & Manual Calibration frames
+
+FrameTableDefinitions.h
+(1) additions for Auto & Manual Calibration frames
+
+FrameTable.c
+Adjuster.c
+(1) Compiler optimization warning messages supressed
+(2) additions for Auto & Manual Calibration frames
+
+driver.h
+(1) Modified to allow driver.h to be included in high level files (packetManager.c) when TYPE_1_IMPLEMENTATION
+
+data_handling.c
+(1) Compiler optimization warning messages supressed
+(2) TYPE_5_IMPLEMENTATION added
+
+2007-08-02 - Rog
+
+PacketManager.c
+(1) Minor change to autoscroll icon
+
+-----------------------------------------------------------------------------------------------
+Labelled 'prerelease20070801_2002_01_02'
+-----------------------------------------------------------------------------------------------
+2007-08-01 - Rog
+
+Hmi_Idx.h
+(1) HMI_IDX_displayTest: datatype changed from ACTION to SIMPLE_U8
+
+Hmi_constructor.c
+(1) construction of displayTest changed from ACTION to SIMPLE_U8
+
+Hmi_types.h
+(1) displayTest moved from T_HMI_STATIC_FREQUENT_STATIC_DEFAULT to T_HMI_DYNAMIC
+
+
+2007-07-25 - Rog
+
+FrameMover.c
+HmiCoordinator.c
+KeystateDefinitions.h
+ (1) Modifications to allow autoscroll on/off setting retained when leaving operator page
+     and re-used when returning to operator page
+
+PacketManager.c
+PacketManager.h
+ (1) Modifications to allow autoscroll icon to be displayed when autoscroll active
+-----------------------------------------------------------------------------------------------
+Labelled 'prerelease20070723_2002_01_02'
+-----------------------------------------------------------------------------------------------
+2007-07-23 - Rog
+Adjuster.c
+ (1) Password strings that are shorter than their allocated length (6) are appended with terminators
+ (2) Diagnostics groups extended to include Hardware, Actuator, Power Supply & Process
+
+FrameMover.c
+ (1) Soft key "Back" added to Operator menu frame
+ (2) Alarm histories only include alarms that have been active at least once
+
+FrameTable.c
+ (1) Alarm histories only include alarms that have been active at least once
+ (2) FrameTableGetNAMURCategoryString() - new function added
+
+FrameTable.h
+ (1) FrameTableGetNAMURCategoryString() - new function definition added
+
+FrameTableDefinitions.h
+ (1) CATEGORY_POWERSUPPLY, CATEGORY_PROCESS, CATEGORY_ACTUATOR & CATEGORY_HARDWARE - definitions added
+
+HmiCoordinator.c
+ (1) Soft key "Back" added to Operator menu frame
+
+KeystateDefinitions.h
+ (1) "COMMAND_ABORT_SECURITY_ACCESS" renamed as "COMMAND_RETURN_TO_OPERATOR_PAGE"
+
+ParameterDump.c
+ (1) service port callback functions added :- SP_CallbackParameterDumpConnected() & SP_CallbackParameterDumpDisconnected()
+
+PacketManager.c
+ (1) Soft key "Back" added to Operator menu frame
+ (2) Alarm histories only include alarms that have been active at least once
+ (3) Diagnostics groups extended to include Hardware, Actuator, Power Supply & Process
+ (4) Contrast adjustment - adjustment of contrast 0..100% actually results in adjustment of 30..80% on display
+     so that completely clear and completely black displays cannot be set.
+ (5) BuildAdvancedOperatorFrame()  - rewritten.
+ (6) PrepareOperatorPageLineData() - new function added
+
+PacketManager.h
+ (1) Icon array position definitions added
+-----------------------------------------------------------------------------------------------
+2007-06-28 - Rog
+HmiCoordinator.h
+ (1) Processing of waiting for reply moved from within "HmiCoordinatorEXE()"
+     to new function "PacketManagerProcessWaitForReply()"
+
+PacketManager.h
+ (1) PACKETBUFFERSIZE_SP added - defines maximum size of packet buffer used when sending messages to service port
+ (2) COMMS_V2_INIT new function code added
+ (3) function definition added "PacketManagerProcessWaitForReply()"
+
+PacketManager.c
+ (1) BuildV2Init() - new function added
+ (2) Received message buffer RxByte[] increased from 7 to 15 bytes
+ (3) PacketManagerHandleErrors() - rewritten to allow for service port & new comms reply format
+ (4) PacketManagerGetKeystate() - rewritten to allow for service port & new comms reply format
+ (5) PacketManagerBuildImage() - additions made to allow for service port comms & new comms reply format
+ (6) PacketManagerForceReply() - rewritten to allow for service port & new comms reply format
+ (7) SP_CallbackPoweredUp() & SP_CallbackPoweredDown() - functions removed
+ (8) PacketManagerProcessWaitForReply() - new function added
+
+-----------------------------------------------------------------------------------------------
+2007-05-24 - Rog
+Labelled 'Supports Display Test'
+
+Adjuster.c
+ (1) AdjusterDoAutoAdjust() - Does not write to subsystem if adjust object is HMI_IDX_displayTest
+
+Hmi_constructor.c
+ (1) New object added - HMI_IDX_displayTest
+
+Hmi_execute.c
+ (1) HMI_GetKeypressSRV() & HMI_NV_InitCompleteSRV() functions moved from beginning of file to end of file
+
+Hmi_types.h
+ (1) New object added - HMI_IDX_displayTest
+
+PacketManager.c
+ (1) Display test added
+ (2) SP_CallbackDataReceived - minor corrections
+
+HMI.h
+ (1) definitions added "HMI_LOCAL_INSTANCE" & "HMI_REMOTE_INSTANCE"
+
+hmi_idx.h
+ (1) New object added - HMI_IDX_displayTest
+
+
+-----------------------------------------------------------------------------------------------
+2007-05-15 - Rog
+
+Adjuster.c
+ (1) Changes to to reflect Common Diagnostics changes
+
+HmiCoordinator.c
+ (1) inclusion of system.h moved to before inclusion of rtos.h
+
+PacketManager.c
+ (1) inclusion of commontype.h moved to before inclusion of assert.h
+
+ParameterDump.c
+ (1) inclusion of CompileTimeDefinitions.h moved to very beginning of file
+ (2) inclusion of commontype.h moved to before inclusion of assert.h
+ (3) Service port interface functions renamed
+
+-----------------------------------------------------------------------------------------------
+2007-05-09 - Rog
+Labelled 'Supports Parameter Dump'
+
+Modifications for Parameter Dump completed
+
+-----------------------------------------------------------------------------------------------
+2007-04-23 - Rog
+Labelled 'Service Port Corrections'
+
+Various corrections to service port operation
+Modifications made to allow for Parameter Dump
+FrameTableGetString() - uses stringTable_1 if selected string in other language is special
+                        character (0x08) - reduces ROM space in foreign language tables.
+-----------------------------------------------------------------------------------------------
+2007-03-13 - Rog
+
+PacketManager.c - BuildMenuFrame() - bug fix relating to building of signals view
+-----------------------------------------------------------------------------------------------
+2007-03-13 - Rog
+Labelled 'supports 12 Digits'
+
+2007-03-12 - Rog
+
+PacketManager.c
+(1) Auto adjust with timer & result frame - display of mean, Std Dev, max & min dependant upon
+    number of attributes available.
+(2) BuildAdvancedOperatorFrame() - correction to bargraph position calculation
+(3) BuildAdvancedOperatorFrame() - values with up to 12 digits can be displayed.
+(4) LimitTextLength() - modified to provide an indication when the text has been abbreviated
+
+
+2007-03-09 - Rog
+
+Adjuster.c
+(1) Correction to calls to Diagnostics Subsystem and to ARM Subsystem
+(2) AdjusterBuildNumberStringFromDouble() & AdjusterBuildNumberString()
+    - functions rewritten to improve efficiency and remove rounding errors
+
+WriteProtect.c
+(1) Correction to calls to ARM Subsystem
+
+-----------------------------------------------------------------------------------------------
+2007-02-28 - Rog
+Labelled 'supports Alarm History'
+
+New HMI object "HMI_IDX_DateFormat" added
+support added for Time & Date Frames
+support added for Alarm History
+inactive HMI users automatically logged out
+lock icon displayed in operator page if no HMI user logged in
+
+-----------------------------------------------------------------------------------------------
+2007-02-02 - Rog
+
+Available characters changed/added in SmallFont[]
+Justification of "ID" value , "Pin" value and service level hash code changed to allow maximum number of characters in prompts
+-----------------------------------------------------------------------------------------------
+ - Rog
+Labeled 'Supports ARM access 2'
+
+New Objects added :
+ HMI_IDX_SetPassword_ServiceLevel
+ HMI_IDX_SetPassword_StandardLevelDefault
+ HMI_IDX_SetPassword_AdvancedLevelDefault
+ HMI_IDX_SetPassword_ServiceLevelDefault
+
+when viewing any of the set passwords the passwords are displayed as "******"
+mechanisms added to allow for setting new passwords
+
+default contrast pre-set to 50%
+
+-----------------------------------------------------------------------------------------------
+ - Rog
+Labeled 'Supports Service Port'
+
+Support for Service Port operation added
+Write protection method modified to allow "password" to be written w/o arm approval
+include files for common diagnostics added
+include files for common arm added
+"old" diagnostics functions removed - now ONLY supports common diagnostics
+
+-----------------------------------------------------------------------------------------------
+ - Rog
+Labeled 'Supports ARM access'
+
+Support for Security access added
+The ability to hide signals from the signals view has been added (via flag in code generator)
+Any value displayed in operator page flashes if its value is outside business rules
+
+Adjuster.c
+    includes for diagnostics added
+    includes for ARM added
+    Support for Security access added
+
+Adjuster.h
+    function declarations for security access functions added
+
+FrameMover.c
+    Support for Security access via ARM added
+    Signals can be removed from signals view via code generator
+
+FrameTable.c
+    Support for Security access via ARM added
+    Allows for signals being hidded from signals view menu
+
+FrameTable.h
+    function declarations for security access functions added
+
+FrameTableDefinitions.h
+    Specific frame types for security access frames removed
+    specialStringFlag added to STRING_PARAM_FRAME_TYPE
+    SignalsViewEnable added to SIGNAL_TABLE_TYPE
+    ARM access level definitions added
+
+Hmi_constructor.c
+    New HMI object "HMI_IDX_Password" added
+
+Hmi_execute.c
+    Whitespace change only
+
+Hmi_overload.c
+    Whitespace change only
+
+Hmi_types.h
+    Password[6] added to T_HMI_DYNAMIC
+
+HmiCoordinator.c
+    Support for Security access added
+
+KeystateDefinitions.h
+    Redundant commands removed from MOVE_COMMAND_TYPE
+
+PacketManager.c
+    Support for Security access via ARM added
+    Allows for signals being hidded from signals view menu
+    value in operator page flashes if value is outside business rules
+    significantDigitsForValues corrected for display formats of 1x9, 2x9 etc
+
+PacketManager.h
+    Constant definition "JUSTIFY_LEFT_WITH_INDENT_11" added
+
+WriteProtect.c
+    Support for Security access via ARM added
+    parameter list for "WriteProtect_HMICanAccess()" simplified
+
+WriteProtect.h
+    parameter list for "WriteProtect_HMICanAccess()" simplified
+
+Hmi_idx.h
+    New HMI object "HMI_IDX_Password" added
+
+Hmi.h
+    Whitespace change only
+-----------------------------------------------------------------------------------------------
+Labeled 'Supports common diagnostics (2)'

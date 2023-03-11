@@ -1,0 +1,70 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 27;;;;;
+;language;;Enumeration - Defines the language used;ENUMERATION;_LANGUAGE
+;mainOperatorView_1_1;;Signal to be displayed on 1st line of 1st operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_2;;Signal to be displayed on 2nd line of 1st operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_3;;Signal to be displayed on 3rd line of 1st operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_4;;;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_bargraph;;Signal to be displayed on bargraph of 1st operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_1;;Signal to be displayed on 1st line of 2nd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_2;;Signal to be displayed on 2nd line of 2nd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_3;;Signal to be displayed on 3rd line of 2nd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_4;;;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_bargraph;;Signal to be displayed on bargraph of 2nd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_1;;Signal to be displayed on 1st line of 3rd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_2;;Signal to be displayed on 2nd line of 3rd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_3;;Signal to be displayed on 3rd line of 3rd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_4;;;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_bargraph;;Signal to be displayed on bargraph of 3rd operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_1;;Signal to be displayed on 1st line of 4th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_2;;Signal to be displayed on 2nd line of 4th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_3;;Signal to be displayed on 3rd line of 4th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_4;;;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_bargraph;;Signal to be displayed on bargraph of 4th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_1;;Signal to be displayed on 1st line of 5th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_2;;Signal to be displayed on 2nd line of 5th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_3;;Signal to be displayed on 3rd line of 5th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_4;;;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_bargraph;;Signal to be displayed on bargraph of 5th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_1;;Signal to be displayed on 1st line of 6th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_2;;Signal to be displayed on 2nd line of 6th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_3;;Signal to be displayed on 3rd line of 6th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_4;;;ENUMERATION;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_bargraph;;Signal to be displayed on bargraph of 6th operator page;ENUMERATION;_MAIN_OPERATOR_VIEW
+;contrast;;Display Contrast (0..100%);NUMERIC;
+;localOperationEnable;;Defines if HMI is allowed to make changes to parameter values;;
+;displayMode_1;;Display format for operator page 1;ENUMERATION;_DISPLAY_MODE
+;displayMode_2;;Display format for operator page 2;ENUMERATION;_DISPLAY_MODE
+;displayMode_3;;Display format for operator page 3;ENUMERATION;_DISPLAY_MODE
+;displayMode_4;;Display format for operator page 4;ENUMERATION;_DISPLAY_MODE
+;displayMode_5;;Display format for operator page 5;ENUMERATION;_DISPLAY_MODE
+;displayMode_6;;Display format for operator page 6;ENUMERATION;_DISPLAY_MODE
+;autoscrollEnable;;Autoscroll on/off - used when multiple operator pages are available;ENUMERATION;_AUTOSCROLL
+;lowLevelSoftwareRevision;;Software revision of low level HMI component;NUMERIC;
+;defaultContrast;;Default contrast setting for display glass;NUMERIC;
+;diagnosisView;;Signal to be displayed in signal view (diagnostics) frame;ENUMERATION;_MAIN_OPERATOR_VIEW
+;customDP_1;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_2;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_3;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_4;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_5;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_6;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_7;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_8;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_9;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_10;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;customDP_11;;Custom number of decimal places;ENUMERATION;_CUSTOM_DP
+;Password;;String entered at "Enter Password" for comparison with ARM security passwords;ASCII;
+;SetPassword_StandardLevel;;Used by the HMI user to set a new standard level password;ASCII;
+;SetPassword_AdvancedLevel;;Used by the HMI user to set a new advanced level password;ASCII;
+;SetPassword_ServiceLevel;;Used by the HMI user to set a new service level password;ASCII;
+;SetPassword_StandardLevelDefault;;Used by the HMI user to set a new default password for standard level;ASCII;
+;SetPassword_AdvancedLevelDefault;;Used by the HMI user to set a new default password for Advanced level;ASCII;
+;SetPassword_ServiceLevelDefault;;Used by the HMI user to set a new default password for Service level;ASCII;
+;DateFormat;;Defines the way in which dates are represented on the HMI.;ENUMERATION;_DATE_FORMAT
+;displayTest;;Action Object - used to start display test;ACTION;
+;Rotation;;Software rotation of display (only effective when indicator Only Low level is fitted);ENUMERATION;_ROTATION
+;MenuFormat;;Number of lines displayed in menu & enum edit frames;ENUMERATION;_MENU_FORMAT
+;Customlanguage;;;ENUMERATION;_LANGUAGE

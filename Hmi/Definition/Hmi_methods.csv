@@ -1,0 +1,64 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 29;;;;;
+;HMI_EXE;0;;TBOOL;This is the high level HMI executive
+;HMI_EXE;1;instance;TUSIGN8;
+;HMI_ForceDisplayTimeoutSRV;0;;void;Forces a timeout of the display update timer, thus forcing the active area of the display to be updated the next time HMI_EXE() is called.
+;HMI_ForceDisplayTimeoutSRV;1;instance;TUSIGN8;
+;HMI_PowerOnSRV;0;;void;Controls the power to the display hardware. Power will not be applied to the hardware until this function has been called
+;HMI_PowerOnSRV;1;instance;TUSIGN8;
+;HMI_AllowIOaccessSRV;0;;void;Allows the HMI to access the I/O. Only after HMI_PowerOnSRV() and HMI_AllowIOaccessSRV() have been called will the High Level HMI attempt to establish communication with the low level HMI.
+;HMI_AllowIOaccessSRV;1;instance;TUSIGN8;
+;HMI_DenyIOaccessSRV;0;;void;Stops the HMI from using the I/O. If HMI_DenyIOaccessSRV() is called then the High Level HMI will assume that the low level HMI has been removed. This allows other subsystems to use the I/O.
+;HMI_DenyIOaccessSRV;1;instance;TUSIGN8;
+;HMI_TransmitInterruptSRV;0;;void;Transmit to Low Level HMI Interrupt handler
+;HMI_ReceiveInterruptSRV;0;;void;Receive from Low Level HMI Interrupt handler
+;HMI_IsIOActiveSRV;0;;TBOOL;Returns the status of the communication between the high level HMI and low level HMI
+;HMI_IsIOActiveSRV;1;instance;TUSIGN8;
+;HMI_NV_InitCompleteSRV;0;;TBOOL;Tells the HMI that NV initialization is complete, returns sucess
+;HMI_GetKeypressSRV;0;;TUSIGN8;Returns the current keypress data
+;HMI_GetKeypressSRV;1;instance;TUSIGN8;
+;HMI_IsOperatorViewActive;0;;TBOOL;Returns eTRUE if HMI currently displaying an operator level frame
+;HMI_IsOperatorViewActive;1;instance;TUSIGN8;
+;HMI_Get_LLHardwareType_SRV;0;;TUSIGN8;Returns the Low Level HMI Type
+;HMI_Get_LLHardwareType_SRV;1;instance;TUSIGN8;
+;HMI_GetAutoscrollState_SRV;0;;TBOOL;Returns eTRUE if autoscroll is active
+;HMI_GetAutoscrollState_SRV;1;instance;TUSIGN8;
+;HMI_GetOperatorPageNumber_SRV;0;;TUSIGN8;Returns the number of the operator page being displayed
+;HMI_GetOperatorPageNumber_SRV;1;instance;TUSIGN8;
+;HMI_resetConfigurationTimeout;0;;void;Resets the configuration mode timeout (and inactive user timeout)
+;HMI_SetStartupFrame_SRV;0;;TBOOL;Allows a remote subsystem to select the operator page & autoscroll state used at startup
+;HMI_SetStartupFrame_SRV;1;autoscrollState;TBOOL;
+;HMI_SetStartupFrame_SRV;2;operatorPage;TUSIGN8;
+;HMI_SetStartupFrame_SRV;3;instance;TUSIGN8;
+;HMI_SetOperatorIcon_SRV;0;;void;Select an icon to be displayed on the lower line of the operator  page
+;HMI_SetOperatorIcon_SRV;1;field;TUSIGN8;
+;HMI_SetOperatorIcon_SRV;2;iconID;TUSIGN8;
+;HMI_SetGraphPointer_SRV;0;;void;
+;HMI_SetGraphPointer_SRV;1;frameNumber;TUSIGN8;
+;HMI_SetGraphPointer_SRV;2;pGraph;TUSIGN8*;
+;HMI_ToggleBacklight_SRV;0;;void;
+;HMI_SetFunctionKeyLock_SRV;0;;void;
+;HMI_SetFunctionKeyLock_SRV;1;lockState;TBOOL;
+;HMI_SetParameterDumpFont_SRV;0;;void;
+;HMI_SetParameterDumpFont_SRV;1;font;TUSIGN8;
+;HMI_SetOperatorInfo_SRV;0;;void;
+;HMI_SetOperatorInfo_SRV;1;infoID;TUSIGN8;
+;HMI_SetGraphTimebase_SRV;0;;TBOOL;
+;HMI_SetGraphTimebase_SRV;1;frameNumber;TUSIGN8;
+;HMI_SetGraphTimebase_SRV;2;timebase;TUSIGN8;
+;HMI_AllowReInit_SRV;0;;void;
+;HMI_AllowReInit_SRV;1;InitFlags;TUSIGN8;
+;HMI_GetLanguageIndex_SRV;0;;TUSIGN8;
+;HMI_GetLanguageIndex_SRV;1;language;TUSIGN8;
+;HMI_InitialiseGlobalConfigChangeCounter_SRV;0;;void;
+;HMI_InitialiseGlobalConfigChangeCounter_SRV;1;ss_Idx;TUSIGN16;
+;HMI_InitialiseGlobalConfigChangeCounter_SRV;2;ob_Idx;TUSIGN16;
+;HMI_InitialiseGlobalConfigChangeCounter_SRV;3;at_Idx;TINT16;
+;HMI_ReInitialiseLowLevelDetection_SRV;0;;void;
+;HMI_PutPacketBuffer_SRV;0;;TBOOL;
+;HMI_PutPacketBuffer_SRV;1;systemIdx;TUSIGN16;
+;HMI_PutPacketBuffer_SRV;2;processCmd;TUSIGN8;
+;HMI_PutPacketBuffer_SRV;3;ptrArray;TUSIGN8*;
+;HMI_PutPacketBuffer_SRV;4;arrayLength;TUSIGN8;
