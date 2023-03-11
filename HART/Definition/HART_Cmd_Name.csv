@@ -1,0 +1,125 @@
+reserved;command;function;name;configChanged;briefDescription
+##Module HartGen;;;;;
+##ModuleRevision 0x010000;;;;;
+##FileRevision 124;;;;;
+Copyright ABB;;;;;
+All rights reserved. Reproduction;;;;;
+use or disclosure to third parties without express;;;;;
+authority is forbidden.;;;;;
+!;;;;;
+DIGITAL_FEEDBACK 0x0002;;;;;
+PRESSURE 0x0004;;;;;
+UNIVERSAL_AI 0x0008;;;;;
+HART 0x0010;;;;;
+EXTERNAL_POS_SENSOR 0x0020;;;;;
+CONTACTLESS_POS_SENSOR 0x0040;;;;;
+SAFETY_SHUT_OFF 0x0080        );;;;;
+SERICHRT;;;;;
+CONTROL_TEST;;;;;
+DIAG_SER_CLEAR_ALARM_FIFO_BUFFER 0x02 //;;;;;
+DIAG_SER_CLEAR_PRESSURE_EXTREMUM 0x04 //;;;;;
+DIAG_SER_CLEAR_TRAVEL_COUNTER 0x08 //;;;;;
+DIAG_SER_CLEAR_MOVENT_COUNTER 0x10 //;;;;;
+;0;READ;ReadUniqueIdentifier;NO;Read Unique Identifier
+;1;READ;ReadPrimaryVariable;NO;Read Primary Variable
+;2;READ;ReadLoopCurrentAndPercentOfRange;NO;Read Loop Current And Percend of Range
+;3;READ;ReadDynamicVariablesAndLoopCurrent;NO;Read Dynamic Variables and Loop Current
+;6;WRITE;WritePollingAdress;YES;Write Polling Address
+;7;READ;ReadLoopConfiguration;NO;Read Loop Configuration
+;8;READ;ReadDynamicVariableClassification;NO;Read Dynamic Variable Classification
+;9;READ;ReadDeviceVariablesWithStatus;NO;Read Device Variables With Status
+;11;READ;ReadUniqueIdentifierAssiciatedWithTag;NO;Read Unique Identifier Assiciated With Tag
+;12;READ;ReadMessage;NO;Read Message
+;13;READ;ReadTagDescriptorDate;NO;Read Tag Descriptor Date
+;14;READ;ReadPrimaryVariableTransducerInformation;NO;Read Primary Variable Transducer Information
+;15;READ;ReadDeviceInformation;NO;Read Device Information
+;16;READ;ReadFinalAssemblyNumber;NO;Read Final Assembly Number
+;17;WRITE;WriteMessage;YES;Write Message
+;18;WRITE;WriteTagDescriptorDate;YES;Write Tag Descriptor Date
+;19;WRITE;WriteFinalAssemblyNumber;YES;Write Final Assembly Number
+;20;READ;ReadLongTag;NO;Read Long Tag
+;21;READ;ReadUniqueIdentifierAssiciatedWithLongTag;NO;Read Unique Identifier Assiciated With Long Tag
+;22;WRITE;WriteLongTag;YES;Write Long Tag
+;33;READ;ReadDeviceVariables;NO;Read Device Variables
+;34;WRITE;WritePrimaryVariableDampingValue;YES;Write Primary Variable Damping Value
+;35;WRITE;WritePrimaryVariableRangeValues;YES;Write Primary Variable Range Values
+;36;WRITE;SetPrimaryVariableUpperRangeValue;NO;Set Primary Variable Upper Range Value
+;37;WRITE;SetPrimaryVariableUpperLowerValue;NO;Set Primary Variable Upper Lower Value
+;38;WRITE;ResetConfigurationChangedFlag;NO;Reset Configuration Changed Flag
+;40;WRITE;EnterExitFixedCurrentMode;NO;Enter or Exit Fixed Current Mode
+;41;WRITE;PerformSelfTest;NO;Perform Self Test
+;42;WRITE;PerformDeviceReset;NO;Perform Device Reset
+;43;WRITE;WritePrimaryVariableZero;YES;Write Primary Variable Zero
+;44;WRITE;WritePrimaryVariableUnits;YES;
+;45;WRITE;TrimloopCurrentZero;YES;Trimloop Current Zero
+;46;WRITE;TrimloopCurrentGain;YES;Trimloop Current Gain
+;48;READ;ReadAdditionalDeviceStatus;NO;Read Additional Device Status
+;50;READ;ReadDynamicVariablesAssignment;NO;Read Dynamic Variables Assignment
+;51;WRITE;WriteDynamicVariablesAssignment;YES;Write Dynamic Variables Assignment
+;53;WRITE;WriteDeviceVariableUnits;YES;Write Device Variable Units
+;54;READ;ReadDeviceVariableInformation;NO;Read Device Variable Information
+;55;WRITE;WriteDeviceVariableDampingValue;YES;Write Device Variable Damping Value
+;59;WRITE;WriteNumberofResponsePreambles;YES;Write Number of Response Preambles
+;71;WRITE;LockDevice;NO;Lock Device
+;76;READ;ReadLockDeviceState;NO;Read Lock Device State
+;79;WRITE;WriteDeviceVariable;YES;Write Device Variable
+;122;WRITE;WriteHartServiceCode;YES;WriteHartServiceCode
+;123;READ;ReadObject;NO;Read Object
+;124;WRITE;WriteObject;YES;Write Object
+;125;READ;ReadMemory;NO;Read Memory
+;126;WRITE;WriteMemory;YES;Write Memory
+;128;READ;ReadCalculationUnsignedCharVariable;NO;Read Calculation Unsigned Char Variable
+;129;WRITE;WriteCalculationUnsignedCharVariable;YES;Write Calculation Unsigned Char Variable
+;130;READ;ReadIOBUSUnsignedCharVariable;NO;ReadI OBUS Unsigned Char Variable
+;131;WRITE;WriteIOBUSUnsignedCharVariable;YES;WriteI OBUS Unsigned Char Variable
+;132;READ;ReadESUnsignedCharVariable;NO;Read ES Unsigned Char Variable
+;133;WRITE;WriteESUnsignedCharVariable;YES;Write ES Unsigned Char Variable
+;134;READ;ReadHMIUnsignedCharVariable;NO;Read HMI Unsigned Char Variable
+;135;WRITE;WriteHMIUnsignedCharVariable;YES;Write HMI Unsigned Char Variable
+;136;READ;ReadUnsignedShortVariable;NO;Read Unsigned Short Variable
+;137;WRITE;Write Unsigned Short Variable;YES;Write Unsigned Short Variable
+;138;READ;ReadUnsignedLongVariable;NO;Read Unsigned Long Variable
+;139;WRITE;WriteUnsignedLongVariable;YES;Write Unsigned Long Variable
+;140;READ;ReadFloatVariable;NO;Read Float Variable
+;141;WRITE;WriteFloatVariable;YES;Write Float Variable
+;142;READ;ReadDoubleVariable;NO;Read Double Variable
+;143;WRITE;WriteDoubleVariable;YES;Write Double Variable
+;144;WRITE;LogOutHartServiceCode;NO;Log Out Hart Service Code
+;146;WRITE;PerformAction;YES;Perform Action
+;150;READ;ReadDiagnosisActiveAlarm;NO;Read Diagnosis Active Alarm
+;151;READ;ReadDiagnosisActiveAlarmConditionDetail;NO;Read Diagnosis Active Alarm Condition Detail
+;152;READ;ReadFlowStatus;NO;Read Flow Status
+;153;READ;ReadFamilyRevision;NO;Read Family Revision
+;154;READ;ReadVortexFrequency;NO;Read Vortex Frequency
+;155;READ;ReadLowFlowCutoff;NO;Read Low Flow Cutoff
+;156;READ;ReadDensityPreset;NO;Read Density Preset
+;157;READ;ReadDensityPresetUnit;NO;Read Density Preset Unit
+;158;READ;ReadViscosity;NO;Read Viscosity
+;159;READ;ReadTubeDiameterSize;NO;Read Tube Diameter Size
+;160;WRITE;WriteLowFlowCutoff;YES;Write Low Flow Cutoff
+;164;WRITE;WriteTubeDiameterSize;YES;Write Tube Diameter Size
+;165;WRITE;WriteHartServiceCode;YES;Write Hart Service Code
+;166;READ;ReadFloats;NO;Read Floats
+;167;WRITE;WriteFloats;YES;Write Floats
+;168;READ;ReadGasConfFlag;NO;Read Gas Conf Flag
+;169;WRITE;WriteGasConfFlag;YES;Write Gas Conf Flag
+;170;READ;ReadString;NO;Read String
+;171;WRITE;WriteString;YES;Write String
+;172;READ;ReadVariableAlarmRange;NO;Read Variable Alarm Range
+;173;WRITE;WriteVariableAlarmRange;YES;Write Variable Alarm Range
+;174;READ;ReadVariableWithUnit;NO;Read Variable With Unit
+;175;WRITE;WriteVariableWithUnit;YES;Write Variable With Unit
+;176;READ;ReadSimulateDeviceVariable;NO;Read Simulate Device Variable
+;177;WRITE;WriteSimulateDeviceVariable;YES;Write Simulate Device Variable
+;178;READ;ReadVariableRange;NO;Read Variable Range
+;179;WRITE;WriteVariableRange;YES;Read Variable  Range
+;180;READ;ReadAiCurrent;NO;Read AI Current
+;181;READ;ReadBurstInConfiguration;NO;Read Burst In Configuration
+;182;WRITE;WriteBurstInConfiguration;YES;Config Burst In configuration
+;183;WRITE;BurstIn;NO;Burst In
+;184;WRITE;LoginwithPassword;YES;LoginwithPassword and accesslevel
+;185;WRITE;ResetSoftWriteProtection;NO;Reset Soft Write Protection
+;186;READ;ReadTotalizerBaseUnitValue;;Read Totalizer Base Unit Value
+;200;READ;ReadSensorInformation;NO;
+;512;READ;ReadCountryCode;NO;Read Country Code
+;513;WRITE;WriteCountryCode;YES;Write Country Code

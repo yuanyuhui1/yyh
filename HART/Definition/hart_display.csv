@@ -1,0 +1,44 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 13;;;;;
+Copyright ABB, 2011.;;;;;
+All rights reserved. Reproduction, modification,;;;;;
+use or disclosure to third parties without express;;;;;
+authority is forbidden.;;;;;
+!;;;;;
+!;;;;;
+;pollAddr;;polling address;NUMERIC;
+;resetConfigFlag;;Reset configuration changed flags;ACTION;
+;StartSelfTest;;Starts self test;ACTION;
+;bolDeviceIsBusy;;Internal information for status;NUMERIC;
+;dummy_254;;Fixed to 254;NUMERIC;
+;dummy_0;;Not used (Value = 0);NUMERIC;
+;bitRateCode;;Bit rate code;NUMERIC;
+;mfrId;;Manufacturer Identification Code 0x1A or ABB;NUMERIC;
+;mfrDeviceType;;Device Type 0x8C for Rainbow SE;NUMERIC;
+;transSpecRev;;Device Revision Level;NUMERIC;
+;flags;;Fixed to 1;NUMERIC;
+;configurationFlags;;Configuration Flag 1 and 2;NUMERIC;
+;tag;;Device-Tag;PASCII;
+;deviceMessage;;Device Message as 24 byte PASCII character;PASCII;
+;finalAssyNumber;;Final Assembly Number;NUMERIC;
+;descriptor;;Descriptor;PASCII;
+;deviceIdNumber;;Device identification number;NUMERIC;
+;slot0;;Slot 0;NUMERIC;
+;slot1;;Slot 1;NUMERIC;
+;slot2;;Slot 2;NUMERIC;
+;slot3;;Slot 3;NUMERIC;
+;reserved;;Reserved;NUMERIC;
+;configExitTimer;;;;
+;fskDisabled;;;;
+;PV_AlarmSelctionCode;;;NUMERIC;
+;hartCmdRev;;Switch between HART 5 and HART 7 command revision.  Change takes only effect after a power cycle.;ENUMERATION;HartRevisionTable
+;findDeviceSwitch;;Configures find device HART function as used with command 73 (> HART 7 only);ENUMERATION;FindDeviceSwitchTable
+;deviceInstallDate;;;NUMERIC;
+;lockDeviceSelection;;implementation for command 71.  This funciton locks the device temporarily or permanent.  For details refer to HART 7.2 spec.;ENUMERATION;lockDeviceSelectionTable
+;lockDeviceStatus;;;NUMERIC;
+;performDeviceReset;;;NUMERIC;
+;burstUpTxSelection;;Display Information for the Hart Input Selection Source;ENUMERATION;T_HART_SELECTION
+;lastReceiveCommandNumber;;last received hart command number;NUMERIC;
+;hartInSim;;;NUMERIC;

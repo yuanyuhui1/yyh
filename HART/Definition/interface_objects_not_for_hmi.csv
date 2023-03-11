@@ -1,0 +1,5 @@
+reserved;subsystem;object;attribute;constant_unit
+"##Module SubGen				"
+"##ModuleRevision 0x020101		"
+"##FileRevision 4				"
+;DigitalOutput;pulseWidth;value;ms

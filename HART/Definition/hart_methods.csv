@@ -1,0 +1,19 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 8;;;;;
+Copyright ABB, 2011.;;;;;
+All rights reserved. Reproduction, modification,;;;;;
+use or disclosure to third parties without express;;;;;
+authority is forbidden.;;;;;
+!;;;;;
+!;;;;;
+the function has to be scheduled every 10ms.";;;;;
+;HARTCommandInterpreterEXE;0;;void;"build the response frame dependend on the received command-request. this function polls layer2 if a response has to be build.
+;IncrementConfiChangeCounter;0;;void;Increments Configuration Change Counter
+;GetDeviceLockStatus;0;;TUSIGN8;Gets the write lock state as applied by command 71 (Lock Device)
+;HART_PutReceiveBuffer_SRV;0;;TBOOL;other subsystem put data to HART Receive Buffer
+;HART_PutReceiveBuffer_SRV;1;systemIdx;TUSIGN16;
+;HART_PutReceiveBuffer_SRV;2;processCmd;TUSIGN8;
+;HART_PutReceiveBuffer_SRV;3;ptrArray;TUSIGN8*;
+;HART_PutReceiveBuffer_SRV;4;arrayLength;TUSIGN8;

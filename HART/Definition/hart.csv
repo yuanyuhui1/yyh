@@ -1,0 +1,13 @@
+reserved;name;value
+##Module SubGen;;
+##ModuleRevision 0x020101;;
+##FileRevision 1;;
+Copyright ABB, 2011.;;
+All rights reserved. Reproduction, modification,;;
+use or disclosure to third parties without express;;
+authority is forbidden.;;
+!;;
+!;;
+;SubsystemName;Hart
+;ShortSubsystemName;Hart
+;FrameworkVersion;0x020101

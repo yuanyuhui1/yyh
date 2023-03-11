@@ -1,0 +1,138 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 110;;;;;;;
+;resetConfigFlag;Reset configuration changed flags;CONTAINED;ACTION;1;;
+;StartSelfTest;Starts self test;CONTAINED;ACTION;1;;
+;bolDeviceIsBusy;Internal information for status;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;dummy_0;Not used (Value = 0);CONTAINED;CONST_U8;1;cst;
+;dummys16;;CONTAINED;SIMPLE_I16;1;dyn;RAM
+;dummy32;;CONTAINED;SIMPLE_U32;1;dyn;RAM
+;dummy250;;CONTAINED;CONST_U8;1;cst;
+;dummy_254;Fixed to 254;CONTAINED;CONST_U8;1;cst;
+;dummyU8;;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;dummyU16;;CONTAINED;SIMPLE_U16;1;dyn;RAM
+;dummyFloat;;CONTAINED;SIMPLE_FLOAT;1;dyn;RAM
+;dummyDouble;;CONTAINED;SIMPLE_DOUBLE;1;dyn;RAM
+;bitRateCode;Bit rate code;CONTAINED;USIGN8;1;rare;NON_VOLATILE
+;fskDisabled;A value <>0 disables the FSK-Function.;CONTAINED;SIMPLE_U8;1;rare;NON_VOLATILE
+;hwWriteProtection;Write protect code;CONTAINED;SIMPLE_U8;1;rare;NON_VOLATILE
+;numberRquestPream;Min Number Request Preambles;CONTAINED;USIGN8;1;rare;NON_VOLATILE
+;numberRespPream;;OUTPUT;USIGN8;1;rare;NON_VOLATILE
+;hartCmdRev;Switch between HART 5 and HART 7 command revision.  Change takes only effect after a power cycle.;CONTAINED;TABENUM8;1;freqCst;NON_VOLATILE
+;univCmdRev;Universal Command Major Revision Number;CONTAINED;TABENUM8;1;freqCst;NON_VOLATILE
+;transSpecRev;Device Revision Level;CONTAINED;CONST_U8;1;cst;
+;deviceRevisionLevel;;CONTAINED;CONST_U8;1;cst;
+;mfrId;Manufacturer Identification Code 0x1A or ABB;CONTAINED;CONST_U8;1;cst;
+;mfrDeviceType;Device Type as assigned by the HART Foundation.  Must be adjusted to the specific device where this subsystem is used;CONTAINED;CONST_U8;1;cst;
+;maxNoOfDevVariables;;CONTAINED;CONST_U8;1;cst;
+;manufacturerIdCode;;CONTAINED;CONST_U8;2;cst;
+;privateLabelDistributorCode;;CONTAINED;SIMPLE_U16;1;rare;NON_VOLATILE
+;deviceProfile;;CONTAINED;CONST_U8;1;cst;
+;flags;Fixed to 2 01 = Multisensor Field Device 02 = Eeprom Control 04 = Protocol bridge Device 08 = IEEE 802.15.4.2  4GHz DSSS;CONTAINED;CONST_U8;1;cst;
+;configurationFlags;Configuration Flag 1 and 2;CONTAINED;CONF;1;freqCst;
+;pollAddr;polling address;CONTAINED;ADDR;1;freqCst;
+;bursttotalNumberOfMsg;;CONTAINED;CONST_U8;1;cst;
+;burstDefaultMsg;;CONTAINED;SIMPLE_U8;1;freqNo;NON_VOLATILE
+;burstMsg0ConfData;;CONTAINED;BURSTMSG_CONFVALUES;1;freqNo;
+;burstMsg0ManageData;;CONTAINED;BURSTMSG_MANAGEVALUES;1;dyn;
+;burstMsg1ConfData;;CONTAINED;BURSTMSG_CONFVALUES;1;freqNo;
+;burstMsg1ManageData;;CONTAINED;BURSTMSG_MANAGEVALUES;1;dyn;
+;burstMsg2ConfData;;CONTAINED;BURSTMSG_CONFVALUES;1;freqNo;
+;burstMsg2ManageData;;CONTAINED;BURSTMSG_MANAGEVALUES;1;dyn;
+;tag;Device-Tag;CONTAINED;SIMPLE_U8;6;freqCst;NON_VOLATILE
+;deviceMessage;Device Message as 24 byte PASCII character;CONTAINED;SIMPLE_U8;24;freqCst;NON_VOLATILE
+;finalAssyNumber;Final Assembly Number;CONTAINED;SIMPLE_U8;3;freqCst;NON_VOLATILE
+;descriptor;Descriptor;CONTAINED;SIMPLE_U8;12;freqCst;NON_VOLATILE
+;deviceIdNumber;Device identification number;CONTAINED;SIMPLE_U8;3;rare;NON_VOLATILE
+;deviceInstallDate;;CONTAINED;SIMPLE_U8;3;freqCst;NON_VOLATILE
+;slot0;Slot 0;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot1;Slot 1;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot2;Slot 2;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot3;Slot 3;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot4;Slot 4;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot5;Slot 5;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot6;Slot 6;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;slot7;Slot 7;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;reserved;Reserved;CONTAINED;USIGN8;1;freqCst;NON_VOLATILE
+;subsystemIndex;dummy object for custom HART command handling arbitrary objects;INPUT;SIMPLE_U16;1;dyn;RAM
+;objectIndex;dummy object for custom HART command handling arbitrary objects;INPUT;SIMPLE_U16;1;dyn;RAM
+;objectDataLength;;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;attributeIndex;dummy object for custom HART command handling arbitrary objects;INPUT;SIMPLE_U16;1;dyn;RAM
+;objectData;dummy object for custom HART command handling direct memory access;INOUT;SIMPLE_U8;32;dyn;RAM
+;board;object for custom HART command handling arbitrary objects;CONTAINED;TABENUM8;1;dyn;RAM
+;address;object for custom HART command handling arbitrary objects;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;memoryAddress;dummy object for custom HART command handling direct memory access;INPUT;SIMPLE_U16;1;dyn;RAM
+;memoryLength;;INOUT;SIMPLE_U8;1;dyn;RAM
+;memoryData;;INOUT;SIMPLE_U8;32;dyn;RAM
+;pvtLabelDistCode_Command15;;CONTAINED;TABENUM8;1;dyn;RAM
+;notUsed;;CONTAINED;CONST_U8;1;cst;
+;PV_AlarmSelctionCode;The Alarm Selection Code indicates the action taken by the device under error conditions. For transmitters, the code indicates the action by Loop Current. For Actuators, the action taken by the positioner is indicated;CONTAINED;TABENUM8;1;dyn;RAM
+;PV_Transfer_FunctionCode;The transfer function code must return "0", Linear if transfer functions are not supported by the device;CONTAINED;TABENUM8;1;dyn;RAM
+;dampValue;;CONTAINED;SIMPLE_FLOAT;1;dyn;RAM
+;pvt_Label_Dist_Code;;CONTAINED;CONST_U8;1;cst;
+;activeDeadbandCode;;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;measuringTask;;CONTAINED;SIMPLE_U8;24;freqCst;NON_VOLATILE
+;minSwitchingTime;;CONTAINED;SIMPLE_U8;1;freqCst;NON_VOLATILE
+;counterReset;;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;configExitTimer;;CONTAINED;TABENUM8;1;dyn;RAM
+;configExitElapsedTime;;CONTAINED;SIMPLE_U16;1;dyn;RAM
+;diagCounterMoreStatusAvailablePrimMaster;;CONTAINED;SIMPLE_U16;1;dyn;RAM
+;diagCounterMoreStatusAvailableSecMaster;;CONTAINED;SIMPLE_U16;1;dyn;RAM
+;eepromControl;;CONTAINED;TABENUM8;1;dyn;RAM
+;performDeviceReset;A write to this object carries out a device reset and caters for the proper response handling by walking through a reset state machine;CONTAINED;SIMPLE_U8;1;dyn;READONLY_RAM
+;resetDevice;;CONTAINED;ACTION;1;;
+;devVariableClassification;;CONTAINED;CONST_U8;1;cst;
+;devVariableTransducerSerialNo;;CONTAINED;CONST_U8;3;cst;
+;devVariableFamilyCode;;CONTAINED;CONST_U8;1;cst;
+;devVariableStatus;;CONTAINED;SIMPLE_BIT8;1;dyn;RAM
+;dataTimeStamp;;CONTAINED;SIMPLE_U32;1;dyn;RAM
+;loopCurrentMode;;CONTAINED;SIMPLE_U8;1;freqCst;NON_VOLATILE
+;longTag;;CONTAINED;SIMPLE_U8;32;freqCst;NON_VOLATILE
+;confChangeCounterValue;;CONTAINED;SIMPLE_U16;1;freqNo;NON_VOLATILE
+;resetMoreStatusAvailable;;CONTAINED;ACTION;1;;
+;pvAnalogChannelFlags;;CONTAINED;CONST_U8;1;cst;
+;nonValidDeviceVariableClassification;;CONTAINED;CONST_U8;1;cst;
+;nonValidDeviceVariableUnitCode;;CONTAINED;CONST_U8;1;cst;
+;nonValidDeviceVariableValue;;CONTAINED;CONST_U8;4;cst;
+;nonValidDeviceVariableStatus;;CONTAINED;CONST_U8;1;cst;
+;deviceVariableCode;;CONTAINED;SIMPLE_U8;1;dyn;RAM
+;updatePeriod;;CONTAINED;SIMPLE_U32;1;dyn;RAM
+;extendedDeviceStatus;;CONTAINED;TABENUM8;1;dyn;RAM
+;deviceOperatingMode;;CONTAINED;TABENUM8;1;dyn;RAM
+;standardizedStatus0;;CONTAINED;TABENUM8;1;dyn;RAM
+;analogChannelFixed;;CONTAINED;TABENUM8;1;dyn;RAM
+;softModemInfo;This object contains the softmodem firmware version.  Only supported if a softmodem is used in the device hardware design - not for single processor solution;CONTAINED;SIMPLE_U8;8;dyn;RAM
+;squawk;;CONTAINED;ACTION;1;;
+;findDeviceSwitch;Configures find device HART function as used with command 73 (> HART 7 only);CONTAINED;TABENUM8;1;dyn;RAM
+;lockDeviceSelection;implementation for command 71.  This funciton locks the device temporarily or permanent.  For details refer to HART 7.2 spec.;CONTAINED;TABENUM8;1;freqNo;NON_VOLATILE
+;lockDeviceStatus;See GetDeviceLockState(). This parameter reflects the access rights as applied by command 71 Lock Device.;CONTAINED;SIMPLE_U8;1;freqNo;NON_VOLATILE
+;transducerLimitsCmd14_54;;CONTAINED;SIMPLE_FLOAT;3;dyn;RAM
+;burstUpUnitCode;;INOUT;SIMPLE_U8;2;dyn;RAM
+;burstUpUnitType;;INOUT;TABENUM8;1;dyn;RAM
+;burstUpDataValue;;INOUT;SIMPLE_FLOAT;1;dyn;RAM
+;burstUpBaseValue;;INOUT;SIMPLE_FLOAT;1;dyn;RAM
+;burstUpTxSelection;;INOUT;TABENUM8;1;freqStatic;NON_VOLATILE
+;transducerSerialNumber;;INOUT;SIMPLE_U8;3;dyn;RAM
+;lastReceiveCommandNumber;;INOUT;SIMPLE_U8;1;freqCst;NON_VOLATILE
+;timeValueHART;;CONTAINED;SIMPLE_U32;1;dyn;RAM
+;currentClassification;;CONTAINED;CONST_U8;1;CONSTANT;ROM
+;currentUnit;;CONTAINED;SIMPLE_U8;2;DYNAMIC;RAM
+;currentStatus;;CONTAINED;SIMPLE_U8;1;DYNAMIC;RAM
+;setPVUpRangeValue;;CONTAINED;ACTION;1;;
+;setPVLowerRangeValue;;CONTAINED;ACTION;1;;
+;setDeviceVariableNZero;;CONTAINED;ACTION;1;;
+;resetDeviceVariableNTrim;;CONTAINED;ACTION;1;;
+;deviceVariableFamilyCodes;;CONTAINED;TABENUM8;1;DYNAMIC;RAM
+;writeDeviceVariableCommCode;;CONTAINED;SIMPLE_U8;1;DYNAMIC;RAM
+;ServiceCode;;CONTAINED;HART_SERVICECODE;20;dyn;RAM
+;serviceCodeLogOut;;INPUT;ACTION;1;;
+;dumNAN;;CONTAINED;SIMPLE_U32;1;DYNAMIC;RAM
+;countryCode;;CONTAINED;SIMPLE_U8;2;STATIC_RARE;NON_VOLATILE
+;SiUnitOnly;;CONTAINED;SIMPLE_U8;1;STATIC_RARE;NON_VOLATILE
+;performActions;;CONTAINED;ACTION;1;;
+;hartInSim;;CONTAINED;SIMPLE_FLOAT;1;DYNAMIC;RAM
+;fixedOutputValue;;CONTAINED;FLOAT;1;DYNAMIC;RAM
+;HartAccessLevel;;CONTAINED;TABENUM8;1;dyn;RAM
+;ResetSoftWriteProtection;;INPUT;SIMPLE_U8;24;DYNAMIC;RAM
+;burstInStatus;;CONTAINED;TABENUM8;1;DYNAMIC;RAM

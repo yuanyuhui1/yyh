@@ -1,0 +1,66 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 32;;;
+Copyright ABB, 2011.;;;
+All rights reserved. Reproduction, modification,;;;
+use or disclosure to third parties without express;;;
+authority is forbidden.;;;
+!;;;
+!;;;
+;bitRateCode;max;255
+;bitRateCode;increment;1
+;reserved;min;0
+;reserved;max;255
+;reserved;increment;1
+;bitRateCode;min;0
+;pollAddr;min;0
+;pollAddr;max;15
+;pollAddr;increment;1
+;configExitTimer;ptrCodeTab;ConfigExitTimerEnumTable
+;configExitTimer;numberOfCodes;sizeof(ConfigExitTimerEnumTable)
+;numberRquestPream;min;5
+;numberRquestPream;max;20
+;numberRquestPream;increment;1
+;PV_AlarmSelctionCode;ptrCodeTab;PV_AlarmSelctionCodeTable
+;PV_AlarmSelctionCode;numberOfCodes;sizeof(PV_AlarmSelctionCodeTable)
+;PV_Transfer_FunctionCode;ptrCodeTab;PV_Transfer_FunctionCodeTable
+;PV_Transfer_FunctionCode;numberOfCodes;sizeof(PV_Transfer_FunctionCodeTable)
+;univCmdRev;ptrCodeTab;HartRevisionTable
+;univCmdRev;numberOfCodes;sizeof(HartRevisionTable)
+;standardizedStatus0;ptrCodeTab;StandardizedStatus0Table
+;standardizedStatus0;numberOfCodes;sizeof(StandardizedStatus0Table)
+;extendedDeviceStatus;ptrCodeTab;ExtendedDeviceStatusTable
+;extendedDeviceStatus;numberOfCodes;sizeof(ExtendedDeviceStatusTable)
+;deviceOperatingMode;ptrCodeTab;DeviceOperatingModeTable
+;deviceOperatingMode;numberOfCodes;sizeof(DeviceOperatingModeTable)
+;analogChannelFixed;ptrCodeTab;AnalogChannelFixedTable
+;analogChannelFixed;numberOfCodes;sizeof(AnalogChannelFixedTable)
+;hartCmdRev;ptrCodeTab;HartRevisionTable
+;hartCmdRev;numberOfCodes;sizeof(HartRevisionTable)
+;numberRespPream;min;5
+;numberRespPream;max;20
+;numberRespPream;increment;1
+;findDeviceSwitch;ptrCodeTab;FindDeviceSwitchTable
+;findDeviceSwitch;numberOfCodes;sizeof(FindDeviceSwitchTable)
+;lockDeviceSelection;ptrCodeTab;lockDeviceSelectionTable
+;lockDeviceSelection;numberOfCodes;sizeof(lockDeviceSelectionTable)
+;burstUpTxSelection;ptrCodeTab;T_HART_SELECTION
+;burstUpTxSelection;numberOfCodes;sizeof(T_HART_SELECTION)
+;pvtLabelDistCode_Command15;ptrCodeTab;pvtLabelDistCode_Command15_Table
+;pvtLabelDistCode_Command15;numberOfCodes;sizeof(pvtLabelDistCode_Command15_Table)
+;eepromControl;ptrCodeTab;eepromControlTable
+;eepromControl;numberOfCodes;sizeof(eepromControlTable)
+;deviceVariableFamilyCodes;ptrCodeTab;T_HART_FAMILY_CODES
+;deviceVariableFamilyCodes;numberOfCodes;sizeof(T_HART_FAMILY_CODES)
+;burstUpUnitType;ptrCodeTab;T_BURST_IN_UNIT_TYPE
+;burstUpUnitType;numberOfCodes;sizeof(T_BURST_IN_UNIT_TYPE)
+;fixedOutputValue;min;0.0f
+;fixedOutputValue;max;23.6f
+;fixedOutputValue;increment;0.1f
+;HartAccessLevel;ptrCodeTab;T_SERVICE_LEVEL
+;HartAccessLevel;numberOfCodes;sizeof(T_SERVICE_LEVEL)
+;board;ptrCodeTab;BoardsTable
+;board;numberOfCodes;sizeof(BoardsTable)
+;burstInStatus;ptrCodeTab;BURST_IN_STATUS
+;burstInStatus;numberOfCodes;sizeof(BURST_IN_STATUS)

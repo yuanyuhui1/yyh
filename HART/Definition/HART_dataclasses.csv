@@ -1,0 +1,10 @@
+reserved;dataClass;referenceDataClass
+##Module SubGen;;
+##ModuleRevision 0x020101;;
+##FileRevision 3;;
+;dyn;DYNAMIC
+;rare;STATIC_RARE
+;freqCst;STATIC_FREQUENT_CONSTANT_DEFAULT
+;freqNo;STATIC_FREQUENT_NO_DEFAULT
+;cst;CONSTANT
+;freqStatic;STATIC_FREQUENT_STATIC_DEFAULT
