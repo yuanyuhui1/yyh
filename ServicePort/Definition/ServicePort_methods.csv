@@ -1,0 +1,9 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 6;;;;;
+;ServPortCommandInterpreterEXE;0;;void;Interprets the command.
+;ServPortUpdateActivationStatusSRV;0;;void;presence pin status.
+;ServPortGetActivationStatusSRV;0;;TUSIGN8;Gets the activation status of service port.
+;ServPortRedetectHMISRV;0;;void;redetect HMI
+;ServPortRedetectHMISRV;1;isSmartHMI;TBOOL;is SmartHMI or HMI

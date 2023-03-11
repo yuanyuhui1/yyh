@@ -1,0 +1,6 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 17;;;;;;;
+;activationStatus;Activation Status;OUTPUT;SIMPLE_CHAR;1;DYNAMIC;RAM
+;baudRate;Service port baud rate.;INPUT;SIMPLE_U16;1;DYNAMIC;RAM

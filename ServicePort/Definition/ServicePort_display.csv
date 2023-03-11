@@ -1,0 +1,6 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 10;;;;;
+;activationStatus;;Activation Status;;
+;baudRate;;Service port baud rate.;NUMERIC;

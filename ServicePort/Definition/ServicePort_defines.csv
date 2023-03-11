@@ -1,0 +1,12 @@
+reserved;definition;name;value;briefdescription
+##Module SubGen;;;;
+##ModuleRevision 0x020101;;;;
+##FileRevision 16;;;;
+;Service Port HMI Status;HMI_STATUS;3;For Object ActiveStatus. Service Port is disbale, HMI is enable.
+;Service Port SmartHMI Status;SHMI_STATUS;2;For Object ActiveStatus. Service port is disbale, Smart HMI is enbale.
+;Service Port Service Status;SERVICE_STATUS;1;For Object ActiveStatus.Service port is enabled. HMI/SmartHMI is disable
+;Service Port Uninitialized Status;UNINITIALIZED_STATUS;0;For Object ActiveStatus.Service port is disabled.HMI/SmartHMI is disable.
+;Service Port Tx Interrupt Priority level;TX_INT_PRIORITY;3;
+;Service Port Rx Interrupt Priority level;RX_INT_PRIORITY;3;
+;BoardsTable;CB_BOARD;0;
+;BoardsTable;FE_BOARD;1;
