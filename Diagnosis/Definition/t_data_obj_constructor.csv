@@ -1,0 +1,14 @@
+reserved;T_DATA_OBJECT;constructorName;ptrValue;numberofAttributes;objectLength;storageQualifier;typeQualifier;ptrDescriptor;type;descriptorType
+##Module SubGen;;;;;;;;;;
+##ModuleRevision 0x020101;;;;;;;;;;
+##FileRevision 1;;;;;;;;;;
+Copyright ABB, 2006.;;;;;;;;;;
+All rights reserved. Reproduction, modification,;;;;;;;;;;
+use or disclosure to third parties without express;;;;;;;;;;
+authority is forbidden.;;;;;;;;;;
+!;;;;;;;;;;
+!;;;;;;;;;;
+!;;;;;;;;;;
+last edited 10.06.2008 Giovanni Invernizzi;;;;;;;;;;
+;T_DIAGNOSIS_ALARM;CONSTRUCT_ALARM;_GEN;_IGNORE;_GEN;_GEN;_IGNORE;_GEN;T_DIAGNOSIS_ALARM;T_RANGE_E8
+;T_DIAGNOSIS_ALARM_COUNTER;CONSTRUCT_ALARM_COUNTER;_GEN;_IGNORE;_GEN;_GEN;_IGNORE;_GEN;T_DIAGNOSIS_ALARM_COUNTER;_IGNORE

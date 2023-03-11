@@ -1,0 +1,12 @@
+reserved;drivenSubsystem;inputTableRow;behaviourObj
+##FileRevision;;;278
+##ModuleRevision;;;0x000600
+;DIGITALOUTPUT;28;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;29;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;24;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;25;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;26;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;27;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;31;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;22;alarmState_DODescriptor_DigitalOutputAlarmBehavior
+;DIGITALOUTPUT;23;alarmState_DODescriptor_DigitalOutputAlarmBehavior

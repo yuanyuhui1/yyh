@@ -1,0 +1,4 @@
+reserved;subsystem;subsystemShort;value;ptrCodeTab;numCodes
+##FileRevision;;;278;;
+##ModuleRevision;;;0x000600;;
+;DigitalOutput;DIGITALOUTPUT;alarmState_DODescriptor;E_DIG_OUT_ALARM_BEHAVIOUR;NUMBER_OF_ALM_BEHAV_ELEMENTS

@@ -1,0 +1,4 @@
+reserved;name;type;descriptor;default
+##FileRevision;;;;278
+##ModuleRevision;;;;0x000600
+;DigitalOutputAlarmBehavior;TABENUM8;alarmState_DODescriptor;ALARM_BEHAVIOUR_FAIL_LOGIC_OUT_1

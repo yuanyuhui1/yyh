@@ -1,0 +1,12 @@
+
+--- Module:   ..\source\diagnosis_constructor.c (C)
+
+--- Module:   ..\source\diagnosis_execute.c (C)
+
+--- Module:   ..\source\diagnosis_overload.c (C)
+
+--- Module:   ..\source\diagnosis_table_default.c (C)
+
+--- Module:   ..\source\t_data_obj_alarm.c (C)
+
+--- Module:   ..\source\t_data_obj_alarm_counter.c (C)
