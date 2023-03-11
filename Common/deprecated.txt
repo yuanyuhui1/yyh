@@ -1,0 +1,2 @@
+This folder is deprecated as of Common Framework 2.3.0
+However, The Entry tool 1.0.4 does check the existance of this folder and it must therefore exist.
