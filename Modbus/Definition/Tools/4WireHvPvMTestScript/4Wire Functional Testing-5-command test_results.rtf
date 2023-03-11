@@ -1,0 +1,110 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\lang2052\f0\fs17 HvPvM test 4Wire Functional Testing-5-command test.csv started at 4/1/2013 1:19:32 PM\par
+\cf2 ==================================================================================================================================\par
+\cf1\par
+Modbus protocol specified as protocol 1.\par
+\par
+COM Port = COM2\par
+Baud Rate = 19200bps\par
+Parity = Even\par
+Stop Bits = 1\par
+Device Address = 1\par
+Word Ordering = IEEE Normal\par
+\cf2 ==================================================================================================================================\par
+// CMD_0X01,\par
+// Test script for 4Wire Modbus common commands,\par
+// =========== CMD_0X01,\par
+// Test - if command 1 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Read the holding coil at 0 \par
+\cf1 Test step 1 for parameter CMD_0X01\par
+Modbus sending command 1 - reading 1 coils starting from index 0\par
+(0) Modbus read type TCOIL with value = 0\par
+\cf2 // CMD_0X02,\par
+// Test script for 4Wire Modbus common commands,\par
+// =========== CMD_0X02,\par
+// Test - if command 2 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Read the input coil at 10000 \par
+\cf1 Test step 2 for parameter CMD_0X02\par
+Modbus sending command 2 - reading 1 coils starting from index 10000\par
+(0) Modbus read type TCOIL with value = 1\par
+\cf2 // CMD_0X03,\par
+// Test script for 4Wire Modbus common commands,\par
+// =========== CMD_0X03,\par
+// Test - if command 3 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Read the holding register at 40000 \par
+\cf1 Test step 3 for parameter CMD_0X03\par
+Modbus sending command 3 - reading 1 registers starting from index 40000\par
+(0) Modbus read type TUSIGN8 with value = 1\par
+\cf2 // CMD_0X04,\par
+// Test script for 4Wire Modbus common commands,\par
+// =========== CMD_0X04,\par
+// Test - if command 4 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Read the input register at 30000 \par
+\cf1 Test step 4 for parameter CMD_0X04\par
+Modbus sending command 4 - reading 1 registers starting from index 30000\par
+(0) Modbus read type TUSIGN8 with value = 1\par
+\cf2 // CMD_0X05,\par
+// Test script for 4Wire Modbus common commands,\par
+// =========== CMD_0X05,\par
+// Test - if command 5 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Write the single coil at 1 with value 1\par
+\cf1 Test step 5 for parameter CMD_0X05\par
+Modbus sending command 5 - writing 1 coils starting from index 1\par
+(0) Modbus wrote type TCOIL with value = 1\par
+\cf2 // CMD_0X06,\par
+// Test script for 4Wire Modbus common commands,\par
+// =========== CMD_0X06,\par
+// Test - if command 6 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Write the single register at 40000 with value 12\par
+\cf1 Test step 6 for parameter CMD_0X06\par
+Modbus sending command 6 - writing 1 registers starting from index 40000\par
+(0) Modbus wrote type TUSIGN8 with value = 12\par
+\cf2 // =========== CMD_0X08,\par
+// Test - if command 8 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Read the diagnosis about sub function 0\par
+\cf1 Test step 7 for parameter CMD_0X08\par
+Modbus sending command 8 - reading 1 registers starting from index 0\par
+(0) Modbus read type TUSIGN16 with value = 12\par
+\cf2 // =========== CMD_0X0F,\par
+// Test - if command 15 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Write the output coils startting at 3 with value 1,0,0,1,1\par
+\cf1 Test step 8 for parameter CMD_0X0F\par
+Modbus sending command 15 - writing 5 coils starting from index 3\par
+(0) Modbus wrote type TCOIL with value = 0\par
+(1) Modbus wrote type TCOIL with value = 0\par
+(2) Modbus wrote type TCOIL with value = 0\par
+(3) Modbus wrote type TCOIL with value = 0\par
+(4) Modbus wrote type TCOIL with value = 0\par
+\cf2 // =========== CMD_0X10,\par
+// Test - if command 16 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Write the registers startting at 40001 with value 20,1,100,21,51\par
+\cf1 Test step 9 for parameter CMD_0X10\par
+Modbus sending command 16 - writing 5 registers starting from index 40001\par
+(0) Modbus wrote type TUSIGN8 with value = 20\par
+(1) Modbus wrote type TUSIGN8 with value = 1\par
+(2) Modbus wrote type TUSIGN8 with value = 100\par
+(3) Modbus wrote type TUSIGN8 with value = 21\par
+(4) Modbus wrote type TUSIGN8 with value = 51\par
+\cf2 // =========== CMD_0X11,\par
+// Test - if command 17 implemented correctly,\par
+// Expected response - Positive and successful,\par
+// Read the slave id\par
+\cf1 Test step 10 for parameter CMD_0X11\par
+Modbus sending command 17 - reading 1 registers starting from index 0\par
+(0) Modbus read type TUSIGN8 with value = 20\par
+\cf2 // End of the common commands test case,\par
+\cf0\par
+}
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\lang2052\f0\fs24\par
+}

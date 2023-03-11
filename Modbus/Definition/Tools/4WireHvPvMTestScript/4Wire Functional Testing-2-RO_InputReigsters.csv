@@ -1,0 +1,63 @@
+Parameter Name;Test Step Type;Modbus Command;Modbus Register;Modbus Data;Modbus Data Descriptor;;;;,,,,
+// Test script for 4Wire Modbus Input Registers,,,,
+//============== RO_InReg_8_1.1,,,,
+// Test - First register reference address response using command 4,,,,
+// Expected response - Positive and successful,,,,
+// First Input register 8 bit resides at register 30000,,,,
+RO_InReg_8_1.1;Compare Predefined;4;30000;4;TUSIGN8,1;;;;
+//============== RO_InReg_16_1.2,,,,
+// Test - First reference address response using command 4,,,,
+// Expected response - Positive and successful,,,,
+// First Input register 8 bit resides at register 30500,,,,
+RO_InReg_16_1.2;Compare Predefined;4;30500;0;TUSIGN16,1;;;;
+//============== RO_InReg_16_1.3,,,,
+// Test - Last reference address response using command 4,,,,
+// Expected response - Positive and successful,,,,
+// Last Input register 16 bit resides at register 30501,,,,
+RO_InReg_16_1.3;Compare Predefined;4;30501;360;TUSIGN16,1;;;;
+//============== RO_InReg_32_1.4,,,,
+// Test - First reference address response using command 4,
+// Expected response - Positive and successful,,,,
+// First Input register 32 bit resides at register 31000,,,,
+RO_InReg_32_1.4;Compare Predefined;4;31000;80000;TUSIGN32,1;;;;
+//============== RO_InReg_32_1.5,,,,
+// Test - Last reference address response using command 4,,,,
+// Expected response - Positive and successful,,,,
+// Last Input register 32 bit resides at register 31002,,,,
+RO_InReg_32_1.5;Compare Predefined;4;31002;32;TUSIGN32,1;;;;
+//============== RO_InReg_flt_1.6,,,,
+// Test - First reference address response using command 4,
+// Expected response - Positive and successful,,,,
+// First Input register float resides at register 31500,,,,
+RO_InReg_flt_1.6;Compare Predefined;4;31500;33.0;TFLOAT,1;;;;
+//============== RO_InReg_flt_1.7,,,,
+// Test - Last reference address response using command 4,,,,
+// Expected response - Positive and successful,,,,
+// Last Input register float resides at register 31506,,,,
+ RO_InReg_flt_1.7;Compare Predefined;4;31506;68.0;TFLOAT,1;;;;
+//============== RO_InReg_dbl_1.8,,,,
+// Test - First double input register reference address response using command 4,
+// Expected response - Positive and successful,
+// First Input register double resides at register 32000,
+RO_InReg_dbl_1.8;Compare Predefined;4;32000;366.20003;TDOUBLE,1;;;;
+//============== RO_InReg_flt+unit_1.9,,,,
+// Test - First reference address response using command 4,
+// Expected response - Positive and successful,
+// First Input register resides at register 32500,
+RO_InReg_flt+unit_1.9;Compare Predefined;4;32500;33.0,4;TFLOAT,1,TUSIGN8,1;;;;
+//============== RO_InReg_array_1.10,,,,
+// Test - First reference address response using command 4,
+// Expected response - Positive and successful,
+// First Input register resides at register 33000,
+RO_InReg_array_1.10;Compare Predefined;4;33000;1,2,3;TUSIGN8,3;;;;
+//============== RO_InReg_diagalarm_1.11,,,,tset later
+// Test - First reference address response using command 4,
+// Expected response - Positive and successful,
+// First Input register resides at register 33500,
+//RO_InReg_diagalarm_1.11;Compare Predefined;4;33500;1;TUSIGN8,1;;;;
+//============== RO_InReg_uompf_1.12,,,,
+// Test - First reference address response using command 4,
+// Expected response - Positive and successful,
+// First Input register resides at register 33600,
+RO_InReg_uompf_1.12;Compare Predefined;4;33600;4,33.0;TUSIGN8,1,TFLOAT,1;;;;
+// End of file,

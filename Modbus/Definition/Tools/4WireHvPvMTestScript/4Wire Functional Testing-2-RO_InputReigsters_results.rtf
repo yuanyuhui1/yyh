@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red0\green128\blue0;}
+\viewkind4\uc1\pard\cf1\lang2052\f0\fs17 HvPvM test 4Wire Functional Testing-2-RO_InputReigsters.csv started at 3/28/2013 8:49:05 AM\par
+\cf2 ==================================================================================================================================\par
+\cf1\par
+Modbus protocol specified as protocol 1.\par
+\par
+COM Port = COM1\par
+Baud Rate = 19200bps\par
+Parity = Even\par
+Stop Bits = 1\par
+Device Address = 1\par
+Word Ordering = IEEE Normal\par
+\cf2 ==================================================================================================================================\par
+// Test script for 4Wire Modbus Input Registers,,,,\par
+//============== RO_InReg_8_1.1,,,,\par
+// Test - First register reference address response using command 4,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Input register 8 bit resides at register 30000,,,,\par
+\cf1 Test step 1 for parameter RO_InReg_8_1.1\par
+Modbus sending command 4 - reading 1 registers starting from index 30000\par
+Predefined value = 4\par
+Modbus read type TUSIGN8 with value 4\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_16_1.2,,,,\par
+// Test - First reference address response using command 4,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Input register 8 bit resides at register 30500,,,,\par
+\cf1 Test step 2 for parameter RO_InReg_16_1.2\par
+Modbus sending command 4 - reading 1 registers starting from index 30500\par
+Predefined value = 0\par
+Modbus read type TUSIGN16 with value 0\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_16_1.3,,,,\par
+// Test - Last reference address response using command 4,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Input register 16 bit resides at register 30501,,,,\par
+\cf1 Test step 3 for parameter RO_InReg_16_1.3\par
+Modbus sending command 4 - reading 1 registers starting from index 30501\par
+Predefined value = 360\par
+Modbus read type TUSIGN16 with value 360\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_32_1.4,,,,\par
+// Test - First reference address response using command 4,\par
+// Expected response - Positive and successful,,,,\par
+// First Input register 32 bit resides at register 31000,,,,\par
+\cf1 Test step 4 for parameter RO_InReg_32_1.4\par
+Modbus sending command 4 - reading 2 registers starting from index 31000\par
+Predefined value = 80000\par
+Modbus read type TUSIGN32 with value 80000\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_32_1.5,,,,\par
+// Test - Last reference address response using command 4,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Input register 32 bit resides at register 31002,,,,\par
+\cf1 Test step 5 for parameter RO_InReg_32_1.5\par
+Modbus sending command 4 - reading 2 registers starting from index 31002\par
+Predefined value = 32\par
+Modbus read type TUSIGN32 with value 32\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_flt_1.6,,,,\par
+// Test - First reference address response using command 4,\par
+// Expected response - Positive and successful,,,,\par
+// First Input register float resides at register 31500,,,,\par
+\cf1 Test step 6 for parameter RO_InReg_flt_1.6\par
+Modbus sending command 4 - reading 2 registers starting from index 31500\par
+Predefined value = 33\par
+Modbus read type TFLOAT with value 33\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_flt_1.7,,,,\par
+// Test - Last reference address response using command 4,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Input register float resides at register 31506,,,,\par
+\cf1 Test step 7 for parameter  RO_InReg_flt_1.7\par
+Modbus sending command 4 - reading 2 registers starting from index 31506\par
+Predefined value = 68\par
+Modbus read type TFLOAT with value 68\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_dbl_1.8,,,,\par
+// Test - First double input register reference address response using command 4,\par
+// Expected response - Positive and successful,\par
+// First Input register double resides at register 32000,\par
+\cf1 Test step 8 for parameter RO_InReg_dbl_1.8\par
+Modbus sending command 4 - reading 4 registers starting from index 32000\par
+Predefined value = 366.20003\par
+Modbus read type TDOUBLE with value 366.200111695616\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_flt+unit_1.9,,,,\par
+// Test - First reference address response using command 4,\par
+// Expected response - Positive and successful,\par
+// First Input register resides at register 32500,\par
+\cf1 Test step 9 for parameter RO_InReg_flt+unit_1.9\par
+Modbus sending command 4 - reading 3 registers starting from index 32500\par
+Predefined value = 33\par
+Modbus read type TFLOAT with value 33\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 4\par
+Modbus read type TUSIGN8 with value 4\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_array_1.10,,,,\par
+// Test - First reference address response using command 4,\par
+// Expected response - Positive and successful,\par
+// First Input register resides at register 33000,\par
+\cf1 Test step 10 for parameter RO_InReg_array_1.10\par
+Modbus sending command 4 - reading 3 registers starting from index 33000\par
+Predefined value = 1\par
+Modbus read type TUSIGN8 with value 1\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 2\par
+Modbus read type TUSIGN8 with value 2\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 3\par
+Modbus read type TUSIGN8 with value 3\par
+\cf3 Compare Predefined OK\par
+\cf2 //============== RO_InReg_diagalarm_1.11,,,,tset later\par
+// Test - First reference address response using command 4,\par
+// Expected response - Positive and successful,\par
+// First Input register resides at register 33500,\par
+//RO_InReg_diagalarm_1.11\par
+//============== RO_InReg_uompf_1.12,,,,\par
+// Test - First reference address response using command 4,\par
+// Expected response - Positive and successful,\par
+// First Input register resides at register 33600,\par
+\cf1 Test step 11 for parameter RO_InReg_uompf_1.12\par
+Modbus sending command 4 - reading 3 registers starting from index 33600\par
+Predefined value = 4\par
+Modbus read type TUSIGN8 with value 4\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 33\par
+Modbus read type TFLOAT with value 33\par
+\cf3 Compare Predefined OK\par
+\cf2 // End of file,\par
+\cf0\par
+}
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\lang2052\f0\fs24\par
+}

@@ -1,0 +1,44 @@
+Parameter Name;Test Step Type;Modbus Command;Modbus Register;Modbus Data;Modbus Data Descriptor;;;;,
+// RW_coil,
+// Test script for 4Wire Modbus Output Coils,
+//===============WR_8_1.1,
+// Test - Write reference address response using command 5,
+// Expected response - Positive and successful,
+// Output Coil resides at register 0,
+WR_8_1.1;Write;5;0;1;TCOIL,1;;;;
+// ==============RD_8_1.2,
+// Test -Read reference address response using command 1,
+// Expected response - Positive and successful,
+// Output Coil resides at register 0,
+RD_8_1.2;Compare Predefined;1;0;1;TCOIL,1;;;;
+//===============WR_8_1.3,
+// Test - Write reference address response using command 5,
+// Expected response - Positive and successful,
+// Output Coil resides at register 2,
+WR_8_1.3;Write;5;2;1;TCOIL,1;;;;
+// ==============RD_8_1.4,
+// Test -Read reference address response using command 1,
+// Expected response - Positive and successful,
+// Output Coil resides at register 2,
+RD_8_1.4;Compare Predefined;1;2;1;TCOIL,1;;;;
+//===============WR_8_1.5,
+// Test - Write reference address response using command 5,
+// Expected response - Positive and successful,
+// Output Coil resides at register 3,
+WR_8_1.5;Write;5;3;1;TCOIL,1;;;;
+// ==============RD_8_1.6,
+// Test -Read reference address response using command 1,
+// Expected response - Positive and successful,
+// Output Coil resides at register 3,
+RD_8_1.6;Compare Predefined;1;3;1;TCOIL,1;;;;
+//===============WR_8_1.7,
+// Test - Write reference address response using command 5,
+// Expected response - Positive and successful,
+// Output Coil resides at register 12,
+WR_8_1.7;Write;5;12;1;TCOIL,1;;;;
+// ==============RD_8_1.8,
+// Test -Read reference address response using command 1,
+// Expected response - Positive and successful,
+// Output Coil resides at register 12,
+RD_8_1.8;Compare Predefined;1;12;1;TCOIL,1;;;;
+// End of file,

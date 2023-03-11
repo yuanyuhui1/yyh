@@ -1,0 +1,44 @@
+Parameter Name;Test Step Type;Modbus Command;Modbus Register;Modbus Data;Modbus Data Descriptor;;;;,
+// RO_8_bit,
+// Test script for 4Wire Modbus Read Only Input Coils,
+// =========== RO_8_1.1,
+// Test - First reference address response using command 2,
+// Expected response - Positive and successful,
+// First Read Only input coil resides at register 10000,
+RO_8_1.1;Compare Predefined;2;10000;1;TCOIL,1;;;;
+// =========== RO_8_1.2,
+// Test -reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10001,
+RO_8_1.2;Compare Predefined;2;10001;1;TCOIL,1;;;;
+// =========== RO_8_1.3,
+// Test -reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10002,
+RO_8_1.3;Compare Predefined;2;10002;1;TCOIL,1;;;;
+// =========== RO_8_1.4,
+// Test -reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10003,
+RO_8_1.4;Compare Predefined;2;10003;1;TCOIL,1;;;;
+// =========== RO_DiagAlarm_1.5,
+// Test - First reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10004,
+RO_DiagAlarm_1.5;Compare Predefined;2;10004;0;TCOIL,1;;;;
+// =========== RO_DiagAlarm_1.6,
+// Test -reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10030,
+RO_DiagAlarm_1.6;Compare Predefined;2;10030;0;TCOIL,1;;;;
+// =========== RO_DiagAlarm_1.7,
+// Test -reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10052,
+RO_DiagAlarm_1.7;Compare Predefined;2;10052;0;TCOIL,1;;;;
+// =========== RO_DiagAlarm_1.8,
+// Test -reference address response using command 2,
+// Expected response - Positive and successful,
+// Read Only input coil resides at register 10099,
+RO_DiagAlarm_1.8;Compare Predefined;2;10099;0;TCOIL,1;;;;
+// End of file,

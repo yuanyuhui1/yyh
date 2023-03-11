@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red0\green128\blue0;}
+\viewkind4\uc1\pard\cf1\lang2052\f0\fs17 HvPvM test 4Wire Functional Testing-3-RW_OutputCoil .csv started at 3/28/2013 8:49:12 AM\par
+\cf2 ==================================================================================================================================\par
+\cf1\par
+Modbus protocol specified as protocol 1.\par
+\par
+COM Port = COM1\par
+Baud Rate = 19200bps\par
+Parity = Even\par
+Stop Bits = 1\par
+Device Address = 1\par
+Word Ordering = IEEE Normal\par
+\cf2 ==================================================================================================================================\par
+// RW_coil,\par
+// Test script for 4Wire Modbus Output Coils,\par
+//===============WR_8_1.1,\par
+// Test - Write reference address response using command 5,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 0,\par
+\cf1 Test step 1 for parameter WR_8_1.1\par
+Modbus sending command 5 - writing 1 coils starting from index 0\par
+(0) Modbus wrote type TCOIL with value = 1\par
+\cf2 // ==============RD_8_1.2,\par
+// Test -Read reference address response using command 1,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 0,\par
+\cf1 Test step 2 for parameter RD_8_1.2\par
+Modbus sending command 1 - reading 1 coils starting from index 0\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 //===============WR_8_1.3,\par
+// Test - Write reference address response using command 5,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 2,\par
+\cf1 Test step 3 for parameter WR_8_1.3\par
+Modbus sending command 5 - writing 1 coils starting from index 2\par
+(0) Modbus wrote type TCOIL with value = 1\par
+\cf2 // ==============RD_8_1.4,\par
+// Test -Read reference address response using command 1,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 2,\par
+\cf1 Test step 4 for parameter RD_8_1.4\par
+Modbus sending command 1 - reading 1 coils starting from index 2\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 //===============WR_8_1.5,\par
+// Test - Write reference address response using command 5,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 3,\par
+\cf1 Test step 5 for parameter WR_8_1.5\par
+Modbus sending command 5 - writing 1 coils starting from index 3\par
+(0) Modbus wrote type TCOIL with value = 1\par
+\cf2 // ==============RD_8_1.6,\par
+// Test -Read reference address response using command 1,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 3,\par
+\cf1 Test step 6 for parameter RD_8_1.6\par
+Modbus sending command 1 - reading 1 coils starting from index 3\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 //===============WR_8_1.7,\par
+// Test - Write reference address response using command 5,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 12,\par
+\cf1 Test step 7 for parameter WR_8_1.7\par
+Modbus sending command 5 - writing 1 coils starting from index 12\par
+(0) Modbus wrote type TCOIL with value = 1\par
+\cf2 // ==============RD_8_1.8,\par
+// Test -Read reference address response using command 1,\par
+// Expected response - Positive and successful,\par
+// Output Coil resides at register 12,\par
+\cf1 Test step 8 for parameter RD_8_1.8\par
+Modbus sending command 1 - reading 1 coils starting from index 12\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 // End of file,\par
+\cf0\par
+}
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\lang2052\f0\fs24\par
+}

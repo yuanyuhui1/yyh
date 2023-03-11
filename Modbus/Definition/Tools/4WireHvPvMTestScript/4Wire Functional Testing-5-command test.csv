@@ -1,0 +1,64 @@
+Parameter Name;Test Step Type;Modbus Command;Modbus Register;Modbus Data;Modbus Data Descriptor;;;;,
+// CMD_0X01,
+// Test script for 4Wire Modbus common commands,
+// =========== CMD_0X01,
+// Test - if command 1 implemented correctly,
+// Expected response - Positive and successful,
+// Read the holding coil at 0 
+CMD_0X01;Read;1;0;;TCOIL,1;;;;
+// CMD_0X02,
+// Test script for 4Wire Modbus common commands,
+// =========== CMD_0X02,
+// Test - if command 2 implemented correctly,
+// Expected response - Positive and successful,
+// Read the input coil at 10000 
+CMD_0X02;Read;2;10000;;TCOIL,1;;;;
+// CMD_0X03,
+// Test script for 4Wire Modbus common commands,
+// =========== CMD_0X03,
+// Test - if command 3 implemented correctly,
+// Expected response - Positive and successful,
+// Read the holding register at 40000 
+CMD_0X03;Read;3;40000;;TUSIGN8,1;;;;
+// CMD_0X04,
+// Test script for 4Wire Modbus common commands,
+// =========== CMD_0X04,
+// Test - if command 4 implemented correctly,
+// Expected response - Positive and successful,
+// Read the input register at 30000 
+CMD_0X04;Read;4;30000;;TUSIGN8,1;;;;
+// CMD_0X05,
+// Test script for 4Wire Modbus common commands,
+// =========== CMD_0X05,
+// Test - if command 5 implemented correctly,
+// Expected response - Positive and successful,
+// Write the single coil at 1 with value 1
+CMD_0X05;Write;5;1;1;TCOIL,1;;;;
+// CMD_0X06,
+// Test script for 4Wire Modbus common commands,
+// =========== CMD_0X06,
+// Test - if command 6 implemented correctly,
+// Expected response - Positive and successful,
+// Write the single register at 40000 with value 12
+CMD_0X06;Write;6;40000;12;TUSIGN8,1;;;;
+// =========== CMD_0X08,
+// Test - if command 8 implemented correctly,
+// Expected response - Positive and successful,
+// Read the diagnosis about sub function 0
+CMD_0X08;Read;8;0;;TUSIGN16,1;;;;
+// =========== CMD_0X0F,
+// Test - if command 15 implemented correctly,
+// Expected response - Positive and successful,
+// Write the output coils startting at 3 with value 1,0,0,1,1
+CMD_0X0F;Write;15;3;1,0,0,1,1;TCOIL,5;;;;
+// =========== CMD_0X10,
+// Test - if command 16 implemented correctly,
+// Expected response - Positive and successful,
+// Write the registers startting at 40001 with value 20,1,100,21,51
+CMD_0X10;Write;16;40001;20,1,100,21,51;TUSIGN8,5;;;;
+// =========== CMD_0X11,
+// Test - if command 17 implemented correctly,
+// Expected response - Positive and successful,
+// Read the slave id
+CMD_0X11;Read;17;0;;TUSIGN8,1;;;;
+// End of the common commands test case,

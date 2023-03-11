@@ -1,0 +1,133 @@
+Parameter Name;Test Step Type;Modbus Command;Modbus Register;Modbus Data;Modbus Data Descriptor;;;;,,,,
+// Test script for 4Wire Modbus Output Registers,,,,
+//==============WR_OutReg_8_1.1,,,,
+// Test - First Write 8 bit register reference address response using command 6,,,,
+// Expected response - Positive and successful,,,,
+// First Output register 8 bit resides at register 40002,,,,
+WR_OutReg_8_1.1;Write;6;40002;1;TUSIGN8,1;;;;
+//==============RD_OutReg_8_1.2,,,,
+// Test - First 8 bit output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register 8 bit resides at register 40002,,,,
+RD_OutReg_8_1.2;Compare Predefined;3;40002;1;TUSIGN8,1;;;;
+//==============WR_OutReg_8_1.3,,,,
+// Test - Last Write 8 bit register reference address response using command 6,,,,
+// Expected response - Positive and successful,,,,
+// Last Output register 8 bit resides at register 40007,,,,
+WR_OutReg_8_1.3;Write;6;40007;1;TUSIGN8,1;;;;
+//==============RD_OutReg_8_1.4,,,,
+// Test - Last 8 bit output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// Last Output register 8 bit resides at register 40007,,,,
+RD_OutReg_8_1.4;Compare Predefined;3;40007;1;TUSIGN8,1;;;;
+//==============WR_OutReg_16_1.5,,,,
+// Test - First Write 16 bit register reference address response using command 6,,,,
+// Expected response - Positive and successful,,,,
+// First Output register 16 bit resides at register 40500,,,,
+WR_OutReg_16_1.5;Write;6;40500;360;TUSIGN16,1;;;;
+//==============RD_OutReg_16_1.6,,,,
+// Test - First 16 bit output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register 16 bit resides at register 40500,,,,
+RD_OutReg_16_1.6;Compare Predefined;3;40500;360;TUSIGN16,1;;;;
+//==============WR_OutReg_32_1.7,,,,
+// Test - First Write 32 bit register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register 32 bit resides at register 41000,,,,
+WR_OutReg_32_1.7;Write;16;41000;80000;TUSIGN32,1;;;;
+//==============RD_OutReg_32_1.8,,,,
+// Test - First 32 bit output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register 32 bit resides at register 41000,,,,
+RD_OutReg_32_1.8;Compare Predefined;3;41000;80000;TUSIGN32,1;;;;
+//==============WR_OutReg_flt_1.9,,,,
+// Test - First Write float register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register float resides at register 41500,,,,
+WR_OutReg_flt_1.9;Write;16;41500;18.0;TFLOAT,1;;;;
+//==============RD_OutReg_flt_1.10,,,,
+// Test - First float output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register float resides at register 41500,,,,
+RD_OutReg_flt_1.10;Compare Predefined;3;41500;18.0;TFLOAT,1;;;;
+//==============WR_OutReg_flt_1.11,,,,
+// Test - Last Write float register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// Last Output register float resides at register 41508,,,,
+WR_OutReg_flt_1.11;Write;16;41508;88.0;TFLOAT,1;;;;
+//==============RD_OutReg_flt_1.12,,,,
+// Test - Last float output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// Last Output register float resides at register 41508,,,,
+RD_OutReg_flt_1.12;Compare Predefined;3;41508;88.0;TFLOAT,1;;;;
+//==============WR_OutReg_flt+unit_1.13,,,,
+// Test - First Write float+unit register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register float+unit resides at register 42500,,,,
+WR_OutReg_flt_1.13;Write;16;42500;68.0,3;TFLOAT,1,TUSIGN8,1;;;;
+//==============RD_OutReg_flt+unit_1.14,,,,
+// Test - First float+unit output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register float+unit resides at register 42500,,,,
+RD_OutReg_flt+unit_1.14;Compare Predefined;3;42500;68.0,3;TFLOAT,1,TUSIGN8,1;;;;
+//==============WR_OutReg_array_1.15,,,,
+// Test - First Write array register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register array resides at register 43000,,,,
+WR_OutReg_array_1.15;Write;16;43000;1,2,3;TUSIGN8,3;;;;
+//==============RD_OutReg_array_1.16,,,,
+// Test - First aray output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register array resides at register 43000,,,,
+RD_OutReg_array_1.16;Compare Predefined;3;43000;1,2,3;TUSIGN8,3;;;;
+//==============WR_OutReg_action_1.17,,,,
+// Test - First Write register reference address response using command 6,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 43500,,,,
+WR_OutReg_array_1.17;Write;6;43500;1;TUSIGN8,1;;;;
+//==============RD_OutReg_action_1.18,,,,
+// Test - First output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 43500,,,,
+RD_OutReg_array_1.18;Read;3;43500;;TUSIGN8,1;;;;
+//==============WR_OutReg_double_1.19,,,,
+// Test - First Write register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 42000,,,,
+WR_OutReg_array_1.19;Write;16;42000;366.20003;TDOUBLE,1;;;;
+//==============RD_OutReg_double_1.20,,,,
+// Test - First output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 42000,,,,
+RD_OutReg_array_1.20;Compare Predefined;3;42000;366.20003;TDOUBLE,1;;;;
+//==============WR_OutReg_diagalarm_1.21,,,,test later
+// Test - First Write register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 44000,,,,
+//WR_OutReg_array_1.21;Write;16;44000;2;TUSIGN8,1;;;;
+//==============RD_OutReg_diagalarm_1.22,,,,test later
+// Test - First output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 44000,,,,
+//RD_OutReg_array_1.22;Compare Predefined;3;44000;2;TUSIGN8,1;;;;
+//==============WR_OutReg_uompf_1.23,,,,
+// Test - First Write register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 45000,,,,
+WR_OutReg_uompf_1.23;Write;16;45000;4,33.0;TUSIGN8,1,TFLOAT,1;;;;
+//==============RD_OutReg_uompf_1.24,,,,
+// Test - First output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 45000,,,,
+RD_OutReg_uompf_1.24;Compare Predefined;3;45000;4,33.0;TUSIGN8,1,TFLOAT,1;;;;
+//==============WR_OutReg_string_1.25,,,,
+// Test - First Write register reference address response using command 16,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 46000,,,,
+WR_OutReg_string_1.25;Write;16;46000;"Test";"TUSIGN8,4";;;;
+//==============RD_OutReg_string_1.26,,,,
+// Test - First output register reference address response using command 3,,,,
+// Expected response - Positive and successful,,,,
+// First Output register resides at register 46000,,,,
+RD_OutReg_string_1.26;Compare Predefined;3;46000;"Test";"TUSIGN8,4";;;;
+// End of file,

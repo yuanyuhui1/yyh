@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red0\green128\blue0;}
+\viewkind4\uc1\pard\cf1\lang2052\f0\fs17 HvPvM test 4Wire Functional Testing-1-RW_OutputReigsters.csv started at 3/28/2013 8:48:42 AM\par
+\cf2 ==================================================================================================================================\par
+\cf1\par
+Modbus protocol specified as protocol 1.\par
+\par
+COM Port = COM1\par
+Baud Rate = 19200bps\par
+Parity = Even\par
+Stop Bits = 1\par
+Device Address = 1\par
+Word Ordering = IEEE Normal\par
+\cf2 ==================================================================================================================================\par
+// Test script for 4Wire Modbus Output Registers,,,,\par
+//==============WR_OutReg_8_1.1,,,,\par
+// Test - First Write 8 bit register reference address response using command 6,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register 8 bit resides at register 40002,,,,\par
+\cf1 Test step 1 for parameter WR_OutReg_8_1.1\par
+Modbus sending command 6 - writing 1 registers starting from index 40002\par
+(0) Modbus wrote type TUSIGN8 with value = 1\par
+\cf2 //==============RD_OutReg_8_1.2,,,,\par
+// Test - First 8 bit output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register 8 bit resides at register 40002,,,,\par
+\cf1 Test step 2 for parameter RD_OutReg_8_1.2\par
+Modbus sending command 3 - reading 1 registers starting from index 40002\par
+Predefined value = 1\par
+Modbus read type TUSIGN8 with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_8_1.3,,,,\par
+// Test - Last Write 8 bit register reference address response using command 6,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Output register 8 bit resides at register 40007,,,,\par
+\cf1 Test step 3 for parameter WR_OutReg_8_1.3\par
+Modbus sending command 6 - writing 1 registers starting from index 40007\par
+(0) Modbus wrote type TUSIGN8 with value = 1\par
+\cf2 //==============RD_OutReg_8_1.4,,,,\par
+// Test - Last 8 bit output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Output register 8 bit resides at register 40007,,,,\par
+\cf1 Test step 4 for parameter RD_OutReg_8_1.4\par
+Modbus sending command 3 - reading 1 registers starting from index 40007\par
+Predefined value = 1\par
+Modbus read type TUSIGN8 with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_16_1.5,,,,\par
+// Test - First Write 16 bit register reference address response using command 6,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register 16 bit resides at register 40500,,,,\par
+\cf1 Test step 5 for parameter WR_OutReg_16_1.5\par
+Modbus sending command 6 - writing 1 registers starting from index 40500\par
+(0) Modbus wrote type TUSIGN16 with value = 360\par
+\cf2 //==============RD_OutReg_16_1.6,,,,\par
+// Test - First 16 bit output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register 16 bit resides at register 40500,,,,\par
+\cf1 Test step 6 for parameter RD_OutReg_16_1.6\par
+Modbus sending command 3 - reading 1 registers starting from index 40500\par
+Predefined value = 360\par
+Modbus read type TUSIGN16 with value 360\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_32_1.7,,,,\par
+// Test - First Write 32 bit register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register 32 bit resides at register 41000,,,,\par
+\cf1 Test step 7 for parameter WR_OutReg_32_1.7\par
+Modbus sending command 16 - writing 2 registers starting from index 41000\par
+(0) Modbus wrote type TUSIGN32 with value = 80000\par
+\cf2 //==============RD_OutReg_32_1.8,,,,\par
+// Test - First 32 bit output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register 32 bit resides at register 41000,,,,\par
+\cf1 Test step 8 for parameter RD_OutReg_32_1.8\par
+Modbus sending command 3 - reading 2 registers starting from index 41000\par
+Predefined value = 80000\par
+Modbus read type TUSIGN32 with value 80000\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_flt_1.9,,,,\par
+// Test - First Write float register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register float resides at register 41500,,,,\par
+\cf1 Test step 9 for parameter WR_OutReg_flt_1.9\par
+Modbus sending command 16 - writing 2 registers starting from index 41500\par
+(0) Modbus wrote type TFLOAT with value = 18\par
+\cf2 //==============RD_OutReg_flt_1.10,,,,\par
+// Test - First float output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register float resides at register 41500,,,,\par
+\cf1 Test step 10 for parameter RD_OutReg_flt_1.10\par
+Modbus sending command 3 - reading 2 registers starting from index 41500\par
+Predefined value = 18\par
+Modbus read type TFLOAT with value 18\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_flt_1.11,,,,\par
+// Test - Last Write float register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Output register float resides at register 41508,,,,\par
+\cf1 Test step 11 for parameter WR_OutReg_flt_1.11\par
+Modbus sending command 16 - writing 2 registers starting from index 41508\par
+(0) Modbus wrote type TFLOAT with value = 88\par
+\cf2 //==============RD_OutReg_flt_1.12,,,,\par
+// Test - Last float output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// Last Output register float resides at register 41508,,,,\par
+\cf1 Test step 12 for parameter RD_OutReg_flt_1.12\par
+Modbus sending command 3 - reading 2 registers starting from index 41508\par
+Predefined value = 88\par
+Modbus read type TFLOAT with value 88\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_flt+unit_1.13,,,,\par
+// Test - First Write float+unit register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register float+unit resides at register 42500,,,,\par
+\cf1 Test step 13 for parameter WR_OutReg_flt_1.13\par
+Modbus sending command 16 - writing 3 registers starting from index 42500\par
+(0) Modbus wrote type TFLOAT with value = 68\par
+(1) Modbus wrote type TUSIGN8 with value = 3\par
+\cf2 //==============RD_OutReg_flt+unit_1.14,,,,\par
+// Test - First float+unit output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register float+unit resides at register 42500,,,,\par
+\cf1 Test step 14 for parameter RD_OutReg_flt+unit_1.14\par
+Modbus sending command 3 - reading 3 registers starting from index 42500\par
+Predefined value = 68\par
+Modbus read type TFLOAT with value 68\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 3\par
+Modbus read type TUSIGN8 with value 3\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_array_1.15,,,,\par
+// Test - First Write array register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register array resides at register 43000,,,,\par
+\cf1 Test step 15 for parameter WR_OutReg_array_1.15\par
+Modbus sending command 16 - writing 3 registers starting from index 43000\par
+(0) Modbus wrote type TUSIGN8 with value = 1\par
+(1) Modbus wrote type TUSIGN8 with value = 2\par
+(2) Modbus wrote type TUSIGN8 with value = 3\par
+\cf2 //==============RD_OutReg_array_1.16,,,,\par
+// Test - First aray output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register array resides at register 43000,,,,\par
+\cf1 Test step 16 for parameter RD_OutReg_array_1.16\par
+Modbus sending command 3 - reading 3 registers starting from index 43000\par
+Predefined value = 1\par
+Modbus read type TUSIGN8 with value 1\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 2\par
+Modbus read type TUSIGN8 with value 2\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 3\par
+Modbus read type TUSIGN8 with value 3\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_action_1.17,,,,\par
+// Test - First Write register reference address response using command 6,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 43500,,,,\par
+\cf1 Test step 17 for parameter WR_OutReg_array_1.17\par
+Modbus sending command 6 - writing 1 registers starting from index 43500\par
+(0) Modbus wrote type TUSIGN8 with value = 1\par
+\cf2 //==============RD_OutReg_action_1.18,,,,\par
+// Test - First output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 43500,,,,\par
+\cf1 Test step 18 for parameter RD_OutReg_array_1.18\par
+Modbus sending command 3 - reading 1 registers starting from index 43500\par
+(0) Modbus read type TUSIGN8 with value = 236\par
+\cf2 //==============WR_OutReg_double_1.19,,,,\par
+// Test - First Write register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 42000,,,,\par
+\cf1 Test step 19 for parameter WR_OutReg_array_1.19\par
+Modbus sending command 16 - writing 4 registers starting from index 42000\par
+(0) Modbus wrote type TDOUBLE with value = 366.200111695616\par
+\cf2 //==============RD_OutReg_double_1.20,,,,\par
+// Test - First output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 42000,,,,\par
+\cf1 Test step 20 for parameter RD_OutReg_array_1.20\par
+Modbus sending command 3 - reading 4 registers starting from index 42000\par
+Predefined value = 366.20003\par
+Modbus read type TDOUBLE with value 366.200111695616\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_diagalarm_1.21,,,,test later\par
+// Test - First Write register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 44000,,,,\par
+//WR_OutReg_array_1.21\par
+//==============RD_OutReg_diagalarm_1.22,,,,test later\par
+// Test - First output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 44000,,,,\par
+//RD_OutReg_array_1.22\par
+//==============WR_OutReg_uompf_1.23,,,,\par
+// Test - First Write register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 45000,,,,\par
+\cf1 Test step 21 for parameter WR_OutReg_uompf_1.23\par
+Modbus sending command 16 - writing 3 registers starting from index 45000\par
+(0) Modbus wrote type TUSIGN8 with value = 4\par
+(1) Modbus wrote type TFLOAT with value = 33\par
+\cf2 //==============RD_OutReg_uompf_1.24,,,,\par
+// Test - First output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 45000,,,,\par
+\cf1 Test step 22 for parameter RD_OutReg_uompf_1.24\par
+Modbus sending command 3 - reading 3 registers starting from index 45000\par
+Predefined value = 4\par
+Modbus read type TUSIGN8 with value 4\par
+\cf3 Compare Predefined OK\par
+\cf1 Predefined value = 33\par
+Modbus read type TFLOAT with value 33\par
+\cf3 Compare Predefined OK\par
+\cf2 //==============WR_OutReg_string_1.25,,,,\par
+// Test - First Write register reference address response using command 16,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 46000,,,,\par
+\cf1 Test step 23 for parameter WR_OutReg_string_1.25\par
+Modbus sending command 16 - writing 4 registers starting from index 46000\par
+(0) Modbus wrote type STRING with value = Test\par
+\cf2 //==============RD_OutReg_string_1.26,,,,\par
+// Test - First output register reference address response using command 3,,,,\par
+// Expected response - Positive and successful,,,,\par
+// First Output register resides at register 46000,,,,\par
+\cf1 Test step 24 for parameter RD_OutReg_string_1.26\par
+Modbus sending command 3 - reading 4 registers starting from index 46000\par
+Predefined value = Test\par
+Modbus read type STRING with value Test\par
+\cf3 Compare Predefined OK\par
+\cf2 // End of file,\par
+\cf0\par
+}
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\lang2052\f0\fs24\par
+}

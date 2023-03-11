@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red0\green128\blue0;\red255\green0\blue0;}
+\viewkind4\uc1\pard\cf1\lang2052\f0\fs17 HvPvM test 4Wire Functional Testing-4-RO_InputCoil.csv started at 3/28/2013 8:49:19 AM\par
+\cf2 ==================================================================================================================================\par
+\cf1\par
+Modbus protocol specified as protocol 1.\par
+\par
+COM Port = COM1\par
+Baud Rate = 19200bps\par
+Parity = Even\par
+Stop Bits = 1\par
+Device Address = 1\par
+Word Ordering = IEEE Normal\par
+\cf2 ==================================================================================================================================\par
+// RO_8_bit,\par
+// Test script for 4Wire Modbus Read Only Input Coils,\par
+// =========== RO_8_1.1,\par
+// Test - First reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// First Read Only input coil resides at register 10000,\par
+\cf1 Test step 1 for parameter RO_8_1.1\par
+Modbus sending command 2 - reading 1 coils starting from index 10000\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 // =========== RO_8_1.2,\par
+// Test -reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10001,\par
+\cf1 Test step 2 for parameter RO_8_1.2\par
+Modbus sending command 2 - reading 1 coils starting from index 10001\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 // =========== RO_8_1.3,\par
+// Test -reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10002,\par
+\cf1 Test step 3 for parameter RO_8_1.3\par
+Modbus sending command 2 - reading 1 coils starting from index 10002\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 // =========== RO_8_1.4,\par
+// Test -reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10003,\par
+\cf1 Test step 4 for parameter RO_8_1.4\par
+Modbus sending command 2 - reading 1 coils starting from index 10003\par
+Predefined value = 1\par
+Modbus read type TCOIL with value 1\par
+\cf3 Compare Predefined OK\par
+\cf2 // =========== RO_DiagAlarm_1.5,\par
+// Test - First reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10004,\par
+\cf1 Test step 5 for parameter RO_DiagAlarm_1.5\par
+Modbus sending command 2 - reading 1 coils starting from index 10004\par
+Predefined value = 0\par
+Modbus read type TCOIL with value 0\par
+\cf3 Compare Predefined OK\par
+\cf2 // =========== RO_DiagAlarm_1.6,\par
+// Test -reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10030,\par
+\cf1 Test step 6 for parameter RO_DiagAlarm_1.6\par
+Modbus sending command 2 - reading 1 coils starting from index 10030\par
+Predefined value = 0\par
+Modbus read type TCOIL with value 1\par
+\cf4 Compare Predefined failed\par
+\cf2 // =========== RO_DiagAlarm_1.7,\par
+// Test -reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10052,\par
+\cf1 Test step 7 for parameter RO_DiagAlarm_1.7\par
+Modbus sending command 2 - reading 1 coils starting from index 10052\par
+Predefined value = 0\par
+Modbus read type TCOIL with value 0\par
+\cf3 Compare Predefined OK\par
+\cf2 // =========== RO_DiagAlarm_1.8,\par
+// Test -reference address response using command 2,\par
+// Expected response - Positive and successful,\par
+// Read Only input coil resides at register 10099,\par
+\cf1 Test step 8 for parameter RO_DiagAlarm_1.8\par
+Modbus sending command 2 - reading 1 coils starting from index 10099\par
+Predefined value = 0\par
+Modbus read type TCOIL with value 0\par
+\cf3 Compare Predefined OK\par
+\cf2 // End of file,\par
+\cf0\par
+}
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\lang2052\f0\fs24\par
+}
