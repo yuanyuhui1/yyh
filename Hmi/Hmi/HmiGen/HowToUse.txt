@@ -1,0 +1,9 @@
+1. Create a new *.hmi project
+2. For each subsystem, check xxx_display.xcl 
+	--> make sure all object is added
+	--> make sure the format is correct to add one object
+3. Check if the subsystem could be detected by HMI gen - if you add signal, you should find all subsytems
+
+4. Build menu structure according to your requreiment
+
+5. when you add one page, pls specify the parameters on the page

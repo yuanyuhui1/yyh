@@ -1,0 +1,16 @@
+copy enums.h	..\..\..\Source\
+copy frames.h	..\..\..\Source\
+copy menus.h	..\..\..\Source\
+copy nvInitIndeces.h	..\..\..\Source\
+copy specialOperation.c	..\..\..\Source\
+copy specialOperation.h	..\..\..\Source\
+copy stringTable.h	..\..\..\Source\
+copy stringDefinitions.h	..\..\..\Source\
+copy unitsTable.h	..\..\..\Source\
+copy validityTest.h	..\..\..\Source\
+copy validityTestFunctions.h	..\..\..\Source\
+copy ConfigIcons.h	..\..\..\Source\
+copy ConstructorDefault.h	..\..\..\Source\
+copy ConstructorInclude.h	..\..\..\Source\
+copy specialOperationFunctions.h		..\..\..\Source\
+copy Implementation.h		..\..\..\Source\

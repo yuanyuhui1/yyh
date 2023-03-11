@@ -1,0 +1,2717 @@
+reserved;object;attribute;briefDescription;displayFormat;subsystem;definition
+;aiSelection;;AI selelct;ENUMERATION;AI;_AI_SELECT
+;aiInValue;;ai value;NUMERIC;AI;
+;aiAlarmSimulation;;;;AI;
+;aiSimulationData;;ai simulation data;NUMERIC;AI;
+;aiTempCurr;;ai current value;NUMERIC;AI;
+;calibrationState;;;;AI;
+;aiExternalCutOffOption;;;ENUMERATION;AI;_EXTERNAL_CUT_OFF_OPTION
+;stdDefaultPassword_dummy;;;NUMERIC;ARM;
+;hartLoginState;;;ENUMERATION;ARM;TClientLoginFormats
+;advDefaultPassword_dummy;;;NUMERIC;ARM;
+;svcDefaultPassword_dummy;;;NUMERIC;ARM;
+;stdUserPassword_dummy;;;NUMERIC;ARM;
+;advUserPassword_dummy;;;NUMERIC;ARM;
+;svcUserPassword_dummy;;;NUMERIC;ARM;
+;adpin;;;NUMERIC;ARM;
+;hmiLoginState;;;ENUMERATION;ARM;TClientLoginFormats
+;enableHighSecurityMode;;;ACTION;ARM;
+;disableHighSecurityMode;;;ACTION;ARM;
+;clientEnableState;;;ENUMERATION;ARM;TClientEnableFormats
+;hiSecAccessState;;;ENUMERATION;ARM;THighSecurityEnableFormats
+;transmitterIdStringForm;;;ASCII;ARM;
+;readOnlySwitchStatus;;;ENUMERATION;ARM;TReadOnlySwitchActiveFormats
+;custodySwitchStatus;;;ENUMERATION;ARM;TCustodySwitchActiveFormats
+;serviceAccountSwitch;;;ENUMERATION;ARM;TCustodySwitchActiveFormats
+;coodinatorAlarmSimulation;;;;CDT;
+;simulationMode;;Simulation mode;ENUMERATION;CDT;_CDT_SIMULATION_MODE
+;cpuLoad;;CPU Load;NUMERIC;CDT;
+;frontEndConfParamRd;;FE Config. Param;NUMERIC;CDT;
+;totalWorkingTimeHour;;Transimtter Working Hour;NUMERIC;CDT;
+;forceReplace;;;ENUMERATION;CDT;_CDT_FORCE_REPLACE
+;calibrationStatus;;;ENUMERATION;CDT;_SENSOR_CALIBRATION_STATUS
+;cdtDiagnosis;;;;CDT;
+;operatingMode;;;ENUMERATION;CDT;_OPERATING_MODE
+;temperature_Obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperature_Obj;type;;;CDT;
+;temperature_Obj;value_0;;NUMERIC;CDT;
+;temperature_Obj;value_1;;;CDT;
+;temperature_Obj;value_2;;;CDT;
+;temperature_Obj;value_3;;;CDT;
+;temperature_Obj;value_4;;;CDT;
+;temperature_Obj;value_5;;;CDT;
+;temperature_Obj;value_6;;;CDT;
+;temperature_Obj;value_7;;;CDT;
+;temperature_Obj;value_8;;;CDT;
+;temperature_Obj;value_9;;;CDT;
+;temperature_Obj;value_10;;;CDT;
+;temperature_Obj;value_11;;;CDT;
+;temperature_Obj;value_12;;;CDT;
+;temperature_Obj;value_13;;;CDT;
+;temperature_Obj;value_14;;;CDT;
+;temperature_Obj;value_15;;;CDT;
+;temperature_Obj;value_16;;;CDT;
+;temperature_Obj;value_17;;;CDT;
+;temperature_Obj;value_18;;;CDT;
+;temperature_Obj;value_19;;;CDT;
+;temperature_Obj;value_20;;;CDT;
+;temperatureAlmRange;loLim;;NUMERIC;CDT;
+;temperatureAlmRange;hiLim;;NUMERIC;CDT;
+;snr;;;NUMERIC;CDT;
+;temperature_Sim;;;NUMERIC;CDT;
+;temperaturePreset;;;NUMERIC;CDT;
+;converterType;;;ENUMERATION;CDT;_CONVERTER_TYPE
+;vortexmeterSize;;;ENUMERATION;CDT;_VORTEX_SIZE
+;swirlmeterSize;;;ENUMERATION;CDT;_SWIRL_SIZE
+;frontendOperationHour;;;NUMERIC;CDT;
+;temperature_DampingTime;;;NUMERIC;CDT;
+;temperature_Selection;;;ENUMERATION;CDT;_TSELECTION
+;frequency_Sim;;;NUMERIC;CDT;
+;vbrFilStep;;;NUMERIC;CDT;
+;vbrFilNumCoef;;;NUMERIC;CDT;
+;fcdShift;;;NUMERIC;CDT;
+;fcdDelay;;;NUMERIC;CDT;
+;fcdNumCoef;;;NUMERIC;CDT;
+;freqMinMarginPer;;;NUMERIC;CDT;
+;freqMaxMarginPer;;;NUMERIC;CDT;
+;accuracyHigh;;;NUMERIC;CDT;
+;accuracyMiddle;;;NUMERIC;CDT;
+;accuracyLow;;;NUMERIC;CDT;
+;gainCtrl;;;ENUMERATION;CDT;_STATUS
+;gainLowThresh;;;NUMERIC;CDT;
+;gainHighThresh;;;NUMERIC;CDT;
+;gainMarginFreq;;;NUMERIC;CDT;
+;gainMaxShift;;;NUMERIC;CDT;
+;lowFlowThreshOn;;;ENUMERATION;CDT;_STATUS
+;noiseSampSize;;;NUMERIC;CDT;
+;maxFlowFreq;;;NUMERIC;CDT;
+;minFlowFreq;;;NUMERIC;CDT;
+;vbrCorrectionOn;;;ENUMERATION;CDT;_STATUS
+;staticDecimation;;;NUMERIC;CDT;
+;middleBufDecimation;;;NUMERIC;CDT;
+;lockMinIntPeriod;;;NUMERIC;CDT;
+;lockMaxIntPeriod;;;NUMERIC;CDT;
+;frequency_UnitCode;;;ENUMERATION;CDT;_T_FREQUENCY
+;temperature_UnitCode;;;ENUMERATION;CDT;_T_TEMPERATURE
+;readParameters;;;ACTION;CDT;
+;writeParameters;;;ACTION;CDT;
+;frequency;;;NUMERIC;CDT;
+;frequency_Obj;unit;;ENUMERATION;CDT;_T_FREQUENCY
+;frequency_Obj;type;;;CDT;
+;frequency_Obj;value_0;;NUMERIC;CDT;
+;frequency_Obj;value_1;;;CDT;
+;frequency_Obj;value_2;;;CDT;
+;frequency_Obj;value_3;;;CDT;
+;frequency_Obj;value_4;;;CDT;
+;frequency_Obj;value_5;;;CDT;
+;frequency_Obj;value_6;;;CDT;
+;frequency_Obj;value_7;;;CDT;
+;frequency_Obj;value_8;;;CDT;
+;frequency_Obj;value_9;;;CDT;
+;frequency_Obj;value_10;;;CDT;
+;frequency_Obj;value_11;;;CDT;
+;frequency_Obj;value_12;;;CDT;
+;frequency_Obj;value_13;;;CDT;
+;frequency_Obj;value_14;;;CDT;
+;frequency_Obj;value_15;;;CDT;
+;frequency_Obj;value_16;;;CDT;
+;frequency_Obj;value_17;;;CDT;
+;frequency_Obj;value_18;;;CDT;
+;frequency_Obj;value_19;;;CDT;
+;frequency_Obj;value_20;;;CDT;
+;temperaturePreset_Obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperaturePreset_Obj;type;;;CDT;
+;temperaturePreset_Obj;value_0;;NUMERIC;CDT;
+;temperaturePreset_Obj;value_1;;;CDT;
+;temperaturePreset_Obj;value_2;;;CDT;
+;temperaturePreset_Obj;value_3;;;CDT;
+;temperaturePreset_Obj;value_4;;;CDT;
+;temperaturePreset_Obj;value_5;;;CDT;
+;temperaturePreset_Obj;value_6;;;CDT;
+;temperaturePreset_Obj;value_7;;;CDT;
+;temperaturePreset_Obj;value_8;;;CDT;
+;temperaturePreset_Obj;value_9;;;CDT;
+;temperaturePreset_Obj;value_10;;;CDT;
+;temperaturePreset_Obj;value_11;;;CDT;
+;temperaturePreset_Obj;value_12;;;CDT;
+;temperaturePreset_Obj;value_13;;;CDT;
+;temperaturePreset_Obj;value_14;;;CDT;
+;temperaturePreset_Obj;value_15;;;CDT;
+;temperaturePreset_Obj;value_16;;;CDT;
+;temperaturePreset_Obj;value_17;;;CDT;
+;temperaturePreset_Obj;value_18;;;CDT;
+;temperaturePreset_Obj;value_19;;;CDT;
+;temperaturePreset_Obj;value_20;;;CDT;
+;saveCustomerDef;;;ACTION;CDT;
+;saveFactoryDef;;;ACTION;CDT;
+;resetCustomerDef;;;ACTION;CDT;
+;resetFactoryDef;;;ACTION;CDT;
+;resetFE_Runhour;;;ACTION;CDT;
+;fcdOn;;;ENUMERATION;CDT;_STATUS
+;lockEstimation;;;NUMERIC;CDT;
+;familyRevision;;;;CDT;
+;frontendMaintenance;;Front end maintenance cycle tiem;NUMERIC;CDT;
+;tranMaintenanceCyc;;Transimitter maintenance cycle time.;NUMERIC;CDT;
+;analogInputPassword;;;ASCII;CDT;
+;internalRTDPassword;;;ASCII;CDT;
+;energyFlowPassword;;;ASCII;CDT;
+;temperature_Percentage;;;NUMERIC;CDT;
+;actualDensitySelection;;;ENUMERATION;CDT;DENSITY_SELECTION_TABLE
+;intRTDType;;internal RTD type;ENUMERATION;CDT;_TEMP_SENSOR_TYPE
+;simTemperature_UnitCode;;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperatureSim_Obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperatureSim_Obj;type;;;CDT;
+;temperatureSim_Obj;value_0;;NUMERIC;CDT;
+;temperatureSim_Obj;value_1;;;CDT;
+;temperatureSim_Obj;value_2;;;CDT;
+;temperatureSim_Obj;value_3;;;CDT;
+;temperatureSim_Obj;value_4;;;CDT;
+;temperatureSim_Obj;value_5;;;CDT;
+;temperatureSim_Obj;value_6;;;CDT;
+;temperatureSim_Obj;value_7;;;CDT;
+;temperatureSim_Obj;value_8;;;CDT;
+;temperatureSim_Obj;value_9;;;CDT;
+;temperatureSim_Obj;value_10;;;CDT;
+;temperatureSim_Obj;value_11;;;CDT;
+;temperatureSim_Obj;value_12;;;CDT;
+;temperatureSim_Obj;value_13;;;CDT;
+;temperatureSim_Obj;value_14;;;CDT;
+;temperatureSim_Obj;value_15;;;CDT;
+;temperatureSim_Obj;value_16;;;CDT;
+;temperatureSim_Obj;value_17;;;CDT;
+;temperatureSim_Obj;value_18;;;CDT;
+;temperatureSim_Obj;value_19;;;CDT;
+;temperatureSim_Obj;value_20;;;CDT;
+;frequency_SimObj;unit;;ENUMERATION;CDT;_T_FREQUENCY
+;frequency_SimObj;type;;;CDT;
+;frequency_SimObj;value_0;;NUMERIC;CDT;
+;frequency_SimObj;value_1;;;CDT;
+;frequency_SimObj;value_2;;;CDT;
+;frequency_SimObj;value_3;;;CDT;
+;frequency_SimObj;value_4;;;CDT;
+;frequency_SimObj;value_5;;;CDT;
+;frequency_SimObj;value_6;;;CDT;
+;frequency_SimObj;value_7;;;CDT;
+;frequency_SimObj;value_8;;;CDT;
+;frequency_SimObj;value_9;;;CDT;
+;frequency_SimObj;value_10;;;CDT;
+;frequency_SimObj;value_11;;;CDT;
+;frequency_SimObj;value_12;;;CDT;
+;frequency_SimObj;value_13;;;CDT;
+;frequency_SimObj;value_14;;;CDT;
+;frequency_SimObj;value_15;;;CDT;
+;frequency_SimObj;value_16;;;CDT;
+;frequency_SimObj;value_17;;;CDT;
+;frequency_SimObj;value_18;;;CDT;
+;frequency_SimObj;value_19;;;CDT;
+;frequency_SimObj;value_20;;;CDT;
+;protectedDataStatus;;;NUMERIC;CDT;
+;frequency_range_Obj;unit;;ENUMERATION;CDT;_T_FREQUENCY
+;frequency_range_Obj;type;;;CDT;
+;frequency_range_Obj;value_0;;NUMERIC;CDT;
+;frequency_range_Obj;value_1;;NUMERIC;CDT;
+;frequency_range_Obj;value_2;;;CDT;
+;frequency_range_Obj;value_3;;;CDT;
+;frequency_range_Obj;value_4;;;CDT;
+;frequency_range_Obj;value_5;;;CDT;
+;frequency_range_Obj;value_6;;;CDT;
+;frequency_range_Obj;value_7;;;CDT;
+;frequency_range_Obj;value_8;;;CDT;
+;frequency_range_Obj;value_9;;;CDT;
+;frequency_range_Obj;value_10;;;CDT;
+;frequency_range_Obj;value_11;;;CDT;
+;frequency_range_Obj;value_12;;;CDT;
+;frequency_range_Obj;value_13;;;CDT;
+;frequency_range_Obj;value_14;;;CDT;
+;frequency_range_Obj;value_15;;;CDT;
+;frequency_range_Obj;value_16;;;CDT;
+;frequency_range_Obj;value_17;;;CDT;
+;frequency_range_Obj;value_18;;;CDT;
+;frequency_range_Obj;value_19;;;CDT;
+;frequency_range_Obj;value_20;;;CDT;
+;temperature_range_Obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperature_range_Obj;type;;;CDT;
+;temperature_range_Obj;value_0;;NUMERIC;CDT;
+;temperature_range_Obj;value_1;;NUMERIC;CDT;
+;temperature_range_Obj;value_2;;;CDT;
+;temperature_range_Obj;value_3;;;CDT;
+;temperature_range_Obj;value_4;;;CDT;
+;temperature_range_Obj;value_5;;;CDT;
+;temperature_range_Obj;value_6;;;CDT;
+;temperature_range_Obj;value_7;;;CDT;
+;temperature_range_Obj;value_8;;;CDT;
+;temperature_range_Obj;value_9;;;CDT;
+;temperature_range_Obj;value_10;;;CDT;
+;temperature_range_Obj;value_11;;;CDT;
+;temperature_range_Obj;value_12;;;CDT;
+;temperature_range_Obj;value_13;;;CDT;
+;temperature_range_Obj;value_14;;;CDT;
+;temperature_range_Obj;value_15;;;CDT;
+;temperature_range_Obj;value_16;;;CDT;
+;temperature_range_Obj;value_17;;;CDT;
+;temperature_range_Obj;value_18;;;CDT;
+;temperature_range_Obj;value_19;;;CDT;
+;temperature_range_Obj;value_20;;;CDT;
+;frequency_Damped_Obj;unit;;ENUMERATION;CDT;_T_FREQUENCY
+;frequency_Damped_Obj;type;;;CDT;
+;frequency_Damped_Obj;value_0;;NUMERIC;CDT;
+;frequency_Damped_Obj;value_1;;;CDT;
+;frequency_Damped_Obj;value_2;;;CDT;
+;frequency_Damped_Obj;value_3;;;CDT;
+;frequency_Damped_Obj;value_4;;;CDT;
+;frequency_Damped_Obj;value_5;;;CDT;
+;frequency_Damped_Obj;value_6;;;CDT;
+;frequency_Damped_Obj;value_7;;;CDT;
+;frequency_Damped_Obj;value_8;;;CDT;
+;frequency_Damped_Obj;value_9;;;CDT;
+;frequency_Damped_Obj;value_10;;;CDT;
+;frequency_Damped_Obj;value_11;;;CDT;
+;frequency_Damped_Obj;value_12;;;CDT;
+;frequency_Damped_Obj;value_13;;;CDT;
+;frequency_Damped_Obj;value_14;;;CDT;
+;frequency_Damped_Obj;value_15;;;CDT;
+;frequency_Damped_Obj;value_16;;;CDT;
+;frequency_Damped_Obj;value_17;;;CDT;
+;frequency_Damped_Obj;value_18;;;CDT;
+;frequency_Damped_Obj;value_19;;;CDT;
+;frequency_Damped_Obj;value_20;;;CDT;
+;analogGain;;;ENUMERATION;CDT;GAIN_CONTROL_TAB
+;temperature_Damped_Obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperature_Damped_Obj;type;;;CDT;
+;temperature_Damped_Obj;value_0;;NUMERIC;CDT;
+;temperature_Damped_Obj;value_1;;;CDT;
+;temperature_Damped_Obj;value_2;;;CDT;
+;temperature_Damped_Obj;value_3;;;CDT;
+;temperature_Damped_Obj;value_4;;;CDT;
+;temperature_Damped_Obj;value_5;;;CDT;
+;temperature_Damped_Obj;value_6;;;CDT;
+;temperature_Damped_Obj;value_7;;;CDT;
+;temperature_Damped_Obj;value_8;;;CDT;
+;temperature_Damped_Obj;value_9;;;CDT;
+;temperature_Damped_Obj;value_10;;;CDT;
+;temperature_Damped_Obj;value_11;;;CDT;
+;temperature_Damped_Obj;value_12;;;CDT;
+;temperature_Damped_Obj;value_13;;;CDT;
+;temperature_Damped_Obj;value_14;;;CDT;
+;temperature_Damped_Obj;value_15;;;CDT;
+;temperature_Damped_Obj;value_16;;;CDT;
+;temperature_Damped_Obj;value_17;;;CDT;
+;temperature_Damped_Obj;value_18;;;CDT;
+;temperature_Damped_Obj;value_19;;;CDT;
+;temperature_Damped_Obj;value_20;;;CDT;
+;temperatureSensor_Obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperatureSensor_Obj;type;;;CDT;
+;temperatureSensor_Obj;value_0;;NUMERIC;CDT;
+;temperatureSensor_Obj;value_1;;;CDT;
+;temperatureSensor_Obj;value_2;;;CDT;
+;temperatureSensor_Obj;value_3;;;CDT;
+;temperatureSensor_Obj;value_4;;;CDT;
+;temperatureSensor_Obj;value_5;;;CDT;
+;temperatureSensor_Obj;value_6;;;CDT;
+;temperatureSensor_Obj;value_7;;;CDT;
+;temperatureSensor_Obj;value_8;;;CDT;
+;temperatureSensor_Obj;value_9;;;CDT;
+;temperatureSensor_Obj;value_10;;;CDT;
+;temperatureSensor_Obj;value_11;;;CDT;
+;temperatureSensor_Obj;value_12;;;CDT;
+;temperatureSensor_Obj;value_13;;;CDT;
+;temperatureSensor_Obj;value_14;;;CDT;
+;temperatureSensor_Obj;value_15;;;CDT;
+;temperatureSensor_Obj;value_16;;;CDT;
+;temperatureSensor_Obj;value_17;;;CDT;
+;temperatureSensor_Obj;value_18;;;CDT;
+;temperatureSensor_Obj;value_19;;;CDT;
+;temperatureSensor_Obj;value_20;;;CDT;
+;temperatureOffsetCorrect;;;NUMERIC;CDT;
+;autoselfcheck_Enable;;;ENUMERATION;CDT;_STATUS
+;temperatureAlmRange_obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperatureAlmRange_obj;type;;;CDT;
+;temperatureAlmRange_obj;value_0;;NUMERIC;CDT;
+;temperatureAlmRange_obj;value_1;;NUMERIC;CDT;
+;temperatureAlmRange_obj;value_2;;;CDT;
+;temperatureAlmRange_obj;value_3;;;CDT;
+;temperatureAlmRange_obj;value_4;;;CDT;
+;temperatureAlmRange_obj;value_5;;;CDT;
+;temperatureAlmRange_obj;value_6;;;CDT;
+;temperatureAlmRange_obj;value_7;;;CDT;
+;temperatureAlmRange_obj;value_8;;;CDT;
+;temperatureAlmRange_obj;value_9;;;CDT;
+;temperatureAlmRange_obj;value_10;;;CDT;
+;temperatureAlmRange_obj;value_11;;;CDT;
+;temperatureAlmRange_obj;value_12;;;CDT;
+;temperatureAlmRange_obj;value_13;;;CDT;
+;temperatureAlmRange_obj;value_14;;;CDT;
+;temperatureAlmRange_obj;value_15;;;CDT;
+;temperatureAlmRange_obj;value_16;;;CDT;
+;temperatureAlmRange_obj;value_17;;;CDT;
+;temperatureAlmRange_obj;value_18;;;CDT;
+;temperatureAlmRange_obj;value_19;;;CDT;
+;temperatureAlmRange_obj;value_20;;;CDT;
+;temperatureMaxRecord_obj;unit;;ENUMERATION;CDT;_T_TEMPERATURE
+;temperatureMaxRecord_obj;type;;;CDT;
+;temperatureMaxRecord_obj;value_0;;NUMERIC;CDT;
+;temperatureMaxRecord_obj;value_1;;;CDT;
+;temperatureMaxRecord_obj;value_2;;;CDT;
+;temperatureMaxRecord_obj;value_3;;;CDT;
+;temperatureMaxRecord_obj;value_4;;;CDT;
+;temperatureMaxRecord_obj;value_5;;;CDT;
+;temperatureMaxRecord_obj;value_6;;;CDT;
+;temperatureMaxRecord_obj;value_7;;;CDT;
+;temperatureMaxRecord_obj;value_8;;;CDT;
+;temperatureMaxRecord_obj;value_9;;;CDT;
+;temperatureMaxRecord_obj;value_10;;;CDT;
+;temperatureMaxRecord_obj;value_11;;;CDT;
+;temperatureMaxRecord_obj;value_12;;;CDT;
+;temperatureMaxRecord_obj;value_13;;;CDT;
+;temperatureMaxRecord_obj;value_14;;;CDT;
+;temperatureMaxRecord_obj;value_15;;;CDT;
+;temperatureMaxRecord_obj;value_16;;;CDT;
+;temperatureMaxRecord_obj;value_17;;;CDT;
+;temperatureMaxRecord_obj;value_18;;;CDT;
+;temperatureMaxRecord_obj;value_19;;;CDT;
+;temperatureMaxRecord_obj;value_20;;;CDT;
+;sigAmplitude;;;NUMERIC;CDT;
+;vbrAmplitude;;;NUMERIC;CDT;
+;sigMagnitude;;;NUMERIC;CDT;
+;lowFlowThresh;;;NUMERIC;CDT;
+;lowFlowThreshCoef;;;NUMERIC;CDT;
+;temperatureOffsetCorrectUser;;;NUMERIC;CDT;
+;reaction_InputFail;;;ENUMERATION;CDT;REACTION_INPUT_FAIL
+;temperatureOffsetCorrectUserDisp;;;NUMERIC;CDT;
+;BothMaintenanceCycle;;;NUMERIC;CDT;
+;temperatureSensor;;;NUMERIC;CDT;
+;ext_algSelection;;;ENUMERATION;CDT;_FE_OUT_FILTER_EXT_ALG_TABLE
+;alarmHistory;;;ENUMERATION;Diag;outputAlarmCodes
+;alarmMasking;;;ENUMERATION;Diag;outputAlarmMaskingCodes
+;simulationStatus;;;ENUMERATION;Diag;simulationStatusCodes
+;diagnosisCondition_fe_board_comm_errorDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_comm_errorDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_comm_errorDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_comm_errorDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_comm_errorDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_not_detectedDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_not_detectedDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_not_detectedDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_not_detectedDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_not_detectedDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_board_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_ram_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fe_ram_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_ram_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_ram_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_ram_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_warningDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_warningDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_warningDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_warningDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_cb_nv_warningDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_tot_counter_stopDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_tot_counter_stopDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_tot_counter_stopDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_tot_counter_stopDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_tot_counter_stopDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_no_hart_burst_inDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_no_hart_burst_inDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_no_hart_burst_inDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_no_hart_burst_inDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_no_hart_burst_inDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_alarm_simu_warningDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_alarm_simu_warningDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_alarm_simu_warningDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_alarm_simu_warningDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_alarm_simu_warningDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_data_simu_warningDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_data_simu_warningDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_data_simu_warningDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_data_simu_warningDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_data_simu_warningDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_steam_type_mismatchDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_steam_type_mismatchDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_steam_type_mismatchDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_steam_type_mismatchDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_steam_type_mismatchDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_process_flowrate_more_than_103Details;counter;;NUMERIC;Diag;
+;diagnosisCondition_process_flowrate_more_than_103Details;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_process_flowrate_more_than_103Details;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_process_flowrate_more_than_103Details;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_process_flowrate_more_than_103Details;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_limsDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_limsDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_limsDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_limsDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_limsDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_rangeDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_rangeDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_rangeDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_rangeDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_pv_sensor_out_rangeDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_limsDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_limsDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_limsDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_limsDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_limsDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_rangeDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_rangeDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_rangeDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_rangeDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_sv_sensor_out_rangeDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_low_flowrate_cutoffDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_low_flowrate_cutoffDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_low_flowrate_cutoffDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_low_flowrate_cutoffDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_low_flowrate_cutoffDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_nv_concistency_checkDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_nv_concistency_checkDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_nv_concistency_checkDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_nv_concistency_checkDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_nv_concistency_checkDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_rangeDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_rangeDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_rangeDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_rangeDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_rangeDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_limsDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_limsDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_limsDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_limsDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_tv_sensor_out_limsDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_failureDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_failureDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_failureDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_failureDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_failureDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tmaxDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tmaxDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tmaxDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tmaxDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tmaxDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tminDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tminDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tminDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tminDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_ambient_temp_reach_tminDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_nv_storage_activeDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_nv_storage_activeDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_nv_storage_activeDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_nv_storage_activeDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_nv_storage_activeDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_limsDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_limsDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_limsDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_limsDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_limsDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_rangeDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_rangeDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_rangeDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_rangeDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fv_sensor_out_rangeDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_nv_replace_warnDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_nv_replace_warnDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_nv_replace_warnDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_nv_replace_warnDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_nv_replace_warnDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_cb_insuf_input_voltageDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_cb_insuf_input_voltageDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_cb_insuf_input_voltageDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_cb_insuf_input_voltageDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_cb_insuf_input_voltageDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_maintenance_warningDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_maintenance_warningDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_maintenance_warningDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_maintenance_warningDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_maintenance_warningDetails;timeStampLastDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_warningDetails;counter;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_warningDetails;timeCounterMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_warningDetails;timeCounterDay;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_warningDetails;timeStampLastMSec;;NUMERIC;Diag;
+;diagnosisCondition_fe_nv_warningDetails;timeStampLastDay;;NUMERIC;Diag;
+;outputMode;;;ENUMERATION;DIGITALOUTPUT;TOutputMode1Formats
+;alarmState_DO;;;ENUMERATION;DIGITALOUTPUT;E_DIG_OUT_ALARM_BEHAVIOUR
+;simuEnabled;;;ENUMERATION;DIGITALOUTPUT;TSimulationEnabledFormat
+;lgcSgnlSrc;;;ENUMERATION;DIGITALOUTPUT;TLogicSignalSourceFormats
+;lgcActState;;;ENUMERATION;DIGITALOUTPUT;TLogicActiveStateFormats
+;lgcSimCmd;;;ENUMERATION;DIGITALOUTPUT;TLogicSimulationCommandFormats
+;simuFrequency;;;NUMERIC;DIGITALOUTPUT;
+;pulseWidth;value;;NUMERIC;DIGITALOUTPUT;
+;pulseWidth;unitsCode;;;DIGITALOUTPUT;
+;pulseWidth;unitsType;;;DIGITALOUTPUT;
+;pulseFactor;value;;NUMERIC;DIGITALOUTPUT;
+;pulseFactor;unitsCode;;;DIGITALOUTPUT;
+;pulseFactor;unitsType;;;DIGITALOUTPUT;
+;pulseFactorRange;max;;NUMERIC;DIGITALOUTPUT;
+;pulseFactorRange;min;;NUMERIC;DIGITALOUTPUT;
+;pulseFactorRange;unitsCode;;;DIGITALOUTPUT;
+;pulseFactorRange;unitsType;;;DIGITALOUTPUT;
+;pulseWidthRange;max;;NUMERIC;DIGITALOUTPUT;ms
+;pulseWidthRange;min;;NUMERIC;DIGITALOUTPUT;ms
+;pulseWidthRange;unitsCode;;;DIGITALOUTPUT;
+;pulseWidthRange;unitsType;;;DIGITALOUTPUT;
+;minFrequency;value;min freq, no unit;NUMERIC;DIGITALOUTPUT;
+;minFrequency;unitsCode;;;DIGITALOUTPUT;
+;minFrequency;unitsType;;;DIGITALOUTPUT;
+;maxFrequency;value;max freq, no unit;NUMERIC;DIGITALOUTPUT;
+;maxFrequency;unitsCode;;;DIGITALOUTPUT;
+;maxFrequency;unitsType;;;DIGITALOUTPUT;
+;generalAlarm;;;ENUMERATION;DIGITALOUTPUT;T_ALARM_STATUS
+;minFlowrateAlarm;;;ENUMERATION;DIGITALOUTPUT;T_ALARM_STATUS
+;maxFlowrateAlarm;;;ENUMERATION;DIGITALOUTPUT;T_ALARM_STATUS
+;maxTemperatureAlarm;;;ENUMERATION;DIGITALOUTPUT;T_ALARM_STATUS
+;lowFlowCutOff;;;ENUMERATION;DIGITALOUTPUT;T_ALARM_STATUS
+;pulseNum;;;NUMERIC;DIGITALOUTPUT;
+;simuPulsesNum;;;NUMERIC;DIGITALOUTPUT;
+;logicValue;;;ENUMERATION;DIGITALOUTPUT;TOutputLogicFormat
+;frequencyValue;;;NUMERIC;DIGITALOUTPUT;
+;functionEnable;;;ENUMERATION;DIGITALOUTPUT;T_FUNCTION_STATUS
+;minTemperatureAlarm;;;ENUMERATION;DIGITALOUTPUT;T_ALARM_STATUS
+;swWriteProtection;;Sw Write Protection Table;ENUMERATION;ElettronicServices;SwWriteProtectionTable
+;lowLevelHmiHwSwRevision;;;ASCII;ElettronicServices;
+;deviceReset;;Device Reset;ACTION;ElettronicServices;
+;resetOutputTrimming;;Reset Output Trimming;ACTION;ElettronicServices;
+;sensorID;;Sensor ID;ASCII;ElettronicServices;
+;sensorCalCertNo;;Sensor calibration certificate No.;ASCII;ElettronicServices;
+;sensorCalDate;;Sensor calibration date.;ASCII;ElettronicServices;
+;sensorSapErpNo;;Sensor SAP/ERP No.;ASCII;ElettronicServices;
+;bootloaderRevision;;;ASCII;ElettronicServices;
+;phone;;Phone;ASCII;ElettronicServices;
+;manufacturer;;;ASCII;ElettronicServices;
+;street;;;ASCII;ElettronicServices;
+;city;;;ASCII;ElettronicServices;
+;tranCalDate;;Transmitter calibration date.;ASCII;ElettronicServices;
+;tranID;;Transmitter ID;ASCII;ElettronicServices;
+;tranSapErpNo;;Transmitter SAP/ERP No.;ASCII;ElettronicServices;
+;tranCalCertNo;;Transmitter calibration certificate No.;ASCII;ElettronicServices;
+;writeSelfDiagnosis;;;ACTION;ElettronicServices;
+;writeAutoZero;;;ACTION;ElettronicServices;
+;resetCB_Runhour;;;ACTION;ElettronicServices;
+;resetToDefault;;;NUMERIC;ElettronicServices;
+;saveAsDefault;;;NUMERIC;ElettronicServices;
+;loadRomDefault;;;NUMERIC;ElettronicServices;
+;tranCalLocation;;;ASCII;ElettronicServices;
+;sensorCalLocation;;;ASCII;ElettronicServices;
+;autoSelfCheckTime;;;NUMERIC;ElettronicServices;
+;tranType;;tranType;ASCII;ElettronicServices;
+;elettronicTemperature;;;NUMERIC;ElettronicServices;
+;sensorLocationTag;;;ASCII;ElettronicServices;
+;sensoTag;;;ASCII;ElettronicServices;
+;snrThreshold;;;NUMERIC;ElettronicServices;
+;swRevisionHmi_transmitter;;;ASCII;ElettronicServices;
+;hwRevisionHmi_transmitter;;;ASCII;ElettronicServices;
+;swRevisionHmi_fe;;;ASCII;ElettronicServices;
+;hwRevisionHmi_fe;;;ASCII;ElettronicServices;
+;elettronicTemperature_Obj;unit;;ENUMERATION;ElettronicServices;TEMPERATURE
+;elettronicTemperature_Obj;type;;;ElettronicServices;
+;elettronicTemperature_Obj;value_0;;NUMERIC;ElettronicServices;
+;elettronicTemperature_Obj;value_1;;;ElettronicServices;
+;elettronicTemperature_Obj;value_2;;;ElettronicServices;
+;elettronicTemperature_Obj;value_3;;;ElettronicServices;
+;elettronicTemperature_Obj;value_4;;;ElettronicServices;
+;elettronicTemperature_Obj;value_5;;;ElettronicServices;
+;elettronicTemperature_Obj;value_6;;;ElettronicServices;
+;elettronicTemperature_Obj;value_7;;;ElettronicServices;
+;elettronicTemperature_Obj;value_8;;;ElettronicServices;
+;elettronicTemperature_Obj;value_9;;;ElettronicServices;
+;elettronicTemperature_Obj;value_10;;;ElettronicServices;
+;elettronicTemperature_Obj;value_11;;;ElettronicServices;
+;elettronicTemperature_Obj;value_12;;;ElettronicServices;
+;elettronicTemperature_Obj;value_13;;;ElettronicServices;
+;elettronicTemperature_Obj;value_14;;;ElettronicServices;
+;elettronicTemperature_Obj;value_15;;;ElettronicServices;
+;elettronicTemperature_Obj;value_16;;;ElettronicServices;
+;elettronicTemperature_Obj;value_17;;;ElettronicServices;
+;elettronicTemperature_Obj;value_18;;;ElettronicServices;
+;elettronicTemperature_Obj;value_19;;;ElettronicServices;
+;elettronicTemperature_Obj;value_20;;;ElettronicServices;
+;hardwareRevision;;;NUMERIC;ElettronicServices;
+;ambientTemperatureMax_obj;unit;;ENUMERATION;ElettronicServices;TEMPERATURE
+;ambientTemperatureMax_obj;type;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_0;;NUMERIC;ElettronicServices;
+;ambientTemperatureMax_obj;value_1;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_2;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_3;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_4;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_5;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_6;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_7;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_8;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_9;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_10;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_11;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_12;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_13;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_14;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_15;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_16;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_17;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_18;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_19;;;ElettronicServices;
+;ambientTemperatureMax_obj;value_20;;;ElettronicServices;
+;saveAllAsDefault;;;ACTION;ElettronicServices;
+;resetAllToDefault;;;ACTION;ElettronicServices;
+;autozeroStatus;;;ENUMERATION;ElettronicServices;_AUTOZERO_STATUS
+;switchBLE;;;ENUMERATION;ElettronicServices;TABLE_BLE_SWITCH_2
+;modeLCDLight;;;ENUMERATION;ElettronicServices;TABLE_LCD_LIGHT_MODE
+;port1DuplexMode;;;ENUMERATION;ETH;E_DuplexMode
+;selectedMainProtocol;;;ENUMERATION;ETH;E_SelectedMainProtocol
+;enableModbusTcp;;;ENUMERATION;ETH;E_AccessStateUnsecured
+;enableOpcUa;;;ENUMERATION;ETH;E_AccessStateFull
+;enableEthernetIp;;;ENUMERATION;ETH;E_AccessStateUnsecured
+;enableProfinetIo;;;ENUMERATION;ETH;E_AccessStateUnsecured
+;enableWebserver;;;ENUMERATION;ETH;E_AccessStateSecured
+;port1AutoNegotiate;;;ENUMERATION;ETH;E_AutoNegotiate
+;port1Speed;;;ENUMERATION;ETH;E_PortSpeed
+;port2AutoNegotiate;;;ENUMERATION;ETH;E_AutoNegotiate
+;port2Speed;;;ENUMERATION;ETH;E_PortSpeed
+;port2DuplexMode;;;ENUMERATION;ETH;E_DuplexMode
+;useDhcp;;;ENUMERATION;ETH;E_UseDhcp
+;hostName;;;ASCII;ETH;
+;hostAddress;;;NUMERIC;ETH;
+;subnetMask;;;NUMERIC;ETH;
+;gatewayAddress;;;NUMERIC;ETH;
+;ntpServerAddress;;;NUMERIC;ETH;
+;chasisMAC;;;NUMERIC;ETH;
+;port1MAC;;;NUMERIC;ETH;
+;port2MAC;;;NUMERIC;ETH;
+;port1EthStatsHMI;;;NUMERIC;ETH;
+;port2EthStatsHMI;;;NUMERIC;ETH;
+;ipStats;;;NUMERIC;ETH;
+;dnsAddress;;;NUMERIC;ETH;
+;domainName;;;ASCII;ETH;
+;chasisMACstr;;;ASCII;ETH;
+;port1MACstr;;;ASCII;ETH;
+;port2MACstr;;;ASCII;ETH;
+;ntpServerAddress2;;;NUMERIC;ETH;
+;portDuplexStatus;;;ENUMERATION;ETH;E_DuplexMode
+;portSpeedStatus;;;ENUMERATION;ETH;E_PortSpeed
+;hmiValidityTestResults;;;BITENUMERATION;ETH;
+;frontendDiagnosis;;;;FE;
+;AccuracyLow;;;NUMERIC;FE;
+;AnaGain;;;NUMERIC;FE;
+;GainCtrl;;;NUMERIC;FE;
+;GainLowThresh;;;NUMERIC;FE;
+;GainHighThresh;;;NUMERIC;FE;
+;GainMarginFreq;;;NUMERIC;FE;
+;GainMaxShift;;;NUMERIC;FE;
+;VbrCorrect;;;NUMERIC;FE;
+;FCDSwitch;;;NUMERIC;FE;
+;LowFlowThresh;;;NUMERIC;FE;
+;HighFlowThreshCoef;;;NUMERIC;FE;
+;NoiseSampSize;;;NUMERIC;FE;
+;LowFlowThreshSwitch;;;NUMERIC;FE;
+;MaxFlowFreq;;;NUMERIC;FE;
+;MinFlowFreq;;;NUMERIC;FE;
+;StaticDecimation;;;NUMERIC;FE;
+;MiddleBufDecimation;;;NUMERIC;FE;
+;LockMinIntPeriod;;;NUMERIC;FE;
+;LockMaxIntPeriod;;;NUMERIC;FE;
+;LockEstErrMarginPer;;;NUMERIC;FE;
+;frontendAlarmSimulationDuplicated;;;;FE;
+;pollAddr;;polling address;NUMERIC;Hart;
+;resetConfigFlag;;Reset configuration changed flags;ACTION;Hart;
+;StartSelfTest;;Starts self test;ACTION;Hart;
+;bolDeviceIsBusy;;Internal information for status;NUMERIC;Hart;
+;dummy_254;;Fixed to 254;NUMERIC;Hart;
+;dummy_0;;Not used (Value = 0);NUMERIC;Hart;
+;bitRateCode;;Bit rate code;NUMERIC;Hart;
+;mfrId;;Manufacturer Identification Code 0x1A or ABB;NUMERIC;Hart;
+;mfrDeviceType;;Device Type 0x8C for Rainbow SE;NUMERIC;Hart;
+;transSpecRev;;Device Revision Level;NUMERIC;Hart;
+;flags;;Fixed to 1;NUMERIC;Hart;
+;configurationFlags;;Configuration Flag 1 and 2;NUMERIC;Hart;
+;tag;;Device-Tag;PASCII;Hart;
+;deviceMessage;;Device Message as 24 byte PASCII character;PASCII;Hart;
+;finalAssyNumber;;Final Assembly Number;NUMERIC;Hart;
+;descriptor;;Descriptor;PASCII;Hart;
+;deviceIdNumber;;Device identification number;NUMERIC;Hart;
+;slot0;;Slot 0;NUMERIC;Hart;
+;slot1;;Slot 1;NUMERIC;Hart;
+;slot2;;Slot 2;NUMERIC;Hart;
+;slot3;;Slot 3;NUMERIC;Hart;
+;reserved;;Reserved;NUMERIC;Hart;
+;configExitTimer;;;;Hart;
+;fskDisabled;;;;Hart;
+;PV_AlarmSelctionCode;;;NUMERIC;Hart;
+;hartCmdRev;;Switch between HART 5 and HART 7 command revision.  Change takes only effect after a power cycle.;ENUMERATION;Hart;HartRevisionTable
+;findDeviceSwitch;;Configures find device HART function as used with command 73 (> HART 7 only);ENUMERATION;Hart;FindDeviceSwitchTable
+;deviceInstallDate;;;NUMERIC;Hart;
+;lockDeviceSelection;;implementation for command 71.  This funciton locks the device temporarily or permanent.  For details refer to HART 7.2 spec.;ENUMERATION;Hart;lockDeviceSelectionTable
+;lockDeviceStatus;;;NUMERIC;Hart;
+;performDeviceReset;;;NUMERIC;Hart;
+;burstUpTxSelection;;Display Information for the Hart Input Selection Source;ENUMERATION;Hart;T_HART_SELECTION
+;lastReceiveCommandNumber;;last received hart command number;NUMERIC;Hart;
+;hartInSim;;;NUMERIC;Hart;
+;language;;Enumeration - Defines the language used;ENUMERATION;HMI;_LANGUAGE
+;mainOperatorView_1_1;;Signal to be displayed on 1st line of 1st operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_2;;Signal to be displayed on 2nd line of 1st operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_3;;Signal to be displayed on 3rd line of 1st operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_4;;;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_1_bargraph;;Signal to be displayed on bargraph of 1st operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_1;;Signal to be displayed on 1st line of 2nd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_2;;Signal to be displayed on 2nd line of 2nd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_3;;Signal to be displayed on 3rd line of 2nd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_4;;;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_2_bargraph;;Signal to be displayed on bargraph of 2nd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_1;;Signal to be displayed on 1st line of 3rd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_2;;Signal to be displayed on 2nd line of 3rd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_3;;Signal to be displayed on 3rd line of 3rd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_4;;;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_3_bargraph;;Signal to be displayed on bargraph of 3rd operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_1;;Signal to be displayed on 1st line of 4th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_2;;Signal to be displayed on 2nd line of 4th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_3;;Signal to be displayed on 3rd line of 4th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_4;;;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_4_bargraph;;Signal to be displayed on bargraph of 4th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_1;;Signal to be displayed on 1st line of 5th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_2;;Signal to be displayed on 2nd line of 5th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_3;;Signal to be displayed on 3rd line of 5th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_4;;;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_5_bargraph;;Signal to be displayed on bargraph of 5th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_1;;Signal to be displayed on 1st line of 6th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_2;;Signal to be displayed on 2nd line of 6th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_3;;Signal to be displayed on 3rd line of 6th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_4;;;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;mainOperatorView_6_bargraph;;Signal to be displayed on bargraph of 6th operator page;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;contrast;;Display Contrast (0..100%);NUMERIC;HMI;
+;localOperationEnable;;Defines if HMI is allowed to make changes to parameter values;;HMI;
+;displayMode_1;;Display format for operator page 1;ENUMERATION;HMI;_DISPLAY_MODE
+;displayMode_2;;Display format for operator page 2;ENUMERATION;HMI;_DISPLAY_MODE
+;displayMode_3;;Display format for operator page 3;ENUMERATION;HMI;_DISPLAY_MODE
+;displayMode_4;;Display format for operator page 4;ENUMERATION;HMI;_DISPLAY_MODE
+;displayMode_5;;Display format for operator page 5;ENUMERATION;HMI;_DISPLAY_MODE
+;displayMode_6;;Display format for operator page 6;ENUMERATION;HMI;_DISPLAY_MODE
+;autoscrollEnable;;Autoscroll on/off - used when multiple operator pages are available;ENUMERATION;HMI;_AUTOSCROLL
+;lowLevelSoftwareRevision;;Software revision of low level HMI component;NUMERIC;HMI;
+;defaultContrast;;Default contrast setting for display glass;NUMERIC;HMI;
+;diagnosisView;;Signal to be displayed in signal view (diagnostics) frame;ENUMERATION;HMI;_MAIN_OPERATOR_VIEW
+;customDP_1;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_2;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_3;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_4;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_5;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_6;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_7;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_8;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_9;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_10;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;customDP_11;;Custom number of decimal places;ENUMERATION;HMI;_CUSTOM_DP
+;Password;;String entered at "Enter Password" for comparison with ARM security passwords;ASCII;HMI;
+;SetPassword_StandardLevel;;Used by the HMI user to set a new standard level password;ASCII;HMI;
+;SetPassword_AdvancedLevel;;Used by the HMI user to set a new advanced level password;ASCII;HMI;
+;SetPassword_ServiceLevel;;Used by the HMI user to set a new service level password;ASCII;HMI;
+;SetPassword_StandardLevelDefault;;Used by the HMI user to set a new default password for standard level;ASCII;HMI;
+;SetPassword_AdvancedLevelDefault;;Used by the HMI user to set a new default password for Advanced level;ASCII;HMI;
+;SetPassword_ServiceLevelDefault;;Used by the HMI user to set a new default password for Service level;ASCII;HMI;
+;DateFormat;;Defines the way in which dates are represented on the HMI.;ENUMERATION;HMI;_DATE_FORMAT
+;displayTest;;Action Object - used to start display test;ACTION;HMI;
+;Rotation;;Software rotation of display (only effective when indicator Only Low level is fitted);ENUMERATION;HMI;_ROTATION
+;MenuFormat;;Number of lines displayed in menu & enum edit frames;ENUMERATION;HMI;_MENU_FORMAT
+;Customlanguage;;;ENUMERATION;HMI;_LANGUAGE
+;diagClearHistory;;Clear History;ACTION;Mapper;
+;diagSimulationType;;;ENUMERATION;Mapper;ALARM_SIMULATION_TYPE
+;diagFunCheckMask;;;ENUMERATION;Mapper;STATUS
+;diagOffSpecMask;;;ENUMERATION;Mapper;STATUS
+;diagMaintainMask;;;ENUMERATION;Mapper;STATUS
+;diagSimulationStatus;;;ENUMERATION;Mapper;STATUS
+;diagMinFlowMask;;;ENUMERATION;Mapper;STATUS
+;diagMaxFlowMask;;;ENUMERATION;Mapper;STATUS
+;diagFlow103Mask;;;ENUMERATION;Mapper;STATUS
+;PV_PercentageForDO;;;NUMERIC;Mapper;
+;PV_TFCode;;;ENUMERATION;Mapper;TF_CODE
+;PV_ACFlag;;;ENUMERATION;Mapper;AC_FLAG
+;diagTSensorOffSpecMask;;;ENUMERATION;Mapper;STATUS
+;diagTxSensorOffSpecMask;;;ENUMERATION;Mapper;STATUS
+;diagTSensorFailMask;;;ENUMERATION;Mapper;STATUS
+;flowOver103Bhv;;;ENUMERATION;Mapper;FLOWOVER103_BHV
+;dvTExtObj;unit;;ENUMERATION;Mapper;_T_TEMPERATURE_UNIT
+;dvTExtObj;type;;;Mapper;
+;dvTExtObj;value_0;;NUMERIC;Mapper;
+;dvTExtObj;value_1;;;Mapper;
+;dvTExtObj;value_2;;;Mapper;
+;dvTExtObj;value_3;;;Mapper;
+;dvTExtObj;value_4;;;Mapper;
+;dvTExtObj;value_5;;;Mapper;
+;dvTExtObj;value_6;;;Mapper;
+;dvTExtObj;value_7;;;Mapper;
+;dvTExtObj;value_8;;;Mapper;
+;dvTExtObj;value_9;;;Mapper;
+;dvTExtObj;value_10;;;Mapper;
+;dvTExtObj;value_11;;;Mapper;
+;dvTExtObj;value_12;;;Mapper;
+;dvTExtObj;value_13;;;Mapper;
+;dvTExtObj;value_14;;;Mapper;
+;dvTExtObj;value_15;;;Mapper;
+;dvTExtObj;value_16;;;Mapper;
+;dvTExtObj;value_17;;;Mapper;
+;dvTExtObj;value_18;;;Mapper;
+;dvTExtObj;value_19;;;Mapper;
+;dvTExtObj;value_20;;;Mapper;
+;dvTExtSimObj;unit;;ENUMERATION;Mapper;_T_TEMPERATURE_UNIT
+;dvTExtSimObj;type;;;Mapper;
+;dvTExtSimObj;value_0;;NUMERIC;Mapper;
+;dvTExtSimObj;value_1;;;Mapper;
+;dvTExtSimObj;value_2;;;Mapper;
+;dvTExtSimObj;value_3;;;Mapper;
+;dvTExtSimObj;value_4;;;Mapper;
+;dvTExtSimObj;value_5;;;Mapper;
+;dvTExtSimObj;value_6;;;Mapper;
+;dvTExtSimObj;value_7;;;Mapper;
+;dvTExtSimObj;value_8;;;Mapper;
+;dvTExtSimObj;value_9;;;Mapper;
+;dvTExtSimObj;value_10;;;Mapper;
+;dvTExtSimObj;value_11;;;Mapper;
+;dvTExtSimObj;value_12;;;Mapper;
+;dvTExtSimObj;value_13;;;Mapper;
+;dvTExtSimObj;value_14;;;Mapper;
+;dvTExtSimObj;value_15;;;Mapper;
+;dvTExtSimObj;value_16;;;Mapper;
+;dvTExtSimObj;value_17;;;Mapper;
+;dvTExtSimObj;value_18;;;Mapper;
+;dvTExtSimObj;value_19;;;Mapper;
+;dvTExtSimObj;value_20;;;Mapper;
+;dvPressureUnitCode;;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressureObj;unit;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressureObj;type;;;Mapper;
+;dvPressureObj;value_0;;NUMERIC;Mapper;
+;dvPressureObj;value_1;;;Mapper;
+;dvPressureObj;value_2;;;Mapper;
+;dvPressureObj;value_3;;;Mapper;
+;dvPressureObj;value_4;;;Mapper;
+;dvPressureObj;value_5;;;Mapper;
+;dvPressureObj;value_6;;;Mapper;
+;dvPressureObj;value_7;;;Mapper;
+;dvPressureObj;value_8;;;Mapper;
+;dvPressureObj;value_9;;;Mapper;
+;dvPressureObj;value_10;;;Mapper;
+;dvPressureObj;value_11;;;Mapper;
+;dvPressureObj;value_12;;;Mapper;
+;dvPressureObj;value_13;;;Mapper;
+;dvPressureObj;value_14;;;Mapper;
+;dvPressureObj;value_15;;;Mapper;
+;dvPressureObj;value_16;;;Mapper;
+;dvPressureObj;value_17;;;Mapper;
+;dvPressureObj;value_18;;;Mapper;
+;dvPressureObj;value_19;;;Mapper;
+;dvPressureObj;value_20;;;Mapper;
+;dvPressureSimObj;unit;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressureSimObj;type;;;Mapper;
+;dvPressureSimObj;value_0;;NUMERIC;Mapper;
+;dvPressureSimObj;value_1;;;Mapper;
+;dvPressureSimObj;value_2;;;Mapper;
+;dvPressureSimObj;value_3;;;Mapper;
+;dvPressureSimObj;value_4;;;Mapper;
+;dvPressureSimObj;value_5;;;Mapper;
+;dvPressureSimObj;value_6;;;Mapper;
+;dvPressureSimObj;value_7;;;Mapper;
+;dvPressureSimObj;value_8;;;Mapper;
+;dvPressureSimObj;value_9;;;Mapper;
+;dvPressureSimObj;value_10;;;Mapper;
+;dvPressureSimObj;value_11;;;Mapper;
+;dvPressureSimObj;value_12;;;Mapper;
+;dvPressureSimObj;value_13;;;Mapper;
+;dvPressureSimObj;value_14;;;Mapper;
+;dvPressureSimObj;value_15;;;Mapper;
+;dvPressureSimObj;value_16;;;Mapper;
+;dvPressureSimObj;value_17;;;Mapper;
+;dvPressureSimObj;value_18;;;Mapper;
+;dvPressureSimObj;value_19;;;Mapper;
+;dvPressureSimObj;value_20;;;Mapper;
+;dvPressureRelativeMaxDN;;;NUMERIC;Mapper;
+;dvPressurePresetObj;unit;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressurePresetObj;type;;;Mapper;
+;dvPressurePresetObj;value_0;;NUMERIC;Mapper;
+;dvPressurePresetObj;value_1;;;Mapper;
+;dvPressurePresetObj;value_2;;;Mapper;
+;dvPressurePresetObj;value_3;;;Mapper;
+;dvPressurePresetObj;value_4;;;Mapper;
+;dvPressurePresetObj;value_5;;;Mapper;
+;dvPressurePresetObj;value_6;;;Mapper;
+;dvPressurePresetObj;value_7;;;Mapper;
+;dvPressurePresetObj;value_8;;;Mapper;
+;dvPressurePresetObj;value_9;;;Mapper;
+;dvPressurePresetObj;value_10;;;Mapper;
+;dvPressurePresetObj;value_11;;;Mapper;
+;dvPressurePresetObj;value_12;;;Mapper;
+;dvPressurePresetObj;value_13;;;Mapper;
+;dvPressurePresetObj;value_14;;;Mapper;
+;dvPressurePresetObj;value_15;;;Mapper;
+;dvPressurePresetObj;value_16;;;Mapper;
+;dvPressurePresetObj;value_17;;;Mapper;
+;dvPressurePresetObj;value_18;;;Mapper;
+;dvPressurePresetObj;value_19;;;Mapper;
+;dvPressurePresetObj;value_20;;;Mapper;
+;dvDensityObj;unit;;ENUMERATION;Mapper;_T_MASS_DENSITY_UNIT
+;dvDensityObj;type;;;Mapper;
+;dvDensityObj;value_0;;NUMERIC;Mapper;
+;dvDensityObj;value_1;;;Mapper;
+;dvDensityObj;value_2;;;Mapper;
+;dvDensityObj;value_3;;;Mapper;
+;dvDensityObj;value_4;;;Mapper;
+;dvDensityObj;value_5;;;Mapper;
+;dvDensityObj;value_6;;;Mapper;
+;dvDensityObj;value_7;;;Mapper;
+;dvDensityObj;value_8;;;Mapper;
+;dvDensityObj;value_9;;;Mapper;
+;dvDensityObj;value_10;;;Mapper;
+;dvDensityObj;value_11;;;Mapper;
+;dvDensityObj;value_12;;;Mapper;
+;dvDensityObj;value_13;;;Mapper;
+;dvDensityObj;value_14;;;Mapper;
+;dvDensityObj;value_15;;;Mapper;
+;dvDensityObj;value_16;;;Mapper;
+;dvDensityObj;value_17;;;Mapper;
+;dvDensityObj;value_18;;;Mapper;
+;dvDensityObj;value_19;;;Mapper;
+;dvDensityObj;value_20;;;Mapper;
+;dvDensityPresetObj;unit;;ENUMERATION;Mapper;_T_MASS_DENSITY_UNIT
+;dvDensityPresetObj;type;;;Mapper;
+;dvDensityPresetObj;value_0;;NUMERIC;Mapper;
+;dvDensityPresetObj;value_1;;;Mapper;
+;dvDensityPresetObj;value_2;;;Mapper;
+;dvDensityPresetObj;value_3;;;Mapper;
+;dvDensityPresetObj;value_4;;;Mapper;
+;dvDensityPresetObj;value_5;;;Mapper;
+;dvDensityPresetObj;value_6;;;Mapper;
+;dvDensityPresetObj;value_7;;;Mapper;
+;dvDensityPresetObj;value_8;;;Mapper;
+;dvDensityPresetObj;value_9;;;Mapper;
+;dvDensityPresetObj;value_10;;;Mapper;
+;dvDensityPresetObj;value_11;;;Mapper;
+;dvDensityPresetObj;value_12;;;Mapper;
+;dvDensityPresetObj;value_13;;;Mapper;
+;dvDensityPresetObj;value_14;;;Mapper;
+;dvDensityPresetObj;value_15;;;Mapper;
+;dvDensityPresetObj;value_16;;;Mapper;
+;dvDensityPresetObj;value_17;;;Mapper;
+;dvDensityPresetObj;value_18;;;Mapper;
+;dvDensityPresetObj;value_19;;;Mapper;
+;dvDensityPresetObj;value_20;;;Mapper;
+;dvPressureAlmRange;loLim;;NUMERIC;Mapper;
+;dvPressureAlmRange;hiLim;;NUMERIC;Mapper;
+;dvContent;;;NUMERIC;Mapper;
+;dvContentPreset;;;NUMERIC;Mapper;
+;dvContentSim;;;NUMERIC;Mapper;
+;dvDensityUnitType;;;;Mapper;
+;dvDensitySimObj;unit;;BITENUMERATION;Mapper;_T_MASS_DENSITY_UNIT
+;dvDensitySimObj;type;;;Mapper;
+;dvDensitySimObj;value_0;;NUMERIC;Mapper;
+;dvDensitySimObj;value_1;;;Mapper;
+;dvDensitySimObj;value_2;;;Mapper;
+;dvDensitySimObj;value_3;;;Mapper;
+;dvDensitySimObj;value_4;;;Mapper;
+;dvDensitySimObj;value_5;;;Mapper;
+;dvDensitySimObj;value_6;;;Mapper;
+;dvDensitySimObj;value_7;;;Mapper;
+;dvDensitySimObj;value_8;;;Mapper;
+;dvDensitySimObj;value_9;;;Mapper;
+;dvDensitySimObj;value_10;;;Mapper;
+;dvDensitySimObj;value_11;;;Mapper;
+;dvDensitySimObj;value_12;;;Mapper;
+;dvDensitySimObj;value_13;;;Mapper;
+;dvDensitySimObj;value_14;;;Mapper;
+;dvDensitySimObj;value_15;;;Mapper;
+;dvDensitySimObj;value_16;;;Mapper;
+;dvDensitySimObj;value_17;;;Mapper;
+;dvDensitySimObj;value_18;;;Mapper;
+;dvDensitySimObj;value_19;;;Mapper;
+;dvDensitySimObj;value_20;;;Mapper;
+;dvTExtPresetObj;unit;;NUMERIC;Mapper;_T_TEMPERATURE_UNIT
+;dvTExtPresetObj;type;;;Mapper;
+;dvTExtPresetObj;value_0;;NUMERIC;Mapper;
+;dvTExtPresetObj;value_1;;;Mapper;
+;dvTExtPresetObj;value_2;;;Mapper;
+;dvTExtPresetObj;value_3;;;Mapper;
+;dvTExtPresetObj;value_4;;;Mapper;
+;dvTExtPresetObj;value_5;;;Mapper;
+;dvTExtPresetObj;value_6;;;Mapper;
+;dvTExtPresetObj;value_7;;;Mapper;
+;dvTExtPresetObj;value_8;;;Mapper;
+;dvTExtPresetObj;value_9;;;Mapper;
+;dvTExtPresetObj;value_10;;;Mapper;
+;dvTExtPresetObj;value_11;;;Mapper;
+;dvTExtPresetObj;value_12;;;Mapper;
+;dvTExtPresetObj;value_13;;;Mapper;
+;dvTExtPresetObj;value_14;;;Mapper;
+;dvTExtPresetObj;value_15;;;Mapper;
+;dvTExtPresetObj;value_16;;;Mapper;
+;dvTExtPresetObj;value_17;;;Mapper;
+;dvTExtPresetObj;value_18;;;Mapper;
+;dvTExtPresetObj;value_19;;;Mapper;
+;dvTExtPresetObj;value_20;;;Mapper;
+;dvTExtRangeObj;unit;;ENUMERATION;Mapper;_T_TEMPERATURE_UNIT
+;dvTExtRangeObj;type;;;Mapper;
+;dvTExtRangeObj;value_0;;NUMERIC;Mapper;
+;dvTExtRangeObj;value_1;;NUMERIC;Mapper;
+;dvTExtRangeObj;value_2;;;Mapper;
+;dvTExtRangeObj;value_3;;;Mapper;
+;dvTExtRangeObj;value_4;;;Mapper;
+;dvTExtRangeObj;value_5;;;Mapper;
+;dvTExtRangeObj;value_6;;;Mapper;
+;dvTExtRangeObj;value_7;;;Mapper;
+;dvTExtRangeObj;value_8;;;Mapper;
+;dvTExtRangeObj;value_9;;;Mapper;
+;dvTExtRangeObj;value_10;;;Mapper;
+;dvTExtRangeObj;value_11;;;Mapper;
+;dvTExtRangeObj;value_12;;;Mapper;
+;dvTExtRangeObj;value_13;;;Mapper;
+;dvTExtRangeObj;value_14;;;Mapper;
+;dvTExtRangeObj;value_15;;;Mapper;
+;dvTExtRangeObj;value_16;;;Mapper;
+;dvTExtRangeObj;value_17;;;Mapper;
+;dvTExtRangeObj;value_18;;;Mapper;
+;dvTExtRangeObj;value_19;;;Mapper;
+;dvTExtRangeObj;value_20;;;Mapper;
+;dvPressureRangeObj;unit;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressureRangeObj;type;;;Mapper;
+;dvPressureRangeObj;value_0;;NUMERIC;Mapper;
+;dvPressureRangeObj;value_1;;NUMERIC;Mapper;
+;dvPressureRangeObj;value_2;;;Mapper;
+;dvPressureRangeObj;value_3;;;Mapper;
+;dvPressureRangeObj;value_4;;;Mapper;
+;dvPressureRangeObj;value_5;;;Mapper;
+;dvPressureRangeObj;value_6;;;Mapper;
+;dvPressureRangeObj;value_7;;;Mapper;
+;dvPressureRangeObj;value_8;;;Mapper;
+;dvPressureRangeObj;value_9;;;Mapper;
+;dvPressureRangeObj;value_10;;;Mapper;
+;dvPressureRangeObj;value_11;;;Mapper;
+;dvPressureRangeObj;value_12;;;Mapper;
+;dvPressureRangeObj;value_13;;;Mapper;
+;dvPressureRangeObj;value_14;;;Mapper;
+;dvPressureRangeObj;value_15;;;Mapper;
+;dvPressureRangeObj;value_16;;;Mapper;
+;dvPressureRangeObj;value_17;;;Mapper;
+;dvPressureRangeObj;value_18;;;Mapper;
+;dvPressureRangeObj;value_19;;;Mapper;
+;dvPressureRangeObj;value_20;;;Mapper;
+;dvDensityRangeObj;unit;;ENUMERATION;Mapper;_T_MASS_DENSITY_UNIT
+;dvDensityRangeObj;type;;;Mapper;
+;dvDensityRangeObj;value_0;;NUMERIC;Mapper;
+;dvDensityRangeObj;value_1;;NUMERIC;Mapper;
+;dvDensityRangeObj;value_2;;;Mapper;
+;dvDensityRangeObj;value_3;;;Mapper;
+;dvDensityRangeObj;value_4;;;Mapper;
+;dvDensityRangeObj;value_5;;;Mapper;
+;dvDensityRangeObj;value_6;;;Mapper;
+;dvDensityRangeObj;value_7;;;Mapper;
+;dvDensityRangeObj;value_8;;;Mapper;
+;dvDensityRangeObj;value_9;;;Mapper;
+;dvDensityRangeObj;value_10;;;Mapper;
+;dvDensityRangeObj;value_11;;;Mapper;
+;dvDensityRangeObj;value_12;;;Mapper;
+;dvDensityRangeObj;value_13;;;Mapper;
+;dvDensityRangeObj;value_14;;;Mapper;
+;dvDensityRangeObj;value_15;;;Mapper;
+;dvDensityRangeObj;value_16;;;Mapper;
+;dvDensityRangeObj;value_17;;;Mapper;
+;dvDensityRangeObj;value_18;;;Mapper;
+;dvDensityRangeObj;value_19;;;Mapper;
+;dvDensityRangeObj;value_20;;;Mapper;
+;dvContentRange;hiLim;;NUMERIC;Mapper;
+;dvContentRange;loLim;;NUMERIC;Mapper;
+;diagLowCutoffMask;;;ENUMERATION;Mapper;STATUS
+;dvPressureRangeRelative;hiLim;;;Mapper;
+;dvPressureRangeRelative;loLim;;;Mapper;
+;dvPressureRangeRelative;span;;;Mapper;
+;hartBurstInAlarmPeriod;;;NUMERIC;Mapper;
+;dvPressureRangeRelativeObj;unit;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressureRangeRelativeObj;type;;;Mapper;
+;dvPressureRangeRelativeObj;value_0;;NUMERIC;Mapper;
+;dvPressureRangeRelativeObj;value_1;;NUMERIC;Mapper;
+;dvPressureRangeRelativeObj;value_2;;;Mapper;
+;dvPressureRangeRelativeObj;value_3;;;Mapper;
+;dvPressureRangeRelativeObj;value_4;;;Mapper;
+;dvPressureRangeRelativeObj;value_5;;;Mapper;
+;dvPressureRangeRelativeObj;value_6;;;Mapper;
+;dvPressureRangeRelativeObj;value_7;;;Mapper;
+;dvPressureRangeRelativeObj;value_8;;;Mapper;
+;dvPressureRangeRelativeObj;value_9;;;Mapper;
+;dvPressureRangeRelativeObj;value_10;;;Mapper;
+;dvPressureRangeRelativeObj;value_11;;;Mapper;
+;dvPressureRangeRelativeObj;value_12;;;Mapper;
+;dvPressureRangeRelativeObj;value_13;;;Mapper;
+;dvPressureRangeRelativeObj;value_14;;;Mapper;
+;dvPressureRangeRelativeObj;value_15;;;Mapper;
+;dvPressureRangeRelativeObj;value_16;;;Mapper;
+;dvPressureRangeRelativeObj;value_17;;;Mapper;
+;dvPressureRangeRelativeObj;value_18;;;Mapper;
+;dvPressureRangeRelativeObj;value_19;;;Mapper;
+;dvPressureRangeRelativeObj;value_20;;;Mapper;
+;dvPressureAlmRangeObj;unit;;ENUMERATION;Mapper;_T_PRESSURE_UNIT
+;dvPressureAlmRangeObj;type;;;Mapper;
+;dvPressureAlmRangeObj;value_0;;NUMERIC;Mapper;
+;dvPressureAlmRangeObj;value_1;;NUMERIC;Mapper;
+;dvPressureAlmRangeObj;value_2;;;Mapper;
+;dvPressureAlmRangeObj;value_3;;;Mapper;
+;dvPressureAlmRangeObj;value_4;;;Mapper;
+;dvPressureAlmRangeObj;value_5;;;Mapper;
+;dvPressureAlmRangeObj;value_6;;;Mapper;
+;dvPressureAlmRangeObj;value_7;;;Mapper;
+;dvPressureAlmRangeObj;value_8;;;Mapper;
+;dvPressureAlmRangeObj;value_9;;;Mapper;
+;dvPressureAlmRangeObj;value_10;;;Mapper;
+;dvPressureAlmRangeObj;value_11;;;Mapper;
+;dvPressureAlmRangeObj;value_12;;;Mapper;
+;dvPressureAlmRangeObj;value_13;;;Mapper;
+;dvPressureAlmRangeObj;value_14;;;Mapper;
+;dvPressureAlmRangeObj;value_15;;;Mapper;
+;dvPressureAlmRangeObj;value_16;;;Mapper;
+;dvPressureAlmRangeObj;value_17;;;Mapper;
+;dvPressureAlmRangeObj;value_18;;;Mapper;
+;dvPressureAlmRangeObj;value_19;;;Mapper;
+;dvPressureAlmRangeObj;value_20;;;Mapper;
+;diagAlarmNamurConfiguration;;;ENUMERATION;Mapper;
+;modbusIEEEFormat;;Modbus IEEE data format for configuring  WORD swapping.;ENUMERATION;Modbus;TModbusConfigurationIEEEEnableState
+;configScanRegister1;;;NUMERIC;Modbus;
+;configScanRegister2;;;NUMERIC;Modbus;
+;mDiagCondenseStatus;;;NUMERIC;Modbus;
+;ScanRegister1;;Scan Register 1;NUMERIC;Modbus;
+;ScanRegister2;;Scan Register 2;NUMERIC;Modbus;
+;QnObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnObj;type;;;MVM;
+;QnObj;value_0;;NUMERIC;MVM;
+;QnObj;value_1;;;MVM;
+;QnObj;value_2;;;MVM;
+;QnObj;value_3;;;MVM;
+;QnObj;value_4;;;MVM;
+;QnObj;value_5;;;MVM;
+;QnObj;value_6;;;MVM;
+;QnObj;value_7;;;MVM;
+;QnObj;value_8;;;MVM;
+;QnObj;value_9;;;MVM;
+;QnObj;value_10;;;MVM;
+;QnObj;value_11;;;MVM;
+;QnObj;value_12;;;MVM;
+;QnObj;value_13;;;MVM;
+;QnObj;value_14;;;MVM;
+;QnObj;value_15;;;MVM;
+;QnObj;value_16;;;MVM;
+;QnObj;value_17;;;MVM;
+;QnObj;value_18;;;MVM;
+;QnObj;value_19;;;MVM;
+;QnObj;value_20;;;MVM;
+;QnDampedObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnDampedObj;type;;;MVM;
+;QnDampedObj;value_0;;NUMERIC;MVM;
+;QnDampedObj;value_1;;;MVM;
+;QnDampedObj;value_2;;;MVM;
+;QnDampedObj;value_3;;;MVM;
+;QnDampedObj;value_4;;;MVM;
+;QnDampedObj;value_5;;;MVM;
+;QnDampedObj;value_6;;;MVM;
+;QnDampedObj;value_7;;;MVM;
+;QnDampedObj;value_8;;;MVM;
+;QnDampedObj;value_9;;;MVM;
+;QnDampedObj;value_10;;;MVM;
+;QnDampedObj;value_11;;;MVM;
+;QnDampedObj;value_12;;;MVM;
+;QnDampedObj;value_13;;;MVM;
+;QnDampedObj;value_14;;;MVM;
+;QnDampedObj;value_15;;;MVM;
+;QnDampedObj;value_16;;;MVM;
+;QnDampedObj;value_17;;;MVM;
+;QnDampedObj;value_18;;;MVM;
+;QnDampedObj;value_19;;;MVM;
+;QnDampedObj;value_20;;;MVM;
+;QnSimObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnSimObj;type;;;MVM;
+;QnSimObj;value_0;;NUMERIC;MVM;
+;QnSimObj;value_1;;;MVM;
+;QnSimObj;value_2;;;MVM;
+;QnSimObj;value_3;;;MVM;
+;QnSimObj;value_4;;;MVM;
+;QnSimObj;value_5;;;MVM;
+;QnSimObj;value_6;;;MVM;
+;QnSimObj;value_7;;;MVM;
+;QnSimObj;value_8;;;MVM;
+;QnSimObj;value_9;;;MVM;
+;QnSimObj;value_10;;;MVM;
+;QnSimObj;value_11;;;MVM;
+;QnSimObj;value_12;;;MVM;
+;QnSimObj;value_13;;;MVM;
+;QnSimObj;value_14;;;MVM;
+;QnSimObj;value_15;;;MVM;
+;QnSimObj;value_16;;;MVM;
+;QnSimObj;value_17;;;MVM;
+;QnSimObj;value_18;;;MVM;
+;QnSimObj;value_19;;;MVM;
+;QnSimObj;value_20;;;MVM;
+;QnRangeObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnRangeObj;type;;;MVM;
+;QnRangeObj;value_0;;NUMERIC;MVM;
+;QnRangeObj;value_1;;NUMERIC;MVM;
+;QnRangeObj;value_2;;;MVM;
+;QnRangeObj;value_3;;;MVM;
+;QnRangeObj;value_4;;;MVM;
+;QnRangeObj;value_5;;;MVM;
+;QnRangeObj;value_6;;;MVM;
+;QnRangeObj;value_7;;;MVM;
+;QnRangeObj;value_8;;;MVM;
+;QnRangeObj;value_9;;;MVM;
+;QnRangeObj;value_10;;;MVM;
+;QnRangeObj;value_11;;;MVM;
+;QnRangeObj;value_12;;;MVM;
+;QnRangeObj;value_13;;;MVM;
+;QnRangeObj;value_14;;;MVM;
+;QnRangeObj;value_15;;;MVM;
+;QnRangeObj;value_16;;;MVM;
+;QnRangeObj;value_17;;;MVM;
+;QnRangeObj;value_18;;;MVM;
+;QnRangeObj;value_19;;;MVM;
+;QnRangeObj;value_20;;;MVM;
+;QmDampedObj;unit;;ENUMERATION;MVM;_T_MASS_FLOW
+;QmDampedObj;type;;;MVM;
+;QmDampedObj;value_0;;NUMERIC;MVM;
+;QmDampedObj;value_1;;;MVM;
+;QmDampedObj;value_2;;;MVM;
+;QmDampedObj;value_3;;;MVM;
+;QmDampedObj;value_4;;;MVM;
+;QmDampedObj;value_5;;;MVM;
+;QmDampedObj;value_6;;;MVM;
+;QmDampedObj;value_7;;;MVM;
+;QmDampedObj;value_8;;;MVM;
+;QmDampedObj;value_9;;;MVM;
+;QmDampedObj;value_10;;;MVM;
+;QmDampedObj;value_11;;;MVM;
+;QmDampedObj;value_12;;;MVM;
+;QmDampedObj;value_13;;;MVM;
+;QmDampedObj;value_14;;;MVM;
+;QmDampedObj;value_15;;;MVM;
+;QmDampedObj;value_16;;;MVM;
+;QmDampedObj;value_17;;;MVM;
+;QmDampedObj;value_18;;;MVM;
+;QmDampedObj;value_19;;;MVM;
+;QmDampedObj;value_20;;;MVM;
+;QmSimObj;unit;;ENUMERATION;MVM;_T_MASS_FLOW
+;QmSimObj;type;;;MVM;
+;QmSimObj;value_0;;NUMERIC;MVM;
+;QmSimObj;value_1;;;MVM;
+;QmSimObj;value_2;;;MVM;
+;QmSimObj;value_3;;;MVM;
+;QmSimObj;value_4;;;MVM;
+;QmSimObj;value_5;;;MVM;
+;QmSimObj;value_6;;;MVM;
+;QmSimObj;value_7;;;MVM;
+;QmSimObj;value_8;;;MVM;
+;QmSimObj;value_9;;;MVM;
+;QmSimObj;value_10;;;MVM;
+;QmSimObj;value_11;;;MVM;
+;QmSimObj;value_12;;;MVM;
+;QmSimObj;value_13;;;MVM;
+;QmSimObj;value_14;;;MVM;
+;QmSimObj;value_15;;;MVM;
+;QmSimObj;value_16;;;MVM;
+;QmSimObj;value_17;;;MVM;
+;QmSimObj;value_18;;;MVM;
+;QmSimObj;value_19;;;MVM;
+;QmSimObj;value_20;;;MVM;
+;QmRangeObj;unit;;ENUMERATION;MVM;_T_MASS_FLOW
+;QmRangeObj;type;;;MVM;
+;QmRangeObj;value_0;;NUMERIC;MVM;
+;QmRangeObj;value_1;;NUMERIC;MVM;
+;QmRangeObj;value_2;;;MVM;
+;QmRangeObj;value_3;;;MVM;
+;QmRangeObj;value_4;;;MVM;
+;QmRangeObj;value_5;;;MVM;
+;QmRangeObj;value_6;;;MVM;
+;QmRangeObj;value_7;;;MVM;
+;QmRangeObj;value_8;;;MVM;
+;QmRangeObj;value_9;;;MVM;
+;QmRangeObj;value_10;;;MVM;
+;QmRangeObj;value_11;;;MVM;
+;QmRangeObj;value_12;;;MVM;
+;QmRangeObj;value_13;;;MVM;
+;QmRangeObj;value_14;;;MVM;
+;QmRangeObj;value_15;;;MVM;
+;QmRangeObj;value_16;;;MVM;
+;QmRangeObj;value_17;;;MVM;
+;QmRangeObj;value_18;;;MVM;
+;QmRangeObj;value_19;;;MVM;
+;QmRangeObj;value_20;;;MVM;
+;QmDampingTime;;;NUMERIC;MVM;
+;QpRangeObj;unit;;ENUMERATION;MVM;_T_POWER
+;QpRangeObj;type;;;MVM;
+;QpRangeObj;value_0;;NUMERIC;MVM;
+;QpRangeObj;value_1;;NUMERIC;MVM;
+;QpRangeObj;value_2;;;MVM;
+;QpRangeObj;value_3;;;MVM;
+;QpRangeObj;value_4;;;MVM;
+;QpRangeObj;value_5;;;MVM;
+;QpRangeObj;value_6;;;MVM;
+;QpRangeObj;value_7;;;MVM;
+;QpRangeObj;value_8;;;MVM;
+;QpRangeObj;value_9;;;MVM;
+;QpRangeObj;value_10;;;MVM;
+;QpRangeObj;value_11;;;MVM;
+;QpRangeObj;value_12;;;MVM;
+;QpRangeObj;value_13;;;MVM;
+;QpRangeObj;value_14;;;MVM;
+;QpRangeObj;value_15;;;MVM;
+;QpRangeObj;value_16;;;MVM;
+;QpRangeObj;value_17;;;MVM;
+;QpRangeObj;value_18;;;MVM;
+;QpRangeObj;value_19;;;MVM;
+;QpRangeObj;value_20;;;MVM;
+;QpDampedObj;unit;;ENUMERATION;MVM;_T_POWER
+;QpDampedObj;type;;;MVM;
+;QpDampedObj;value_0;;NUMERIC;MVM;
+;QpDampedObj;value_1;;;MVM;
+;QpDampedObj;value_2;;;MVM;
+;QpDampedObj;value_3;;;MVM;
+;QpDampedObj;value_4;;;MVM;
+;QpDampedObj;value_5;;;MVM;
+;QpDampedObj;value_6;;;MVM;
+;QpDampedObj;value_7;;;MVM;
+;QpDampedObj;value_8;;;MVM;
+;QpDampedObj;value_9;;;MVM;
+;QpDampedObj;value_10;;;MVM;
+;QpDampedObj;value_11;;;MVM;
+;QpDampedObj;value_12;;;MVM;
+;QpDampedObj;value_13;;;MVM;
+;QpDampedObj;value_14;;;MVM;
+;QpDampedObj;value_15;;;MVM;
+;QpDampedObj;value_16;;;MVM;
+;QpDampedObj;value_17;;;MVM;
+;QpDampedObj;value_18;;;MVM;
+;QpDampedObj;value_19;;;MVM;
+;QpDampedObj;value_20;;;MVM;
+;QpSimObj;unit;;ENUMERATION;MVM;_T_POWER
+;QpSimObj;type;;;MVM;
+;QpSimObj;value_0;;NUMERIC;MVM;
+;QpSimObj;value_1;;;MVM;
+;QpSimObj;value_2;;;MVM;
+;QpSimObj;value_3;;;MVM;
+;QpSimObj;value_4;;;MVM;
+;QpSimObj;value_5;;;MVM;
+;QpSimObj;value_6;;;MVM;
+;QpSimObj;value_7;;;MVM;
+;QpSimObj;value_8;;;MVM;
+;QpSimObj;value_9;;;MVM;
+;QpSimObj;value_10;;;MVM;
+;QpSimObj;value_11;;;MVM;
+;QpSimObj;value_12;;;MVM;
+;QpSimObj;value_13;;;MVM;
+;QpSimObj;value_14;;;MVM;
+;QpSimObj;value_15;;;MVM;
+;QpSimObj;value_16;;;MVM;
+;QpSimObj;value_17;;;MVM;
+;QpSimObj;value_18;;;MVM;
+;QpSimObj;value_19;;;MVM;
+;QpSimObj;value_20;;;MVM;
+;steamStatus;;;ENUMERATION;MVM;_STEAMSTATUS
+;steamType;;;ENUMERATION;MVM;_STEAMTYPE
+;liquidCorrection;;;ENUMERATION;MVM;_LIQUIDCORRECTION
+;heatCapacity;;;NUMERIC;MVM;
+;densityRef;;;NUMERIC;MVM;
+;densityS;;;NUMERIC;MVM;
+;densityExpandBeta2;;;NUMERIC;MVM;
+;volumeExpandBeta1;;;NUMERIC;MVM;
+;gasRef;;;ENUMERATION;MVM;_GAS_REF_CONDITIONS
+;gasComputeType;;;ENUMERATION;MVM;_GAS_COMPUTATION_TYPE
+;gasDensitySelection;;;ENUMERATION;MVM;_GAS_MASS_COMPUTATION
+;calorificEnergy;;;NUMERIC;MVM;
+;refTemperature;;;NUMERIC;MVM;
+;refPressure;;;NUMERIC;MVM;
+;QnMaxDN;;;NUMERIC;MVM;
+;QmMaxDN;;;NUMERIC;MVM;
+;QpMaxDN;;;NUMERIC;MVM;
+;QnPartialMaxDNDuplicated;;;NUMERIC;MVM;
+;QvPartialMaxDN;;;NUMERIC;MVM;
+;QmObj;unit;;ENUMERATION;MVM;_T_MASS_FLOW
+;QmObj;type;;;MVM;
+;QmObj;value_0;;NUMERIC;MVM;
+;QmObj;value_1;;;MVM;
+;QmObj;value_2;;;MVM;
+;QmObj;value_3;;;MVM;
+;QmObj;value_4;;;MVM;
+;QmObj;value_5;;;MVM;
+;QmObj;value_6;;;MVM;
+;QmObj;value_7;;;MVM;
+;QmObj;value_8;;;MVM;
+;QmObj;value_9;;;MVM;
+;QmObj;value_10;;;MVM;
+;QmObj;value_11;;;MVM;
+;QmObj;value_12;;;MVM;
+;QmObj;value_13;;;MVM;
+;QmObj;value_14;;;MVM;
+;QmObj;value_15;;;MVM;
+;QmObj;value_16;;;MVM;
+;QmObj;value_17;;;MVM;
+;QmObj;value_18;;;MVM;
+;QmObj;value_19;;;MVM;
+;QmObj;value_20;;;MVM;
+;molFractions;;;NUMERIC;MVM;
+;relativeDensityRef;;;ENUMERATION;MVM;_RELATIVE_DENSITY_REF
+;relativeDensity;;;NUMERIC;MVM;
+;calorificValueRef;;;ENUMERATION;MVM;_CALORIFIC_REF
+;QmPerSim;;;NUMERIC;MVM;
+;QmPercentage;;;NUMERIC;MVM;
+;QAlmRange;loLim;;NUMERIC;MVM;
+;QAlmRange;hiLim;;NUMERIC;MVM;
+;QnPartialDampedObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnPartialDampedObj;type;;;MVM;
+;QnPartialDampedObj;value_0;;NUMERIC;MVM;
+;QnPartialDampedObj;value_1;;;MVM;
+;QnPartialDampedObj;value_2;;;MVM;
+;QnPartialDampedObj;value_3;;;MVM;
+;QnPartialDampedObj;value_4;;;MVM;
+;QnPartialDampedObj;value_5;;;MVM;
+;QnPartialDampedObj;value_6;;;MVM;
+;QnPartialDampedObj;value_7;;;MVM;
+;QnPartialDampedObj;value_8;;;MVM;
+;QnPartialDampedObj;value_9;;;MVM;
+;QnPartialDampedObj;value_10;;;MVM;
+;QnPartialDampedObj;value_11;;;MVM;
+;QnPartialDampedObj;value_12;;;MVM;
+;QnPartialDampedObj;value_13;;;MVM;
+;QnPartialDampedObj;value_14;;;MVM;
+;QnPartialDampedObj;value_15;;;MVM;
+;QnPartialDampedObj;value_16;;;MVM;
+;QnPartialDampedObj;value_17;;;MVM;
+;QnPartialDampedObj;value_18;;;MVM;
+;QnPartialDampedObj;value_19;;;MVM;
+;QnPartialDampedObj;value_20;;;MVM;
+;QnPartialObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnPartialObj;type;;;MVM;
+;QnPartialObj;value_0;;NUMERIC;MVM;
+;QnPartialObj;value_1;;;MVM;
+;QnPartialObj;value_2;;;MVM;
+;QnPartialObj;value_3;;;MVM;
+;QnPartialObj;value_4;;;MVM;
+;QnPartialObj;value_5;;;MVM;
+;QnPartialObj;value_6;;;MVM;
+;QnPartialObj;value_7;;;MVM;
+;QnPartialObj;value_8;;;MVM;
+;QnPartialObj;value_9;;;MVM;
+;QnPartialObj;value_10;;;MVM;
+;QnPartialObj;value_11;;;MVM;
+;QnPartialObj;value_12;;;MVM;
+;QnPartialObj;value_13;;;MVM;
+;QnPartialObj;value_14;;;MVM;
+;QnPartialObj;value_15;;;MVM;
+;QnPartialObj;value_16;;;MVM;
+;QnPartialObj;value_17;;;MVM;
+;QnPartialObj;value_18;;;MVM;
+;QnPartialObj;value_19;;;MVM;
+;QnPartialObj;value_20;;;MVM;
+;QnPartialPercentage;;;NUMERIC;MVM;
+;QvPartialObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QvPartialObj;type;;;MVM;
+;QvPartialObj;value_0;;NUMERIC;MVM;
+;QvPartialObj;value_1;;;MVM;
+;QvPartialObj;value_2;;;MVM;
+;QvPartialObj;value_3;;;MVM;
+;QvPartialObj;value_4;;;MVM;
+;QvPartialObj;value_5;;;MVM;
+;QvPartialObj;value_6;;;MVM;
+;QvPartialObj;value_7;;;MVM;
+;QvPartialObj;value_8;;;MVM;
+;QvPartialObj;value_9;;;MVM;
+;QvPartialObj;value_10;;;MVM;
+;QvPartialObj;value_11;;;MVM;
+;QvPartialObj;value_12;;;MVM;
+;QvPartialObj;value_13;;;MVM;
+;QvPartialObj;value_14;;;MVM;
+;QvPartialObj;value_15;;;MVM;
+;QvPartialObj;value_16;;;MVM;
+;QvPartialObj;value_17;;;MVM;
+;QvPartialObj;value_18;;;MVM;
+;QvPartialObj;value_19;;;MVM;
+;QvPartialObj;value_20;;;MVM;
+;QvPartialDampedObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QvPartialDampedObj;type;;;MVM;
+;QvPartialDampedObj;value_0;;NUMERIC;MVM;
+;QvPartialDampedObj;value_1;;;MVM;
+;QvPartialDampedObj;value_2;;;MVM;
+;QvPartialDampedObj;value_3;;;MVM;
+;QvPartialDampedObj;value_4;;;MVM;
+;QvPartialDampedObj;value_5;;;MVM;
+;QvPartialDampedObj;value_6;;;MVM;
+;QvPartialDampedObj;value_7;;;MVM;
+;QvPartialDampedObj;value_8;;;MVM;
+;QvPartialDampedObj;value_9;;;MVM;
+;QvPartialDampedObj;value_10;;;MVM;
+;QvPartialDampedObj;value_11;;;MVM;
+;QvPartialDampedObj;value_12;;;MVM;
+;QvPartialDampedObj;value_13;;;MVM;
+;QvPartialDampedObj;value_14;;;MVM;
+;QvPartialDampedObj;value_15;;;MVM;
+;QvPartialDampedObj;value_16;;;MVM;
+;QvPartialDampedObj;value_17;;;MVM;
+;QvPartialDampedObj;value_18;;;MVM;
+;QvPartialDampedObj;value_19;;;MVM;
+;QvPartialDampedObj;value_20;;;MVM;
+;QnPercentage;;;NUMERIC;MVM;
+;QpPercentage;;;NUMERIC;MVM;
+;QvPartialPercentage;;;NUMERIC;MVM;
+;QvPartialRangeObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QvPartialRangeObj;type;;;MVM;
+;QvPartialRangeObj;value_0;;NUMERIC;MVM;
+;QvPartialRangeObj;value_1;;NUMERIC;MVM;
+;QvPartialRangeObj;value_2;;;MVM;
+;QvPartialRangeObj;value_3;;;MVM;
+;QvPartialRangeObj;value_4;;;MVM;
+;QvPartialRangeObj;value_5;;;MVM;
+;QvPartialRangeObj;value_6;;;MVM;
+;QvPartialRangeObj;value_7;;;MVM;
+;QvPartialRangeObj;value_8;;;MVM;
+;QvPartialRangeObj;value_9;;;MVM;
+;QvPartialRangeObj;value_10;;;MVM;
+;QvPartialRangeObj;value_11;;;MVM;
+;QvPartialRangeObj;value_12;;;MVM;
+;QvPartialRangeObj;value_13;;;MVM;
+;QvPartialRangeObj;value_14;;;MVM;
+;QvPartialRangeObj;value_15;;;MVM;
+;QvPartialRangeObj;value_16;;;MVM;
+;QvPartialRangeObj;value_17;;;MVM;
+;QvPartialRangeObj;value_18;;;MVM;
+;QvPartialRangeObj;value_19;;;MVM;
+;QvPartialRangeObj;value_20;;;MVM;
+;QnPartialRangeObj;unit;;ENUMERATION;MVM;_T_VOLUME_FLOW
+;QnPartialRangeObj;type;;;MVM;
+;QnPartialRangeObj;value_0;;NUMERIC;MVM;
+;QnPartialRangeObj;value_1;;NUMERIC;MVM;
+;QnPartialRangeObj;value_2;;;MVM;
+;QnPartialRangeObj;value_3;;;MVM;
+;QnPartialRangeObj;value_4;;;MVM;
+;QnPartialRangeObj;value_5;;;MVM;
+;QnPartialRangeObj;value_6;;;MVM;
+;QnPartialRangeObj;value_7;;;MVM;
+;QnPartialRangeObj;value_8;;;MVM;
+;QnPartialRangeObj;value_9;;;MVM;
+;QnPartialRangeObj;value_10;;;MVM;
+;QnPartialRangeObj;value_11;;;MVM;
+;QnPartialRangeObj;value_12;;;MVM;
+;QnPartialRangeObj;value_13;;;MVM;
+;QnPartialRangeObj;value_14;;;MVM;
+;QnPartialRangeObj;value_15;;;MVM;
+;QnPartialRangeObj;value_16;;;MVM;
+;QnPartialRangeObj;value_17;;;MVM;
+;QnPartialRangeObj;value_18;;;MVM;
+;QnPartialRangeObj;value_19;;;MVM;
+;QnPartialRangeObj;value_20;;;MVM;
+;QpObj;unit;;ENUMERATION;MVM;_T_POWER
+;QpObj;type;;;MVM;
+;QpObj;value_0;;NUMERIC;MVM;
+;QpObj;value_1;;;MVM;
+;QpObj;value_2;;;MVM;
+;QpObj;value_3;;;MVM;
+;QpObj;value_4;;;MVM;
+;QpObj;value_5;;;MVM;
+;QpObj;value_6;;;MVM;
+;QpObj;value_7;;;MVM;
+;QpObj;value_8;;;MVM;
+;QpObj;value_9;;;MVM;
+;QpObj;value_10;;;MVM;
+;QpObj;value_11;;;MVM;
+;QpObj;value_12;;;MVM;
+;QpObj;value_13;;;MVM;
+;QpObj;value_14;;;MVM;
+;QpObj;value_15;;;MVM;
+;QpObj;value_16;;;MVM;
+;QpObj;value_17;;;MVM;
+;QpObj;value_18;;;MVM;
+;QpObj;value_19;;;MVM;
+;QpObj;value_20;;;MVM;
+;refPressureObj;unit;;ENUMERATION;MVM;_T_PRESSURE
+;refPressureObj;type;;;MVM;
+;refPressureObj;value_0;;NUMERIC;MVM;
+;refPressureObj;value_1;;;MVM;
+;refPressureObj;value_2;;;MVM;
+;refPressureObj;value_3;;;MVM;
+;refPressureObj;value_4;;;MVM;
+;refPressureObj;value_5;;;MVM;
+;refPressureObj;value_6;;;MVM;
+;refPressureObj;value_7;;;MVM;
+;refPressureObj;value_8;;;MVM;
+;refPressureObj;value_9;;;MVM;
+;refPressureObj;value_10;;;MVM;
+;refPressureObj;value_11;;;MVM;
+;refPressureObj;value_12;;;MVM;
+;refPressureObj;value_13;;;MVM;
+;refPressureObj;value_14;;;MVM;
+;refPressureObj;value_15;;;MVM;
+;refPressureObj;value_16;;;MVM;
+;refPressureObj;value_17;;;MVM;
+;refPressureObj;value_18;;;MVM;
+;refPressureObj;value_19;;;MVM;
+;refPressureObj;value_20;;;MVM;
+;densigyRefObj;unit;;;MVM;
+;densigyRefObj;type;;;MVM;
+;densigyRefObj;value_0;;NUMERIC;MVM;
+;densigyRefObj;value_1;;;MVM;
+;densigyRefObj;value_2;;;MVM;
+;densigyRefObj;value_3;;;MVM;
+;densigyRefObj;value_4;;;MVM;
+;densigyRefObj;value_5;;;MVM;
+;densigyRefObj;value_6;;;MVM;
+;densigyRefObj;value_7;;;MVM;
+;densigyRefObj;value_8;;;MVM;
+;densigyRefObj;value_9;;;MVM;
+;densigyRefObj;value_10;;;MVM;
+;densigyRefObj;value_11;;;MVM;
+;densigyRefObj;value_12;;;MVM;
+;densigyRefObj;value_13;;;MVM;
+;densigyRefObj;value_14;;;MVM;
+;densigyRefObj;value_15;;;MVM;
+;densigyRefObj;value_16;;;MVM;
+;densigyRefObj;value_17;;;MVM;
+;densigyRefObj;value_18;;;MVM;
+;densigyRefObj;value_19;;;MVM;
+;densigyRefObj;value_20;;;MVM;
+;refTemperatureObj;unit;;;MVM;
+;refTemperatureObj;type;;;MVM;
+;refTemperatureObj;value_0;;NUMERIC;MVM;
+;refTemperatureObj;value_1;;;MVM;
+;refTemperatureObj;value_2;;;MVM;
+;refTemperatureObj;value_3;;;MVM;
+;refTemperatureObj;value_4;;;MVM;
+;refTemperatureObj;value_5;;;MVM;
+;refTemperatureObj;value_6;;;MVM;
+;refTemperatureObj;value_7;;;MVM;
+;refTemperatureObj;value_8;;;MVM;
+;refTemperatureObj;value_9;;;MVM;
+;refTemperatureObj;value_10;;;MVM;
+;refTemperatureObj;value_11;;;MVM;
+;refTemperatureObj;value_12;;;MVM;
+;refTemperatureObj;value_13;;;MVM;
+;refTemperatureObj;value_14;;;MVM;
+;refTemperatureObj;value_15;;;MVM;
+;refTemperatureObj;value_16;;;MVM;
+;refTemperatureObj;value_17;;;MVM;
+;refTemperatureObj;value_18;;;MVM;
+;refTemperatureObj;value_19;;;MVM;
+;refTemperatureObj;value_20;;;MVM;
+;QvPartialSimObj;unit;;;MVM;
+;QvPartialSimObj;type;;;MVM;
+;QvPartialSimObj;value_0;;NUMERIC;MVM;
+;QvPartialSimObj;value_1;;;MVM;
+;QvPartialSimObj;value_2;;;MVM;
+;QvPartialSimObj;value_3;;;MVM;
+;QvPartialSimObj;value_4;;;MVM;
+;QvPartialSimObj;value_5;;;MVM;
+;QvPartialSimObj;value_6;;;MVM;
+;QvPartialSimObj;value_7;;;MVM;
+;QvPartialSimObj;value_8;;;MVM;
+;QvPartialSimObj;value_9;;;MVM;
+;QvPartialSimObj;value_10;;;MVM;
+;QvPartialSimObj;value_11;;;MVM;
+;QvPartialSimObj;value_12;;;MVM;
+;QvPartialSimObj;value_13;;;MVM;
+;QvPartialSimObj;value_14;;;MVM;
+;QvPartialSimObj;value_15;;;MVM;
+;QvPartialSimObj;value_16;;;MVM;
+;QvPartialSimObj;value_17;;;MVM;
+;QvPartialSimObj;value_18;;;MVM;
+;QvPartialSimObj;value_19;;;MVM;
+;QvPartialSimObj;value_20;;;MVM;
+;QnMaxDNObj;unit;;;MVM;
+;QnMaxDNObj;type;;;MVM;
+;QnMaxDNObj;value_0;;NUMERIC;MVM;
+;QnMaxDNObj;value_1;;;MVM;
+;QnMaxDNObj;value_2;;;MVM;
+;QnMaxDNObj;value_3;;;MVM;
+;QnMaxDNObj;value_4;;;MVM;
+;QnMaxDNObj;value_5;;;MVM;
+;QnMaxDNObj;value_6;;;MVM;
+;QnMaxDNObj;value_7;;;MVM;
+;QnMaxDNObj;value_8;;;MVM;
+;QnMaxDNObj;value_9;;;MVM;
+;QnMaxDNObj;value_10;;;MVM;
+;QnMaxDNObj;value_11;;;MVM;
+;QnMaxDNObj;value_12;;;MVM;
+;QnMaxDNObj;value_13;;;MVM;
+;QnMaxDNObj;value_14;;;MVM;
+;QnMaxDNObj;value_15;;;MVM;
+;QnMaxDNObj;value_16;;;MVM;
+;QnMaxDNObj;value_17;;;MVM;
+;QnMaxDNObj;value_18;;;MVM;
+;QnMaxDNObj;value_19;;;MVM;
+;QnMaxDNObj;value_20;;;MVM;
+;QmMaxDNObj;unit;;;MVM;
+;QmMaxDNObj;type;;;MVM;
+;QmMaxDNObj;value_0;;NUMERIC;MVM;
+;QmMaxDNObj;value_1;;;MVM;
+;QmMaxDNObj;value_2;;;MVM;
+;QmMaxDNObj;value_3;;;MVM;
+;QmMaxDNObj;value_4;;;MVM;
+;QmMaxDNObj;value_5;;;MVM;
+;QmMaxDNObj;value_6;;;MVM;
+;QmMaxDNObj;value_7;;;MVM;
+;QmMaxDNObj;value_8;;;MVM;
+;QmMaxDNObj;value_9;;;MVM;
+;QmMaxDNObj;value_10;;;MVM;
+;QmMaxDNObj;value_11;;;MVM;
+;QmMaxDNObj;value_12;;;MVM;
+;QmMaxDNObj;value_13;;;MVM;
+;QmMaxDNObj;value_14;;;MVM;
+;QmMaxDNObj;value_15;;;MVM;
+;QmMaxDNObj;value_16;;;MVM;
+;QmMaxDNObj;value_17;;;MVM;
+;QmMaxDNObj;value_18;;;MVM;
+;QmMaxDNObj;value_19;;;MVM;
+;QmMaxDNObj;value_20;;;MVM;
+;QpMaxDNObj;unit;;;MVM;
+;QpMaxDNObj;type;;;MVM;
+;QpMaxDNObj;value_0;;NUMERIC;MVM;
+;QpMaxDNObj;value_1;;;MVM;
+;QpMaxDNObj;value_2;;;MVM;
+;QpMaxDNObj;value_3;;;MVM;
+;QpMaxDNObj;value_4;;;MVM;
+;QpMaxDNObj;value_5;;;MVM;
+;QpMaxDNObj;value_6;;;MVM;
+;QpMaxDNObj;value_7;;;MVM;
+;QpMaxDNObj;value_8;;;MVM;
+;QpMaxDNObj;value_9;;;MVM;
+;QpMaxDNObj;value_10;;;MVM;
+;QpMaxDNObj;value_11;;;MVM;
+;QpMaxDNObj;value_12;;;MVM;
+;QpMaxDNObj;value_13;;;MVM;
+;QpMaxDNObj;value_14;;;MVM;
+;QpMaxDNObj;value_15;;;MVM;
+;QpMaxDNObj;value_16;;;MVM;
+;QpMaxDNObj;value_17;;;MVM;
+;QpMaxDNObj;value_18;;;MVM;
+;QpMaxDNObj;value_19;;;MVM;
+;QpMaxDNObj;value_20;;;MVM;
+;QnPartialMaxDNObj;unit;;;MVM;
+;QnPartialMaxDNObj;type;;;MVM;
+;QnPartialMaxDNObj;value_0;;NUMERIC;MVM;
+;QnPartialMaxDNObj;value_1;;;MVM;
+;QnPartialMaxDNObj;value_2;;;MVM;
+;QnPartialMaxDNObj;value_3;;;MVM;
+;QnPartialMaxDNObj;value_4;;;MVM;
+;QnPartialMaxDNObj;value_5;;;MVM;
+;QnPartialMaxDNObj;value_6;;;MVM;
+;QnPartialMaxDNObj;value_7;;;MVM;
+;QnPartialMaxDNObj;value_8;;;MVM;
+;QnPartialMaxDNObj;value_9;;;MVM;
+;QnPartialMaxDNObj;value_10;;;MVM;
+;QnPartialMaxDNObj;value_11;;;MVM;
+;QnPartialMaxDNObj;value_12;;;MVM;
+;QnPartialMaxDNObj;value_13;;;MVM;
+;QnPartialMaxDNObj;value_14;;;MVM;
+;QnPartialMaxDNObj;value_15;;;MVM;
+;QnPartialMaxDNObj;value_16;;;MVM;
+;QnPartialMaxDNObj;value_17;;;MVM;
+;QnPartialMaxDNObj;value_18;;;MVM;
+;QnPartialMaxDNObj;value_19;;;MVM;
+;QnPartialMaxDNObj;value_20;;;MVM;
+;QvPartialMaxDNObj;unit;;;MVM;
+;QvPartialMaxDNObj;type;;;MVM;
+;QvPartialMaxDNObj;value_0;;NUMERIC;MVM;
+;QvPartialMaxDNObj;value_1;;;MVM;
+;QvPartialMaxDNObj;value_2;;;MVM;
+;QvPartialMaxDNObj;value_3;;;MVM;
+;QvPartialMaxDNObj;value_4;;;MVM;
+;QvPartialMaxDNObj;value_5;;;MVM;
+;QvPartialMaxDNObj;value_6;;;MVM;
+;QvPartialMaxDNObj;value_7;;;MVM;
+;QvPartialMaxDNObj;value_8;;;MVM;
+;QvPartialMaxDNObj;value_9;;;MVM;
+;QvPartialMaxDNObj;value_10;;;MVM;
+;QvPartialMaxDNObj;value_11;;;MVM;
+;QvPartialMaxDNObj;value_12;;;MVM;
+;QvPartialMaxDNObj;value_13;;;MVM;
+;QvPartialMaxDNObj;value_14;;;MVM;
+;QvPartialMaxDNObj;value_15;;;MVM;
+;QvPartialMaxDNObj;value_16;;;MVM;
+;QvPartialMaxDNObj;value_17;;;MVM;
+;QvPartialMaxDNObj;value_18;;;MVM;
+;QvPartialMaxDNObj;value_19;;;MVM;
+;QvPartialMaxDNObj;value_20;;;MVM;
+;QnDampingTime;;;NUMERIC;MVM;
+;QpDampingTime;;;NUMERIC;MVM;
+;QnPartialDampingTime;;;NUMERIC;MVM;
+;QvPartialDampingTime;;;NUMERIC;MVM;
+;compressFactorS;;;NUMERIC;MVM;
+;compressFactorR;;;NUMERIC;MVM;
+;steamPwrrFR;;Steam Power calucaltion Forward and Reverse Switch;ENUMERATION;MVM;_PWR_FWD_REV_SW
+;activationStatus;;Activation Status;;ServicePort;
+;baudRate;;Service port baud rate.;NUMERIC;ServicePort;
+;QvObj;unit;;ENUMERATION;SVM;SVM_T_VOLUME_FLOW
+;QvObj;type;;;SVM;
+;QvObj;value_0;;NUMERIC;SVM;
+;QvObj;value_1;;;SVM;
+;QvObj;value_2;;;SVM;
+;QvObj;value_3;;;SVM;
+;QvObj;value_4;;;SVM;
+;QvObj;value_5;;;SVM;
+;QvObj;value_6;;;SVM;
+;QvObj;value_7;;;SVM;
+;QvObj;value_8;;;SVM;
+;QvObj;value_9;;;SVM;
+;QvObj;value_10;;;SVM;
+;QvObj;value_11;;;SVM;
+;QvObj;value_12;;;SVM;
+;QvObj;value_13;;;SVM;
+;QvObj;value_14;;;SVM;
+;QvObj;value_15;;;SVM;
+;QvObj;value_16;;;SVM;
+;QvObj;value_17;;;SVM;
+;QvObj;value_18;;;SVM;
+;QvObj;value_19;;;SVM;
+;QvObj;value_20;;;SVM;
+;QvRangeObj;unit;;ENUMERATION;SVM;SVM_T_VOLUME_FLOW
+;QvRangeObj;type;;;SVM;
+;QvRangeObj;value_0;;NUMERIC;SVM;
+;QvRangeObj;value_1;;NUMERIC;SVM;
+;QvRangeObj;value_2;;;SVM;
+;QvRangeObj;value_3;;;SVM;
+;QvRangeObj;value_4;;;SVM;
+;QvRangeObj;value_5;;;SVM;
+;QvRangeObj;value_6;;;SVM;
+;QvRangeObj;value_7;;;SVM;
+;QvRangeObj;value_8;;;SVM;
+;QvRangeObj;value_9;;;SVM;
+;QvRangeObj;value_10;;;SVM;
+;QvRangeObj;value_11;;;SVM;
+;QvRangeObj;value_12;;;SVM;
+;QvRangeObj;value_13;;;SVM;
+;QvRangeObj;value_14;;;SVM;
+;QvRangeObj;value_15;;;SVM;
+;QvRangeObj;value_16;;;SVM;
+;QvRangeObj;value_17;;;SVM;
+;QvRangeObj;value_18;;;SVM;
+;QvRangeObj;value_19;;;SVM;
+;QvRangeObj;value_20;;;SVM;
+;QvMaxDN;;;NUMERIC;SVM;
+;QvDampedObj;unit;;;SVM;
+;QvDampedObj;type;;;SVM;
+;QvDampedObj;value_0;;NUMERIC;SVM;
+;QvDampedObj;value_1;;;SVM;
+;QvDampedObj;value_2;;;SVM;
+;QvDampedObj;value_3;;;SVM;
+;QvDampedObj;value_4;;;SVM;
+;QvDampedObj;value_5;;;SVM;
+;QvDampedObj;value_6;;;SVM;
+;QvDampedObj;value_7;;;SVM;
+;QvDampedObj;value_8;;;SVM;
+;QvDampedObj;value_9;;;SVM;
+;QvDampedObj;value_10;;;SVM;
+;QvDampedObj;value_11;;;SVM;
+;QvDampedObj;value_12;;;SVM;
+;QvDampedObj;value_13;;;SVM;
+;QvDampedObj;value_14;;;SVM;
+;QvDampedObj;value_15;;;SVM;
+;QvDampedObj;value_16;;;SVM;
+;QvDampedObj;value_17;;;SVM;
+;QvDampedObj;value_18;;;SVM;
+;QvDampedObj;value_19;;;SVM;
+;QvDampedObj;value_20;;;SVM;
+;QvSimObj;unit;;ENUMERATION;SVM;SVM_T_VOLUME_FLOW
+;QvSimObj;type;;;SVM;
+;QvSimObj;value_0;;NUMERIC;SVM;
+;QvSimObj;value_1;;;SVM;
+;QvSimObj;value_2;;;SVM;
+;QvSimObj;value_3;;;SVM;
+;QvSimObj;value_4;;;SVM;
+;QvSimObj;value_5;;;SVM;
+;QvSimObj;value_6;;;SVM;
+;QvSimObj;value_7;;;SVM;
+;QvSimObj;value_8;;;SVM;
+;QvSimObj;value_9;;;SVM;
+;QvSimObj;value_10;;;SVM;
+;QvSimObj;value_11;;;SVM;
+;QvSimObj;value_12;;;SVM;
+;QvSimObj;value_13;;;SVM;
+;QvSimObj;value_14;;;SVM;
+;QvSimObj;value_15;;;SVM;
+;QvSimObj;value_16;;;SVM;
+;QvSimObj;value_17;;;SVM;
+;QvSimObj;value_18;;;SVM;
+;QvSimObj;value_19;;;SVM;
+;QvSimObj;value_20;;;SVM;
+;QvDampingTime;;;NUMERIC;SVM;
+;QvPercentage;;;NUMERIC;SVM;
+;QvPerSim;;;NUMERIC;SVM;
+;KLiquidFreq;;;NUMERIC;SVM;
+;KLiquid;;;NUMERIC;SVM;
+;KGas;;;NUMERIC;SVM;
+;KGasFreq;;;NUMERIC;SVM;
+;KSET;;;ENUMERATION;SVM;_KSET
+;KAverageGas;;;NUMERIC;SVM;
+;KAverageLiquid;;;NUMERIC;SVM;
+;QvAlmRange;loLim;;NUMERIC;SVM;
+;QvAlmRange;hiLim;;NUMERIC;SVM;
+;KLinearisation;;;ENUMERATION;SVM;_KLINEARATION
+;QvLowCutOff;;;NUMERIC;SVM;
+;QDPercentage;;;NUMERIC;SVM;
+;Re;;Renold Number;NUMERIC;SVM;
+;dynViscosity;;Dynamic Viscosity;NUMERIC;SVM;
+;QvMaxDNObj;unit;;;SVM;
+;QvMaxDNObj;type;;;SVM;
+;QvMaxDNObj;value_0;;NUMERIC;SVM;
+;QvMaxDNObj;value_1;;;SVM;
+;QvMaxDNObj;value_2;;;SVM;
+;QvMaxDNObj;value_3;;;SVM;
+;QvMaxDNObj;value_4;;;SVM;
+;QvMaxDNObj;value_5;;;SVM;
+;QvMaxDNObj;value_6;;;SVM;
+;QvMaxDNObj;value_7;;;SVM;
+;QvMaxDNObj;value_8;;;SVM;
+;QvMaxDNObj;value_9;;;SVM;
+;QvMaxDNObj;value_10;;;SVM;
+;QvMaxDNObj;value_11;;;SVM;
+;QvMaxDNObj;value_12;;;SVM;
+;QvMaxDNObj;value_13;;;SVM;
+;QvMaxDNObj;value_14;;;SVM;
+;QvMaxDNObj;value_15;;;SVM;
+;QvMaxDNObj;value_16;;;SVM;
+;QvMaxDNObj;value_17;;;SVM;
+;QvMaxDNObj;value_18;;;SVM;
+;QvMaxDNObj;value_19;;;SVM;
+;QvMaxDNObj;value_20;;;SVM;
+;totDispQv;value;totvalue;NUMERIC;Totalizer;
+;totDispQv;units;totunit;ENUMERATION;Totalizer;TTotalizerUnitIDXVolume
+;totDispQv;unitsType;tot unittype;ENUMERATION;Totalizer;TTotalizerUnitsTypeIDX
+;totDispQv;simpleValue;;NUMERIC;Totalizer;
+;totDispQn;value;;NUMERIC;Totalizer;
+;totDispQn;units;;ENUMERATION;Totalizer;TTotalizerUnitIDXVolume
+;totDispQn;unitsType;;ENUMERATION;Totalizer;TTotalizerUnitsTypeIDX
+;totDispQn;simpleValue;;NUMERIC;Totalizer;
+;StartAllTotalizr;;Start All Totalizer;ACTION;Totalizer;
+;StartQvTotalizer;;Start Qv Totalizer;ACTION;Totalizer;
+;StartQnTotalizer;;Start Qn Totalizer;ACTION;Totalizer;
+;StartQmTotalizer;;Start Qm Totalizer;ACTION;Totalizer;
+;StartEnergyTotalizer;;Start Energy Totalizer;ACTION;Totalizer;
+;StartQvPartialTotalizer;;Start QvPartial Totalizer;ACTION;Totalizer;
+;StartQnPartialTotalizer;;Start Qn Totalizer;ACTION;Totalizer;
+;StopAllTotalizer;;Stop All Totalizer;ACTION;Totalizer;
+;StopQvTotalizer;;Stop Qv Totalizer;ACTION;Totalizer;
+;StopQnTotalizer;;Stop Qn Totalizer;ACTION;Totalizer;
+;StopQmTotalizer;;Stop Qm Totalizer;ACTION;Totalizer;
+;StopEnergyTotalizer;;Stop Energy Totalizer;ACTION;Totalizer;
+;StopQvPartialTotalizer;;Stop Qv Partial Totalizer;ACTION;Totalizer;
+;StopQnPartialtotalizer;;Stop QnPartial Totalizer;ACTION;Totalizer;
+;ResetAllTotalizer;;Reset All Totalizer;ACTION;Totalizer;
+;ResetQvTotalizer;;Reset Qv Totalizer;ACTION;Totalizer;
+;ResetQnTotalizer;;Reset Qn Totalizer;ACTION;Totalizer;
+;ResetQmTotalizer;;Reset Qm Totalizer;ACTION;Totalizer;
+;ResetEnergyTotalizer;;Reset Energy Totalizer;ACTION;Totalizer;
+;ResetQvPartialTotalizer;;Reset QvPartial Totalizer;ACTION;Totalizer;
+;ResetQnPartialTotalizer;;Reset QnPartial Totalizer;ACTION;Totalizer;
+;PresetAllTotalizer;;Preset ALL Totalizer;ACTION;Totalizer;
+;PresetQvTotalizer;;Preset Qv Totalizer;ACTION;Totalizer;
+;PresetQnTotalizer;;Preset Qn Totalizer;ACTION;Totalizer;
+;PresetQmTotalizer;;Preset Qm Totalizer;ACTION;Totalizer;
+;PresetEnergyTotalizer;;Preset Energy Totalizer;ACTION;Totalizer;
+;PresetQvPartialTotalizer;;Preset QvPartial Totalizer;ACTION;Totalizer;
+;PresetQnPartialTotalizer;;Preset QnPartial Totalizer;ACTION;Totalizer;
+;totQvPresetValue;;Qv Preset Value Input;NUMERIC;Totalizer;
+;totQnPresetValue;;Qn Preset Value Input;NUMERIC;Totalizer;
+;totQmPresetValue;;Qm Preset Value Input;NUMERIC;Totalizer;
+;totEnergyPresetValue;;Energy Preset Value Input;NUMERIC;Totalizer;
+;totQvPartialPresetValue;;Qv  Partial Preset Value Input;NUMERIC;Totalizer;
+;totQnPartialPresetValue;;Qn Partial Preset Value Input;NUMERIC;Totalizer;
+;totDispQm;value;;NUMERIC;Totalizer;
+;totDispQm;units;;ENUMERATION;Totalizer;TTotalizerUnitIDXMass
+;totDispQm;unitsType;;ENUMERATION;Totalizer;TTotalizerUnitsTypeIDX
+;totDispQm;simpleValue;;NUMERIC;Totalizer;
+;totDispEnergy;value;;NUMERIC;Totalizer;
+;totDispEnergy;units;;ENUMERATION;Totalizer;TTotalizerUnitIDXEnergy
+;totDispEnergy;unitsType;;ENUMERATION;Totalizer;TTotalizerUnitsTypeIDX
+;totDispEnergy;simpleValue;;NUMERIC;Totalizer;
+;totDispQvPartial;value;;NUMERIC;Totalizer;
+;totDispQvPartial;units;;ENUMERATION;Totalizer;TTotalizerUnitIDXVolume
+;totDispQvPartial;unitsType;;ENUMERATION;Totalizer;TTotalizerUnitsTypeIDX
+;totDispQvPartial;simpleValue;;NUMERIC;Totalizer;
+;totDispQnPartial;value;;NUMERIC;Totalizer;
+;totDispQnPartial;units;;ENUMERATION;Totalizer;TTotalizerUnitIDXVolume
+;totDispQnPartial;unitsType;;ENUMERATION;Totalizer;TTotalizerUnitsTypeIDX
+;totDispQnPartial;simpleValue;;NUMERIC;Totalizer;
+;totQvUnit;unitsCode;;ENUMERATION;Totalizer;TTotalizerUnitIDXVolume
+;totQvUnit;unitsType;;;Totalizer;
+;totQmUnit;unitsCode;;ENUMERATION;Totalizer;TTotalizerUnitIDXMass
+;totQmUnit;unitsType;;;Totalizer;
+;totEnergyUnit;unitsCode;;ENUMERATION;Totalizer;TTotalizerUnitIDXEnergy
+;totEnergyUnit;unitsType;;;Totalizer;
+;totQnUnit;unitsCode;;ENUMERATION;Totalizer;TTotalizerUnitIDXVolume
+;totQnUnit;unitsType;;;Totalizer;
+;totQvOverrollCnt;;;NUMERIC;Totalizer;
+;totQnOverrollCnt;;;NUMERIC;Totalizer;
+;totQmOverrollCnt;;;NUMERIC;Totalizer;
+;totEnergyOverrollCnt;;;NUMERIC;Totalizer;
+;totQvPartialOverrollCnt;;;NUMERIC;Totalizer;
+;totQnPartialOverrollCnt;;;NUMERIC;Totalizer;
+;totOverrollBase;;;NUMERIC;Totalizer;
+;totQvFloatAccUserUnit;overRollCounter;;NUMERIC;Totalizer;
+;totQvFloatAccUserUnit;accFloatValue;;NUMERIC;Totalizer;
+;totOverrollBase;;;NUMERIC;Totalizer;
+;totQvFloatUserUnit;;;NUMERIC;Totalizer;
+;totQnFloatUserUnit;;;NUMERIC;Totalizer;
+;totQmFloatUserUnit;;;NUMERIC;Totalizer;
+;totEnergyFloatUserUnit;;;NUMERIC;Totalizer;
+;totQvPartialFloatUserUnit;;;NUMERIC;Totalizer;
+;totQnPartialFloatUserUnit;;;NUMERIC;Totalizer;
+;defaultPasswordHash;;;NUMERIC;WebSrv;
+;sessionTimeoutInMinutes;;;NUMERIC;WebSrv;
+;resetUserCredentials;;reset user credentials;ACTION;WebSrv;
+reserved;definition;name;value;subsystem;briefDesciption
+;_AI_SELECT;EXT_TEMPERATURE;0;AI;
+;_AI_SELECT;PRESSURE;1;AI;
+;_AI_SELECT;PRESSURE_ABS;2;AI;
+;_AI_SELECT;DENSITY;3;AI;
+;_AI_SELECT;GAS_CONTENT;4;AI;
+;_AI_SELECT;EXTERNAL_OUTPUT_CUTOFF;5;AI;
+;_AI_SELECT;WITHOUT;6;AI;
+;_AI_SELECT;INTER_TEMPERATURE;7;AI;
+;_EXTERNAL_CUT_OFF_OPTION;EXTERNAL_CUT_OFF_4MA;0;AI;
+;_EXTERNAL_CUT_OFF_OPTION;EXTERNAL_CUT_OFF_8MA;1;AI;
+;_EXTERNAL_CUT_OFF_OPTION;EXTERNAL_CUT_OFF_12MA;2;AI;
+;THighSecurityEnableFormats;HIGH_SECURITY_DISABLED;0;ARM;Service level login via password
+;THighSecurityEnableFormats;HIGH_SECURITY_ENABLED;1;ARM;Service level login via hasher/pin
+;TClientEnableFormats;HART_ENABLED;0;ARM;HART Client may login with write access
+;TClientEnableFormats;HMI_ENABLED;1;ARM;HMI Client may log in with write access
+;TClientEnableFormats;HART_AND_HMI_ENABLED;2;ARM;HART and HMI Client may log in with write access
+;TClientLoginFormats;NO_USER;0;ARM;No user logged in
+;TClientLoginFormats;STANDARD_USER;1;ARM;Standard user logged in
+;TClientLoginFormats;ADVANCED_USER;2;ARM;Advanced user logged in
+;TClientLoginFormats;SERVICE_USER;3;ARM;Service user logged in
+;TClientLoginFormats;CUSTODY_USER;4;ARM;Custody user logged in
+;TCustodySwitchActiveFormats;CUSTODY_SWITCH_INACTIVE;0;ARM;Custody (HW) switch disengaged
+;TCustodySwitchActiveFormats;CUSTODY_SWITCH_ACTIVE;1;ARM;Custody (HW) switch engaged
+;TReadOnlySwitchActiveFormats;READ_ONLY_SWITCH_INACTIVE;0;ARM;Read-only (HW) switch disengaged
+;TReadOnlySwitchActiveFormats;READ_ONLY_SWITCH_ACTIVE;1;ARM;Read-only (HW) switch engaged
+;_CDT_SIMULATION_MODE;SIMULATION_CB_OFF;0;CDT;Sim off
+;_CDT_SIMULATION_MODE;SIMULATION_CB_QV_VALUE;1;CDT;Qv Val
+;_CDT_SIMULATION_MODE;SIMULATION_CB_QV_PERCENTAGE;2;CDT;Qv Percentage
+;_CDT_SIMULATION_MODE;SIMULATION_CB_QM_VALUE;3;CDT;Qm Val
+;_CDT_SIMULATION_MODE;SIMULATION_CB_QM_PERCENTAGE;4;CDT;Qm Percentage
+;_CDT_SIMULATION_MODE;SIMULATION_CB_MEDIUM_TEMP;5;CDT;Medium Temp
+;_CDT_SIMULATION_MODE;SIMULATION_CB_AMBIENT_TEMP;6;CDT;Ambient Temp
+;_CDT_SIMULATION_MODE;SIMULATION_CB_DO_FREQ;8;CDT;DO Freq
+;_CDT_SIMULATION_MODE;SIMULATION_CB_DO_LOGIC;9;CDT;DO Logic
+;_CDT_SIMULATION_MODE;SIMULATION_CB_DO_PULSE;10;CDT;DO Puls
+;_CDT_SIMULATION_MODE;SIMULATION_CB_AI_VALUE;12;CDT;AI Val
+;_CDT_SIMULATION_MODE;SIMULATION_FE_SENSOR_FREQ;13;CDT;Sensor Freq
+;_CDT_FORCE_REPLACE;FORCE_REPLACE_NONE;0;CDT;NV replace is not enabled
+;_CDT_FORCE_REPLACE;FORCE_REPLACE_FE_TO_CB_COMMON_ONLY;1;CDT;NV replace from FE to CB for common data
+;_CDT_FORCE_REPLACE;FORCE_REPLACE_FE_TO_CB;2;CDT;NV replace from FE to CB for all data
+;_CDT_FORCE_REPLACE;FORCE_REPLACE_CB_TO_FE;3;CDT;NV replace from CB to FE for all data
+;_SENSOR_CALIBRATION_STATUS;SENSOR_IS_CALIBRATED;0;CDT;Piezo sensor is calibarted.
+;_SENSOR_CALIBRATION_STATUS;SENSOR_IS_UNCALIBRATED;1;CDT;Piezo sensor is not calibarted.
+;_TEMP_SENSOR_TYPE;TEMP_PT100;0;CDT;PT100 temperature sensor
+;_TEMP_SENSOR_TYPE;TEMP_PT1000;1;CDT;PT1000 temperature sensor
+;_TEMP_SENSOR_TYPE;TEMP_NONE;2;CDT;
+;_T_FREQUENCY;HERTZ;1;CDT;Hz
+;_T_TEMPERATURE;KELVIN;1;CDT;kelvin
+;_T_TEMPERATURE;CELSIUS;2;CDT;Celsius
+;_T_TEMPERATURE;FAHRENHEIT;3;CDT;Fahrenheit
+;_TSELECTION;T_PRESET;0;CDT;
+;_TSELECTION;T_SENSOR;1;CDT;
+;_TSELECTION;T_AI;2;CDT;
+;_TSELECTION;T_HART;3;CDT;
+;_OPERATING_MODE;LIQUID_ACTUAL_VOLUME;0;CDT;Liquid volume
+;_OPERATING_MODE;LIQUID_NORMAL_VOLUME;1;CDT;Liquid normal volume
+;_OPERATING_MODE;LIQUID_MASS;2;CDT;Liquid mass
+;_OPERATING_MODE;LIQUID_POWER;3;CDT;Liquid power
+;_OPERATING_MODE;GAS_ACTUAL_VOLUME;4;CDT;Gas actual volume
+;_OPERATING_MODE;GAS_STANDARD_VOLUME;5;CDT;Gas standard volume
+;_OPERATING_MODE;GAS_MASS;6;CDT;Gas mass
+;_OPERATING_MODE;GAS_POWER;7;CDT;Gas power
+;_OPERATING_MODE;BIOGAS_ACTUAL_VOLUME;8;CDT;Biogas actual volume
+;_OPERATING_MODE;BIOGAS_STANDARD_VOLUME;9;CDT;Biogas standard volume
+;_OPERATING_MODE;STEAM_ACTUAL_VOLUME;10;CDT;Steam actual volume
+;_OPERATING_MODE;STEAM_MASS;11;CDT;Steam mass
+;_OPERATING_MODE;STEAM_POWER;12;CDT;Steam power
+;_CONVERTER_TYPE;SWIREL;0;CDT;
+;_CONVERTER_TYPE;VORTEX;1;CDT;
+;_SWIRL_SIZE;Swirl15mm;0;CDT;
+;_SWIRL_SIZE;Swirl20mm;1;CDT;
+;_SWIRL_SIZE;Swirl25mm;2;CDT;
+;_SWIRL_SIZE;Swirl32mm;3;CDT;
+;_SWIRL_SIZE;Swirl40mm;4;CDT;
+;_SWIRL_SIZE;Swirl50mm;5;CDT;
+;_SWIRL_SIZE;Swirl80mm;6;CDT;
+;_SWIRL_SIZE;Swirl100mm;7;CDT;
+;_SWIRL_SIZE;Swirl150mm;8;CDT;
+;_SWIRL_SIZE;Swirl200mm;9;CDT;
+;_SWIRL_SIZE;Swirl300mm;10;CDT;
+;_SWIRL_SIZE;Swirl400mm;11;CDT;
+;_VORTEX_SIZE;VotrexD15mm;0;CDT;
+;_VORTEX_SIZE;VotrexD25mm;1;CDT;
+;_VORTEX_SIZE;VotrexD40mm;2;CDT;
+;_VORTEX_SIZE;VotrexD50mm;3;CDT;
+;_VORTEX_SIZE;VotrexD80mm;4;CDT;
+;_VORTEX_SIZE;VotrexD100mm;5;CDT;
+;_VORTEX_SIZE;VotrexD150mm;6;CDT;
+;_VORTEX_SIZE;VotrexD200mm;7;CDT;
+;_VORTEX_SIZE;VotrexD250mm;8;CDT;
+;_VORTEX_SIZE;VotrexD300mm;9;CDT;
+;_VORTEX_SIZE;VotrexA15mm;10;CDT;
+;_VORTEX_SIZE;VotrexA25mm;11;CDT;
+;_VORTEX_SIZE;VotrexA40mm;12;CDT;
+;_VORTEX_SIZE;VotrexA50mm;13;CDT;
+;_VORTEX_SIZE;VotrexA80mm;14;CDT;
+;_VORTEX_SIZE;VotrexA100mm;15;CDT;
+;_VORTEX_SIZE;VotrexA150mm;16;CDT;
+;_VORTEX_SIZE;VotrexA200mm;17;CDT;
+;_VORTEX_SIZE;VotrexA250mm;18;CDT;
+;_VORTEX_SIZE;VotrexA300mm;19;CDT;
+;_STATUS;STATUS_OFF;0;CDT;
+;_STATUS;STATUS_ON;1;CDT;
+;DENSITY_SELECTION_TABLE;EXT_DENSITY;0;CDT;
+;DENSITY_SELECTION_TABLE;CALCULATION_FROM_TP;1;CDT;
+;DENSITY_SELECTION_TABLE;CALCULATION_FROM_T;2;CDT;
+;DENSITY_SELECTION_TABLE;CALCULATION_FROM_P;3;CDT;
+;GAIN_CONTROL_TAB;GAIN_CONTROL_1TIMES;1;CDT;
+;GAIN_CONTROL_TAB;GAIN_CONTROL_2TIMES;2;CDT;
+;GAIN_CONTROL_TAB;GAIN_CONTROL_4TIMES;4;CDT;
+;GAIN_CONTROL_TAB;GAIN_CONTROL_8TIMES;8;CDT;
+;REACTION_INPUT_FAIL;PRESET;0;CDT;
+;REACTION_INPUT_FAIL;LAST_GOOD_VALUE;1;CDT;
+;_FE_OUT_FILTER_EXT_ALG_TABLE;EXT_ALG_NO_FILTER;0;CDT;
+;_FE_OUT_FILTER_EXT_ALG_TABLE;EXT_ALG_PRESET_1;1;CDT;
+;_FE_OUT_FILTER_EXT_ALG_TABLE;EXT_ALG_PRESET_2;2;CDT;
+;_FE_OUT_FILTER_EXT_ALG_TABLE;EXT_ALG_SELF_CUSTOM;3;CDT;
+;outputAlarmCodes;CONDITION_PV_SENSOR_FAILURE;0;Diag;
+;outputAlarmCodes;CONDITION_SV_SENSOR_FAILURE;1;Diag;
+;outputAlarmCodes;CONDITION_TV_SENSOR_FAILURE;2;Diag;
+;outputAlarmCodes;CONDITION_FV_SENSOR_FAILURE;3;Diag;
+;outputAlarmCodes;CONDITION_PV_SENSOR_OUT_LIMS;4;Diag;
+;outputAlarmCodes;CONDITION_SV_SENSOR_OUT_LIMS;5;Diag;
+;outputAlarmCodes;CONDITION_TV_SENSOR_OUT_LIMS;6;Diag;
+;outputAlarmCodes;CONDITION_FV_SENSOR_OUT_LIMS;7;Diag;
+;outputAlarmCodes;CONDITION_PV_SENSOR_OUT_RANGE;10;Diag;
+;outputAlarmCodes;CONDITION_SV_SENSOR_OUT_RANGE;11;Diag;
+;outputAlarmCodes;CONDITION_TV_SENSOR_OUT_RANGE;12;Diag;
+;outputAlarmCodes;CONDITION_FV_SENSOR_OUT_RANGE;13;Diag;
+;outputAlarmCodes;CONDITION_FE_BOARD_FAILURE;16;Diag;
+;outputAlarmCodes;CONDITION_FE_NV_FAILURE;17;Diag;
+;outputAlarmCodes;CONDITION_FE_NV_WARNING;18;Diag;
+;outputAlarmCodes;CONDITION_FE_BOARD_NOT_DETECTED;19;Diag;
+;outputAlarmCodes;CONDITION_FE_BOARD_COMM_ERROR;20;Diag;
+;outputAlarmCodes;CONDITION_CB_NV_FAILURE;23;Diag;
+;outputAlarmCodes;CONDITION_CB_NV_WARNING;24;Diag;
+;outputAlarmCodes;CONDITION_NV_STORAGE_ACTIVE;25;Diag;
+;outputAlarmCodes;CONDITION_NV_CONCISTENCY_CHECK;26;Diag;
+;outputAlarmCodes;CONDITION_STEAM_TYPE_MISMATCH;30;Diag;
+;outputAlarmCodes;CONDITION_MAINTENANCE_WARNING;31;Diag;
+;outputAlarmCodes;CONDITION_CB_INSUF_INPUT_VOLTAGE;32;Diag;
+;outputAlarmCodes;CONDITION_AMBIENT_TEMP_REACH_TMIN;33;Diag;
+;outputAlarmCodes;CONDITION_AMBIENT_TEMP_REACH_TMAX;34;Diag;
+;outputAlarmCodes;CONDITION_LOW_FLOWRATE_CUTOFF;35;Diag;
+;outputAlarmCodes;CONDITION_PROCESS_FLOWRATE_MORE_THAN_103;36;Diag;
+;outputAlarmCodes;CONDITION_DATA_SIMU_WARNING;37;Diag;
+;outputAlarmCodes;CONDITION_ALARM_SIMU_WARNING;38;Diag;
+;outputAlarmCodes;CONDITION_NV_REPLACE_WARN;43;Diag;
+;outputAlarmCodes;CONDITION_FE_RAM_FAILURE;44;Diag;
+;outputAlarmCodes;CONDITION_TOT_COUNTER_STOP;45;Diag;
+;outputAlarmCodes;CONDITION_NO_HART_BURST_IN;47;Diag;
+;simulationStatusCodes;SIMULATION_DISABLED;0;Diag;
+;simulationStatusCodes;SIMULATION_ENABLED;1;Diag;
+;simulationStatusCodes;SIMULATION_ENABLED_OUTPUT;2;Diag;
+;TOutputMode1Formats;DO1_NONE;0;DIGITALOUTPUT;Hardware output1 is disabled
+;TOutputMode1Formats;DO1_LOGIC;1;DIGITALOUTPUT;Hardware output1 logic signal
+;TOutputMode1Formats;DO1_PULSE;2;DIGITALOUTPUT;Hardware output1 pulse signal
+;TOutputMode1Formats;DO1_FREQUENCY;3;DIGITALOUTPUT;Hardware output1 frequency signal
+;TSimulationEnabledFormat;SIMU_DISABLED;0;DIGITALOUTPUT;Output simulation is disabled
+;TSimulationEnabledFormat;SIMU_ENABLED;1;DIGITALOUTPUT;Output simulation is enabled
+;TLogicSignalSourceFormats;NO_LOGIC_SOURCE;0;DIGITALOUTPUT;No source selected for logic output
+;TLogicSignalSourceFormats;DIGITAL_OUTPUT_ALARM;1;DIGITALOUTPUT;Dig out alarm signal selected for logic output
+;TLogicActiveStateFormats;ACTIVE_HIGH;0;DIGITALOUTPUT;Logic output Active State is high
+;TLogicActiveStateFormats;ACTIVE_LOW;1;DIGITALOUTPUT;Logic output Active State is low
+;TOutputLogicFormat;LOGIC_LOW;0;DIGITALOUTPUT;Hardware logic output is low
+;TOutputLogicFormat;LOGIC_HIGH;1;DIGITALOUTPUT;Hardware logic output is high
+;TLogicSimulationCommandFormats;COMMAND_OFF;0;DIGITALOUTPUT;Simulate logic OFF
+;TLogicSimulationCommandFormats;COMMAND_ON;1;DIGITALOUTPUT;Simulate logic ON
+;E_DIG_OUT_ALARM_BEHAVIOUR;ALARM_BEHAVIOUR_OK;0;DIGITALOUTPUT;Dig out alarm logic OFF
+;E_DIG_OUT_ALARM_BEHAVIOUR;ALARM_BEHAVIOUR_FAIL_LOGIC_OUT_1;1;DIGITALOUTPUT;Dig out alarm logic ON (OP1)
+;T_ALARM_STATUS;ALARM_DISABLE;0;DIGITALOUTPUT;
+;T_ALARM_STATUS;ALARM_ENABLE;1;DIGITALOUTPUT;
+;T_FUNCTION_STATUS;FUNCTION_ENABLE;1;DIGITALOUTPUT;
+;T_FUNCTION_STATUS;FUNCTION_DISABLE;0;DIGITALOUTPUT;
+;SwWriteProtectionTable;WRITE_PROTECTION_OFF;0;ElettronicServices;
+;SwWriteProtectionTable;WRITE_PROTECTION_ON;1;ElettronicServices;
+;TEMPERATURE;KELVIN;1;ElettronicServices;Kevin
+;TEMPERATURE;CELSIUS;2;ElettronicServices;Celsius
+;TEMPERATURE;FAHRENHEIT;3;ElettronicServices;F
+;_AUTOZERO_STATUS;STATUS_COMPLETED;0;ElettronicServices;
+;_AUTOZERO_STATUS;STATUS_UNCOMPLETED;1;ElettronicServices;
+;_AUTOZERO_STATUS;STATUS_FAIL;2;ElettronicServices;
+;_AUTOZERO_STATUS;STATUS_NOT_START;3;ElettronicServices;
+;TABLE_LCD_LIGHT_MODE;LIGHT_OFF;0;ElettronicServices;HMI LCD light turn off
+;TABLE_LCD_LIGHT_MODE;LIGHT_ON;1;ElettronicServices;HMI LCD light turn on
+;TABLE_LCD_LIGHT_MODE;LIGHT_DYNAMIC;2;ElettronicServices;HMI LCD light auto adjust
+;TABLE_BLE_SWITCH_2;BLE_TOOTH_OFF;0;ElettronicServices;HMI bluetooth off
+;TABLE_BLE_SWITCH_2;BLE_TOOTH_ON;5;ElettronicServices;HMI bluetooth on
+;E_SelectedMainProtocol;INVALID_PROTOCOL;0;ETH;Invalid protocol
+;E_SelectedMainProtocol;ETHERNETIP_PROTOCOL;1;ETH;EtherNet/IP is selected
+;E_SelectedMainProtocol;PROFINETIO_PROTOCOL;2;ETH;PROFINET IO is selected
+;E_AutoNegotiate;AUTO_NEGOTIATE_UNKNOWN;0;ETH;Link Auto-Negotiation is unknown
+;E_AutoNegotiate;AUTO_NEGOTIATE_DISABLED;1;ETH;Link Auto-Negotiation is disabled
+;E_AutoNegotiate;AUTO_NEGOTIATE_ENABLED;2;ETH;Link Auto-Negotiation is enabled
+;E_PortSpeed;PORT_SPEED_UNKNOWN;0;ETH;Speed on posrt is unknown
+;E_PortSpeed;PORT_SPEED_10;1;ETH;Speed on port of up to 10 Mbits/s
+;E_PortSpeed;PORT_SPEED_100;2;ETH;Speed on port of up to 100 Mbits/s
+;E_PortSpeed;PORT_SPEED_1000;3;ETH;Speed on port of up to 1000 Mbits/s
+;E_DuplexMode;UNKNOWN_DUPLEX;0;ETH;Unknown duplex
+;E_DuplexMode;HALF_DUPLEX;1;ETH;Half duplex
+;E_DuplexMode;FULL_DUPLEX;2;ETH;Full duplex
+;E_UseDhcp;DHCP_STATE_DISABLED;0;ETH;DHCP is disabled and static IP settings are used
+;E_UseDhcp;DHCP_STATE_ENABLED;1;ETH;DHCP is enabled
+;E_AccessStateFull;FULL_ACCESS_INVALID;0;ETH;Access is undefined
+;E_AccessStateFull;FULL_ACCESS_DISABLED;1;ETH;Access is disabled
+;E_AccessStateFull;FULL_ACCESS_UNSECURED_READ_ONLY;2;ETH;Access is unsecured with read only permission
+;E_AccessStateFull;FULL_ACCESS_UNSECURED_READ_WRITE;3;ETH;Access is unsecured with read and write permission
+;E_AccessStateFull;FULL_ACCESS_SECURED_READ_ONLY;4;ETH;Access is secured with read only permission
+;E_AccessStateFull;FULL_ACCESS_SECURED_READ_WRITE;5;ETH;Access is secured with read and write permission
+;E_AccessStateUnsecured;UNSECURED_ACCESS_INVALID;0;ETH;Access is undefined
+;E_AccessStateUnsecured;UNSECURED_ACCESS_DISABLED;1;ETH;Access is disabled
+;E_AccessStateUnsecured;UNSECURED_ACCESS_UNSECURED_READ_ONLY;2;ETH;Access is unsecured with read only permission
+;E_AccessStateUnsecured;UNSECURED_ACCESS_UNSECURED_READ_WRITE;3;ETH;Access is unsecured with read and write permission
+;E_AccessStateSecured;SECURED_ACCESS_INVALID;0;ETH;Access is undefined
+;E_AccessStateSecured;SECURED_ACCESS_DISABLED;1;ETH;Access is disabled
+;E_AccessStateSecured;SECURED_ACCESS_SECURED_READ_ONLY;4;ETH;Access is secured with read only permission
+;E_AccessStateSecured;SECURED_ACCESS_SECURED_READ_WRITE;5;ETH;Access is secured with read and write permission
+
+;HartRevisionTable;HART_REVISION_5;5;Hart;
+;HartRevisionTable;HART_REVISION_7;7;Hart;
+;FindDeviceSwitchTable;FIND_DEVICE_DISABLED;0;Hart;
+;FindDeviceSwitchTable;FIND_DEVICE_ONE_TIME;1;Hart;
+;FindDeviceSwitchTable;FIND_DEVICE_CONTINUOUS;2;Hart;
+;lockDeviceSelectionTable;LOCK_DEVICE_UNLOCKED;0;Hart;unlocked, funciton disabled
+;lockDeviceSelectionTable;LOCK_DEVICE_TEMPORARY;1;Hart;i.e. device reset or power loss releases the lock
+;lockDeviceSelectionTable;LOCK_DEVICE_PERMANENT;2;Hart;i.e. device reset or power loss does not affect the lock
+;lockDeviceSelectionTable;LOCK_DEVICE_ALL;3;Hart;no changes in the device configuration, by any master is allowed
+;T_HART_SELECTION;SEC_EXT_TEMPERATURE;0;Hart;Select the burst in Tx as Select the burst in Tx as Temperature
+;T_HART_SELECTION;SEC_PRESSURE;1;Hart;Select the burst in Tx as Pressure
+;T_HART_SELECTION;SEC_PRESSURE_ABS;2;Hart;Select the burst in Tx as ABS Pressure
+;T_HART_SELECTION;SEC_GAS_CONTENT;3;Hart;Select the burst in Tx Gas Content?
+;T_HART_SELECTION;SEC_DENSITY;4;Hart;Select the burst in Tx Density
+;T_HART_SELECTION;SEC_WITHOUT;5;Hart;
+;T_HART_SELECTION;SEC_INTER_TEMPERATURE;6;Hart;
+;_LANGUAGE;LANGUAGE_ENGLISH;0;HMI;English
+;_LANGUAGE;LANGUAGE_GERMAN;1;HMI;German
+;_LANGUAGE;LANGUAGE_FRENCH;2;HMI;French
+;_LANGUAGE;LANGUAGE_SPANISH;3;HMI;Spanish
+;_LANGUAGE;LANGUAGE_ITALIAN;4;HMI;Italian
+;_LANGUAGE;LANGUAGE_DUTCH;5;HMI;Dutch
+;_LANGUAGE;LANGUAGE_DANISH;6;HMI;Danish
+;_LANGUAGE;LANGUAGE_SWEDISH;7;HMI;Swedish
+;_LANGUAGE;LANGUAGE_FINNISH;8;HMI;Finnish
+;_LANGUAGE;LANGUAGE_POLISH;9;HMI;Polish
+;_LANGUAGE;LANGUAGE_RUSSIAN;10;HMI;Russian
+;_LANGUAGE;LANGUAGE_CHINESE;11;HMI;Chinese
+;_LANGUAGE;LANGUAGE_JAPANESE;12;HMI;Japanese
+;_LANGUAGE;LANGUAGE_TURKISH;13;HMI;Turkish
+;_LANGUAGE;LANGUAGE_PORTUGUESE;14;HMI;Portuguese
+;_LANGUAGE;LANGUAGE_NOT_DEFINED;20;HMI;
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_1;0;HMI;1st signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_2;1;HMI;2nd signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_3;2;HMI;3rd signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_4;3;HMI;4th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_5;4;HMI;5th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_6;5;HMI;6th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_7;6;HMI;7th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_8;7;HMI;8th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_9;8;HMI;9th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_10;9;HMI;10th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_11;10;HMI;11th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_12;11;HMI;12th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_13;12;HMI;13th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_14;13;HMI;14th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_15;14;HMI;15th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_16;15;HMI;16th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_17;16;HMI;17th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_18;17;HMI;18th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_19;18;HMI;19th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_20;19;HMI;20th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_21;20;HMI;21th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_22;21;HMI;22th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_23;22;HMI;23th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_24;23;HMI;24th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_25;24;HMI;25th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_26;25;HMI;26th signal defined in signals table
+;_MAIN_OPERATOR_VIEW;MAIN_OPERATOR_VIEW_SIGNAL_27;26;HMI;27th signal defined in signals table
+;_DISPLAY_MODE;DISPLAY_MODE_OFF;0;HMI;Operator page switched off
+;_DISPLAY_MODE;DISPLAY_MODE_GRAPHIC;1;HMI;Graph View
+;_DISPLAY_MODE;DISPLAY_MODE_1x4;2;HMI;1 row of 4 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_A;3;HMI;1 row of 6 characters (Rainbow Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_BAR_A;4;HMI;1 row of 6 characters + Bargraph (Rainbow Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_B;5;HMI;1 row of 6 characters (Standard Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x6_BAR_B;6;HMI;1 row of 6 characters + Bargraph (Standard Style)
+;_DISPLAY_MODE;DISPLAY_MODE_1x9;7;HMI;1 row of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_1x9_BAR;8;HMI;1 row of 9 characters + Bargraph
+;_DISPLAY_MODE;DISPLAY_MODE_2x9;9;HMI;2 rows of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_2x9_BAR;10;HMI;2 rows of 9 characters + Bargraph
+;_DISPLAY_MODE;DISPLAY_MODE_3x9;11;HMI;3 rows of 9 characters
+;_DISPLAY_MODE;DISPLAY_MODE_4x9;12;HMI;4 rows of 9 characters
+;_AUTOSCROLL;AUTOSCROLL_DISABLED;eFALSE;HMI;Autoscroll Disabled
+;_AUTOSCROLL;AUTOSCROLL_ENABLED;eTRUE;HMI;Autoscroll Enabled
+;_CUSTOM_DP;0_DP;0;HMI;X
+;_CUSTOM_DP;1_DP;1;HMI;X.X
+;_CUSTOM_DP;2_DP;2;HMI;X.XX
+;_CUSTOM_DP;3_DP;3;HMI;X.XXX
+;_CUSTOM_DP;4_DP;4;HMI;X.XXXX
+;_CUSTOM_DP;5_DP;5;HMI;X.XXXXX
+;_CUSTOM_DP;6_DP;6;HMI;X.XXXXXX
+;_CUSTOM_DP;7_DP;7;HMI;X.XXXXXXX
+;_CUSTOM_DP;8_DP;8;HMI;X.XXXXXXXX
+;_CUSTOM_DP;9_DP;9;HMI;X.XXXXXXXXX
+;_CUSTOM_DP;10_DP;10;HMI;X.XXXXXXXXXX
+;_CUSTOM_DP;11_DP;11;HMI;X.XXXXXXXXXXX
+;_CUSTOM_DP;12_DP;12;HMI;X.XXXXXXXXXXXX
+;_DATE_FORMAT;DATE_FORMAT_DD_MM_YYYY;0;HMI;DD-MM-YYYY
+;_DATE_FORMAT;DATE_FORMAT_MM_DD_YYYY;1;HMI;MM-DD-YYYY
+;_DATE_FORMAT;DATE_FORMAT_YYYY_MM_DD;2;HMI;YYYY-MM-YYYY
+;_ROTATION;ROTATION_0;0;HMI;
+;_ROTATION;ROTATION_180;1;HMI;
+;_MENU_FORMAT;MENU_FORMAT_3_LINES;3;HMI;
+;_MENU_FORMAT;MENU_FORMAT_4_LINES;4;HMI;
+;_MENU_FORMAT;MENU_FORMAT_5_LINES;5;HMI;
+;_MENU_FORMAT;MENU_FORMAT_6_LINES;6;HMI;
+;STATUS;DISABLE;0;Mapper;
+;STATUS;ENABLE;1;Mapper;
+;ALARM_SIMULATION_TYPE;OFF;0;Mapper;OFF
+;ALARM_SIMULATION_TYPE;Simulate_Digital_Out;2;Mapper;SIMULATE DIGITAL OUT
+;ALARM_SIMULATION_TYPE;VORTEX_SENSOR_FAILURE;4;Mapper;VORTEX SENSOR FAILURE
+;ALARM_SIMULATION_TYPE;TEMP_SENSOR_FAILURE;5;Mapper;TEMP SENSOR FAILURE
+;ALARM_SIMULATION_TYPE;VIBRAT_SENSOR_FAILURE;6;Mapper;VIBRAT SENSOR FAILURE
+;ALARM_SIMULATION_TYPE;ANALOGINPUT_OUT_OF_RANGE;7;Mapper;ANALOGINPUT OUT OF RANGE
+;ALARM_SIMULATION_TYPE;FLOWRATE_REACH_QMAX;8;Mapper;FLOWRATE REACH QMAX
+;ALARM_SIMULATION_TYPE;PROCESS_TEMP_REACH_TMAX;9;Mapper;PROCESS TEMP REACH TMAX
+;ALARM_SIMULATION_TYPE;ANALOGINPUT_CUT_OFF;10;Mapper;ANALOGINPUT CUT OFF
+;ALARM_SIMULATION_TYPE;PRESSURE_REACH_PMAX;11;Mapper;PRESSURE REACH PMAX
+;ALARM_SIMULATION_TYPE;FLOWRATE_REACH_QMIN;14;Mapper;FLOWRATE REACH QMIN
+;ALARM_SIMULATION_TYPE;PROCESS_TEMP_REACH_TMIN;15;Mapper;PROCESS TEMP REACH TMIN
+;ALARM_SIMULATION_TYPE;PRESSURE_REACH_PMIN;17;Mapper;PRESSURE REACH PMIN
+;ALARM_SIMULATION_TYPE;SNR_FAILURE;20;Mapper;SNR FAILURE
+;ALARM_SIMULATION_TYPE;FE_NV_FAILURE;21;Mapper;SENSOR NV FAILURE
+;ALARM_SIMULATION_TYPE;SENSOR_CAL_STATUS;22;Mapper;SENSOR CAL STATUS
+;ALARM_SIMULATION_TYPE;FE_SYNC_MISSING;23;Mapper;SENSOR SYNC MISSING
+;ALARM_SIMULATION_TYPE;FE_BOARD_COMM_ERROR;24;Mapper;SENSOR COMM ERROR
+;ALARM_SIMULATION_TYPE;CB_NV_FAILURE;27;Mapper;TRANSMITTER NV FAILURE
+;ALARM_SIMULATION_TYPE;AI_SPI_COM_FAIL;28;Mapper;AI SPI COM FAIL
+;ALARM_SIMULATION_TYPE;DIGITAL_OUT_CUTOFF;29;Mapper;PULSE OUT  CUTOFF
+;ALARM_SIMULATION_TYPE;RE_OUT_LINEAR_RANGE;30;Mapper;RE OUT LINEAR RANGE
+;ALARM_SIMULATION_TYPE;STEAM_TYPE_MISMATCH;34;Mapper;STEAM_TYPE_MISMATCH
+;ALARM_SIMULATION_TYPE;MAINTENANCE_WARNING;35;Mapper;MAINTENANCE WARNING
+;ALARM_SIMULATION_TYPE;CB_INSUF_INPUT_VOLTAGE;36;Mapper;TRANSMITTER INSUF INPUT VOLTAGE
+;ALARM_SIMULATION_TYPE;AMBIENT_TEMP_REACH_TMIN;37;Mapper;AMBIENT TEMP REACH TMIN
+;ALARM_SIMULATION_TYPE;AMBIENT_TEMP_REACH_TMAX;38;Mapper;AMBIENT TEMP REACH TMAX
+;ALARM_SIMULATION_TYPE;LOW_FLOWRATE_CUTOFF;39;Mapper;LOW FLOWRATE CUTOFF
+;ALARM_SIMULATION_TYPE;FLOWRATE_BG_103;40;Mapper;FLOWRATE BG 103
+;ALARM_SIMULATION_TYPE;DATA_SIMU_ALARM;41;Mapper;DATA SIMU ALARM
+;ALARM_SIMULATION_TYPE;DIAG_SIMU_ALARM;42;Mapper;DIAG SIMU ALARM
+;ALARM_SIMULATION_TYPE;NV_REPLACE_ERROR;47;Mapper;NV REPLACE ERROR
+;ALARM_SIMULATION_TYPE;FE_RAM_FAILURE;48;Mapper;SENSOR RAM FAILURE
+;ALARM_SIMULATION_TYPE;TOT_COUNTER_STOP;49;Mapper;TOT COUNTER STOP
+;ALARM_SIMULATION_TYPE;NO_HART_BURST_IN;51;Mapper;NO HART BURST IN
+;_T_TEMPERATURE_UNIT;KELVIN;1;Mapper;Kevin
+;_T_TEMPERATURE_UNIT;CELSIUS;2;Mapper;Celsius
+;_T_TEMPERATURE_UNIT;FAHRENHEIT;3;Mapper;F
+;_T_MASS_DENSITY_UNIT;KILOGRAM_PER_CUBIC_METER;1;Mapper;Kg/m3
+;_T_MASS_DENSITY_UNIT;GRAM_PER_CUBIC_CENTIMETER;3;Mapper;g/cm3
+;_T_MASS_DENSITY_UNIT;KILOGRAM_PER_LITER;6;Mapper;Kg/l
+;_T_MASS_DENSITY_UNIT;GRAM_PER_MILLILITER;7;Mapper;g/ml
+;_T_MASS_DENSITY_UNIT;GRAM_PER_LITER;8;Mapper;g/l
+;_T_MASS_DENSITY_UNIT;POUND_PER_CUBIC_INCH;9;Mapper;lb/in
+;_T_MASS_DENSITY_UNIT;POUND_PER_CUBIC_FOOT;10;Mapper;lb/ft3
+;_T_PRESSURE_UNIT;PASCAL_U;1;Mapper;Pa
+;_T_PRESSURE_UNIT;MEGAPASCAL;3;Mapper;MPa
+;_T_PRESSURE_UNIT;KILOPASCAL;4;Mapper;KPa
+;_T_PRESSURE_UNIT;HECTOPASCAL;7;Mapper;HPa
+;_T_PRESSURE_UNIT;BAR;8;Mapper;bar
+;_T_PRESSURE_UNIT;MILLIBAR;9;Mapper;mbar
+;_T_PRESSURE_UNIT;POUNDFORCE_PER_SQUARE_INCH;65;Mapper;psi
+;_T_PRESSURE_UNIT;KILOGRAMFORCE_PER_SQUARE_CENTIMETER;69;Mapper;kg/cm2
+;_T_PRESSURE_UNIT;MILLIMETER_H2O;53;Mapper;mm H2O
+;TF_CODE;LINEAR;0;Mapper;
+;TF_CODE;SQUARE_ROOT;1;Mapper;
+;TF_CODE;SQUARE_ROOT_THIRD_POWER;2;Mapper;
+;TF_CODE;SQUARE_ROOT_FIFTH_POWER;3;Mapper;
+;TF_CODE;SPECIAL_CURVE;4;Mapper;
+;TF_CODE;SQUARE;5;Mapper;
+;TF_CODE;DISCRETE;230;Mapper;
+;TF_CODE;SQUARE_ROOT_PLUS_SPECIAL_CURVE;231;Mapper;
+;TF_CODE;SQUARE_ROOT_THIRD_POWER_PLUS_SPECIAL_CURVE;232;Mapper;
+;TF_CODE;SQUARE_ROOT_FIFTH_POWER_PLUS_SPECIAL_CURVE;233;Mapper;
+;TF_CODE;NOT_USED;250;Mapper;
+;TF_CODE;NONE;251;Mapper;
+;TF_CODE;UNKNOWN;252;Mapper;
+;TF_CODE;SPECIAL;253;Mapper;
+;AC_FLAG;NOT_CONNECTED;0;Mapper;
+;AC_FLAG;CONNECTED;1;Mapper;
+;FLOWOVER103_BHV;FLOWOVER103_BHV_ALARM_OFF;0;Mapper;
+;FLOWOVER103_BHV;FLOWOVER103_BHV_ALARM_HI;3;Mapper;
+;FLOWOVER103_BHV;FLOWOVER103_BHV_ALARM_LO;4;Mapper;
+;TModbusConfigurationIEEEEnableState;CONFIGURATION_IEEE_FORMAT_ENABLED;0;Modbus;IEEE format enabled for word swap
+;TModbusConfigurationIEEEEnableState;CONFIGURATION_IEEE_FORMAT_DISABLED;1;Modbus;IEEE format disabled for word swap
+;_T_VOLUME_FLOW;CUBIC_METER_PER_SECOND;13;MVM;
+;_T_VOLUME_FLOW;CUBIC_METER_PER_MINUTE;14;MVM;
+;_T_VOLUME_FLOW;CUBIC_METER_PER_HOUR;15;MVM;
+;_T_VOLUME_FLOW;CUBIC_METER_PER_DAY;16;MVM;
+;_T_VOLUME_FLOW;CUBIC_FEET_PER_SECOND;29;MVM;
+;_T_VOLUME_FLOW;CUBIC_FEET_PER_MINUTE;30;MVM;
+;_T_VOLUME_FLOW;CUBIC_FEET_PER_HOUR;31;MVM;
+;_T_VOLUME_FLOW;CUBIC_FEET_PER_DAY;32;MVM;
+;_T_VOLUME_FLOW;CUBIC_KILOFEET_PER_SECOND;35;MVM;
+;_T_VOLUME_FLOW;CUBIC_KILOFEET_PER_MINUTE;36;MVM;
+;_T_VOLUME_FLOW;CUBIC_KILOFEET_PER_HOUR;37;MVM;
+;_T_VOLUME_FLOW;CUBIC_KILOFEET_PER_DAY;38;MVM;
+;_T_VOLUME_FLOW;LITER_PER_SECOND;48;MVM;
+;_T_VOLUME_FLOW;LITER_PER_MINUTE;49;MVM;
+;_T_VOLUME_FLOW;LITER_PER_HOUR;50;MVM;
+;_T_VOLUME_FLOW;LITER_PER_DAY;51;MVM;
+;_T_VOLUME_FLOW;KILOLITER_PER_SECOND;52;MVM;
+;_T_VOLUME_FLOW;HECTOLITER_PER_SECOND;56;MVM;
+;_T_VOLUME_FLOW;HECTOLITER_PER_MINUTE;57;MVM;
+;_T_VOLUME_FLOW;HECTOLITER_PER_HOUR;58;MVM;
+;_T_VOLUME_FLOW;HECTOLITER_PER_DAY;59;MVM;
+;_T_VOLUME_FLOW;KILOLITER_PER_MINUTE;60;MVM;
+;_T_VOLUME_FLOW;KILOLITER_PER_HOUR;61;MVM;
+;_T_VOLUME_FLOW;KILOLITER_PER_DAY;62;MVM;
+;_T_VOLUME_FLOW;US_GALLON_PER_SECOND;63;MVM;
+;_T_VOLUME_FLOW;US_GALLON_PER_MINUTE;64;MVM;
+;_T_VOLUME_FLOW;US_GALLON_PER_HOUR;65;MVM;
+;_T_VOLUME_FLOW;US_GALLON_PER_DAY;66;MVM;
+;_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_SECOND;83;MVM;
+;_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_MINUTE;84;MVM;
+;_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_HOUR;85;MVM;
+;_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_DAY;86;MVM;
+;_T_VOLUME_FLOW;BARREL_PER_SECOND;104;MVM;
+;_T_VOLUME_FLOW;BARREL_PER_MINUTE;105;MVM;
+;_T_VOLUME_FLOW;BARREL_PER_HOUR;106;MVM;
+;_T_VOLUME_FLOW;BARREL_PER_DAY;107;MVM;
+;_T_VOLUME_FLOW;BARREL_US_BEER_PER_DAY;127;MVM;
+;_T_VOLUME_FLOW;BARREL_US_BEER_PER_HOUR;128;MVM;
+;_T_VOLUME_FLOW;BARREL_US_BEER_PER_MINUTE;129;MVM;
+;_T_VOLUME_FLOW;BARREL_US_BEER_PER_SECOND;130;MVM;
+;_T_MASS_FLOW;GRAM_PER_SECOND;1;MVM;g/s
+;_T_MASS_FLOW;GRAM_PER_MINUTE;2;MVM;g/min
+;_T_MASS_FLOW;GRAM_PER_HOUR;3;MVM;g/h
+;_T_MASS_FLOW;KILOGRAM_PER_SECOND;5;MVM;kg/s
+;_T_MASS_FLOW;KILOGRAM_PER_MINUTE;6;MVM;kg/min
+;_T_MASS_FLOW;KILOGRAM_PER_HOUR;7;MVM;kg/h
+;_T_MASS_FLOW;KILOGRAM_PER_DAY;8;MVM;kg/d
+;_T_MASS_FLOW;METRIC_TON_PER_SECOND;9;MVM;
+;_T_MASS_FLOW;METRIC_TON_PER_MINUTE;10;MVM;
+;_T_MASS_FLOW;METRIC_TON_PER_HOUR;11;MVM;
+;_T_MASS_FLOW;METRIC_TON_PER_DAY;12;MVM;
+;_T_MASS_FLOW;POUND_PER_SECOND;13;MVM;
+;_T_MASS_FLOW;POUND_PER_MINUTE;14;MVM;
+;_T_MASS_FLOW;POUND_PER_HOUR;15;MVM;
+;_T_MASS_FLOW;POUND_PER_DAY;16;MVM;
+;_T_MASS_FLOW;SHORT_TON_PER_SECOND;17;MVM;
+;_T_MASS_FLOW;SHORT_TON_PER_MINUTE;18;MVM;
+;_T_MASS_FLOW;SHORT_TON_PER_HOUR;19;MVM;
+;_T_MASS_FLOW;SHORT_TON_PER_DAY;20;MVM;
+;_T_POWER;WATT;1;MVM;W
+;_T_POWER;MEGAWATT;4;MVM;MW
+;_T_POWER;KILOWATT;5;MVM;KW
+;_T_POWER;KILOJOULE_PER_SECOND;19;MVM;KJ/s
+;_T_POWER;KILOJOULE_PER_MINUTE;20;MVM;KJ/min
+;_T_POWER;KILOJOULE_PER_HOUR;21;MVM;KJ/h
+;_T_POWER;KILOJOULE_PER_DAY;22;MVM;KJ/d
+;_T_POWER;MEGAJOULE_PER_HOUR;25;MVM;MJ/h
+;_T_POWER;BRITISH_THERMAL_UNIT_PER_SECOND;27;MVM;BTU/s
+;_T_POWER;BRITISH_THERMAL_UNIT_PER_MINUTE;28;MVM;BTU/min
+;_T_POWER;BRITISH_THERMAL_UNIT_PER_HOUR;29;MVM;BTU/hour
+;_T_POWER;BRITISH_THERMAL_UNIT_PER_DAY;30;MVM;BTU/day
+;_T_POWER;THOUSAND_BRITISH_THERMAL_UNIT_PER_MINUTE;32;MVM;MBTU/min
+;_T_POWER;THOUSAND_BRITISH_THERMAL_UNIT_PER_HOUR;33;MVM;MBTU/hour
+;_T_POWER;THOUSAND_BRITISH_THERMAL_UNIT_PER_DAY;34;MVM;MBTU/day
+;_T_POWER;MILLION_BRITISH_THERMAL_UNIT_PER_HOUR;37;MVM;MMBTU/hour
+;_T_POWER;MILLION_BRITISH_THERMAL_UNIT_PER_DAY;38;MVM;MMBTU/day
+;_T_PRESSURE;PASCAL_U;1;MVM;
+;_T_PRESSURE;GIGAPASCAL;2;MVM;
+;_T_PRESSURE;MEGAPASCAL;3;MVM;
+;_T_PRESSURE;KILOPASCAL;4;MVM;
+;_T_PRESSURE;MILLIPASCAL;5;MVM;
+;_T_PRESSURE;MICROPASCAL;6;MVM;
+;_T_PRESSURE;HECTOPASCAL;7;MVM;
+;_T_PRESSURE;BAR;8;MVM;
+;_T_PRESSURE;MILLIBAR;9;MVM;
+;_T_PRESSURE;PASCAL_ABSOLUTE;10;MVM;
+;_T_PRESSURE;PASCAL_GAUGE;11;MVM;
+;_T_PRESSURE;GIGAPASCA_ABSOLUTE;12;MVM;
+;_T_PRESSURE;GIGAPASCA_GAUGE;13;MVM;
+;_T_PRESSURE;MEGAPASCAL_ABSOLUTE;14;MVM;
+;_T_PRESSURE;MEGAPASCAL_GAUGE;15;MVM;
+;_T_PRESSURE;KILOPASCAL_ABSOLUTE;16;MVM;
+;_T_PRESSURE;KILOPASCAL_GAUGE;17;MVM;
+;_T_PRESSURE;MILLIPASCAL_ABSOLUTE;18;MVM;
+;_T_PRESSURE;MILLIPASCAL_GAUGE;19;MVM;
+;_T_PRESSURE;MICROPASCAL_ABSOLUTE;20;MVM;
+;_T_PRESSURE;MICROPASCAL_GAUGE;21;MVM;
+;_T_PRESSURE;HECTOPASCAL_ABSOLUTE;22;MVM;
+;_T_PRESSURE;HECTOPASCAL_GAUGE;23;MVM;
+;_T_PRESSURE;INCH_H2O_60F_ABSOLUTE;24;MVM;
+;_T_PRESSURE;INCH_H2O_60F_GAUGE;25;MVM;
+;_T_PRESSURE;INCH_H2O_4C_ABSOLUTE;26;MVM;
+;_T_PRESSURE;INCH_H2O_4C_GAUGE;27;MVM;
+;_T_PRESSURE;INCH_H2O_68F_ABSOLUTE;28;MVM;
+;_T_PRESSURE;INCH_H2O_68F_GAUGE;29;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_ABSOLUTE;30;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_GAUGE;31;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_4C_ABSOLUTE;32;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_4C_GAUGE;33;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_68F_ABSOLUTE;34;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_68F_GAUGE;35;MVM;
+;_T_PRESSURE;FEET_H2O_ABSOLUTE_GAUGE;36;MVM;
+;_T_PRESSURE;FEET_H2O_GAUGE;37;MVM;
+;_T_PRESSURE;FEET_H2O_4C_ABSOLUTE;38;MVM;
+;_T_PRESSURE;FEET_H2O_4C_GAUGE;39;MVM;
+;_T_PRESSURE;FEET_H2O_68F_ABSOLUTE;40;MVM;
+;_T_PRESSURE;FEET_H2O_68F_GAUGE;41;MVM;
+;_T_PRESSURE;INCH_HG_ABSOLUTE;42;MVM;
+;_T_PRESSURE;INCH_HG_GAUGE;43;MVM;
+;_T_PRESSURE;INCH_HG_0C_ABSOLUTE;44;MVM;
+;_T_PRESSURE;INCH_HG_0C_GAUGE;45;MVM;
+;_T_PRESSURE;MILLIMETER_HG_ABSOLUTE;46;MVM;
+;_T_PRESSURE;MILLIMETER_HG_GAUGE;47;MVM;
+;_T_PRESSURE;MILLIMETER_HG_0C_ABSOLUTE;48;MVM;
+;_T_PRESSURE;MILLIMETER_HG_0C_GAUGE;49;MVM;
+;_T_PRESSURE;INCH_H2O_60F;50;MVM;
+;_T_PRESSURE;INCH_H2O_4C;51;MVM;
+;_T_PRESSURE;INCH_H2O_68F;52;MVM;
+;_T_PRESSURE;MILLIMETER_H2O;53;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_4C;54;MVM;
+;_T_PRESSURE;MILLIMETER_H2O_68F;55;MVM;
+;_T_PRESSURE;FEET_H2O;56;MVM;
+;_T_PRESSURE;FEET_H2O_4C;57;MVM;
+;_T_PRESSURE;FEET_H2O_68F;58;MVM;
+;_T_PRESSURE;INCH_HG;59;MVM;
+;_T_PRESSURE;INCH_HG_0C;60;MVM;
+;_T_PRESSURE;MILLIMETER_HG;61;MVM;
+;_T_PRESSURE;MILLIMETER_HG_0C;62;MVM;
+;_T_PRESSURE;TORR;63;MVM;
+;_T_PRESSURE;ATMOSPHERE;64;MVM;
+;_T_PRESSURE;POUNDFORCE_PER_SQUARE_INCH;65;MVM;
+;_T_PRESSURE;POUNDFORCE_PER_SQUARE_INCH_ABSOLUTE;66;MVM;
+;_T_PRESSURE;POUNDFORCE_PER_SQUARE_INCH_GAUGE;67;MVM;
+;_T_PRESSURE;GRAMFORCE_PER_SQUARE_CENTIMETER;68;MVM;
+;_T_PRESSURE;KILOGRAMFORCE_PER_SQUARE_CENTIMETER;69;MVM;
+;_T_PRESSURE;GRAMFORCE_PER_SQUARE_CENTIMETER_ABSOLUTE;70;MVM;
+;_T_PRESSURE;GRAMFORCE_PER_SQUARE_CENTIMETER_GAUGE;71;MVM;
+;_T_PRESSURE;KILOGRAMFORCE_PER_SQUARE_CENTIMETER_ABSOLUTE;72;MVM;
+;_T_PRESSURE;KILOGRAMFORCE_PER_SQUARE_CENTIMETER_GAUGE;73;MVM;
+;_T_PRESSURE;BAR_ABSOLUTE;74;MVM;
+;_T_PRESSURE;BAR_GAUGE;75;MVM;
+;_T_PRESSURE;MILLIBAR_GAUGE;76;MVM;
+;_STEAMSTATUS;WATER;0;MVM;
+;_STEAMSTATUS;SATURATED_STEAM;1;MVM;
+;_STEAMSTATUS;OVERHEAT_STEAM;2;MVM;
+;_STEAMTYPE;STEAMTYPE_OVERHEAT;0;MVM;
+;_STEAMTYPE;STEAMTYPE_SATURATED;1;MVM;
+;_STEAMTYPE;STEAMTYPE_WATER;2;MVM;
+;_LIQUIDCORRECTION;DENSITY_CORRECTION;0;MVM;
+;_LIQUIDCORRECTION;VOLUME_CORRECTION;1;MVM;
+;_LIQUIDCORRECTION;WITHOUT_CORRECTION;2;MVM;
+;_GAS_REF_CONDITIONS;UK;0;MVM;14.7 psia 60?F (15.4?C) (UK)
+;_GAS_REF_CONDITIONS;US;1;MVM;14.7 psia70?F (21.6?C) (US)
+;_GAS_REF_CONDITIONS;DEG0;2;MVM;1013.25 mbar and 0?C
+;_GAS_REF_CONDITIONS;DEG20;3;MVM;(CGPM),1013.25 mbar and 20?C
+;_GAS_COMPUTATION_TYPE;IDEAL_GAS;0;MVM;Real gas equation
+;_GAS_COMPUTATION_TYPE;ISO12213_MOLAR;1;MVM;ISO12213_2/AGA8
+;_GAS_COMPUTATION_TYPE;ISO12213_PHISICAL_PROPERTY;2;MVM;ISO12213_3/GERG88
+;_GAS_MASS_COMPUTATION;REFERENCY_DENSITY;0;MVM;Select the Standard Density
+;_GAS_MASS_COMPUTATION;ACTUAL_DENSITY;1;MVM;Seletct  Preset Density or AI. or Hart.
+;_RELATIVE_DENSITY_REF;RELATIVE_DENSITY_REF_DEG0_101325;0;MVM;T2 = 0?C , 1.01325 bar
+;_RELATIVE_DENSITY_REF;RELATIVE_DENSITY_REF_DEG15_101325;1;MVM;T2 = 20?C , 1.01325 bar
+;_RELATIVE_DENSITY_REF;RELATIVE_DENSITY_REF__60F_101592;2;MVM;T2 = 60?F ,1.01592bar
+;_RELATIVE_DENSITY_REF;RELATIVE_DENSITY_REF__60F_101560;3;MVM;T2 = 60?F ,14.73Psi
+;_CALORIFIC_REF;CALORIFIC_REF_DEG25_DEG0_101325;0;MVM;T1=25 Deg,t2=0  P2=1.01325 Bar
+;_CALORIFIC_REF;CALORIFIC_REF_DEG0_DEG0_101325;1;MVM;T1=0 Deg,t2=0  P2=1.01325 Bar
+;_CALORIFIC_REF;CALORIFIC_REF_DEG15_DEG15_101325;2;MVM;T1=15 Deg,t2=15 P2=1.01325 Bar
+;_CALORIFIC_REF;CALORIFIC_REF_60F_6OF_101592;3;MVM;T1=60F Deg,t2=60F  P2=1.01592Bar
+;_CALORIFIC_REF;CALORIFIC_REF_60F_6OF_101560;4;MVM;T1=60F Deg,t2=60F  P2=1.01560 Bar
+;_PWR_FWD_REV_SW;FWD_ONLY;0;MVM;Just measure forward flow
+;_PWR_FWD_REV_SW;FWD_REV;1;MVM;measure forward and reverse flow
+
+;SVM_T_VOLUME_FLOW;CUBIC_METER_PER_SECOND;13;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_METER_PER_MINUTE;14;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_METER_PER_HOUR;15;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_METER_PER_DAY;16;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_FEET_PER_SECOND;29;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_FEET_PER_MINUTE;30;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_FEET_PER_HOUR;31;SVM;
+;SVM_T_VOLUME_FLOW;CUBIC_FEET_PER_DAY;32;SVM;
+;SVM_T_VOLUME_FLOW;LITER_PER_SECOND;48;SVM;
+;SVM_T_VOLUME_FLOW;LITER_PER_MINUTE;49;SVM;
+;SVM_T_VOLUME_FLOW;LITER_PER_HOUR;50;SVM;
+;SVM_T_VOLUME_FLOW;LITER_PER_DAY;51;SVM;
+;SVM_T_VOLUME_FLOW;KILOLITER_PER_SECOND;52;SVM;
+;SVM_T_VOLUME_FLOW;KILOLITER_PER_MINUTE;60;SVM;
+;SVM_T_VOLUME_FLOW;KILOLITER_PER_HOUR;61;SVM;
+;SVM_T_VOLUME_FLOW;KILOLITER_PER_DAY;62;SVM;
+;SVM_T_VOLUME_FLOW;US_GALLON_PER_SECOND;63;SVM;
+;SVM_T_VOLUME_FLOW;US_GALLON_PER_MINUTE;64;SVM;
+;SVM_T_VOLUME_FLOW;US_GALLON_PER_HOUR;65;SVM;
+;SVM_T_VOLUME_FLOW;US_GALLON_PER_DAY;66;SVM;
+;SVM_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_SECOND;83;SVM;
+;SVM_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_MINUTE;84;SVM;
+;SVM_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_HOUR;85;SVM;
+;SVM_T_VOLUME_FLOW;IMPERIAL_GALLON_PER_DAY;86;SVM;
+;SVM_T_VOLUME_FLOW;BARREL_PER_SECOND;104;SVM;
+;SVM_T_VOLUME_FLOW;BARREL_PER_MINUTE;105;SVM;
+;SVM_T_VOLUME_FLOW;BARREL_PER_HOUR;106;SVM;
+;SVM_T_VOLUME_FLOW;BARREL_PER_DAY;107;SVM;
+;_KSET;KFACTOR_GAS;0;SVM;KSET_ENABLE_GAS
+;_KSET;KFACTOR_LIQUID;1;SVM;KSET_ENABLE_Liquid
+;_KLINEARATION;AVERAGE;0;SVM;
+;_KLINEARATION;1PT;1;SVM;
+;_KLINEARATION;2PT;2;SVM;
+;_KLINEARATION;3PT;3;SVM;
+;_KLINEARATION;4PT;4;SVM;
+;_KLINEARATION;5PT;5;SVM;
+;_KLINEARATION;6PT;6;SVM;
+;_KLINEARATION;7PT;7;SVM;
+;_KLINEARATION;8PT;8;SVM;
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXCubicMetres;1;Totalizer;//1 TOTALIZER_CUBIC_METRES
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXCubicFeet;7;Totalizer;//7 TOTALIZER_CUBIC_FEET
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXLitres;11;Totalizer;//11 TOTALIZER_LITRES
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXMillilitres;13;Totalizer;//13 TOTALIZER_MILLILITRES
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXHectolitres;14;Totalizer;//14 TOTALIZER_HECTOLITRES
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXImperialGallons;20;Totalizer;//20 TOTALIZER_IMP_GALLONS
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXUSGallonsLiquid;19;Totalizer;//19 TOTALIZER_US_GALLONS_LIQUID
+;TTotalizerUnitIDXVolume;TotalizerUnitIDXUSBarrelsBeer;22;Totalizer;//22 TOTALIZER_US_BARRELS_BEER
+;TTotalizerUnitIDXMass;TotalizerUnitIDXGrams;2;Totalizer;//2 TOTALIZER_GRAMS
+;TTotalizerUnitIDXMass;TotalizerUnitIDXKilograms;1;Totalizer;//1 TOTALIZER_KILOGRAMS
+;TTotalizerUnitIDXMass;TotalizerUnitIDXTonnes;5;Totalizer;//5 TOTALIZER_TONNES
+;TTotalizerUnitIDXMass;TotalizerUnitIDXPounds;7;Totalizer;//7 TOTALIZER_POUNDS
+;TTotalizerUnitIDXMass;TotalizerUnitIDXOunces;6;Totalizer;//6 TOTALIZER_OUNCES
+;TTotalizerUnitIDXMass;TotalizerUnitIDXShortTon;8;Totalizer;//8 TOTALIZER_SHORT_TON
+;TTotalizerUnitIDXMass;TotalizerUnitIDXLongTon;9;Totalizer;//9 TOTALIZER_LONG_TON
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXJoure;1;Totalizer;//1 TOTALIZER_JOULE
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXKiloJoure;7;Totalizer;//7 TOTALIZER_KILOJOULE
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXMegaJoure;6;Totalizer;//6 TOTALIZER_MEGAJOULE
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXBritishThermalUnit;12;Totalizer;//12 TOTALIZER_BTU
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXMillionBritishThermalUnit;14;Totalizer;//14 TOTALIZER_MMBTU or DEKA_THERM
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXWattHour;15;Totalizer;//15 TOTALIZER_WATTHOUR
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXMegaWattHour;18;Totalizer;//18 TOTALIZER_MEGAWATTHOUR
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXKiloWattHour;19;Totalizer;//19 TOTALIZER_KILOWATTHOUR
+;TTotalizerUnitIDXEnergy;TotalizerUnitIDXThousandBritishThermalUnit;21;Totalizer;//21 TOTALIZER_MBTU
+;TTotalizerUnitsTypeIDX;TotalizerUnitsTypeIDXMass;3;Totalizer;//3 UNITSTYPE_MASS
+;TTotalizerUnitsTypeIDX;TotalizerUnitsTypeIDXVolume;17;Totalizer;//17 UNITSTYPE_VOLUME
+;TTotalizerUnitsTypeIDX;TotalizerUnitsTypeIDXEnergy;53;Totalizer;// 53UNITSTYPE_ENERGY
+
