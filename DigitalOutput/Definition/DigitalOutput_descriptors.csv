@@ -1,0 +1,96 @@
+reserved;object;attribute;value
+##Module SubGen;;;
+##ModuleRevision 0x020101;;;
+##FileRevision 211;;;
+;outputMode;ptrCodeTab;TOutputMode1Formats
+;outputMode;numberOfCodes;NUMBER_OF_OUTPUT1_MODES
+;alarmState_DO;ptrCodeTab;E_DIG_OUT_ALARM_BEHAVIOUR
+;alarmState_DO;numberOfCodes;NUMBER_OF_ALM_BEHAV_ELEMENTS
+;simuEnabled;ptrCodeTab;TSimulationEnabledFormat
+;simuEnabled;numberOfCodes;NUMBER_OF_SIMULATION_ENABLED
+;lgcSgnlSrc;ptrCodeTab;TLogicSignalSourceFormats
+;lgcSgnlSrc;numberOfCodes;NUMBER_OF_LOGIC_SIGNAL_SOURCES
+;lgcActState;ptrCodeTab;TLogicActiveStateFormats
+;lgcActState;numberOfCodes;NUMBER_OF_LOGIC_ACTIVE_STATES
+;lgcSimCmd;ptrCodeTab;TLogicSimulationCommandFormats
+;lgcSimCmd;numberOfCodes;NUMBER_OF_LOGIC_SIM_COMMANDS
+;simuFrequency;min;FULLSCALE_FREQ_MIN
+;simuFrequency;max;FULLSCALE_FREQ_MAX
+;simuFrequency;increment;FULLSCALE_FREQ_DEFAULT
+;pulseWidth;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseWidth;publicRangeDatObj;&digitalOutputObjectList[DIGITALOUTPUT_IDX_pulseWidthRange]
+;pulseWidth;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseWidth;min;PULSE_WIDTH_MIN
+;pulseWidth;max;PULSE_WIDTH_MAX
+;pulseWidth;unitsCode;UM_MILLISECOND
+;pulseWidth;unitsType;UM_T_TIME
+;pulseFactor;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseFactor;publicRangeDatObj;&digitalOutputObjectList[DIGITALOUTPUT_IDX_pulseFactorRange]
+;pulseFactor;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseFactor;min;PULSE_FACTOR_MIN
+;pulseFactor;max;PULSE_FACTOR_MAX
+;pulseFactor;unitsCode;0
+;pulseFactor;unitsType;0
+;pulseFactorRange;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseFactorRange;publicRangeDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseFactorRange;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseFactorRange;min;PULSE_FACTOR_MIN
+;pulseFactorRange;max;PULSE_FACTOR_MAX
+;pulseFactorRange;unitsCode;0
+;pulseFactorRange;unitsType;0
+;pulseWidthRange;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseWidthRange;publicRangeDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseWidthRange;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;pulseWidthRange;min;PULSE_WIDTH_MIN
+;pulseWidthRange;max;PULSE_WIDTH_MAX
+;pulseWidthRange;unitsCode;UM_MILLISECOND
+;pulseWidthRange;unitsType;UM_T_TIME
+;generalAlarm;ptrCodeTab;T_ALARM_STATUS
+;generalAlarm;numberOfCodes;T_ALARM_DTABLE_SIZE
+;minFlowrateAlarm;ptrCodeTab;T_ALARM_STATUS
+;minFlowrateAlarm;numberOfCodes;T_ALARM_DTABLE_SIZE
+;maxFlowrateAlarm;ptrCodeTab;T_ALARM_STATUS
+;maxFlowrateAlarm;numberOfCodes;T_ALARM_DTABLE_SIZE
+;maxTemperatureAlarm;ptrCodeTab;T_ALARM_STATUS
+;maxTemperatureAlarm;numberOfCodes;T_ALARM_DTABLE_SIZE
+;lowFlowCutOff;ptrCodeTab;T_ALARM_STATUS
+;lowFlowCutOff;numberOfCodes;T_ALARM_DTABLE_SIZE
+;minFrequencyRange;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;minFrequencyRange;publicRangeDatObj;(const T_DATA_OBJ SLOW*)NULL
+;minFrequencyRange;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;minFrequencyRange;min;OUTPUTFREQ_MIN
+;minFrequencyRange;max;OUTPUTFREQ_MAX
+;minFrequencyRange;unitsCode;0
+;minFrequencyRange;unitsType;0
+;maxFrequencyRange;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;maxFrequencyRange;publicRangeDatObj;(const T_DATA_OBJ SLOW*)NULL
+;maxFrequencyRange;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;maxFrequencyRange;min;FULLSCALE_FREQ_MIN
+;maxFrequencyRange;max;FULLSCALE_FREQ_MAX
+;maxFrequencyRange;unitsCode;0
+;maxFrequencyRange;unitsType;0
+;minFrequency;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;minFrequency;publicRangeDatObj;&digitalOutputObjectList[DIGITALOUTPUT_IDX_minFrequencyRange]
+;minFrequency;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;minFrequency;min;OUTPUTFREQ_MIN
+;minFrequency;max;OUTPUTFREQ_MAX
+;minFrequency;unitsCode;0
+;minFrequency;unitsType;0
+;maxFrequency;publicUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;maxFrequency;publicRangeDatObj;&digitalOutputObjectList[DIGITALOUTPUT_IDX_maxFrequencyRange]
+;maxFrequency;customUnitsDatObj;(const T_DATA_OBJ SLOW*)NULL
+;maxFrequency;min;OUTPUTFREQ_MIN
+;maxFrequency;max;OUTPUTFREQ_MAX
+;maxFrequency;unitsCode;0
+;maxFrequency;unitsType;0
+;simuPulsesNum;min;0
+;simuPulsesNum;max;10000
+;simuPulsesNum;increment;1
+;logicValue;ptrCodeTab;TOutputLogicFormat
+;logicValue;numberOfCodes;NUMBER_OF_OUTPUT_LOGICS
+;alarmSimulation_DO;ptrCodeTab;DO_ALARM
+;alarmSimulation_DO;numberOfCodes;DO_ALARM_SIZE
+;functionEnable;ptrCodeTab;T_FUNCTION_STATUS
+;functionEnable;numberOfCodes;sizeof(T_FUNCTION_STATUS)
+;minTemperatureAlarm;ptrCodeTab;T_ALARM_STATUS
+;minTemperatureAlarm;numberOfCodes;T_ALARM_DTABLE_SIZE

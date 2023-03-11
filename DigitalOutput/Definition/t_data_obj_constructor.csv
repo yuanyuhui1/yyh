@@ -1,0 +1,5 @@
+reserved;T_DATA_OBJECT;constructorName;ptrValue;numberofAttributes;objectLength;storageQualifier;typeQualifier;ptrDescriptor;type;descriptorType
+##Module SubGen;;;;;;;;;;
+##ModuleRevision 0x020101;;;;;;;;;;
+##FileRevision 8;;;;;;;;;;
+;FLOAT_TOTUNIT;CONSTRUCT_STRUCT_FLOAT_TOTUNIT;_GEN;_IGNORE;_IGNORE;_GEN;STRUCT;_GEN;T_FLOAT_TOTUNIT;T_FLOAT_TOTUNIT_DESCRIPTOR

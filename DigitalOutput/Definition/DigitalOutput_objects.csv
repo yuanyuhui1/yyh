@@ -1,0 +1,31 @@
+reserved;object;briefDescription;direction;T_DATA_OBJECT;objectCount;dataClass;storageQualifier
+##Module SubGen;;;;;;;
+##ModuleRevision 0x020101;;;;;;;
+##FileRevision 211;;;;;;;
+;alarmState_DO;Alarms to be represented as logic outputs by the digital output subsystem. only used by DO subsystem;CONTAINED;TABENUM8;1;DYNAMIC;READONLY_RAM
+;outputMode;Output mode of hardware output logic/freq/pulse/none;INPUT;TABENUM8;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;simuEnabled;to disable/enable DO simulation output(base on the output mode and simulation value(freqsimu/pulse simu/logic simu));INPUT;TABENUM8;1;DYNAMIC;RAM
+;lgcSgnlSrc;Logic signal source for hardware output. None/Alarm;INPUT;TABENUM8;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;lgcActState;Logic output NC/NO;INPUT;TABENUM8;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;lgcSimCmd;Logic simulation command for hardware (On-output/Off-close);INPUT;TABENUM8;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;pulseWidth;Pulse Width.;INPUT;FLOAT_FIXEDUNIT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;pulseFactor;Pulse factor.;INPUT;FLOAT_FIXEDUNIT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;pulseFactorRange;Pulse factor range.;CONTAINED;FLOATRANGE_FIXEDUNIT;1;StaticFrequentConstantDefault;NON_VOLATILE
+;pulseWidthRange;Pulse width range.;CONTAINED;FLOATRANGE_FIXEDUNIT;1;StaticFrequentConstantDefault;NON_VOLATILE
+;simuFrequency;Simulation frequency for frequency outputs.;INPUT;FLOAT;1;DYNAMIC;RAM
+;minFrequency;frequency minimum range;INPUT;FLOAT_FIXEDUNIT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;maxFrequency;frequency maximum range;INPUT;FLOAT_FIXEDUNIT;1;REPLACE_STATIC_FREQUENT_STATIC_DEFAULT;NON_VOLATILE
+;minFrequencyRange;the range of minimum Range value;CONTAINED;FLOATRANGE_FIXEDUNIT;1;StaticFrequentConstantDefault;NON_VOLATILE
+;maxFrequencyRange;the range of maximum Range value;CONTAINED;FLOATRANGE_FIXEDUNIT;1;StaticFrequentConstantDefault;NON_VOLATILE
+;alarmSimulation_DO;logic alarm simulation value;INPUT;T_DIAGNOSIS_ALARM;1;DYNAMIC;RAM
+;generalAlarm;enable/disable general alarm for diagnosis.;INPUT;TABENUM8;1;StaticFrequentConstantDefault;NON_VOLATILE
+;minFlowrateAlarm;enable/disable min flow rate alarm for diagnosis.;INPUT;TABENUM8;1;StaticFrequentConstantDefault;NON_VOLATILE
+;maxFlowrateAlarm;enable/disable max flow rate alarm for diagnosis.;INPUT;TABENUM8;1;StaticFrequentConstantDefault;NON_VOLATILE
+;maxTemperatureAlarm;enable/disable temperature alarm for diagnosis.;INPUT;TABENUM8;1;StaticFrequentConstantDefault;NON_VOLATILE
+;lowFlowCutOff;enable/disable low flow cut off alarm for diagnosis.;INPUT;TABENUM8;1;StaticFrequentConstantDefault;NON_VOLATILE
+;simuPulsesNum;simulate pulse number;INPUT;INT16;1;DYNAMIC;RAM
+;logicValue;logic output value(on/off);INPUT;TABENUM8;1;DYNAMIC;READONLY_RAM
+;pulseNum;pulse output value(the actual number of pulse output);INPUT;SIMPLE_U32;1;DYNAMIC;READONLY_RAM
+;frequencyValue;the actual frequency the do output;INPUT;SIMPLE_FLOAT;1;DYNAMIC;READONLY_RAM
+;functionEnable;to enable/disable DO function.;INPUT;TABENUM8;1;DYNAMIC;RAM
+;minTemperatureAlarm;;INPUT;TABENUM8;1;StaticFrequentConstantDefault;NON_VOLATILE

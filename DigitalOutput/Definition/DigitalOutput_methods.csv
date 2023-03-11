@@ -1,0 +1,7 @@
+reserved;methodName;parameterIndex;parameterName;Type;Briefdescription
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 43;;;;;
+;UpdateEXE;0;;TUSIGN16;Called by coordinator function to update logic/pulse/frequency/OIML outputs
+;UpdateEXE;1;digitalInput;const T_DIGTALINPUT_PARAMETER*;
+;UpdateDiagnosis;0;;void;

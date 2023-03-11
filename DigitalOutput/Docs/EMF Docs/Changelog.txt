@@ -1,0 +1,99 @@
+=============================================================================================
+>>>>>>>>>>>>>>>>>>>>           EMF - Digital Output Subsystem            <<<<<<<<<<<<<<<<<<<<
+=============================================================================================
+
+Current Release :   Version: 01.01.01
+===============
+					
+ToDo            :   
+====			
+										
+
+Review Status   :  Test Report Review 2007/10/31 (Thomas Blume, Joachim Lenk, Floarian Reuss)	
+=============
+  					
+Test Status     :  
+===========		  
+                   Lint Level 3: free
+                   Module Test: complete
+                   System Test: complete    
+ 
+Notes           :  EMF Digital Output Subsystem.
+=====              See design description for further details.
+                   Has dependencies on the following components:
+                        - Common Framework
+                        - Diagnosis Subsystem (alarms)
+                        - Device Subsystem (Set simulatin mode "off")
+                        - Secondary Calcs Subsystem (for flow measurement)
+                        - Totalizer Subsystem 
+                        - HMI Subsystem 
+                        - NV Mem Subsystem (for non-volatile settings)
+                        - Segger embOS
+                        - Units Handling (data objects and units conversion factors)
+
+ 
+Change History
+==============
+
+Digital Output Version: 01.01.01
+---------------------------------
+    2008/03/11
+--> corrections after lint check
+
+Digital Output Version: 01.01.00
+---------------------------------
+    2008/02/28
+--> add the include of the t_data_obj_alarm_counter.h in secondarycalcs_execute.c
+
+Digital Output Version: 01.00.09
+---------------------------------
+    2008/02/22
+--> It will be checked if the pulseFactor is in Range after Sensor switching. 
+
+Digital Output Version: 01.00.08
+---------------------------------
+    2008/02/08
+--> Changed T_DATA_OBJ for pulseFactor from FLOAT_FIXED_UNIT to PULSEFACTOR.
+    Thats because the pulsefactor have and changeable unitscode.
+    The CustomDataObj totDispUnits from the Totalizer will be used in the DigitalOutput subsystem.
+
+Digital Output Version: 01.00.07
+---------------------------------
+    2008/01/31
+--> Changed min OutputFrequency from 0,25Hz to 0,0005Hz. (Pulse Factor Min Range refers to 0,0005Hz)
+--> Changed default value for object pulseFactor to 1 (1/m³ defualt values)
+
+Digital Output Version: 01.00.06
+---------------------------------
+    2008/01/09
+--> Changed default value for object pulseFactor from 10000.0 to 2000000.0
+
+Digital Output Version: 01.00.05
+---------------------------------
+    2007/12/10
+--> Changed default for lgcSgnlSrc_2 to FORWARD_REVERSE (after discussion with U.Mecke)
+    
+Digital Output Version: 01.00.04
+---------------------------------
+    2007/11/09
+--> Solved Bug: pulse width min range input.
+--> Configuration Bug solved
+
+Digital Output Version: 01.00.03
+---------------------------------
+--> Changes after Common Units Handling 03.01.00
+
+Digital Output Version: 01.00.02
+---------------------------------
+--> Changes for adapting the IND non-volatile objects to the WW non-volatile objects
+    (The dataobject of the pulseFactor was changed from FLOAT_TOTUNIT to FLOAT_FIXEDUNIT)
+
+Digital Output Version: 01.00.01
+---------------------------------
+--> Insert Functionality to set the simulation mode "OFF" if the 
+    Simulation configuration do not match with the Digital Output configuration.
+--> Changed the internal min/max Range for the PulseFactor: 
+	max. Range from 100000.0f to 100000000.0f 
+	min. Range from 0.00001f to 0.000001f
+	Previuosly it was not able to pulse max 5000Hz at MegaUsGallons and MegaLiter
+     

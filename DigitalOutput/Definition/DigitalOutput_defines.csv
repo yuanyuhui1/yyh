@@ -1,0 +1,67 @@
+reserved;definition;name;value;briefdescription
+##Module SubGen;;;;
+##ModuleRevision 0x020101;;;;
+##FileRevision 121;;;;
+;TOutputPulses;PULSE_WIDTH_MIN;0.05f;The minimum pulse width is 0.05ms
+;TOutputPulses;PULSE_WIDTH_MAX;2000.0f;The maximum pulse width is 2000ms
+;TOutputPulses;PULSE_WIDTH_DEFAULT;20.0f;The default pulse width is 10.0ms
+;TOutputPulses;PULSE_FACTOR_MIN;0.001f;The minimum pulse factor is 0.001pulses/uot
+;TOutputPulses;PULSE_FACTOR_MAX;2000.0f;The maxmum pulse factor is 2000.0pulses/uot
+;TOutputPulses;PULSE_FACTOR_DEFAULT;20.0f;The default pulse factor is 20.0pulses/uot
+;TOutputFrequencies;FULLSCALE_FREQ_MIN;0.0f;The minimum fullscale frequency of real frequency is 0.0f
+;TOutputFrequencies;FULLSCALE_FREQ_MAX;10000.0f;The maximum fullscale frequency of real frequency is 10000.0f
+;TOutputFrequencies;FULLSCALE_FREQ_DEFAULT;2000.0f;The default fullscale frequency is 2000.0f
+;TOutputFrequencies;OUTPUTFREQ_MIN;0.0f;The minimum allowed frequency for real frequency is 0.0f
+;TOutputFrequencies;OUTPUTFREQ_MAX;10500.0f;The maximum allowed frequency for real frequency is 10500.0f
+;TOutputFrequencies;OUTPUTFREQ_DEFAULT;2000.0f;The default allowed frequency for real frequency is 2000.0f
+;TOutputMode1Formats;DO1_NONE;0;Hardware output1 is disabled
+;TOutputMode1Formats;DO1_LOGIC;1;Hardware output1 logic signal
+;TOutputMode1Formats;DO1_PULSE;2;Hardware output1 pulse signal
+;TOutputMode1Formats;DO1_FREQUENCY;3;Hardware output1 frequency signal
+;;NUMBER_OF_OUTPUT1_MODES;4;TOutputMode1Formats numeric limit
+;TSimulationEnabledFormat;SIMU_DISABLED;0;Output simulation is disabled
+;TSimulationEnabledFormat;SIMU_ENABLED;1;Output simulation is enabled
+;;NUMBER_OF_SIMULATION_ENABLED;2;TSimulationEnabledFormat numeric limit
+;TLogicSignalSourceFormats;NO_LOGIC_SOURCE;0;No source selected for logic output
+;TLogicSignalSourceFormats;DIGITAL_OUTPUT_ALARM;1;Dig out alarm signal selected for logic output
+;;NUMBER_OF_LOGIC_SIGNAL_SOURCES;2;TLogicSignalSourceFormats numeric limit
+;TLogicActiveStateFormats;ACTIVE_HIGH;0;Logic output Active State is high
+;TLogicActiveStateFormats;ACTIVE_LOW;1;Logic output Active State is low
+;;NUMBER_OF_LOGIC_ACTIVE_STATES;2;TLogicActiveStateFormats numeric limit
+;TOutputLogicFormat;LOGIC_LOW;0;Hardware logic output is low
+;TOutputLogicFormat;LOGIC_HIGH;1;Hardware logic output is high
+;;NUMBER_OF_OUTPUT_LOGICS;2;
+;TLogicSimulationCommandFormats;COMMAND_OFF;0;Simulate logic OFF
+;TLogicSimulationCommandFormats;COMMAND_ON;1;Simulate logic ON
+;;NUMBER_OF_LOGIC_SIM_COMMANDS;2;TLogicSimulationCommandFormats numeric limit
+;TPulseOperationFormats;PULSE_MODE_1;0;Pulse frequency determined by pulse-factor
+;TPulseOperationFormats;PULSE_MODE_2;1;Pulse frequency determined by fullscale-frequency
+;;NUMBER_OF_PULSE_OPERATIONS;2;TPulseOperationFormats numeric limit
+;TFlowDirectionFormats;FLOW_FORWARD;0;Flow forward
+;TFlowDirectionFormats;FLOW_REVERSE;1;Flow reverse
+;;NUMBER_OF_FLOW_DIRECTIONS;2;TFlowDirectionFormats numeric limit
+;TLogicSignalValidFormats;LOGIC_SIGNAL_NOT_VALID;0;Logic signal not valid
+;TLogicSignalValidFormats;LOGIC_SIGNAL_VALID;1;Logic signal valid
+;;NUMBER_OF_LOGIC_SIGNAL_VALIDS;2;TLogicSignalValidFormats numeric limit
+;TPulseSignalValidFormats;PULSE_OUTPUT_NOT_VALID;0;Pulse signal not valid
+;TPulseSignalValidFormats;NORMAL_PULSES_VALID;1;Pulse signal valid in respect of normal mode
+;TPulseSignalValidFormats;SIMULATION_PULSES_VALID;2;Pulse signal valid in respect of simulation mode
+;;NUMBER_OF_PULSE_SIGNAL_VALIDS;3;TPulseSignalValidFormats numeric limit
+;TPulseTypeFormats;LONG_PULSE;0;This is a long pulse
+;TPulseTypeFormats;SHORT_PULSE;1;This is a short pulse
+;;NUMBER_OF_PULSE_TYPES;2;
+;E_DIG_OUT_ALARM_BEHAVIOUR;ALARM_BEHAVIOUR_OK;0;Dig out alarm logic OFF
+;E_DIG_OUT_ALARM_BEHAVIOUR;ALARM_BEHAVIOUR_FAIL_LOGIC_OUT_1;1;Dig out alarm logic ON (OP1)
+;;NUMBER_OF_ALM_BEHAV_ELEMENTS;2;E_DIG_OUT_ALARM_BEHAVIOUR numeric limit
+;DO_ALARM;PULSENUMMAXALARM;0;
+;;DO_ALARM_SIZE;1;
+;TOutputConnectionFormats;NO_CONNECT;0;no connection
+;TOutputConnectionFormats;FLOW_CONNECT;1;flow output
+;TOutputConnectionFormats;TEMP_CONNECT;2;temp output
+;;NUMBER_OF_OUTPUT_CONNECTIONS;3;
+;T_ALARM_STATUS;ALARM_DISABLE;0;
+;T_ALARM_STATUS;ALARM_ENABLE;1;
+;;T_ALARM_DTABLE_SIZE;2;
+;;PULSE_FACTOR_MULTI_WIDTH;1.1f;
+;T_FUNCTION_STATUS;FUNCTION_ENABLE;1;
+;T_FUNCTION_STATUS;FUNCTION_DISABLE;0;

@@ -1,0 +1,42 @@
+reserved;object;attribute;briefDescription;displayFormat;definition
+##Module SubGen;;;;;
+##ModuleRevision 0x020101;;;;;
+##FileRevision 162;;;;;
+;outputMode;;;ENUMERATION;TOutputMode1Formats
+;alarmState_DO;;;ENUMERATION;E_DIG_OUT_ALARM_BEHAVIOUR
+;simuEnabled;;;ENUMERATION;TSimulationEnabledFormat
+;lgcSgnlSrc;;;ENUMERATION;TLogicSignalSourceFormats
+;lgcActState;;;ENUMERATION;TLogicActiveStateFormats
+;lgcSimCmd;;;ENUMERATION;TLogicSimulationCommandFormats
+;simuFrequency;;;NUMERIC;
+;pulseWidth;value;;NUMERIC;
+;pulseWidth;unitsCode;;;
+;pulseWidth;unitsType;;;
+;pulseFactor;value;;NUMERIC;
+;pulseFactor;unitsCode;;;
+;pulseFactor;unitsType;;;
+;pulseFactorRange;max;;NUMERIC;
+;pulseFactorRange;min;;NUMERIC;
+;pulseFactorRange;unitsCode;;;
+;pulseFactorRange;unitsType;;;
+;pulseWidthRange;max;;NUMERIC;ms
+;pulseWidthRange;min;;NUMERIC;ms
+;pulseWidthRange;unitsCode;;;
+;pulseWidthRange;unitsType;;;
+;minFrequency;value;min freq, no unit;NUMERIC;
+;minFrequency;unitsCode;;;
+;minFrequency;unitsType;;;
+;maxFrequency;value;max freq, no unit;NUMERIC;
+;maxFrequency;unitsCode;;;
+;maxFrequency;unitsType;;;
+;generalAlarm;;;ENUMERATION;T_ALARM_STATUS
+;minFlowrateAlarm;;;ENUMERATION;T_ALARM_STATUS
+;maxFlowrateAlarm;;;ENUMERATION;T_ALARM_STATUS
+;maxTemperatureAlarm;;;ENUMERATION;T_ALARM_STATUS
+;lowFlowCutOff;;;ENUMERATION;T_ALARM_STATUS
+;pulseNum;;;NUMERIC;
+;simuPulsesNum;;;NUMERIC;
+;logicValue;;;ENUMERATION;TOutputLogicFormat
+;frequencyValue;;;NUMERIC;
+;functionEnable;;;ENUMERATION;T_FUNCTION_STATUS
+;minTemperatureAlarm;;;ENUMERATION;T_ALARM_STATUS
